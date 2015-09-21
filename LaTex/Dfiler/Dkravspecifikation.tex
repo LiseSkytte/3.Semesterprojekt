@@ -9,7 +9,7 @@
 
 
 \section{Indledning}
-Kravspecifikationen vil beskrive, ud fra en række modeller, hvordan EKG-systemet fungerer. Helt generelt er EKG-måling en simpel metode, til at måle hjertets elektriske aktivitet via elektroder, som registrerer elektriske impulser, placeret på huden. Ud fra disse impulser dannes en graf, som benyttes til at analysere hjertets funktionalitet ud fra P-, Q-, R-, S- og T-takkerne, og dermed konkludere om den pågældende patient har et raskt eller sygt hjerte, samt hvilken sygdom, der er tale om. Helt specifikt for denne opgave er formålet, at identificere sygdommen atrieflimmer via et virtuelt EKG-signal. 
+
 
 \section{Funktionelle krav}
 De funktionelle krav vil nedenstående beskrives ud fra Aktør-kontekstdiagram, aktørbeskrivelse, Use Cases samt Use Case diagram. 
@@ -40,13 +40,15 @@ De funktionelle krav vil nedenstående beskrives ud fra Aktør-kontekstdiagram, 
 \begin{longtabu} to \linewidth{@{}l r X[j]@{}} %UC1%
     {\large \textbf{Use Case 1}} && \\
     \toprule
-    Navn &&    Log ind\\
+    Navn &&    Start blodtryksmåling med digitalt filter\\
     Use case ID &&    1\\
     Samtidige forløb &&    1\\
-    Primær aktør &&    Brugeren\\
-    Initialisere &&    Brugeren ønsker at logge ind\\
-    Forudsætninger &&  At der er logget ud efter en tidligere måling\\
-    Resultat &&    Brugeren bliver logget på og kan foretage en måling                     \\ \midrule
+    Primær aktør &&    Bruger\\
+    Sekundære aktør &&	Borger \\
+    Mål &&    Bruger ønsker at starte en blodtryksmåling\\
+    Initiering &&	Startes af Bruger\\
+    Forudsætninger &&  Borger er tilsluttet systemet. Systemet er aktivt og tilgængelig (Kalibering)  \\
+    Resultat &&		Blodtrykssignalet bliver kontinuerligt vist i blodtryksmålings-vinduet                         \\ \midrule
     Hovedforløb &    1. &    Brugeren indtaster username samt password\\[-1ex]   						 	
                 &    2. &    Brugeren trykker på "Login"\--knappen. Login-vinduet lukkes ned mens CPR-vinduet åbnes\newline
                 	[2.a \textit{Username eller password er forkert}]\\[-1ex]
