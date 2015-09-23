@@ -102,7 +102,6 @@ De funktionelle krav vil nedenstående beskrives ud fra Aktør-kontekstdiagram, 
 \label{UC3}
 \end{longtabu}
 
-
 \begin{longtabu} to \linewidth{@{}l r X[j]@{}} %UC4%
     {\large \textbf{Use Case 4}} && \\
     \toprule
@@ -114,17 +113,15 @@ De funktionelle krav vil nedenstående beskrives ud fra Aktør-kontekstdiagram, 
     Mål &&    Bruger ønsker at gemme en blodtryksmåling og lydsekvens\\
     Initiering &&	Startes af Bruger\\
     Forudsætninger &&  Systemet er aktivt og tilgængeligt. UC1 eller UC2 er gennemført  \\
-    Resultat &&		Blodtryksmåling og lydsekvens bliver gemt i Database                   \\ \midrule
-    Hovedforløb &    1. &    Brugeren trykker på "Gem"\--knappen\\[-1ex]   						 	
-                &    2. &    Systemet gemmer blodtryksmåling og lydsekvens og 		 "Gem"\--diode lyser \newline
-                			 [2.a \textit{Bruger har ikke optaget lydsekvens}]\\ 
-                			 \midrule
+    Resultat &&   Blodtryksmåling og lydsekvens bliver gemt i Database  \\ \midrule
+    Hovedforløb &    1. &    Brugeren trykker på "Gem"\--knappen \\[-1ex]	
+                &    2. &    Systemet gemmer blodtryksmåling og lydsekvens og 		 "Gem"\--diode lyser\newline
+                			 [2.a \textit{Bruger har ikke optaget lydsekvens}]\\ \midrule
                 
-    Undtagelser &   [Extension 1: ]  &      \\ \bottomrule
+    Undtagelser &    2a. &    "Forklaring" \\ \bottomrule
 \caption{Fully dressed Use Case 4.}
 \label{UC4}
 \end{longtabu}
-
 
 
 \section{Ikke-funktionelle krav}
