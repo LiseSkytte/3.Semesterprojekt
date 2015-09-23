@@ -7,5 +7,5 @@
 \contentsline {subsection}{Akt\IeC {\o }rbeskrivelse}{i}{section*.5}
 \contentsline {subsection}{Use case-diagram}{i}{section*.7}
 \contentsline {subsection}{Use Cases}{i}{section*.8}
-\contentsline {section}{Ikke-funktionelle krav}{ii}{section*.9}
-\contentsline {subsection}{(F)URPS+}{ii}{section*.10}
+\contentsline {section}{Ikke-funktionelle krav}{iv}{section*.9}
+\contentsline {subsection}{(F)URPS+}{iv}{section*.10}
