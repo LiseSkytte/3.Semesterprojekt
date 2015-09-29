@@ -1,11 +1,11 @@
 \changetocdepth {2}
 \select@language {danish}
-\contentsline {chapter}{Kravspecifikation}{i}{chapter*.1}
-\contentsline {section}{Indledning}{i}{section*.2}
-\contentsline {section}{Funktionelle krav}{i}{section*.3}
-\contentsline {subsection}{Akt\IeC {\o }r-kontekstdiagram}{ii}{section*.4}
-\contentsline {subsection}{Akt\IeC {\o }rbeskrivelse}{ii}{section*.6}
-\contentsline {subsection}{Use case-diagram}{ii}{section*.8}
-\contentsline {subsection}{Use Cases}{ii}{section*.9}
-\contentsline {section}{Ikke-funktionelle krav}{v}{section*.10}
-\contentsline {subsection}{(F)URPS+}{v}{section*.11}
+\contentsline {chapter}{\chapternumberline {1}Kravspecifikation}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Indledning}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Funktionelle krav}{1}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Akt\IeC {\o }r-kontekstdiagram}{1}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Akt\IeC {\o }rbeskrivelse}{2}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Use case-diagram}{3}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.4}Use Cases}{3}{subsection.1.2.4}
+\contentsline {section}{\numberline {1.3}Ikke-funktionelle krav}{6}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}(F)URPS+}{6}{subsection.1.3.1}
