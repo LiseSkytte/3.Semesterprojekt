@@ -3,9 +3,9 @@
 \contentsline {chapter}{Kravspecifikation}{i}{chapter*.1}
 \contentsline {section}{Indledning}{i}{section*.2}
 \contentsline {section}{Funktionelle krav}{i}{section*.3}
-\contentsline {subsection}{Akt\IeC {\o }r-kontekstdiagram}{i}{section*.4}
-\contentsline {subsection}{Akt\IeC {\o }rbeskrivelse}{i}{section*.5}
-\contentsline {subsection}{Use case-diagram}{i}{section*.7}
-\contentsline {subsection}{Use Cases}{i}{section*.8}
-\contentsline {section}{Ikke-funktionelle krav}{iv}{section*.9}
-\contentsline {subsection}{(F)URPS+}{iv}{section*.10}
+\contentsline {subsection}{Akt\IeC {\o }r-kontekstdiagram}{ii}{section*.4}
+\contentsline {subsection}{Akt\IeC {\o }rbeskrivelse}{ii}{section*.6}
+\contentsline {subsection}{Use case-diagram}{ii}{section*.8}
+\contentsline {subsection}{Use Cases}{ii}{section*.9}
+\contentsline {section}{Ikke-funktionelle krav}{v}{section*.10}
+\contentsline {subsection}{(F)URPS+}{v}{section*.11}
