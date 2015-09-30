@@ -80,9 +80,9 @@ De funktionelle krav vil nedenstående beskrives ud fra Aktør-kontekstdiagram, 
     Hovedforløb &    1. &	 Kalibrering-vinduet vises, hvor system spørger om der skal foretages en kalibrering\\[-1ex]  				
     			&    2. &    Bruger trykker på "Ja"\--knappen\newline
     						 [2.a \textit{Bruger trykker på "Nej"\--knappen}]\\
-                &    3.	&	 System kalibrerer og kalibrerings-vinduet lukkes ned \newline\\ \midrule
+                &    3.	&	 System kalibrerer og Kalibrering-vinduet lukkes ned \newline\\ \midrule
                 
-    Undtagelser &    2.a &   Bruger ønsker ingen kalibrering. UC1 afsluttes og kalibrerings-vinduet lukkes  \\ \bottomrule
+    Undtagelser &    2.a &   Bruger ønsker ingen kalibrering. UC1 afsluttes og Kalibrering-vinduet lukkes  \\ \bottomrule
 \caption{Fully dressed Use Case 1.}
 \label{UC1}
 \end{longtabu}
@@ -199,24 +199,34 @@ De funktionelle krav vil nedenstående beskrives ud fra Aktør-kontekstdiagram, 
 
 
 \section{Ikke-funktionelle krav}
+De ikke-funktionelle krav er specificeret ved brug af redskabet (F)URPS+, der står for hhv. Functionality, Usability, Reliability, Performance, Supportability og andre krav til fx brugssituationer og interface.  
 
 
-\subsection{(F)URPS+}
-MoSCoW er angivet i parentes med hhv. M, S, C eller W.
+\textbf{Functionality}
+\begin{itemize}
+	\item System skal kunne vise en kontinuerlig blodtryksignal i Monitor-vinduet.
+	\item System skal kunne vise Systole-, Diastole- og Pulsværdier med op til tre cifre.
+	\item System skal kunne vise et blodtrykssignal med og uden et digitalt filter.
+	\item System skal kunne nulpunktsjustere blodtrykssignalet.
+	\item System skal kunne gemme en blodtryksmåling i en database.
+	\item System skal kunne kalibreres. 
+\end{itemize}
 
 \textbf{Usability}
 \begin{itemize}
-	\item (M) Brugeren skal kunne starte en default-måling maksimalt 20 sek. efter opstart af programmet
-	\item (M) Login-vinduet skal indeholde en "login"\--knap til at logge på og få vist EKG-vinduet
-	\item (M) EKG-vinduet skal indeholde en "start"\--knap til at igangsætte målingerne
-	\item (M) EKG-vinduet skal indeholde en "log ud"\--knap
-	\item (M) EKG-vinduet  skal indeholde en "gem"\--knap
-	\item (M) Information-vinduet skal indeholde en "gem"\--knap
+	\item Monitor-vinduet skal indeholde en ”Gem”\--knap.
+	\item Monitor-vinduet skal indeholde en ”Nulpunktsjustér”\--knap.
+	\item Monitor-vinduet skal indeholde to radiobuttons til aktivering og deaktivering af digitalt filter.
+	\item Kalibrering-vinduet skal indeholde en ”Ja”\--knap og en ”Nej”\--knap.
+	\item Kalibrering-vinduet skal indeholde et datostempel for seneste kalibrering.
+	\item Gem-vinduet skal indeholde tekstbokse til data indtastning for målingen. 
+	\item Gem-vinduet skal indeholde en ”OK”\--knap.
+	\item Det skal være muligt at aflæse værdier på Monitor-vinduet fra 2 meters afstand med normalt syn.
 \end{itemize}
 
 \textbf{Reliability}
 \begin{itemize}
-	\item (M) Systemet skal have en effektiv MTBF (Mean Time Between Failure) på 20 minutter og en MTTR (Mean Time To Restore) på 1 minut.
+	\item Systemet skal have en effektiv MTBF (Mean Time Between Failure) på 20 minutter og en MTTR (Mean Time To Restore) på 1 minut.
 				\begin{align}
 					Availability = \frac{MTBF}{MTBF+MTTR} = \frac{20}{20+1} = 0,952 = 95,2 \%
 				\end{align}
@@ -225,17 +235,28 @@ MoSCoW er angivet i parentes med hhv. M, S, C eller W.
 
 \textbf{Performance}
 \begin{itemize}
-	\item (M) Der skal vises en EKG-graf i EKG-vinduet, hvor spænding vises op af y-aksen (-1V til 1V) og tiden på x-aksen
-	\item (M) Grafen skal være scrollbar på x-aksen, så brugeren selv ved brug af musen kan vælge det udsnit af grafen, der skal vises mere detaljeret
-	\item (M) Skal tage en sample over et brugerbestemt interval, hvor frekvensen  er tilpasset målingerne, således at grafen er analyserbar
+	\item Blodtrykssignalet skal vises maksimalt 5 sekunder efter UC1 er afsluttet.
+	\item Systemet skal vise en graf for blodtryksmålingen, hvor y-aksen er mmHg og x-aksen er tid i sekunder.
+	\item Systemet skal kunne måle blodtryksværdier fra 0 til 300 mmHg.
 \end{itemize}
 
 \textbf{Supportability}
 \begin{itemize}
-	\item (M) Softwaren er opbygget af trelagsmodellen
+	\item Softwaren skal opbygges efter trelagsmodellen.
 \end{itemize}
 
-
+\textbf{Andre(+)}\newline
+\textbf{Brugssituationer}
+\begin{itemize}
+	\item Der skal være adgang til en computer med Windows 7 eller nyere – computeren skal have minimum 4 GB RAM.
+\end{itemize}
+\textbf{Interface}
+\begin{itemize}
+	\item Blodtryksdiagrammet skal fylde minimum 1/3 af Monitor-vinduet.
+	\item Baggrunden i Montior-vinduet skal være mørk.
+	\item Blodtrykssignal og -værdier(systole og diastole) skal være røde, og puls skal være grøn.
+	\item Systolisk og diastolisk blodtryk skal fremhæves ved større skriftstørrelse end andre værdier i Monitor-vinduet (fx værdier på akserne).
+\end{itemize}
 
 
 
