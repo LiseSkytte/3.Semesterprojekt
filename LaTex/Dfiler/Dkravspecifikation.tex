@@ -9,7 +9,7 @@
 
 
 \section{Indledning}
-
+Kravspecifikationen vil gennem seks Use Cases beskrive blodtryksmålerens funktionelle krav. Systemet skal kunne vise et blodtryksignal kontinuert i en graf. Systemet skal udover det kunne kalibrer, nulpunkts justeres samt gemme data i en database. Kravspecifikationen indeholder også en række ikke-funktionelle krav, som er listet op efter (F)URPS+.   
 
 
 \section{Funktionelle krav}
@@ -23,7 +23,8 @@ De funktionelle krav vil nedenstående beskrives ud fra Aktør-kontekstdiagram, 
 	\label{fig:aktoerbeskrivelse}
 \end{figure}
 
-
+Systemet består af en software- og en hardward-del. Softwaredelen er udarbejdet i Visual Studio C\#. Hardwaredelen består af flere komponenter sat sammen. Tryktransducer, Instrumentationforstærker, et aktivt 2. ordens lavpasfilter af typen Sallen-Key med unity gain og en DAQ. Det er selve systemet. \\
+Primær aktøren i dette projekt er en Bruger. Sekundære aktører er Database og Borger. Borger er en package af Physionet og Analog Discovery, som er eksterne aktører.   
 
 \subsection{Aktørbeskrivelse}
 
@@ -58,10 +59,12 @@ De funktionelle krav vil nedenstående beskrives ud fra Aktør-kontekstdiagram, 
 \subsection{Use case-diagram}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/Snip20150930_2}
+	\includegraphics[width=1\textwidth]{Figurer/Snip20151001_20}
 	\caption{Use case-diagram}
 	\label{fig:Use case-diagram}
 \end{figure}
+
+Brugeren af systemet er den primære aktør i alle seks Use Cases. Det er Brugeren, der sætter alle Use Cases igang og styre, hvad der skal ske og hvornår. Borgeren, som er den sekundære aktør, integrer i UC2, da det er her, blodtryksmålingen for Borgeren skal vises. For at få gemt data integrer den sekundære aktør Database med UC6.  
 
 \subsection{Use Cases}
 
@@ -202,7 +205,7 @@ De funktionelle krav vil nedenstående beskrives ud fra Aktør-kontekstdiagram, 
 De ikke-funktionelle krav er specificeret ved brug af redskabet (F)URPS+, der står for hhv. Functionality, Usability, Reliability, Performance, Supportability og andre krav til fx brugssituationer og interface.  
 
 
-\textbf{Functionality}
+\subsection{Functionality}
 \begin{itemize}
 	\item System skal kunne vise en kontinuerlig blodtryksignal i Monitor-vinduet.
 	\item System skal kunne vise Systole-, Diastole- og Pulsværdier med op til tre cifre.
@@ -212,7 +215,7 @@ De ikke-funktionelle krav er specificeret ved brug af redskabet (F)URPS+, der st
 	\item System skal kunne kalibreres. 
 \end{itemize}
 
-\textbf{Usability}
+\subsection{Usability}
 \begin{itemize}
 	\item Monitor-vinduet skal indeholde en ”Gem”\--knap.
 	\item Monitor-vinduet skal indeholde en ”Nulpunktsjustér”\--knap.
@@ -224,7 +227,7 @@ De ikke-funktionelle krav er specificeret ved brug af redskabet (F)URPS+, der st
 	\item Det skal være muligt at aflæse værdier på Monitor-vinduet fra 2 meters afstand med normalt syn.
 \end{itemize}
 
-\textbf{Reliability}
+\subsection{Reliability}
 \begin{itemize}
 	\item Systemet skal have en effektiv MTBF (Mean Time Between Failure) på 20 minutter og en MTTR (Mean Time To Restore) på 1 minut.
 				\begin{align}
@@ -233,19 +236,19 @@ De ikke-funktionelle krav er specificeret ved brug af redskabet (F)URPS+, der st
 
 \end{itemize}
 
-\textbf{Performance}
+\subsection{Performance}
 \begin{itemize}
 	\item Blodtrykssignalet skal vises maksimalt 5 sekunder efter UC1 er afsluttet.
 	\item Systemet skal vise en graf for blodtryksmålingen, hvor y-aksen er mmHg og x-aksen er tid i sekunder.
 	\item Systemet skal kunne måle blodtryksværdier fra 0 til 300 mmHg.
 \end{itemize}
 
-\textbf{Supportability}
+\subsection{Supportability}
 \begin{itemize}
 	\item Softwaren skal opbygges efter trelagsmodellen.
 \end{itemize}
 
-\textbf{Andre(+)}\newline
+\subsection{Andre(+)}
 \textbf{Brugssituationer}
 \begin{itemize}
 	\item Der skal være adgang til en computer med Windows 7 eller nyere – computeren skal have minimum 4 GB RAM.
