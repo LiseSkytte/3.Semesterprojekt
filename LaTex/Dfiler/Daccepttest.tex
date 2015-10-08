@@ -1,0 +1,201 @@
+\chapter{Acceptest}
+
+\begin{longtabu} to \linewidth{@{}l l l X[j]@{}}
+    Version &    Dato &    Ansvarlig &    Beskrivelse\\[-1ex]
+    \midrule
+    1.0		&	30-09-2015	& Alle 	&	Første udkast. Klar til Review\\[-1ex]
+\label{version_Systemark}
+\end{longtabu}
+
+\section{Accepttest af Use Cases}
+
+
+%Use case 1 acceptest
+\subsection{Use Case 1}
+\textbf{Kalibrér}
+
+\begin{longtabu} to \linewidth{@{} c X[j] X[j] X[j] l@{}}
+    ~ &	Test &    Forventet resultat &		Faktiske observationer &    Godkendt\\[-1ex]
+    \midrule
+    ~ &\textit{Hovedforløb} & ~ & ~ &
+    \\ \midrule
+    1. & Start system &   Kalibrering-vinduet vises, hvor system spørger om der skal foretages en kalibrering  &     &		%{\Huge \checkmark}
+    \\
+    2. &Tryk på "Ja"\--knappen  &    System kalibrerer og Kalibrering-vinduet lukkes ned  &    &		%{\Huge \checkmark}
+	\\ \midrule
+	~ &\textit{Undtagelse} & ~ & ~ & 
+	\\ \midrule	
+    2a. &	Tryk på "Nej"\--knappen &    Kalibrering-vinduet lukkes ned  &     &		%{\Huge \checkmark}
+ \\ \bottomrule
+ 
+\caption{Accepttest af Use Case 1.}\\
+\label{AT_UC1}
+\end{longtabu}
+
+%Use case 2 acceptest 
+\subsection{Use Case 2}
+\textbf{Vis måling}
+
+\begin{longtabu} to \linewidth{@{} c X[j] X[j] X[j] l@{}}
+	& Test	& Forventet resultat		& Faktiske observationer		& Godkendt\\[-1ex] 
+	\midrule
+	&\textit{Hovedforløb} & & & 
+	\\ \midrule
+	1. &System viser Monitor-vinduet & Blodtryksignal samt Systole-, Diastole- og pulsværdier udskrives i Monitor-vinduet& & %{\Huge \checkmark}
+	\\ \midrule
+		~ &\textit{Undtagelse} & ~ & ~ & 
+	\\ \midrule
+	\\ \bottomrule
+
+\caption{Accepttest af Use Case 2.}\\
+\label{AT_UC2}	
+\end{longtabu}
+
+%Use Case 3 acceptest
+
+\subsection{Use Case 3}
+\textbf{Nulpunktsjustér}
+
+\begin{longtabu} to \linewidth{@{} c X[j] X[j] X[j] l@{}}
+    ~ &	Test &    Forventet resultat &		Faktiske observationer &    Godkendt\\[-1ex]
+    \midrule
+    ~ &\textit{Hovedforløb} & ~ & ~ &
+    \\ \midrule
+    1. & Tryk på "Nulpunktsjustering"\--knappen &    Blodtrykssignalet udskrives i Monitor-vinduet med en baseline ved 0  &    &		%{\Huge (\checkmark)}
+	\\ \midrule
+	~ &\textit{Undtagelser} & ~ & ~ & 
+	\\ \midrule	
+ \\ \bottomrule
+ 
+\caption{Accepttest af Use Case 3.}\\
+\label{AT_UC3}
+\end{longtabu}
+
+%Use Case 4 acceptest
+
+\subsection{Use Case 4}
+\textbf{Deaktivér filter}
+
+\begin{longtabu} to \linewidth{@{} c X[j] X[j] X[j] l@{}}
+    ~ &	Test &    Forventet resultat &		Faktiske observationer &    Godkendt\\[-1ex]
+    \midrule
+    ~ &\textit{Hovedforløb} & ~ & ~ &
+    \\ \midrule
+    1. &Markér \textit{"Deaktivér digitalt filtre"}  &    Filteret deaktiveres og det ufiltreret blodtryksignal udskrives i Monitor-vinduet &     &		%{\Huge \checkmark}
+	\\ \midrule
+	~ &\textit{Undtagelser} & ~ & ~ & 
+	\\ \midrule	
+ \\ \bottomrule
+ 
+\caption{Accepttest af Use Case 4.}\\
+\label{AT_UC4}
+\end{longtabu}
+
+%Use Case 5 acceptest
+
+\subsection{Use Case 5}
+\textbf{Aktivér filter}
+
+\begin{longtabu} to \linewidth{@{} c X[j] X[j] X[j] l@{}}
+    ~ &	Test &    Forventet resultat &		Faktiske observationer &    Godkendt\\[-1ex]
+    \midrule
+    ~ &\textit{Hovedforløb} & ~ & ~ &
+    \\ \midrule
+    1. & Markér \textit{"Aktivér digitalt filtre"}  &    Filteret aktiveres og det filtreret blodtryksignal udskrives i Monitor-vinduet &   &		%{\Huge \checkmark}
+   	\\ \midrule
+	~ &\textit{Undtagelser} & ~ & ~ & 
+	\\ \midrule	
+ \\ \bottomrule
+ 
+\caption{Accepttest af Use Case 5.}\\
+\label{AT_UC5}
+\end{longtabu}
+
+%Use Case 6 acceptest
+
+\subsection{Use Case 6}
+\textbf{Gem måling}
+
+\begin{longtabu} to \linewidth{@{} c X[j] X[j] X[j] l@{}}
+    ~ &	Test &    Forventet resultat &		Faktiske observationer &    Godkendt\\[-1ex]
+    \midrule
+    ~ &\textit{Hovedforløb} & ~ & ~ &
+    \\ \midrule
+    1. & Tryk på "Gem"\--knappen &    Gem-vinduet åbnes &   &		%{\Huge \checkmark}
+    \\
+    2. & Indtast data & Datafelterne er udfyldt &		&	%{\Huge \checkmark}
+    \\
+    3. & Tryk på "OK"\--knappen & Gem-vinduet lukkes ned og Monitor-vinduet åbnes. Gemme tidspunktet vises i Monitor-vinduet  &		& %{\Huge \checkmark}
+   	\\ \midrule
+	~ &\textit{Undtagelser} & ~ & ~ & 
+	\\ \midrule	
+	1a. &	Tryk på "Gem"\--knappen &  Gemme tidspunktet vises i Monitor-vinduet    &     &		%{\Huge \checkmark}
+
+ \\ \bottomrule
+ 
+\caption{Accepttest af Use Case 6.}\\
+\label{AT_UC6}
+\end{longtabu}
+
+\section{Accepttest af ikke-funktionelle krav}
+
+\begin{longtabu} to \linewidth{@{} c X[j] X[j] X[j] X[j] l@{}}
+	& Ikke-funktionelt krav & Test/handling & Forventet resultat & Faktiske observationer & Godkendt
+	\\[-1ex] \midrule
+	&  \textit{Functionality} &  &  & & \\ \midrule
+	& System skal kunne vise et kontinuerligt blodtryksignal i Monitor-vinduet & Der ses om GUI'en viser et kontinuerligt blodtrykssignal & System viser et kontinuerligt blodtrykssignal &  & %{\Huge \checkmark}
+	\\ \midrule
+	& System skal kunne vise Systole-, Diastole- og Pulsværdier med op til tre cifre & Der ses om GUI'en indeholder Systole-, Diastole- og Pulsværdier med op til tre cifre & GUI'en indeholder Systole-, Diastole- og Pulsværdier med op til tre cifre &  & %{\Huge \checkmark}
+	\\ \midrule
+	& System skal kunne vise et blodtrykssignal med og uden et digitalt filter & Der ses om GUI'en kan vise et blodtrykssignal med og uden digitalt filter & GUI'en kan vise et blodtrykssignal med og uden digitalt filter &  & %{\Huge \checkmark}
+	\\ \midrule
+	& System skal kunne nulpunktsjustere blodtrykssignalet & Der ses i GUI'en om blodtrykssignalet kan nulpunktsjusteres & Blodtrykssignalet kan nulpunktjusteres &  & %{\Huge \checkmark}
+	\\ \midrule
+	& System skal kunne gemme en blodtryksmåling i en database & Der trykkes på "Gem"\--knappen i Monitor-vinduet og der indtastes gyldige værdier i Gem-vinduet og trykkes på "OK"\--knappen & System gemmer data i en database og udskriver tidsstempel for gemt data i Monitor-vinduet &  & %{\Huge \checkmark}
+	\\ \midrule
+	& System skal kunne kalibreres & Der trykkes på "Ja"\--knappen i kalibrering-vinduet & System er kalibreret &  & %{\Huge \checkmark}
+	\\ \midrule
+	& \textit{Usability} &  &  & & \\ \midrule
+	& Monitor-vinduet skal indeholde en ”Gem”\--knap & Der ses i Monitor-vinduet om der er en ”Gem”\--knap & Der er en ”Gem”\--knap i Monitor-vinduet &  & %{\Huge \checkmark}
+	\\ \midrule
+	& Monitor-vinduet skal indeholde en ”Nulpunktsjustér”\--knap & Der ses i Monitor-vinduet om der er en ”Nulpunktsjustér”\--knap & Der er en ”Nulpunktsjustér”\--knap i Monitor-vinduet &  & %{\Huge \checkmark}
+	\\ \midrule 
+	& Monitor-vinduet skal indeholde to radiobuttons til aktivering og deaktivering af digitalt filter & Der ses i Monitor-vinduet om der er to radiobuttons til aktivering og deaktivering af digitalt filter & Der er to radiobuttons til aktivering og deaktivering af digitalt filter i Monitor-vinduet &  & %{\Huge \checkmark}
+	\\ \midrule
+	& Kalibrering-vinduet skal indeholde en ”Ja”\--knap og en ”Nej”\--knap & Der ses i kalibrering-vinduet om der er en ”Ja”\--knap og en ”Nej”\--knap & Der er en ”Ja”\--knap og en ”Nej”\--knap i kalibrering-vinduet &  & %{\Huge \checkmark}
+	\\ \midrule
+	& Kalibrering-vinduet skal indeholde et datostempel for seneste kalibrering & Der ses i kalibrering-vinduet om der er et tidsstempel for seneste kalibrering & Der er et tidsstempel for seneste kalibrering i kalibrering-vinduet &  & %{\Huge \checkmark}
+	\\ \midrule
+	& Gem-vinduet skal indeholde tekstbokse til data indtastning for målingen & Der ses i Gem-vinduet, om der er tekstbokse til indtastning af data & Der er tekstbokse til indtastning af data i Gem-vinduet & & %{\Huge \checkmark}
+	\\ \midrule
+	& Gem-vinduet skal indeholde en ”OK”\--knap & Der ses i Gem-vinduet om der er en "OK"\--knap & Der er en "OK"\--knap i Gem-vinduet& & %{\Huge \checkmark}
+	\\ \midrule
+	& Det skal være muligt at aflæse værdier på Monitor-vinduet fra 2 meters afstand med normalt syn & Der testes af 5 personer med forskellige aldre med en synsstyrke på +/- 0,25, som placeres 2 meter fra Monitor-vinduet & Det er muligt for de 5 at aflæse værdierne på 2 meters afstand & & %{\Huge \checkmark}
+	\\ \midrule
+	& \textit{Reliability} & & & & \\ \midrule
+	& Systemet skal have en effektiv MTBF på 20 minutter og MTTR på 1 minut & Køre programmet i 20 minutter. Genstart derefter programmet, hvor der tages tid med et stopur & Programmet har kørt i 20 minutter og genstartes indenfor 1 minut  &  & %{\Huge \checkmark}
+	\\ \midrule
+	& \textit{Performance} & & & & \\ \midrule
+	& Blodtrykssignalet skal vises maksimalt 5 sekunder efter UC1 er afsluttet & UC1 afsluttes samtidig med startes et stopur på en iPhone 5s. Når blodtrykssignalet vises stoppes uret & Blodtryksignalet vises indenfor de 5 sekunder & & %{\Huge \checkmark}
+	\\ \midrule
+	& Systemet skal vise en graf for blodtryksmålingen, hvor y-aksen er mmHg og x-aksen er tid i sekunder & Der ses på grafen for blodtrykssignalet, om y-aksen er mmHg og x-aksen er tid i sekunder & Blodtryksignalets y-akse er mmHg og x-aksen er tid i sekunder & & %{\Huge \checkmark}
+	\\ \midrule
+	& Systemet skal kunne måle blodtryksværdier fra 0 til 300 mmHg & Der foretages målinger hvor trykket er henholdsvis 280-295 og +300 (?) & (?) & & %{\Huge \checkmark}
+	\\ \midrule
+	& \textit{Supportability} & & & & \\ \midrule
+	& Softwaren skal opbygges efter trelagsmodellen & Der kigges i koden efter data-lag, logik-lag og GUI-lag & Data-lag, logik-lag og GUI-lag er at find i koden & & %{\Huge \checkmark}
+	\\ \midrule
+	& \textit{Andet(+)} & & & & \\ \midrule
+	& Der skal være adgang til en computer med Windows 7 eller nyere – computeren skal have minimum 4 GB RAM & Der ses om der er installeret Windows 7 eller nyere og om der er minimum 4 GB RAM & Det ses at der er installeret Windows 7 eller nyere og om der er minimum 4 GB RAM & & %{\Huge \checkmark}
+	\\ \midrule
+	& Blodtryksdiagrammet skal fylde minimum 1/3 af Monitor-vinduet & Der ses om blodtryksdiagrammet fylder minimum 1/3 af Monitor-vinduet & Blodtryksdiagrammet fylder minimum 1/3 af Monitor-vinduet& & %{\Huge \checkmark}
+	\\ \midrule
+	& Baggrunden i Monitor-vinduet skal være mørk & Der ses i Monitor-vinduet om baggrunden er mørk & Baggrunden i Monitor-vinduet er mørk& & %{\Huge \checkmark}
+	\\ \midrule
+	& Blodtrykssignal og -værdier(systole og diastole) skal være røde og puls skal være grøn & Der ses på blodtryksdiagrammet om blodtrykssignal og -værdier er røde og puls er grøn & Blodtrykssignal og -værdier(systole og diastole) er røde og puls er grøn & & %{\Huge \checkmark}
+	\\ \midrule
+	& Systolisk og diastolisk blodtryk skal fremhæves ved større skriftstørrelse end andre værdier i Monitor-vinduet (fx værdier på akserne) & Der ses i Monitor-vinduet om det systoliske og det diastoliske blodtryk er fremhævet ved større skriftstørrelse end andre værdier i Monitor-vinduet  & Det ses i Monitor-vinduet at det systoliske og det diastoliske blodtryk er fremhævet ved større skriftstørrelse end andre værdier i Monitor-vinduet & &%{\Huge \checkmark}
+	\\ \bottomrule
+\caption{Accepttest af Ikke-funktionelle krav}
+\end{longtabu}
+
