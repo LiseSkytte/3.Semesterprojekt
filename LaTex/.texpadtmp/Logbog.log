@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.16)  6 OCT 2015 15:07
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.10)  1 OCT 2015 16:37
->>>>>>> origin/master
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.10)  19 OCT 2015 13:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1587,7 +1583,7 @@ File: upzd.fd 2001/06/04 font definitions for U/pzd.
 LaTeX Font Info:    Try loading font information for U+psy on input line 64.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/upsy.fd
 File: upsy.fd 2001/06/04 font definitions for U/psy.
-)) (/Users/jakobdegn/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Logbog.aux (/Users/jakobdegn/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Lfiler/Logbog.aux))
+)) (/Users/Lise/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Logbog.aux (/Users/Lise/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Lfiler/Logbog.aux))
 \openout1 = `Logbog.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
@@ -1671,7 +1667,7 @@ LaTeX Info: Redefining \nameref on input line 6.
 LaTeX Info: Redefining \ref on input line 6.
 LaTeX Info: Redefining \pageref on input line 6.
 LaTeX Info: Redefining \nameref on input line 6.
-(/Users/jakobdegn/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Logbog.out) (/Users/jakobdegn/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Logbog.out)
+(/Users/Lise/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Logbog.out) (/Users/Lise/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Logbog.out)
 \@outlinefile=\write4
 \openout4 = `Logbog.out'.
 
@@ -1719,81 +1715,82 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--41
  []
 
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 55.
+(babel)             in language  on input line 54.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 55.
+(babel)             in language  on input line 54.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 57.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 57.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 57.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 57.
 [1
 
 
 
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 62--67
+Underfull \hbox (badness 10000) in paragraph at lines 61--66
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--77
+Underfull \hbox (badness 10000) in paragraph at lines 72--76
 
  []
 
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 91.
+(babel)             in language  on input line 89.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 91.
+(babel)             in language  on input line 89.
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--103
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
 
  []
 
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 104.
+(babel)             in language  on input line 102.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 104.
+(babel)             in language  on input line 102.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 104.
+(babel)             in language  on input line 102.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 104.
+(babel)             in language  on input line 102.
 [2]
 Package babel Info: Redefining danish shorthand "|
-<<<<<<< HEAD
-(babel)             in language  on input line 115.
+(babel)             in language  on input line 119.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 115.
-
-Underfull \hbox (badness 10000) in paragraph at lines 122--127
-=======
-(babel)             in language  on input line 120.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 120.
+(babel)             in language  on input line 119.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 142.
+(babel)             in language  on input line 140.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 142.
+(babel)             in language  on input line 140.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 145.
+(babel)             in language  on input line 143.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 145.
+(babel)             in language  on input line 143.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 145.
+(babel)             in language  on input line 143.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 145.
+(babel)             in language  on input line 143.
  [3]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 154.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 154.
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--166
->>>>>>> origin/master
+Underfull \hbox (badness 10000) in paragraph at lines 159--165
+
+ []
+
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 177.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 177.
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--189
 
  []
 
@@ -1814,11 +1811,7 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 13.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 13.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 13.
-<<<<<<< HEAD
-(/Users/jakobdegn/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Logbog.aux (/Users/jakobdegn/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Lfiler/Logbog.aux))
-=======
 (/Users/Lise/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Logbog.aux (/Users/Lise/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Lfiler/Logbog.aux))
->>>>>>> origin/master
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 13.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 13.
 Package rerunfilecheck Info: File `Logbog.out' has not changed.
@@ -1826,34 +1819,18 @@ Package rerunfilecheck Info: File `Logbog.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 13.
  ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 26818 strings out of 493117
- 477253 string characters out of 6135433
- 797921 words of memory out of 5000000
- 29907 multiletter control sequences out of 15000+600000
-=======
- 26823 strings out of 493117
- 477224 string characters out of 6135433
+ 26825 strings out of 493117
+ 477246 string characters out of 6135433
  798921 words of memory out of 5000000
- 29909 multiletter control sequences out of 15000+600000
->>>>>>> origin/master
+ 29910 multiletter control sequences out of 15000+600000
  17001 words of font info for 52 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  40i,13n,40p,10459b,846s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb>
-<<<<<<< HEAD
-Output written on /Users/jakobdegn/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Logbog.pdf (3 pages, 82940 bytes).
+Output written on /Users/Lise/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Logbog.pdf (4 pages, 85634 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
- 10 named destinations out of 1000 (max. 500000)
- 49 words of extra memory for PDF output out of 10000 (max. 10000000)
-=======
-Output written on /Users/Lise/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Logbog.pdf (4 pages, 84184 bytes).
-PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
- 74 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 500000)
- 65 words of extra memory for PDF output out of 10000 (max. 10000000)
->>>>>>> origin/master
+ 90 PDF objects out of 1000 (max. 8388607)
+ 78 compressed objects within 1 object stream
+ 14 named destinations out of 1000 (max. 500000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
 
