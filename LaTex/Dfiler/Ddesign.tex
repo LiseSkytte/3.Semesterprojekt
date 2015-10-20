@@ -2,6 +2,18 @@
 
 \section{Systemarkitektur} 
 
+\begin{longtabu} to \linewidth{@{}l X[j]@{}}
+	Blok &	Beskrivelse \\[-1ex]
+	\midrule
+	Blodtryksmåler & Det overordnede system, som indeholder DAQ transducer, filter, computer og forstærker\\[-1ex]
+	Computer & Indeholder software til systemet, som er kodet i Visual Studio C\#. Brugeren af systemet kan kalibrere, nulpunktsjustere, aktivere, deaktiver filter, gemme og vise målinger\\[-1ex]
+	DAQ & Konverterer et analogt signal fra transduceren til et digitalt signal\\[-1ex]
+	Transducer & Registrerer det målte tryk, og omdanner det til en spænding, der læses som et analogt signal\\[-1ex]
+	Forstærker & Forstærker det analoge signal fra transduceren. Dette gøres ved hjælp af instrumentationsforstærkeren\\[-1ex]
+	Filter & Lavpasfilter\\[-1ex]
+\end{longtabu}
+
+
 
 \section{Grænseflader}
 
