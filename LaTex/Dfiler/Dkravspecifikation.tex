@@ -30,7 +30,7 @@ De funktionelle krav vil nedenstående beskrives ud fra Aktør-kontekstdiagram, 
 \end{figure}
 
 Systemet består af en software- og en hardward-del. Softwaredelen er udarbejdet i Visual Studio C\#. Hardwaredelen består af flere komponenter sat sammen. Tryktransducer, Instrumentationforstærker, et aktivt 2. ordens lavpasfilter af typen Sallen-Key med unity gain og en DAQ. Det er selve systemet. \\
-Primær aktøren i dette projekt er en Forsker. Sekundære aktører er Database og Borger. Borger er en package af Physionet og Analog Discovery, som er eksterne aktører.   
+Primær aktøren i dette projekt er en Forsker. Sekundære aktører er Database og Måleobjekt. Måleobjekt er en package af Physionet og Analog Discovery, som er eksterne aktører.   
 
 \subsection{Aktørbeskrivelse}
 
@@ -40,9 +40,9 @@ Primær aktøren i dette projekt er en Forsker. Sekundære aktører er Database 
      Type & Primær \\
      Beskrivelse  & Person med relevant baggrundsviden inden for blodtryksanalyse \\ 
      \midrule
-     Aktørnavn & Borger  \\
+     Aktørnavn & Måleobjekt  \\
      Type & Sekundær \\
-     Beskrivelse  & Borger er en kombination af Physionet og Analog Discovery. Borger repræsenterer data fra Physionet leveret til blodtryksmålingssystemet igennem Analog Discovery \\
+     Beskrivelse  & Måleobjektet i det færdigudviklede produkt er et signal genereret enten in vitro eller in vivo. I prototypen er måleobjektet en kombination af Physionet og Analog Discovery. Måleobjektet repræsenterer data fra Physionet leveret til blodtryksmålingssystemet igennem Analog Discovery \\
      \midrule
      Aktørnavn & Database \\
      Type & Sekundær \\
@@ -70,7 +70,7 @@ Primær aktøren i dette projekt er en Forsker. Sekundære aktører er Database 
 	\label{fig:Use case-diagram}
 \end{figure}
 
-Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forskeren, der sætter alle Use Cases igang og styrer, hvad der skal ske og hvornår. Borgeren, som er den sekundære aktør, integrer i UC2, da det er her, blodtryksmålingen for Borgeren skal vises. For at få gemt data integrerer den sekundære aktør Database med UC6.  
+Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forskeren, der sætter alle Use Cases igang og styrer, hvad der skal ske og hvornår. Måleobjektet, som er den sekundære aktør, integrer i UC2, da det er her, blodtryksmålingen for Måleobjektet skal vises. For at få gemt data integrerer den sekundære aktør Database med UC6.  
 
 \subsection{Use Cases}
 
@@ -86,7 +86,7 @@ Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forsk
     Initiering &&	Startes af Forsker\\
     Forudsætninger &&  System er aktivt og tilgængeligt\\
     Resultat &&		Blodtrykssignalet er kalibreret                         \\ \midrule
-    Hovedforløb &    1. &	 Kalibrering-vinduet vises, hvor system spørger om der skal foretages en kalibrering\\[-1ex]  				
+    Hovedforløb &    1. &	 Kalibrering-vinduet vises, hvor System spørger om der skal foretages en kalibrering\\[-1ex]  				
     			&    2. &    Forsker trykker på "Ja"\--knappen\newline
     						 [2.a \textit{Forsker trykker på "Nej"\--knappen}]\\
                 &    3.	&	 System kalibrerer og Kalibrering-vinduet lukkes ned \newline\\ \midrule
@@ -100,14 +100,14 @@ Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forsk
 \begin{longtabu} to \linewidth{@{}l r X[j]@{}} %UC2%
     {\large \textbf{Use Case 2}} && \\
     \toprule
-    Navn &&    Vis Måling\\
+    Navn &&    Vis Måling med filter\\
     Use case ID &&    2\\
     Samtidige forløb &&    1\\
     Primær aktør &&    Forsker\\
-    Sekundære aktør &&	 Borger\\
+    Sekundære aktør &&	 Måleobjekt\\
     Mål &&    Forsker ønsker at vise blodtrykssignal med digitalt filter\\
     Initiering &&	Startes af UC1\\
-    Forudsætninger &&  System er aktivt og tilgængeligt. Digitalt filter er aktivt. Borger er tilsluttet system\\
+    Forudsætninger &&  System er aktivt og tilgængeligt. Digitalt filter er aktivt. Måleobjekt er tilsluttet system\\
     Resultat &&		Blodtrykssignalet udskrives                         \\ \midrule
     Hovedforløb &    1. &    Monitor-vinduet vises\\[-1ex]	
     			&    2. &    Blodtryksignal udskrives på en graf i 	  Monitor-vinduet\\[-1ex]
@@ -131,7 +131,7 @@ Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forsk
     Initiering &&	Startes af Forsker\\
     Forudsætninger &&  System er aktivt og tilgængeligt. UC2 kører \\    Resultat &&		Blodtrykssignalet er nulpunktsjusteret\\ \midrule
     Hovedforløb &    1. &    Forsker trykker på "Nulpunktjustering"\--knappen\\[-1ex]   						 	
-                &    2. &    System starter nulpunktsjusteringen\\[-1ex]
+                &    2. &    System udfører nulpunktsjusteringen\\[-1ex]
                 &	 3.	&	 Det fremgår i Monitor-vinduet, at nulpunktsjustering er foretaget\newline\\ \midrule
                 
     Undtagelser &     &      \\ \bottomrule
@@ -150,7 +150,7 @@ Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forsk
     Mål &&    Forsker ønsker at deaktivere det digitale filter\\
     Initiering &&	Startes af Forsker\\
     Forudsætninger &&  System er aktivt og tilgængeligt. UC2 kører  \\
-    Resultat &&		Ufiltreret blodtrykssignal vises i Monitor-vindet                 \\ \midrule
+    Resultat &&		Ufiltreret blodtrykssignal vises i Monitor-vinduet                 \\ \midrule
     Hovedforløb &    1. &    Forsker deaktiverer filter ved at markere i \textit{" Deaktivér digitalt filtre"} \\[-1ex]   						 	
                 &    2. &    System udskriver det ufiltreret blodtryksignal\newline\\ \midrule
                 
@@ -193,7 +193,7 @@ Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forsk
     Forudsætninger &&  System er aktivt og tilgængeligt. UC2 kører  \\
     Resultat &&		Data er gemt i Database                 \\ \midrule
     Hovedforløb &    1. &    Forsker trykker på "Gem"\--knappen \newline
-       						 [1.a \textit{Borgerens data er gemt fra forrige målinger}]\\	
+       						 [1.a \textit{Måleobjektets data er gemt fra forrige målinger}]\\	
                 &    2. &    System åbner Gem-vinduet\\[-1ex]
                 &    3.	&	 Forsker indtaster data for blodtryksmålingen \\[-1ex]
                 &	 4. &    Forsker trykker på "OK"\--knappen  \\[-1ex]
@@ -226,6 +226,7 @@ De ikke-funktionelle krav er specificeret ved brug af redskabet (F)URPS+, der st
 \begin{itemize}
 	\item Monitor-vinduet skal indeholde en ”Gem”\--knap.
 	\item Monitor-vinduet skal indeholde en ”Nulpunktsjustér”\--knap.
+	\item Monitor-vinduet skal indeholde et tidsstempel for seneste nulpunktsjustering.
 	\item Monitor-vinduet skal indeholde to radiobuttons til aktivering og deaktivering af digitalt filter.
 	\item Kalibrering-vinduet skal indeholde en ”Ja”\--knap og en ”Nej”\--knap.
 	\item Kalibrering-vinduet skal indeholde et datostempel for seneste kalibrering.
@@ -236,9 +237,9 @@ De ikke-funktionelle krav er specificeret ved brug af redskabet (F)URPS+, der st
 
 \subsection{Reliability}
 \begin{itemize}
-	\item Systemet skal have en effektiv MTBF (Mean Time Between Failure) på 20 minutter og en MTTR (Mean Time To Restore) på 1 minut.
+	\item Systemet skal have en effektiv MTBF (Mean Time Between Failure) på 99 timer og en MTTR (Mean Time To Restore) på 20 minutter (1/3 time).
 				\begin{align}
-					Availability = \frac{MTBF}{MTBF+MTTR} = \frac{20}{20+1} = 0,952 = 95,2 \%
+					Availability = \frac{MTBF}{MTBF+MTTR} = \frac{99}{99+1/3} = 0,997 = 99,7 \%
 				\end{align}
 
 \end{itemize}

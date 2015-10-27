@@ -21,7 +21,7 @@
     \midrule
     ~ &\textit{Hovedforløb} & ~ & ~ &
     \\ \midrule
-    1. & Start system &   Kalibrering-vinduet vises, hvor system spørger om der skal foretages en kalibrering  &     &		%{\Huge \checkmark}
+    1. & Start system &   Kalibrering-vinduet vises, hvor system spørger om der skal foretages en kalibrering. Seneste kalibreringstidspunkt vises.  &     &		%{\Huge \checkmark}
     \\
     2. &Tryk på "Ja"\--knappen  &    System kalibrerer og Kalibrering-vinduet lukkes ned  &    &		%{\Huge \checkmark}
 	\\ \midrule
@@ -36,7 +36,7 @@
 
 %Use case 2 acceptest 
 \subsection{Use Case 2}
-\textbf{Vis måling}
+\textbf{Vis måling med filter}
 
 \begin{longtabu} to \linewidth{@{} c X[j] X[j] X[j] l@{}}
 	& Test	& Forventet resultat		& Faktiske observationer		& Godkendt\\[-1ex] 
@@ -63,7 +63,7 @@
     \midrule
     ~ &\textit{Hovedforløb} & ~ & ~ &
     \\ \midrule
-    1. & Tryk på "Nulpunktsjustering"\--knappen &    Blodtrykssignalet udskrives i Monitor-vinduet med en baseline ved 0  &    &		%{\Huge (\checkmark)}
+    1. & Tryk på "Nulpunktsjustering"\--knappen &    Blodtrykssignalet udskrives i Monitor-vinduet med en baseline ved 0. Tidsstemplet opdateres.  &    &		%{\Huge (\checkmark)}
 	\\ \midrule
 	~ &\textit{Undtagelser} & ~ & ~ & 
 	\\ \midrule	
@@ -162,6 +162,8 @@
 	\\ \midrule
 	& Monitor-vinduet skal indeholde en ”Nulpunktsjustér”\--knap & Der ses i Monitor-vinduet om der er en ”Nulpunktsjustér”\--knap & Der er en ”Nulpunktsjustér”\--knap i Monitor-vinduet &  & %{\Huge \checkmark}
 	\\ \midrule 
+	& Monitor-vinduet skal indeholde et tidsstempel for seneste nulpunktsjustering & Der ses i Monitor-vinduet, om der er et tidsstempel for seneste nulpunktsjustering & Der er et tidsstempel for seneste nulpunktsjustering i Monitor-vinduet & & %{\Huge \checkmark}
+	\\ \midrule
 	& Monitor-vinduet skal indeholde to radiobuttons til aktivering og deaktivering af digitalt filter & Der ses i Monitor-vinduet om der er to radiobuttons til aktivering og deaktivering af digitalt filter & Der er to radiobuttons til aktivering og deaktivering af digitalt filter i Monitor-vinduet &  & %{\Huge \checkmark}
 	\\ \midrule
 	& Kalibrering-vinduet skal indeholde en ”Ja”\--knap og en ”Nej”\--knap & Der ses i kalibrering-vinduet om der er en ”Ja”\--knap og en ”Nej”\--knap & Der er en ”Ja”\--knap og en ”Nej”\--knap i kalibrering-vinduet &  & %{\Huge \checkmark}
