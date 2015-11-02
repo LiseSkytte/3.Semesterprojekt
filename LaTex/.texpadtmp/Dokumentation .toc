@@ -20,12 +20,12 @@
 \contentsline {subsection}{\numberline {2.1.1}BBD-diagram}{11}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}IBD-diagram}{12}{subsection.2.1.2}
 \contentsline {section}{\numberline {2.2}Gr\IeC {\ae }nseflader}{13}{section.2.2}
-\contentsline {section}{\numberline {2.3}Hardware arkitektur}{14}{section.2.3}
-\contentsline {section}{\numberline {2.4}Software arkitektur}{14}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Dom\IeC {\ae }nemodel}{14}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Applikationsmodel}{14}{subsection.2.4.2}
-\contentsline {subsubsection}{Klassediagram}{14}{section*.6}
-\contentsline {subsubsection}{Sekvensdiagram}{17}{section*.13}
+\contentsline {section}{\numberline {2.3}Hardware arkitektur}{13}{section.2.3}
+\contentsline {section}{\numberline {2.4}Software arkitektur}{13}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Dom\IeC {\ae }nemodel}{13}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Applikationsmodel}{13}{subsection.2.4.2}
+\contentsline {subsubsection}{Sekvensdiagram}{13}{section*.6}
+\contentsline {subsubsection}{Opdateret klassediagram}{17}{section*.13}
 \contentsline {chapter}{\chapternumberline {3}Acceptest}{21}{chapter.3}
 \contentsline {section}{\numberline {3.1}Accepttest af Use Cases}{21}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Use Case 1}{21}{subsection.3.1.1}

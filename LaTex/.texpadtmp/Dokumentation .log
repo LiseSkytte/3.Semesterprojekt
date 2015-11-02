@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.10)  2 NOV 2015 13:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.10)  2 NOV 2015 13:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2017,123 +2017,115 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 70.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 70.
- <Figurer/Snip20151102_15.png, id=277, 919.435pt x 696.6025pt>
-File: Figurer/Snip20151102_15.png Graphic file (type png)
- <use Figurer/Snip20151102_15.png>
-Package pdftex.def Info: Figurer/Snip20151102_15.png used on input line 75.
-(pdftex.def)             Requested size: 426.0pt x 322.75822pt.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 78.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 78.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 78.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 78.
- [13] <Figurer/Snip20151102_16.png, id=283, 788.9475pt x 443.6575pt>
-File: Figurer/Snip20151102_16.png Graphic file (type png)
- <use Figurer/Snip20151102_16.png>
-Package pdftex.def Info: Figurer/Snip20151102_16.png used on input line 81.
-(pdftex.def)             Requested size: 426.0pt x 239.55794pt.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 84.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 84.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 84.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 84.
- [14 <./Figurer/Snip20151102_15.png>] <Figurer/Snip20151102_17.png, id=291, 841.1425pt x 491.8375pt>
-File: Figurer/Snip20151102_17.png Graphic file (type png)
- <use Figurer/Snip20151102_17.png>
-Package pdftex.def Info: Figurer/Snip20151102_17.png used on input line 87.
-(pdftex.def)             Requested size: 426.0pt x 249.09268pt.
- <Figurer/Snip20151102_18.png, id=292, 837.1275pt x 475.7775pt>
-File: Figurer/Snip20151102_18.png Graphic file (type png)
- <use Figurer/Snip20151102_18.png>
-Package pdftex.def Info: Figurer/Snip20151102_18.png used on input line 93.
-(pdftex.def)             Requested size: 426.0pt x 242.11334pt.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 96.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 96.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 96.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 96.
- [15 <./Figurer/Snip20151102_16.png> <./Figurer/Snip20151102_17.png>] <Figurer/Snip20151102_19.png, id=303, 827.09pt x 473.77pt>
-File: Figurer/Snip20151102_19.png Graphic file (type png)
- <use Figurer/Snip20151102_19.png>
-Package pdftex.def Info: Figurer/Snip20151102_19.png used on input line 99.
-(pdftex.def)             Requested size: 426.0pt x 244.02681pt.
- <Figurer/Snip20151102_20.png, id=304, 1142.2675pt x 644.4075pt>
-File: Figurer/Snip20151102_20.png Graphic file (type png)
- <use Figurer/Snip20151102_20.png>
-Package pdftex.def Info: Figurer/Snip20151102_20.png used on input line 105.
-(pdftex.def)             Requested size: 426.0pt x 240.32478pt.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 108.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 108.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 108.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 108.
- [16 <./Figurer/Snip20151102_18.png> <./Figurer/Snip20151102_19.png>] <Figurer/Snip20151102_9.png, id=313, 1555.8125pt x 1003.75pt>
+ <Figurer/Snip20151102_9.png, id=277, 1555.8125pt x 1003.75pt>
 File: Figurer/Snip20151102_9.png Graphic file (type png)
  <use Figurer/Snip20151102_9.png>
-Package pdftex.def Info: Figurer/Snip20151102_9.png used on input line 115.
+Package pdftex.def Info: Figurer/Snip20151102_9.png used on input line 77.
 (pdftex.def)             Requested size: 426.0pt x 274.8298pt.
- <Figurer/Snip20151102_10.png, id=314, 1284.8pt x 909.3975pt>
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 80.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 80.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 80.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 80.
+ [13] <Figurer/Snip20151102_10.png, id=284, 1284.8pt x 909.3975pt>
 File: Figurer/Snip20151102_10.png Graphic file (type png)
  <use Figurer/Snip20151102_10.png>
-Package pdftex.def Info: Figurer/Snip20151102_10.png used on input line 121.
+Package pdftex.def Info: Figurer/Snip20151102_10.png used on input line 83.
 (pdftex.def)             Requested size: 426.0pt x 301.53136pt.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 124.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 124.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 124.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 124.
- [17 <./Figurer/Snip20151102_20.png> <./Figurer/Snip20151102_9.png>] <Figurer/Snip20151102_11.png, id=324, 1557.82pt x 989.6975pt>
+ <Figurer/Snip20151102_11.png, id=285, 1557.82pt x 989.6975pt>
 File: Figurer/Snip20151102_11.png Graphic file (type png)
  <use Figurer/Snip20151102_11.png>
-Package pdftex.def Info: Figurer/Snip20151102_11.png used on input line 127.
+Package pdftex.def Info: Figurer/Snip20151102_11.png used on input line 89.
 (pdftex.def)             Requested size: 426.0pt x 270.63484pt.
- <Figurer/Snip20151102_12.png, id=325, 1178.4025pt x 796.9775pt>
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 92.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 92.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 92.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 92.
+ [14 <./Figurer/Snip20151102_9.png> <./Figurer/Snip20151102_10.png>] <Figurer/Snip20151102_12.png, id=294, 1178.4025pt x 796.9775pt>
 File: Figurer/Snip20151102_12.png Graphic file (type png)
  <use Figurer/Snip20151102_12.png>
-Package pdftex.def Info: Figurer/Snip20151102_12.png used on input line 133.
+Package pdftex.def Info: Figurer/Snip20151102_12.png used on input line 95.
 (pdftex.def)             Requested size: 426.0pt x 288.1156pt.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 136.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 136.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 136.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 136.
- [18 <./Figurer/Snip20151102_10.png> <./Figurer/Snip20151102_11.png>] <Figurer/Snip20151102_13.png, id=334, 1403.2425pt x 959.585pt>
+ <Figurer/Snip20151102_13.png, id=295, 1403.2425pt x 959.585pt>
 File: Figurer/Snip20151102_13.png Graphic file (type png)
  <use Figurer/Snip20151102_13.png>
-Package pdftex.def Info: Figurer/Snip20151102_13.png used on input line 139.
+Package pdftex.def Info: Figurer/Snip20151102_13.png used on input line 101.
 (pdftex.def)             Requested size: 426.0pt x 291.30396pt.
- <Figurer/Snip20151102_14.png, id=335, 578.16pt x 418.48492pt>
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 104.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 104.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 104.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 104.
+ [15 <./Figurer/Snip20151102_11.png> <./Figurer/Snip20151102_12.png>] <Figurer/Snip20151102_14.png, id=306, 578.16pt x 418.48492pt>
 File: Figurer/Snip20151102_14.png Graphic file (type png)
  <use Figurer/Snip20151102_14.png>
-Package pdftex.def Info: Figurer/Snip20151102_14.png used on input line 145.
+Package pdftex.def Info: Figurer/Snip20151102_14.png used on input line 107.
 (pdftex.def)             Requested size: 426.0pt x 308.3458pt.
+ <Figurer/Snip20151102_15.png, id=307, 919.435pt x 696.6025pt>
+File: Figurer/Snip20151102_15.png Graphic file (type png)
+ <use Figurer/Snip20151102_15.png>
+Package pdftex.def Info: Figurer/Snip20151102_15.png used on input line 116.
+(pdftex.def)             Requested size: 426.0pt x 322.75822pt.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 148.
+(babel)             in language  on input line 118.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 148.
+(babel)             in language  on input line 118.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 148.
+(babel)             in language  on input line 118.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 148.
- [19 <./Figurer/Snip20151102_12.png> <./Figurer/Snip20151102_13.png>])
+(babel)             in language  on input line 118.
+ [16 <./Figurer/Snip20151102_13.png> <./Figurer/Snip20151102_14.png>] <Figurer/Snip20151102_16.png, id=316, 788.9475pt x 443.6575pt>
+File: Figurer/Snip20151102_16.png Graphic file (type png)
+ <use Figurer/Snip20151102_16.png>
+Package pdftex.def Info: Figurer/Snip20151102_16.png used on input line 122.
+(pdftex.def)             Requested size: 426.0pt x 239.55794pt.
+ <Figurer/Snip20151102_17.png, id=317, 841.1425pt x 491.8375pt>
+File: Figurer/Snip20151102_17.png Graphic file (type png)
+ <use Figurer/Snip20151102_17.png>
+Package pdftex.def Info: Figurer/Snip20151102_17.png used on input line 128.
+(pdftex.def)             Requested size: 426.0pt x 249.09268pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 131.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 131.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 131.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 131.
+ [17 <./Figurer/Snip20151102_15.png> <./Figurer/Snip20151102_16.png>] <Figurer/Snip20151102_18.png, id=327, 837.1275pt x 475.7775pt>
+File: Figurer/Snip20151102_18.png Graphic file (type png)
+ <use Figurer/Snip20151102_18.png>
+Package pdftex.def Info: Figurer/Snip20151102_18.png used on input line 134.
+(pdftex.def)             Requested size: 426.0pt x 242.11334pt.
+ <Figurer/Snip20151102_19.png, id=328, 827.09pt x 473.77pt>
+File: Figurer/Snip20151102_19.png Graphic file (type png)
+ <use Figurer/Snip20151102_19.png>
+Package pdftex.def Info: Figurer/Snip20151102_19.png used on input line 140.
+(pdftex.def)             Requested size: 426.0pt x 244.02681pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 143.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 143.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 143.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 143.
+ [18 <./Figurer/Snip20151102_17.png> <./Figurer/Snip20151102_18.png>] <Figurer/Snip20151102_20.png, id=337, 1142.2675pt x 644.4075pt>
+File: Figurer/Snip20151102_20.png Graphic file (type png)
+ <use Figurer/Snip20151102_20.png>
+Package pdftex.def Info: Figurer/Snip20151102_20.png used on input line 146.
+(pdftex.def)             Requested size: 426.0pt x 240.32478pt.
+)
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 16.
 Package babel Info: Redefining danish shorthand "~
@@ -2142,10 +2134,23 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 16.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 16.
- [20 <./Figurer/Snip20151102_14.png>]
+ [19 <./Figurer/Snip20151102_19.png> <./Figurer/Snip20151102_20.png>]
 \openout2 = `Dfiler/Daccepttest.aux'.
 
  (./Dfiler/Daccepttest.tex
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 1.
+ [20
+
+
+
+]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
@@ -2230,11 +2235,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 54.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 54.
-[21
-
-
-
-]
+[21]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 58.
 Package babel Info: Redefining danish shorthand "~
@@ -3423,7 +3424,7 @@ Here is how much of TeX's memory you used:
  1143 hyphenation exceptions out of 8191
  53i,12n,90p,10469b,1033s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm2488.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb>
-Output written on "/Users/Lise/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Dokumentation .pdf" (32 pages, 752036 bytes).
+Output written on "/Users/Lise/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Dokumentation .pdf" (32 pages, 751123 bytes).
 PDF statistics:
  468 PDF objects out of 1000 (max. 8388607)
  381 compressed objects within 4 object streams
