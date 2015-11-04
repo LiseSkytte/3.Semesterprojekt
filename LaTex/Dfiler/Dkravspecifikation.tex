@@ -30,7 +30,7 @@ De funktionelle krav vil nedenstående beskrives ud fra Aktør-kontekstdiagram, 
 \end{figure}
 
 Systemet består af en software- og en hardward-del. Softwaredelen er udarbejdet i Visual Studio C\#. Hardwaredelen består af flere komponenter sat sammen. Tryktransducer, Instrumentationforstærker, et aktivt 2. ordens lavpasfilter af typen Sallen-Key med unity gain og en DAQ. Det er selve systemet. \\
-Primær aktøren i dette projekt er en Forsker. Sekundære aktører er Database og Måleobjekt. Måleobjekt er en package af Physionet og Analog Discovery, som er eksterne aktører.   
+Primær aktøren i dette projekt er en Forsker. Sekundære aktører er Database, Tryktransducer og Måleobjekt. Måleobjekt er en package af Physionet og Analog Discovery, som er eksterne aktører.   
 
 \subsection{Aktørbeskrivelse}
 
@@ -40,9 +40,9 @@ Primær aktøren i dette projekt er en Forsker. Sekundære aktører er Database 
      Type & Primær \\
      Beskrivelse  & Person med relevant baggrundsviden inden for blodtryksanalyse \\ 
      \midrule
-     Aktørnavn & Transducer \\
+     Aktørnavn & Tryktransducer \\
      Type & Sekundær \\
-     Beskrivelse  & Transducer måler og omformer trykket fra Måleobjekt til et analogt signal \\ 
+     Beskrivelse  & Tryktransducer måler og omformer trykket fra Måleobjekt til et analogt signal \\ 
      \midrule
      Aktørnavn & Måleobjekt  \\
      Type & Sekundær \\
@@ -109,14 +109,14 @@ Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forsk
     Use case ID &&    2\\
     Samtidige forløb &&    1\\
     Primær aktør &&    Forsker\\
-    Sekundære aktør &&	 Måleobjekt\\
+    Sekundære aktør &&	 Måleobjekt og Tryktransducer\\
     Mål &&    Forsker ønsker at vise blodtrykssignal med digitalt filter\\
     Initiering &&	Startes af UC1\\
-    Forudsætninger &&  System er aktivt og tilgængeligt. Digitalt filter er aktivt. Måleobjekt er tilsluttet system\\
+    Forudsætninger &&  System er aktivt og tilgængeligt. Digitalt filter er aktivt. Måleobjekt og Tryktransducer er tilsluttet system\\
     Resultat &&		Blodtrykssignalet udskrives                         \\ \midrule
     Hovedforløb &    1. &    Monitor-vinduet vises\\[-1ex]	
-    			&    2. &    Blodtryksignal vises i en graf i 	  Monitor-vinduet\\[-1ex]
-    			&	 3.	&	 Systole-, Diastole- og puls	værdier vises i Monitor-vinduet\newline\\ \midrule
+    			&    2. &    Blodtryksignal vises i en graf i Monitor-vinduet\\[-1ex]
+    			&	 3.	&	 Systole-, Diastole- og puls værdier vises i Monitor-vinduet\newline\\ \midrule
                 
     Undtagelser &    &   \\ \bottomrule
 \caption{Fully dressed Use Case 2.}
