@@ -61,8 +61,8 @@ Kommunikationsprotokol for hardware blokkene ses i tabel 2.3. Det er en beskrive
 
 
 \section{Hardware arkitektur}
-\subsubsection{Tryktransducer}
-\subsection{Specifikationer}
+\subsection{Tryktransducer}
+\subsubsection{Specifikationer}
 \begin{itemize}
 	\item Måleprobe kan indsættes intravenøst
 	\item Operationel trykinterval 0-300 mmHg
@@ -102,13 +102,18 @@ Kommunikationsprotokol for hardware blokkene ses i tabel 2.3. Det er en beskrive
 \section{Software arkitektur}
 
 \subsection{Domænemodel}
-Domænemodellen er skabt på baggrund af de seks Use Cases. Gennem navneordsanalyse af Use Casene er de konceptuelle klasser fundet. I modellen beskrives, hvordan de konceptuelle klasser interagerer med hinanden.
+Domænemodellen er skabt på baggrund af de seks Use Cases og fungerer som et middel til at skabe et samlet overblik over systemet. Gennem navneordsanalyse er de konceptuelle klasser fundet. I modellen beskrives, hvordan de konceptuelle klasser og aktører interagerer med hinanden. Controlleren er ikke en konceptuel klasse, men det er den, der sørger for at systemet fungerer optimalt, og udfører kommandoer.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1 \textwidth]{Figurer/Snip20151102_23}
+	\includegraphics[width=1 \textwidth]{Figurer/Snip20151104_30}
 	\caption{Domænemodel for blodtryksmålersystemet}
 \end{figure}
+
+NPJ = nulpunktsjustering\\
+BT = blodtryksmåling
+\\ \\
+I domænemodellen ses to røde streger, som har hver deres kommando – ”kalibrerings data bliver sendt fra database” og ”vises i kalibrerings-vinduet”.Årsagen til at stregerne er røde, er, at hver af de to handlinger udelukkende forekommer ved start/genstart af programmet.
 
 \subsection{Applikationsmodel}
 
@@ -117,76 +122,89 @@ Sekvensdiagrammerne beskriver step-by-step, via metoder, forløbet i de forskell
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/Snip20151102_9}
+	\includegraphics[width=1\textwidth]{Figurer/Snip20151104_31}
 	\caption{Sekvensdiagram for UC1}
 \end{figure}
 
+Forsker interagerer med Monitorvindue. Kalibreringsmetoden bliver kaldt, når Forsker trykker på knappen ”Ja”. Derefter igangsættes kalibreringen og metadata sendes og gemmes. 
+
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/Snip20151102_10}
+	\includegraphics[width=1\textwidth]{Figurer/Snip20151104_32}
 	\caption{Sekvensdiagram for UC2}
 \end{figure}
 
+Controller henter data fra Tryktransducer, som henter data i form af tryk fra måleobjekt. Datafilerne sendes fra Måleobjekt via Tryktransducer tilbage til Controller, der kalder metoden. Monitorvindue opdateres, og herefter kan Forsker aflæse blodtryk. 
+
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/Snip20151102_11}
+	\includegraphics[width=1\textwidth]{Figurer/Snip20151104_33}
 	\caption{Sekvensdiagram for UC3}
 \end{figure}
 
+Forsker interagerer med Monitorvindue ved at trykke på knappen ”Nulpunktsjustér”. Derefter kaldes metoden, og nulpunktsjusteringen startes. Metadata sendes og gemmes, hvorefter Forsker får besked om, at nulpunktsjusteringen er foretaget. 
+
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/Snip20151102_12}
+	\includegraphics[width=1\textwidth]{Figurer/Snip20151104_34}
 	\caption{Sekvensdiagram for UC4}
 \end{figure}
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1\textwidth]{Figurer/Snip20151102_13}
-	\caption{Sekvensdiagram for UC5}
-\end{figure}
+Forsker interagerer med Monitorvindue ved at markere radiobutton ”Deaktivér digitalt filter”. Derefter kaldes metoden, og filteret deaktiveres, hvorefter signalet bliver udskrevet ufiltreret.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/Snip20151102_14}
+	\includegraphics[width=1\textwidth]{Figurer/Snip20151104_35}
+	\caption{Sekvensdiagram for UC5}
+\end{figure}
+
+Forsker interagerer med Monitorvindue ved at markere radiobutton ”Aktivér digitalt filter”. Derefter kaldes metoden, og filteret aktiveres, hvorefter signalet bliver udskrevet filtreret.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Snip20151104_36}
 	\caption{Sekvensdiagram for UC6}
 \end{figure}
+
+Forsker interagerer med Monitorvindue ved at trykke på knappen ”Gem”. Derefter kaldes metoden og Gem vinduet åbnes. Første gang Forsker ønsker at gemme, indtastes data og der trykkes på knappen ”OK”. Kommando sendes og data valideres. De efterfølgende gange, der ønskes at gemme, er data udfyldt fra første gang, og der trykkes blot på ”OK”, hvorefter kommandoen sendes. Data sendes til datalag, hvor det bliver behandlet, og derefter bliver sendt til database. Data gemmes og Gem vinduet lukkes. Controller bekræfter til Monitorvindue, at data er gemt.
 
 \subsubsection{Opdateret klassediagram}
 De opdateret klassediagrammer indeholder metoderne fra de dertilhørende  sekvensdiagrammer - dette giver et overblik over, hvilke metoder de forskellige klasser består af.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/Snip20151102_15}
+	\includegraphics[width=1\textwidth]{Figurer/Snip20151104_37}
 	\caption{Klassediagram for UC1}
 \end{figure}
+ 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/Snip20151102_16}
+	\includegraphics[width=1\textwidth]{Figurer/Snip20151104_38}
 	\caption{Klassediagram for UC2}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/Snip20151102_17}
+	\includegraphics[width=1\textwidth]{Figurer/Snip20151104_39}
 	\caption{Klassediagram for UC3}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/Snip20151102_18}
+	\includegraphics[width=1\textwidth]{Figurer/Snip20151104_40}
 	\caption{Klassediagram for UC4}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/Snip20151102_19}
+	\includegraphics{Figurer/Snip20151104_41}
 	\caption{Klassediagram for UC5}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/Snip20151102_20}
+	\includegraphics{Figurer/Snip20151104_42}
 	\caption{Klassediagram for UC6}
 \end{figure}
 
