@@ -84,6 +84,21 @@ Kommunikationsprotokol for hardware blokkene ses i tabel 2.3. Det er en beskrive
 	\label{fig:ibdhw-diagram}
 \end{figure}
 
+\subsection{Grænseflader}
+
+\begin{longtabu} to \linewidth{@{}l l l l X[j]@{}}
+	\textbf{Grænseflade} & \textbf{Signal} & \textbf{Type} & \textbf{Format} & \textbf{Værdi} \\[-1ex]
+	\midrule
+	Forstærker & Batteri & in & Spænding & +/- 9V \\[-1ex]
+			   & Analogt & in & Spænding & +/- 13,5mV \\[-1ex]
+			   & Jord	 & out & Spænding & 0V \\[-1ex]
+			   & Forstærket analogt & out & Spænding & +/- 5V \\[-1ex]
+	Filter	   & Forstærket analogt & in & Spænding & +/- 5V\\[-1ex]
+			   & Jord	 & out & Spænding & +/- 5V\\[-1ex]
+			   & Filteret analogt & out & Spænding & +/- 5V\\[-1ex]
+	\caption{Kommunikationsprotokol for Instrumenteringsforstærke}	
+\end{longtabu}
+
 \subsection{Tryktransducer}
 \subsubsection{Specifikationer}
 \begin{itemize}
