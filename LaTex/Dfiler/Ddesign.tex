@@ -3,7 +3,11 @@
 \begin{longtabu} to \linewidth{@{}l l l X[j]@{}}
     Version &    Dato &    Ansvarlig &    Beskrivelse\\[-1ex]
     \midrule
-    1.0		&	 &		&	\\[-1ex]
+    1.0		&	20-10-2015 &	 Alle	& Første udkast til domænemodel, bdd, ibd og sekvensdiagrammer	\\[-1ex]
+    1.1		&	21-10-2015	&	Alle	& Små ændringer i bdd og ibd efter møde med vejleder \\[-1ex]
+    1.2		&	27-10-2015	&	Alle	& Ændring af bdd og ibd efter møde med Kim; blokkene filter og forstærker er blevet lagt sammen under blokken instrumenteringsforstærker\\[-1ex]
+    1.3  	&	02-11-2015	&	Alle	& Begyndte at oprette Design-dokumentet. Udkast til klassediagrammer for UC \\[-1ex]
+    1.4		&	04-11-2015	&	Alle	& Skrevet hardward design afsnittet. Små rettelser i de andre afsnit i design, så det er klar til review \\[-1ex]
 \label{version_Systemark}
 \end{longtabu}
 
@@ -15,7 +19,7 @@ På figur 2.1 ses BDD-diagrammet for systemet. BBD viser de forskellige blokke f
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/Snip20151102_8}
+	\includegraphics[width=1\textwidth]{Figurer/Snip20151104_45}
 	\caption{BBD-diagram}
 	\label{fig:BBD-diagram}
 \end{figure}
@@ -61,6 +65,25 @@ Kommunikationsprotokol for hardware blokkene ses i tabel 2.3. Det er en beskrive
 
 
 \section{Hardware arkitektur}
+
+\subsection{bdd}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Snip20151104_46}
+	\caption{bdd-diagram for Instrumenteringsforstærker HW}
+	\label{fig:bddhw-diagram}
+\end{figure}
+
+\subsection{ibd}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Snip20151104_48}
+	\caption{ibd-diagram for Instrumenteringsforstærker HW}
+	\label{fig:ibdhw-diagram}
+\end{figure}
+
 \subsection{Tryktransducer}
 \subsubsection{Specifikationer}
 \begin{itemize}
