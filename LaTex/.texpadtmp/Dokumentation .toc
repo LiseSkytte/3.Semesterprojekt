@@ -29,7 +29,6 @@
 \contentsline {subsection}{\numberline {2.3.5}Instrumentationsforst\IeC {\ae }rker}{15}{subsection.2.3.5}
 \contentsline {subsubsection}{Filterblok}{15}{section*.9}
 \contentsline {subsubsection}{Specifikationer}{15}{section*.10}
-\contentsline {subsection}{\numberline {2.3.6}BDD Diagram}{15}{subsection.2.3.6}
 \contentsline {subsubsection}{Forst\IeC {\ae }rkerblok}{15}{section*.11}
 \contentsline {subsubsection}{Specifikationer}{15}{section*.12}
 \contentsline {section}{\numberline {2.4}Software arkitektur}{16}{section.2.4}
