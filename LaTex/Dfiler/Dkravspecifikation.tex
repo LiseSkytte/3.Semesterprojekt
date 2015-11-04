@@ -5,7 +5,7 @@
     Version &    Dato &    Ansvarlig &    Beskrivelse\\[-1ex]
     \midrule
     1.0		&	23-09-2015 &		Alle	&	Første udkast til Use Cases. I alt 4, hvor en af funktionaliteterne var, at man kunne optage en lydsekvens\\[-1ex]
-    1.1		&	29-09-2015	&	Alle	&	Ændring af Use Cases efter møde med Peter. I alt 5, hvor funktionaliteterne kunne dækker over de opstillede krav til projektet. \\[-1ex]
+    1.1		&	29-09-2015	&	Alle	&	Ændring af Use Cases efter møde med Peter. I alt 5, hvor funktionaliteterne kun dækker over de opstillede krav til projektet. \\[-1ex]
     1.2		&	30-09-2015	&	Alle	&	Små ændring af formuleringerne samt byttet om på UC1 og UC2 og tilføjet en UC6. De ikke-funktionelle krav er blevet tilføjet. Klar til Review\\[-1ex]	
     2.0		&	08-10-2015	& Alle		&	Rettelser efter review møde\\[-1ex] 
 
@@ -40,9 +40,13 @@ Primær aktøren i dette projekt er en Forsker. Sekundære aktører er Database 
      Type & Primær \\
      Beskrivelse  & Person med relevant baggrundsviden inden for blodtryksanalyse \\ 
      \midrule
+     Aktørnavn & Transducer \\
+     Type & Sekundær \\
+     Beskrivelse  & Transducer måler og omformer trykket fra Måleobjekt til et analogt signal \\ 
+     \midrule
      Aktørnavn & Måleobjekt  \\
      Type & Sekundær \\
-     Beskrivelse  & Måleobjektet i det færdigudviklede produkt er et signal genereret enten in vitro eller in vivo. I prototypen er måleobjektet en kombination af Physionet og Analog Discovery. Måleobjektet repræsenterer data fra Physionet leveret til blodtryksmålingssystemet igennem Analog Discovery \\
+     Beskrivelse  & Måleobjekt i det færdigudviklede produkt er et signal genereret enten in vitro eller in vivo. I prototypen er Måleobjekt en kombination af Physionet og Analog Discovery. Måleobjekt repræsenterer data fra Physionet leveret til blodtryksmålingssystemet igennem Analog Discovery \\
      \midrule
      Aktørnavn & Database \\
      Type & Sekundær \\
@@ -70,7 +74,7 @@ Primær aktøren i dette projekt er en Forsker. Sekundære aktører er Database 
 	\label{fig:Use case-diagram}
 \end{figure}
 
-Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forskeren, der sætter alle Use Cases igang og styrer, hvad der skal ske og hvornår. Måleobjektet, som er den sekundære aktør, integrer i UC2, da det er her, blodtryksmålingen for Måleobjektet skal vises. For at få gemt data integrerer den sekundære aktør Database med UC6.  
+Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forskeren, der sætter alle Use Cases igang og styrer, hvad der skal ske og hvornår. Tryktransducer, som er en af de sekundære aktører, interagerer i UC2. Tryktransduceren behandler tryk fra den anden sekundære aktør Måleobjekt, og omformer det til et analog signal. Blodtryksmålingen skal vises i UC2. For at få gemt data interagerer den sekundære aktør Database med UC6.  
 
 \subsection{Use Cases}
 
@@ -86,12 +90,13 @@ Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forsk
     Initiering &&	Startes af Forsker\\
     Forudsætninger &&  System er aktivt og tilgængeligt\\
     Resultat &&		Blodtrykssignalet er kalibreret                         \\ \midrule
-    Hovedforløb &    1. &	 Kalibrering-vinduet vises, hvor System spørger om der skal foretages en kalibrering\\[-1ex]  				
-    			&    2. &    Forsker trykker på "Ja"\--knappen\newline
-    						 [2.a \textit{Forsker trykker på "Nej"\--knappen}]\\
-                &    3.	&	 System kalibrerer og Kalibrering-vinduet lukkes ned \newline\\ \midrule
+    Hovedforløb &    1. &	 Kalibrering-vinduet vises\\[-1ex]  				
+    			&    2. &    Tidligere kalibreringsdato vises og System spørg om der ønskes en kalibrering \newline
+    			&    3.	&	 Forsker trykker på "Ja"\--knappen \newline\\ \midrule
+    						 [3.a \textit{Forsker trykker på "Nej"\--knappen}]\\
+                &    4.	&	 System kalibrerer og Kalibrering-vinduet lukkes ned \newline\\ \midrule
                 
-    Undtagelser &    2.a &   Forsker ønsker ingen kalibrering. UC1 afsluttes og Kalibrering-vinduet lukkes  \\ \bottomrule
+    Undtagelser &    3.a &   Forsker ønsker ingen kalibrering. UC1 afsluttes og Kalibrering-vinduet lukkes  \\ \bottomrule
 \caption{Fully dressed Use Case 1.}
 \label{UC1}
 \end{longtabu}
