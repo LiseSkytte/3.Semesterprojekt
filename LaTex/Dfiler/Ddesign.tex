@@ -61,7 +61,43 @@ Kommunikationsprotokol for hardware blokkene ses i tabel 2.3. Det er en beskrive
 
 
 \section{Hardware arkitektur}
+\subsubsection{Tryktransducer}
+\subsection{Specifikationer}
+\begin{itemize}
+	\item Måleprobe kan indsættes intravenøst
+	\item Operationel trykinterval 0-300 mmHg
+	\item Udgangssignal: 2 udgange; +/- udgang
+	\item Sensitivitet: 5$\mu$/V/V/mmHg 
+	\item Operationstemperatur: 15-40 grader Celcius
+\end{itemize}
 
+ \subsection{Instrumentationsforstærker}
+ 
+ 
+ \subsubsection{Filterblok}
+ \subsubsection{Specifikationer}
+ \begin{itemize}
+ 	\item 2. Ordens lavpasfilter
+ 	\item Cutofffrekvens: 50 Hz
+ 	\item Unity gain (ingen forstærkning)
+ 	\item -20 dB ved 500 Hz
+ 	\item Infinite indgangsimpedans
+ 	\item Indgangsspænding +/- 5 V
+ 	\item Eksitationsspænding +/- 9 V
+ \end{itemize}
+ 
+ \subsection{BDD Diagram}
+  
+ 
+ \subsubsection{Forstærkerblok}
+ \subsubsection{Specifikationer}
+ \begin{itemize}
+ 	\item Gain: 370
+ 	\item Indgangspænding: +/- 0-14 mV
+ 	\item Eksitationsspænding: +/- 9V
+ 	\item Outputspænding: +/- 5 V
+ 	\item Båndbredde: 100 Hz
+ \end{itemize}
 
 \section{Software arkitektur}
 
