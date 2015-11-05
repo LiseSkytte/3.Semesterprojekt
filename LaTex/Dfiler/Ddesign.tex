@@ -65,7 +65,14 @@ Kommunikationsprotokol for hardware blokkene ses i tabel 2.3. Det er en beskrive
 
 
 \section{Hardware arkitektur}
-Herunder er de krævede specifikationer for hardwaren beskrevet. 
+Herunder er de krævede specifikationer for hardwaren beskrevet. Instrumentationsforstærkeren består af to dele.
+\subsubsection{Tryktransducer}
+Tryktransduceren skal omsætte det fysiske tryk i blodkarret til en elektrisk spænding. Da de målte størrelser (trykændring) er meget små, skal transduceren have en meget høj common mode rejection, samt en høj sensitivitet.
+Tryktransduceren er medtaget i designet, fordi dennes specifikationer har indflydelse for forstærkerblokkens specifikationer. Der er imidlertid kun mulighed for at anvende én tryktransducer i projektet, og der er derfor ikke lavet diagrammer over denne.
+\subsubsection{Forstærkerblok}
+Forstærkerblokken sørger for at det meget svage spændingssignal fra tryktransduceren bliver forstærket op til en spænding der ligger i et fornuftigt måleinterval der tilsvarer DAQ'en. 
+\subsubsection{Filterblok}
+Filterets formål er at frasorterer signalets frekvenser der er højere end 50 Hz. Dette skal realiseres ved et lavpasfilter. 
  
 \subsection{bdd}
 
@@ -120,7 +127,7 @@ Herunder er de krævede specifikationer for hardwaren beskrevet.
  	\item Cutofffrekvens: 50 Hz
  	\item Unity gain (ingen forstærkning)
  	\item -20 dB ved 500 Hz
- 	\item Infinite indgangsimpedans
+ 	\item Uendelig indgangsimpedans
  	\item Indgangsspænding +/- 5 V
  	\item Eksitationsspænding +/- 9 V
  \end{itemize}
@@ -135,6 +142,7 @@ Herunder er de krævede specifikationer for hardwaren beskrevet.
  	\item Eksitationsspænding: +/- 9V
  	\item Outputspænding: +/- 5 V
  	\item Båndbredde: 100 Hz
+ 	\item Uendelig indgangsimpedans
  \end{itemize}
 
 \section{Software arkitektur}

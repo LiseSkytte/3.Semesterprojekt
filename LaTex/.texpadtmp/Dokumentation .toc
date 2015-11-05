@@ -21,31 +21,41 @@
 \contentsline {subsection}{\numberline {2.1.2}IBD-diagram}{12}{subsection.2.1.2}
 \contentsline {section}{\numberline {2.2}Gr\IeC {\ae }nseflader}{13}{section.2.2}
 \contentsline {section}{\numberline {2.3}Hardware arkitektur}{14}{section.2.3}
+\contentsline {subsubsection}{Tryktransducer}{14}{section*.6}
+\contentsline {subsubsection}{Forst\IeC {\ae }rkerblok}{14}{section*.7}
+\contentsline {subsubsection}{Filterblok}{14}{section*.8}
 \contentsline {subsection}{\numberline {2.3.1}bdd}{14}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}ibd}{14}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Gr\IeC {\ae }nseflader}{14}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.2}ibd}{15}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Gr\IeC {\ae }nseflader}{15}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}Tryktransducer}{15}{subsection.2.3.4}
-\contentsline {subsubsection}{Specifikationer}{15}{section*.8}
-\contentsline {subsection}{\numberline {2.3.5}Instrumentationsforst\IeC {\ae }rker}{15}{subsection.2.3.5}
-\contentsline {subsubsection}{Filterblok}{15}{section*.9}
-\contentsline {subsubsection}{Specifikationer}{15}{section*.10}
-\contentsline {subsubsection}{Forst\IeC {\ae }rkerblok}{15}{section*.11}
-\contentsline {subsubsection}{Specifikationer}{15}{section*.12}
+\contentsline {subsubsection}{Specifikationer}{15}{section*.11}
+\contentsline {subsection}{\numberline {2.3.5}Instrumentationsforst\IeC {\ae }rker}{16}{subsection.2.3.5}
+\contentsline {subsubsection}{Filterblok}{16}{section*.12}
+\contentsline {subsubsection}{Specifikationer}{16}{section*.13}
+\contentsline {subsubsection}{Forst\IeC {\ae }rkerblok}{16}{section*.14}
+\contentsline {subsubsection}{Specifikationer}{16}{section*.15}
 \contentsline {section}{\numberline {2.4}Software arkitektur}{16}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Dom\IeC {\ae }nemodel}{16}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Applikationsmodel}{17}{subsection.2.4.2}
-\contentsline {subsubsection}{Sekvensdiagram}{17}{section*.14}
-\contentsline {subsubsection}{Opdateret klassediagram}{21}{section*.21}
-\contentsline {chapter}{\chapternumberline {3}Hardware implementering og test}{27}{chapter.3}
-\contentsline {section}{\numberline {3.1}Operationsforst\IeC {\ae }rker}{27}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}}{27}{subsection.3.1.1}
-\contentsline {section}{\numberline {3.2}Filterblok}{27}{section.3.2}
-\contentsline {chapter}{\chapternumberline {4}Acceptest}{29}{chapter.4}
-\contentsline {section}{\numberline {4.1}Accepttest af Use Cases}{29}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Use Case 1}{29}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Use Case 2}{30}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Use Case 3}{30}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Use Case 4}{30}{subsection.4.1.4}
-\contentsline {subsection}{\numberline {4.1.5}Use Case 5}{31}{subsection.4.1.5}
-\contentsline {subsection}{\numberline {4.1.6}Use Case 6}{31}{subsection.4.1.6}
-\contentsline {section}{\numberline {4.2}Accepttest af ikke-funktionelle krav}{32}{section.4.2}
+\contentsline {subsubsection}{Sekvensdiagram}{17}{section*.17}
+\contentsline {subsubsection}{Opdateret klassediagram}{22}{section*.24}
+\contentsline {chapter}{\chapternumberline {3}HW implementering og test}{27}{chapter.3}
+\contentsline {section}{\numberline {3.1}Tryktransducer}{27}{section.3.1}
+\contentsline {subsubsection}{Outputsp\IeC {\ae }nding}{27}{section*.31}
+\contentsline {section}{\numberline {3.2}Operationsforst\IeC {\ae }rker}{27}{section.3.2}
+\contentsline {subsubsection}{Forst\IeC {\ae }rkning}{27}{section*.32}
+\contentsline {subsubsection}{B\IeC {\r a}ndbredde}{27}{section*.33}
+\contentsline {subsubsection}{Gainmodstand}{28}{section*.34}
+\contentsline {section}{\numberline {3.3}Filterblok}{28}{section.3.3}
+\contentsline {subsubsection}{Standardform}{28}{section*.35}
+\contentsline {subsubsection}{Magnitude Bodeplot}{29}{section*.36}
+\contentsline {subsubsection}{Magnitude Bodeplot Beregning}{29}{section*.38}
+\contentsline {chapter}{\chapternumberline {4}Acceptest}{33}{chapter.4}
+\contentsline {section}{\numberline {4.1}Accepttest af Use Cases}{33}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Use Case 1}{33}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Use Case 2}{34}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Use Case 3}{34}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Use Case 4}{34}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.5}Use Case 5}{35}{subsection.4.1.5}
+\contentsline {subsection}{\numberline {4.1.6}Use Case 6}{35}{subsection.4.1.6}
+\contentsline {section}{\numberline {4.2}Accepttest af ikke-funktionelle krav}{36}{section.4.2}
