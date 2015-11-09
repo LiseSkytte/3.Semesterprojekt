@@ -172,7 +172,7 @@ Sekvensdiagrammerne beskriver step-by-step, via metoder, forløbet i de forskell
 	\caption{Sekvensdiagram for UC1}
 \end{figure}
 
-Forsker interagerer med Monitorvindue. Kalibreringsmetoden bliver kaldt, når Forsker trykker på knappen ”Ja”. Derefter igangsættes kalibreringen og metadata sendes og gemmes. 
+Forsker interagerer med Monitorvindue. Kalibreringsmetoden bliver kaldt, når Forsker trykker på knappen ”Ja”. Derefter igangsættes kalibreringen og kalibrerings tidspunkt og værdi sendes og gemmes i databasen. 
 
 \begin{figure}[H]
 	\centering
@@ -188,7 +188,7 @@ Controller henter data fra Tryktransducer, som henter data i form af tryk fra m�
 	\caption{Sekvensdiagram for UC3}
 \end{figure}
 
-Forsker interagerer med Monitorvindue ved at trykke på knappen ”Nulpunktsjustér”. Derefter kaldes metoden, og nulpunktsjusteringen startes. Metadata sendes og gemmes, hvorefter Forsker får besked om, at nulpunktsjusteringen er foretaget. 
+Forsker interagerer med Monitorvindue ved at trykke på knappen ”Nulpunktsjustér”. Derefter kaldes metoden, og nulpunktsjusteringen startes. Tidspunktet og værdien for nulpunktjusteringen sendes og gemmes i databasn, hvorefter Forsker får besked om, at nulpunktsjusteringen er foretaget. 
 
 \begin{figure}[H]
 	\centering
@@ -196,7 +196,7 @@ Forsker interagerer med Monitorvindue ved at trykke på knappen ”Nulpunktsjust
 	\caption{Sekvensdiagram for UC4}
 \end{figure}
 
-Forsker interagerer med Monitorvindue ved at markere radiobutton ”Deaktivér digitalt filter”. Derefter kaldes metoden, og filteret deaktiveres, hvorefter signalet bliver udskrevet ufiltreret.
+Forsker interagerer med Monitorvindue ved at markere i radiobutton ”Deaktivér digitalt filter”. Derefter kaldes metoden, og filteret deaktiveres, hvorefter signalet bliver udskrevet ufiltreret.
 
 \begin{figure}[H]
 	\centering
@@ -204,7 +204,7 @@ Forsker interagerer med Monitorvindue ved at markere radiobutton ”Deaktivér d
 	\caption{Sekvensdiagram for UC5}
 \end{figure}
 
-Forsker interagerer med Monitorvindue ved at markere radiobutton ”Aktivér digitalt filter”. Derefter kaldes metoden, og filteret aktiveres, hvorefter signalet bliver udskrevet filtreret.
+Forsker interagerer med Monitorvindue ved at markere i radiobutton ”Aktivér digitalt filter”. Derefter kaldes metoden, og filteret aktiveres, hvorefter signalet bliver udskrevet filtreret.
 
 \begin{figure}[H]
 	\centering
@@ -212,7 +212,7 @@ Forsker interagerer med Monitorvindue ved at markere radiobutton ”Aktivér dig
 	\caption{Sekvensdiagram for UC6}
 \end{figure}
 
-Forsker interagerer med Monitorvindue ved at trykke på knappen ”Gem”. Derefter kaldes metoden og Gem vinduet åbnes. Første gang Forsker ønsker at gemme, indtastes data og der trykkes på knappen ”OK”. Kommando sendes og data valideres. De efterfølgende gange, der ønskes at gemme, er data udfyldt fra første gang, og der trykkes blot på ”OK”, hvorefter kommandoen sendes. Data sendes til datalag, hvor det bliver behandlet, og derefter bliver sendt til database. Data gemmes og Gem vinduet lukkes. Controller bekræfter til Monitorvindue, at data er gemt.
+Forsker interagerer med Monitorvindue ved at trykke på knappen ”Gem”. Derefter kaldes metoden og Gem-vinduet åbnes. Første gang Forsker ønsker at gemme, indtastes data om målingen og der trykkes på knappen ”OK”. Kommando sendes og data gemmes. De efterfølgende gange, der ønskes at gemme, er data udfyldt fra første gang, og der trykkes blot på ”OK”, hvorefter kommandoen sendes. Data gemmes og Gem vinduet lukkes. Controller bekræfter til Monitorvindue, at data er gemt.
 
 \subsubsection{Opdateret klassediagram}
 De opdateret klassediagrammer indeholder metoderne fra de dertilhørende  sekvensdiagrammer - dette giver et overblik over, hvilke metoder de forskellige klasser består af.
