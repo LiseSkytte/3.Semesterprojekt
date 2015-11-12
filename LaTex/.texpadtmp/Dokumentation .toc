@@ -17,25 +17,25 @@
 \contentsline {subsection}{\numberline {1.4.6}Andre(+)}{9}{subsection.1.4.6}
 \contentsline {chapter}{\chapternumberline {2}Design}{11}{chapter.2}
 \contentsline {section}{\numberline {2.1}Systemarkitektur}{11}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}BBD-diagram}{11}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}IBD-diagram}{12}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.1}BDD}{11}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}IBD}{12}{subsection.2.1.2}
 \contentsline {section}{\numberline {2.2}Gr\IeC {\ae }nseflader}{13}{section.2.2}
 \contentsline {section}{\numberline {2.3}Hardware arkitektur}{14}{section.2.3}
 \contentsline {subsubsection}{Tryktransducer}{14}{section*.6}
 \contentsline {subsubsection}{Forst\IeC {\ae }rkerblok}{14}{section*.7}
 \contentsline {subsubsection}{Filterblok}{14}{section*.8}
-\contentsline {subsection}{\numberline {2.3.1}bdd}{14}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}ibd}{15}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.1}BDD}{15}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}IBD}{15}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Gr\IeC {\ae }nseflader}{15}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Tryktransducer}{15}{subsection.2.3.4}
-\contentsline {subsubsection}{Specifikationer}{15}{section*.11}
+\contentsline {subsection}{\numberline {2.3.4}Tryktransducer}{16}{subsection.2.3.4}
+\contentsline {subsubsection}{Specifikationer}{16}{section*.11}
 \contentsline {subsection}{\numberline {2.3.5}Instrumentationsforst\IeC {\ae }rker}{16}{subsection.2.3.5}
 \contentsline {subsubsection}{Filterblok}{16}{section*.12}
 \contentsline {subsubsection}{Specifikationer}{16}{section*.13}
 \contentsline {subsubsection}{Forst\IeC {\ae }rkerblok}{16}{section*.14}
 \contentsline {subsubsection}{Specifikationer}{16}{section*.15}
-\contentsline {section}{\numberline {2.4}Software arkitektur}{16}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Dom\IeC {\ae }nemodel}{16}{subsection.2.4.1}
+\contentsline {section}{\numberline {2.4}Software arkitektur}{17}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Dom\IeC {\ae }nemodel}{17}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Applikationsmodel}{17}{subsection.2.4.2}
 \contentsline {subsubsection}{Sekvensdiagram}{17}{section*.17}
 \contentsline {subsubsection}{Opdateret klassediagram}{23}{section*.24}

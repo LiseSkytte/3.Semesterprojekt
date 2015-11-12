@@ -3,93 +3,104 @@
 \begin{longtabu} to \linewidth{@{}l l l X[j]@{}}
     Version &    Dato &    Ansvarlig &    Beskrivelse\\[-1ex]
     \midrule
-    1.0		&	20-10-2015 &	 Alle	& Første udkast til domænemodel, bdd, ibd og sekvensdiagrammer	\\[-1ex]
-    1.1		&	21-10-2015	&	Alle	& Små ændringer i bdd og ibd efter møde med vejleder \\[-1ex]
-    1.2		&	27-10-2015	&	Alle	& Ændring af bdd og ibd efter møde med Kim; blokkene filter og forstærker er blevet lagt sammen under blokken instrumenteringsforstærker\\[-1ex]
+    1.0		&	20-10-2015 &	 Alle	& Første udkast til domænemodel, BDD, IBD og sekvensdiagrammer	\\[-1ex]
+    1.1		&	21-10-2015	&	Alle	& Små ændringer i BDD og IBD efter møde med vejleder \\[-1ex]
+    1.2		&	27-10-2015	&	Alle	& Ændring af BDD og IBD efter møde med Kim; blokkene filter og forstærker er blevet lagt sammen under blokken Signalforstærker\\[-1ex]
     1.3  	&	02-11-2015	&	Alle	& Begyndte at oprette Design-dokumentet. Udkast til klassediagrammer for UC \\[-1ex]
     1.4		&	04-11-2015	&	Alle	& Skrevet hardward design afsnittet. Små rettelser i de andre afsnit i design, så det er klar til review \\[-1ex]
 \label{version_Systemark}
 \end{longtabu}
 
 \section{Systemarkitektur} 
-Igennem BBD og IBD vil det overordnede blodtryksmålersystem beskrives i forhold til hvilke blokke systemet består af, og hvordan de interagerer med hinanden. 
+Igennem BDD og IBD vil det overordnede blodtryksmålersystem beskrives i forhold til hvilke blokke systemet består af, og hvordan de interagerer med hinanden. 
 
-\subsection{BBD-diagram}
-På figur 2.1 ses BDD-diagrammet for systemet. BBD viser de forskellige blokke for systemet og hvilke porte de består af. I tabel 2.2 ses en beskrivelse af blokkene. 
+\subsection{BDD}
+På figur 2.1 ses BDD for systemet. BDD viser de forskellige blokke for systemet og hvilke porte de består af. I tabel 2.2 ses en beskrivelse af blokkene. 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/Snip20151104_45}
-	\caption{BBD-diagram}
-	\label{fig:BBD-diagram}
+	\caption{BDD}
+	\label{fig:BDD}
 \end{figure}
 
 \begin{longtabu} to \linewidth{@{}l X[j]@{}}
 	\textbf{Blok} &	\textbf{Beskrivelse} \\[-1ex]
 	\midrule
-	Blodtryksmåler & Det overordnede system, som indeholder Trykmonitor, Instrumenteringsforstærker, DAQ og Computer\\[-1ex]
-	Trykmonitor & Registrerer en fysisk størrelse i form af en trykændring. I dette system anvendes en transducer. Transduceren har til opgave at transformere den fysiske størrelse til en elektrisk spænding, som viderebehandles gennem de resterne hardware blokke  \\[-1ex]
-	Instrumenteringsforstærker & Består af to dele. En forstærker-del og en filterings-del. Det analoge signal fra Trykmonitoren bliver via denne blok forstærket og filteret\\[-1ex]
-	DAQ & Konverterer det analoge signal fra Trykmonitoren til et digitalt signal\\[-1ex]
+	Blodtryksmåler & Det overordnede system, som indeholder Tryktransducer, Signalforstærker, DAQ og Computer\\[-1ex]
+	Tryktransducer & Registrerer en fysisk størrelse i form af en trykændring. I dette system anvendes en transducer. Transduceren har til opgave at transformere den fysiske størrelse til en elektrisk spænding, som viderebehandles gennem de resterne hardware blokke  \\[-1ex]
+	Signalforstærker & Består af to dele. En forstærker-del og en filterings-del. Det analoge signal fra Tryktransduceren bliver via denne blok forstærket og filteret\\[-1ex]
+	DAQ & Konverterer det forstærkede og filterede analoge signal til et digitalt signal\\[-1ex]
 	Computer & Indeholder software til systemet, som er kodet i Visual Studio C\#. Softwaren kan blandt andet vise det digitale signal grafisk. Softwaren kan ligeledes kalibrere, nulpunktsjustere og gemme målinger samt aktivere og deaktiver filter\\[-1ex]
 	\caption{Beskrivelse af blokkene for systemet}
 	\end{longtabu}
 	
-\subsection{IBD-diagram}
-På figur 2.2 ses IBD-diagrammet for systemet. IBD viser, hvordan de forskellige blokke intergerer med hinanden. IBD fortæller signalets behandling gennem systemet - altså hvordan signalet transformeres fra et målt fysisk tryk til et digitalt signal, som softwaren kan videre behandle og vise grafisk. 
+\subsection{IBD}
+På figur 2.2 ses IBD for systemet. IBD viser, hvordan de forskellige blokke intergerer med hinanden. IBD fortæller signalets behandling gennem systemet - altså hvordan signalet transformeres fra et målt fysisk tryk til et digitalt signal, som softwaren kan videre behandle og vise grafisk. 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{Figurer/Snip20151102_7}
-	\caption{IBD-diagram}
-	\label{fig:IBD-diagram}
+	\caption{IBD}
+	\label{fig:IBD}
 \end{figure}
 
 \section{Grænseflader}
-Kommunikationsprotokol for hardware blokkene ses i tabel 2.3. Det er en beskrivelse og specifikation af hvilken indgang- og udgangssignal de forskellige blokke har.   
+Kommunikationsprotokol for hardware blokkene ses i tabel 2.3. Det er en beskrivelse og specifikation af hvilken indgang- og udgangssignal de forskellige blokke har. 
+\\  \\
+Tryktransducerens output, $V_{out}$, bestemmes ud fra følgende ligning:
+
+$V_{out}$ = P $\cdot$ K $\cdot$ $V_{+}$
+\\ \\
+P = Tryk\\K = sensitivitet\\$V_{+}$ = indgangsspænding\\
+
+For systemet er der valgt, at tryktransducerens målbare område skal ligge i intervallet 0-300 mmHg. Den maksimale udgangsspænding bliver derfor udtrykt ud fra det maksimale tryk på 300 mmHg, sensitiviteten på 5 $\mu$ og indgangsspændingen på 9 V. 
+
+$V_{max}$ = 300 mmHg $\cdot$ 5 $\mu$ $\cdot$ 9 V\\
+$V_{max}$ = 13,5 mV
+  
 
 \begin{longtabu} to \linewidth{@{}l l l l X[j]@{}}
 	\textbf{Grænseflade} & \textbf{Signal} & \textbf{Type} & \textbf{Format} & \textbf{Værdi} \\[-1ex]
 	\midrule
-	Trykmoniter & Blodtryk & in & Tryk & 0 - 300 mmHg \\[-1ex]
-				& Analogt & out & Spænding & +/- 13,5mV \\[-1ex]
-	Forstærker  & Analogt & in & Spænding & +/- 13,5mV \\[-1ex]
-				& Forstærket analogt & out & Spænding & +/- 5V \\[-1ex]
-	Filter 		& Forstærket analogt & in & Spænding & +/- 5V \\				[-1ex]
-				& Filteret analogt & out & Spænding & +/- 5V \\[-1ex]
-	DAQ			& Filteret analogt & in & Spænding & +/- 5V \\				[-1ex]	
-				& Digitalt & out & 16-bit double & +/- 5 \\[-1ex]
-	Computer	& Digitalt & in & 16-bit double & +/- 5 \\[-1ex]
+	Tryktransducer & Blodtryk & in & Tryk & 0 - 300 mmHg \\[-1ex]
+				& Analogt & out & Spænding & +/- 13,5 mV \\[-1ex]
+	Signalforstærker  & Analogt & in & Spænding & +/- 13,5 mV \\[-1ex]
+			 & Forstærket og filteret analogt & out & Spænding & +/- 5 V \\[-1ex]
+	DAQ			& Forstærket og filteret analogt & in & Spænding & +/- 5 V \\[-1ex]	
+				& Digitalt & out & 16-bit double & 0-5 V \\[-1ex]
+	Computer	& Digitalt & in & 16-bit double &  0-5 V \\[-1ex]
 	\caption{Kommunikationsprotokol}	
 \end{longtabu}
 
 
 \section{Hardware arkitektur}
-Herunder er de krævede specifikationer for hardwaren beskrevet. Instrumentationsforstærkeren består af to dele.
+Herunder er de krævede specifikationer for hardwaren beskrevet. Signalforstærkeren består af to dele.
+
 \subsubsection{Tryktransducer}
-Tryktransduceren skal omsætte det fysiske tryk i blodkarret til en elektrisk spænding. Da de målte størrelser (trykændring) er meget små, skal transduceren have en meget høj common mode rejection, samt en høj sensitivitet.
+Tryktransduceren skal omsætte det fysiske tryk i blodkarret til en elektrisk spænding. Da de målte størrelser (trykændring) er meget små, skal tryktransduceren have en meget høj common mode rejection, samt en høj sensitivitet.
 Tryktransduceren er medtaget i designet, fordi dennes specifikationer har indflydelse for forstærkerblokkens specifikationer. Der er imidlertid kun mulighed for at anvende én tryktransducer i projektet, og der er derfor ikke lavet diagrammer over denne.
 \subsubsection{Forstærkerblok}
 Forstærkerblokken sørger for at det meget svage spændingssignal fra tryktransduceren bliver forstærket op til en spænding der ligger i et fornuftigt måleinterval der tilsvarer DAQ'en. 
 \subsubsection{Filterblok}
-Filterets formål er at frasorterer signalets frekvenser der er højere end 50 Hz. Dette skal realiseres ved et lavpasfilter. 
+Filterets formål er at frasorterer signalets frekvenser der er højere end 50 Hz. Dette skal realiseres ved et anden ordens lavpasfilter. 
  
-\subsection{bdd}
+\subsection{BDD}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/Snip20151104_46}
-	\caption{bdd-diagram for Instrumenteringsforstærker HW}
-	\label{fig:bddhw-diagram}
+	\caption{BDD for Signalforstærker HW}
+	\label{fig:BDDhw-diagram}
 \end{figure}
 
-\subsection{ibd}
+\subsection{IBD}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/Snip20151104_48}
-	\caption{ibd-diagram for Instrumenteringsforstærker HW}
-	\label{fig:ibdhw-diagram}
+	\caption{IBD for Signalforstærker HW}
+	\label{fig:IBDhw-diagram}
 \end{figure}
 
 \subsection{Grænseflader}
