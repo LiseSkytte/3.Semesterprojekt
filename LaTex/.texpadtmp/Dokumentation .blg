@@ -6,12 +6,13 @@ A level-1 auxiliary file: Dfiler/Dforside.aux
 A level-1 auxiliary file: Dfiler/Dkravspecifikation.aux
 A level-1 auxiliary file: Dfiler/Ddesign.aux
 A level-1 auxiliary file: Dfiler/Dhardware_implementering_test.aux
+A level-1 auxiliary file: Dfiler/Dsoftware_implementering_test.aux
 A level-1 auxiliary file: Dfiler/Daccepttest.aux
 I found no \citation commands---while reading file /Users/Lise/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Dokumentation .aux
 I found no \bibdata command---while reading file /Users/Lise/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Dokumentation .aux
 You've used 0 entries,
             2118 wiz_defined-function locations,
-            501 strings with 4239 characters,
+            502 strings with 4279 characters,
 and the built_in function-call counts, 18 in all, are:
 = -- 0
 > -- 0
