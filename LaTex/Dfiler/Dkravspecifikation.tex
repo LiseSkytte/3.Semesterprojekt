@@ -87,17 +87,22 @@ Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forsk
     Samtidige forløb &&    1\\
     Primær aktør &&    Forsker\\
     Sekundære aktør &&	 \\
-    Mål &&    Forsker ønsker at kalibrere blodtrykssignal\\
+    Mål &&    Forsker ønsker at kalibrere systemet\\
     Initiering &&	Startes af Forsker\\
     Forudsætninger &&  System er aktivt og tilgængeligt\\
-    Resultat &&		Blodtrykssignalet er kalibreret                         \\ \midrule
-    Hovedforløb &    1. &	 Kalibrering-vinduet vises\\[-1ex]  				
-    			&    2. &    Tidligere kalibreringsdato vises og System spørg om der ønskes en kalibrering \\[-1ex]
-    			&    3.	&	 Forsker trykker på "Ja"\--knappen \newline
-    						 [3.a \textit{Forsker trykker på "Nej"\--knappen}]\\
-                &    4.	&	 System kalibrerer og Kalibrering-vinduet lukkes ned \newline\\ \midrule
+    Resultat &&		System er kalibreret                         \\ \midrule
+    Hovedforløb &    1. &	 Kalibrering-vinduet vises ved opstart\\[-1ex]  				
+    			&    2. &    Tidligere kalibreringsdata vises i Kalibrering-vindue\\[-1ex]
+    			&	 3. &	 Forsker indtaster målte kalibreringsdata
+    			\newline
+    						 [3.a \textit{Forsker vælger ikke at kalibrere}]\\
+    			&    4.	&	 Forsker vælger at udføre kalibrering\newline
+    						 [4.a \textit{Indtastede kalibreringsdata ugyldige}]\\
+                &    5.	&	 System kalibrerer\\
+                &	 6. &	 Det fremgår i Kalibrering-vinduet at kalibrering er udført \newline\\ \midrule
                 
-    Undtagelser &    3.a &   Forsker ønsker ingen kalibrering. UC1 afsluttes og Kalibrering-vinduet lukkes  \\ \bottomrule
+    Undtagelser &    3.a &   Forsker ønsker ingen kalibrering. UC1 afsluttes og Kalibrering-vinduet lukkes  \\
+    			&	 4.a &	 Det fremgår i Kalibrering-vinduet at indtastede kalibreringsdata er ugyldige \\ \bottomrule
 \caption{Fully dressed Use Case 1.}
 \label{UC1}
 \end{longtabu}
@@ -112,12 +117,10 @@ Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forsk
     Primær aktør &&    Forsker\\
     Sekundære aktør &&	 Måleobjekt og Tryktransducer\\
     Mål &&    Forsker ønsker at vise blodtrykssignal med digitalt filter\\
-    Initiering &&	Startes af UC1\\
+    Initiering &&	Startes efter afsluttet UC1\\
     Forudsætninger &&  System er aktivt og tilgængeligt. Digitalt filter er aktivt. Måleobjekt og Tryktransducer er tilsluttet system\\
-    Resultat &&		Blodtrykssignalet udskrives                         \\ \midrule
-    Hovedforløb &    1. &    Monitor-vinduet vises\\[-1ex]	
-    			&    2. &    Blodtryksignal vises i en graf i Monitor-vinduet\\[-1ex]
-    			&	 3.	&	 Systole-, Diastole- og puls værdier vises i Monitor-vinduet\newline\\ \midrule
+    Resultat &&		Det filtrerede blodtrykssignal udskrives                         \\ \midrule
+    Hovedforløb &    1. &    Det filtrerede blodtrykssignal vises i en graf i Monitor-vinduet\newline\\ \midrule
                 
     Undtagelser &    &   \\ \bottomrule
 \caption{Fully dressed Use Case 2.}
@@ -133,12 +136,13 @@ Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forsk
     Samtidige forløb &&    1\\
     Primær aktør &&    Forsker\\
     Sekundære aktør && \\
-    Mål &&    Forsker ønsker at nulpunktsjustere blodtrykssignal\\
+    Mål &&    Forsker ønsker at nulpunktsjustere system\\
     Initiering &&	Startes af Forsker\\
-    Forudsætninger &&  System er aktivt og tilgængeligt. UC2 kører \\    Resultat &&		Blodtrykssignalet er nulpunktsjusteret\\ \midrule
-    Hovedforløb &    1. &    Forsker trykker på "Nulpunktjustering"\--knappen\\[-1ex]   						 	
-                &    2. &    System udfører nulpunktsjusteringen\\[-1ex]
-                &	 3.	&	 Det fremgår i Monitor-vinduet, at nulpunktsjustering er foretaget\newline\\ \midrule
+    Forudsætninger &&  System er aktivt og tilgængeligt. UC2 kører \\    
+    Resultat &&		System er nulpunktsjusteret\\ \midrule
+    Hovedforløb &    1. &    Forsker vælger at udføre en nulpunktsjustering\\[-1ex]   						 	
+                &    2. &    System nulpunktsjusterer\\[-1ex]
+                &	 3.	&	 Det fremgår i Monitor-vinduet, at nulpunktsjustering er udført\newline\\ \midrule
                 
     Undtagelser &     &      \\ \bottomrule
 \caption{Fully dressed Use Case 3.}
@@ -157,8 +161,8 @@ Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forsk
     Initiering &&	Startes af Forsker\\
     Forudsætninger &&  System er aktivt og tilgængeligt. UC2 kører  \\
     Resultat &&		Ufiltreret blodtrykssignal vises i Monitor-vinduet                 \\ \midrule
-    Hovedforløb &    1. &    Forsker deaktiverer filter ved at markere i \textit{" Deaktivér digitalt filtre"} \\[-1ex]   						 	
-                &    2. &    System udskriver det ufiltreret blodtryksignal\newline\\ \midrule
+    Hovedforløb &    1. &    Forsker vælger at deaktivere digitalt filter \\[-1ex]   						 	
+                &    2. &    System udskriver det ufiltrerede blodtryksignal\newline\\ \midrule
                 
     Undtagelser &     &      \\ \bottomrule
 \caption{Fully dressed Use Case 4.}
@@ -178,8 +182,8 @@ Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forsk
     Initiering &&	Startes af Forsker\\
     Forudsætninger &&  System er aktivt og tilgængeligt. Det digitale filter er deaktiveret  \\
     Resultat &&		Filtreret blodtrykssignal vises i Monitor-vindet                 \\ \midrule
-    Hovedforløb &    1. &    Forsker aktiverer filter ved at markere i \textit{" Aktivér digitalt filtre"} \\[-1ex]   						 	
-                &    2. &    System udskriver det filtreret blodtryksignal\newline\\ \midrule
+    Hovedforløb &    1. &    Forsker vælger at aktivere digitalt filter\\[-1ex]   						 	
+                &    2. &    System udskriver det filtrerede blodtrykssignal\newline\\ \midrule
                 
     Undtagelser &     &      \\ \bottomrule
 \caption{Fully dressed Use Case 5.}
@@ -198,17 +202,17 @@ Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forsk
     Initiering &&	Startes af Forsker\\
     Forudsætninger &&  System er aktivt og tilgængeligt. UC2 kører  \\
     Resultat &&		Data er gemt i Database                 \\ \midrule
-    Hovedforløb &    1. &    Forsker trykker på "Gem"\--knappen \newline
-       						 [1.a \textit{Måleobjektets data er gemt fra forrige målinger}]\\	
-                &    2. &    System åbner Gem-vinduet\\[-1ex]
-                &    3.	&	 Forsker indtaster data for blodtryksmålingen \\[-1ex]
+    Hovedforløb &    1. &    Forsker vælger at gemme \\[-1ex]	
+                &    2. &    System åbner Gem-vinduet \newline
+       						 [2.a \textit{Måleobjektets data er gemt fra forrige målinger}]\\
+                &    3.	&	 Forsker indtaster metadata for blodtryksmåling \\[-1ex]
                 &	 4. &    Forsker trykker på "OK"\--knappen  \\[-1ex]
-                &	 5.	&	 System lukker Gem-vinduet og åbner Monitor-vinduet igen\\[-1ex]
-                &	 6.	&	 System viser, at data er gemt i Monitor-vinduet\newline
+                &	 6.	&	 Det fremgår af Gem-vinduet at måling er gemt\newline
                 
                 \\ \midrule
                 
-    Undtagelser &   1.a  &  UC6 forsættes ved punkt 6    \\ \bottomrule
+    Undtagelser &   2.a  &  Det fremgår af Monitor-vinduet at måling er gemt   \\ \bottomrule
+    
 \caption{Fully dressed Use Case 6.}
 \label{UC6}
 \end{longtabu}
