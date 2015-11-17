@@ -49,14 +49,17 @@
 \contentsline {subsubsection}{Magnitude Bodeplot}{29}{section*.35}
 \contentsline {section}{\numberline {3.3}Test}{30}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Forst\IeC {\ae }rkerblok}{30}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Filterblok}{30}{subsection.3.3.2}
-\contentsline {chapter}{\chapternumberline {4}SW implementering og test }{35}{chapter.4}
-\contentsline {chapter}{\chapternumberline {5}Acceptest}{37}{chapter.5}
-\contentsline {section}{\numberline {5.1}Accepttest af Use Cases}{37}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Use Case 1}{37}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Use Case 2}{38}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Use Case 3}{38}{subsection.5.1.3}
-\contentsline {subsection}{\numberline {5.1.4}Use Case 4}{38}{subsection.5.1.4}
-\contentsline {subsection}{\numberline {5.1.5}Use Case 5}{39}{subsection.5.1.5}
-\contentsline {subsection}{\numberline {5.1.6}Use Case 6}{39}{subsection.5.1.6}
-\contentsline {section}{\numberline {5.2}Accepttest af ikke-funktionelle krav}{40}{section.5.2}
+\contentsline {subsection}{\numberline {3.3.2}Filterblok}{31}{subsection.3.3.2}
+\contentsline {subsubsection}{Filtering ved 1 Hz}{33}{section*.40}
+\contentsline {subsubsection}{Filtering ved 50 Hz}{34}{section*.42}
+\contentsline {subsubsection}{Filtering ved 500 Hz}{34}{section*.44}
+\contentsline {chapter}{\chapternumberline {4}SW implementering og test }{37}{chapter.4}
+\contentsline {chapter}{\chapternumberline {5}Acceptest}{39}{chapter.5}
+\contentsline {section}{\numberline {5.1}Accepttest af Use Cases}{39}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Use Case 1}{39}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Use Case 2}{40}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Use Case 3}{40}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}Use Case 4}{40}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.5}Use Case 5}{41}{subsection.5.1.5}
+\contentsline {subsection}{\numberline {5.1.6}Use Case 6}{41}{subsection.5.1.6}
+\contentsline {section}{\numberline {5.2}Accepttest af ikke-funktionelle krav}{42}{section.5.2}

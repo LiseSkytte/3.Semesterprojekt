@@ -106,35 +106,28 @@ Der ønskes, at ved en indgangsspænding på 13,5 mV vil outputsspændingen vær
 
 Dette ser, at være det samme, når man tester forstærkeren. 
 
-
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/2015-11-17}
+	\caption{Forstærker respons ved 13 mV}
+\end{figure}
 
 
 \subsection{Filterblok}
+Testen af filteret foretaget, hvor der påtrykkes en AC spænding på 5 V, hvor frekvensen varieres imellem 1 Hz, 50 Hz og 500 Hz. \\ \\
 
-Følgende målinger er udført med komponentværdier, som i praksis gav bedre resultater end komponentværdierne udregnet i teori-afsnittet. Følgende komponenter er benyttet: R1 og R2: 2,3, C1: 340nF og C2: 680nF. Målingerne er foretaget ved at påsætte filteret en AC spænding på 5V med varierende frekvens i et spekter fra 1 Hz til 500 Hz. Dette gøres for at teste frekvensresponset på filteret. Channel 1 er indgangsspændingen og viser den varierende frekvens. Ændringen ses i venstre side af efterfølgende skærmbilleder. Oscilloskopet måler udgangsspændingen på filteret og resultatet vises i højre side af efterfølgende skærmbilleder. 
-
-Følgende målinger er udført med komponentværdier, som i praksis gav bedre resultater end komponentværdierne udregnet i teori-afsnittet. Følgende komponenter er benyttet: R1 og R2: 2,3, C1: 340nF og C2: 680nF. Målingerne er foretaget ved at påsætte filteret en AC spænding på 5V med varierende frekvens i et spekter fra 1 Hz til 500 Hz. Dette gøres for at teste frekvensresponset på filteret. Channel 1 er indgangsspændingen og viser den varierende frekvens. Ændringen ses i venstre side af efterfølgende skærmbilleder. Oscilloskopet måler udgangsspændingen på filteret og resultatet vises i højre side af efterfølgende skærmbilleder. \\
-Værdierne der gerne vil opnår er henholdsvis:
-
-
-\begin{longtabu} to \linewidth{@{}l X[j]@{}}
-	\textbf{Input} & \textbf{Output} \\[-1ex]
-	\midrule
-	5V 1Hz & 5V \\[-1ex]
-	5V 50Hz	& 3.53V\\[-1ex]
-	5V 500Hz & 0.5 V \\[-1ex]
-	\caption{}	
-\end{longtabu}
-
-	
+Testopstillingen ses på Figur 3.6.  
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/Filterblok}
-	\caption{Praktisk opstilling af Filter}
+	\caption{Testopstilling af filteret}
 	\label{fig:Filter}
 \end{figure}
 
+Channel 1 er indgangsspændingen og viser den varierende frekvens. Ændringen ses i venstre side af efterfølgende skærmbilleder. Oscilloskopet måler udgangsspændingen på filteret og resultatet vises i højre side af efterfølgende skærmbilleder.
+
+\subsubsection{Filtering ved 1 Hz}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/Lavpasfilter_Praktisk_1Hz}
@@ -142,12 +135,38 @@ Værdierne der gerne vil opnår er henholdsvis:
 	\label{fig:Filter}
 \end{figure}
 
+Indgangsspændingen  og outpusspændingen er den samme, 5 V. Dette er også det ønskede resultat, da filteret er et lavpasfilter, der er designet til at lukke de lave frekvenser igennem indtil 50 Hz. 
+ 
+\subsubsection{Filtering ved 50 Hz}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/Lavpasfilter_Praktisk_50Hz}
 	\caption{Lavpasfilter respons 50 Hz}
 	\label{fig:Filter}
 \end{figure}
+
+Ved 50 Hz, som er filteret cutofffrekvens, skal indgangsspændingen være dæmpet med 3 dB efter filteringen. I ligningen (3.9) beregnes, hvad outputspændingen er efter en dæmpning med 3 dB. 
+
+\begin{equation}
+	3 dB = 20\cdot log(x) \\ \Longrightarrow \\
+	x = 0,707 V\\ \Longrightarrow \\
+	outputspænding = 5 V \cdot 0,707 V \\ \Longrightarrow \\
+	outputspænding = 3,535 V 
+\end{equation}
+
+På Figur 3.8 ses, at det i praksis er 3,8, hvilket der er acceptabelt. 
+
+\subsubsection{Filtering ved 500 Hz}
+Her forventes, der en dæmpning med 40 dB, da det er et andenordens lavpasfilter, og 500 Hz er en dekade efter cutofffrekvensen. I ligning (3.10) ses beregningen, hvad outputspændingen er efter en dæmpning med 40 dB. 
+
+\begin{equation}
+	40 dB = 20\cdot log(x) \\ \Longrightarrow \\
+	x = 0,01 V\\ \Longrightarrow \\
+	outputspænding = 5 V \cdot 0,01 V \\ \Longrightarrow \\
+	outputspænding = 0,05 V 
+\end{equation}
+
+På Figur 3.9 ses, at det i praksis er 633,6 mV.. Dette er ikke godt, da 633,6/1000 = 0,6, som ikke er tæt på 0,05....  
 
 \begin{figure}[H]
 	\centering
