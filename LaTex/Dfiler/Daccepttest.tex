@@ -12,7 +12,7 @@
 \section{Accepttest af Use Cases}
 
 
-%Use case 1 acceptest
+%Use case 1 accepttest
 \subsection{Use Case 1}
 \textbf{Kalibrér}
 
@@ -21,13 +21,17 @@
     \midrule
     ~ &\textit{Hovedforløb} & ~ & ~ &
     \\ \midrule
-    1. & Start system &   Kalibrering-vinduet vises, hvor system spørger om der skal foretages en kalibrering. Seneste kalibreringstidspunkt vises.  &     &		%{\Huge \checkmark}
+    1. & Start system &   Kalibrering-vinduet og seneste kalibreringstidspunkt vises  &     &		%{\Huge \checkmark}
     \\
-    2. &Tryk på "Ja"\--knappen  &    System kalibrerer og Kalibrering-vinduet lukkes ned  &    &		%{\Huge \checkmark}
+    2. & Indtast kalibreringsdata &   Der kan indtastes kalibreringsdata i de forskellige tekstbokse  &     &		%{\Huge \checkmark}
+    \\
+    3. & Udfør kalibrering &    System kalibrerer og bekræfter fuldført kalibrering  &    &		%{\Huge \checkmark}
 	\\ \midrule
 	~ &\textit{Undtagelse} & ~ & ~ & 
 	\\ \midrule	
-    2a. &	Tryk på "Nej"\--knappen &    Kalibrering-vinduet lukkes ned  &     &		%{\Huge \checkmark}
+    1a. & Ønsker ikke kalibrering &    Kalibrering-vinduet lukkes ned  &     &		%{\Huge \checkmark}
+    \\
+    2a. & Kalibreringsdata er ugyldige &    System informerer om ugylidge kalibreringsdata  &     &		%{\Huge \checkmark}
  \\ \bottomrule
  
 \caption{Accepttest af Use Case 1.}\\
@@ -36,7 +40,7 @@
 
 %Use case 2 acceptest 
 \subsection{Use Case 2}
-\textbf{Vis måling med filter}
+\textbf{Vis måling med digitalt filter}
 
 \begin{longtabu} to \linewidth{@{} c X[j] X[j] X[j] l@{}}
 	& Test	& Forventet resultat		& Faktiske observationer		& Godkendt\\[-1ex] 
@@ -63,7 +67,7 @@
     \midrule
     ~ &\textit{Hovedforløb} & ~ & ~ &
     \\ \midrule
-    1. & Tryk på "Nulpunktsjustering"\--knappen &    Blodtrykssignalet udskrives i Monitor-vinduet med en baseline ved 0. Tidsstemplet opdateres.  &    &		%{\Huge (\checkmark)}
+    1. & Udfør nulpunktsjustering &    System nulpunktsjusterer og bekræfter fuldført nulpunktsjustering. Tidsstempel opdateres  &    &		%{\Huge (\checkmark)}
 	\\ \midrule
 	~ &\textit{Undtagelser} & ~ & ~ & 
 	\\ \midrule	
@@ -83,7 +87,7 @@
     \midrule
     ~ &\textit{Hovedforløb} & ~ & ~ &
     \\ \midrule
-    1. &Markér \textit{"Deaktivér digitalt filtre"}  &    Filteret deaktiveres og det ufiltreret blodtryksignal udskrives i Monitor-vinduet &     &		%{\Huge \checkmark}
+    1. & Deaktivér digitalt filter &    Digital filter deaktiveres og det ufiltrerede blodtrykssignal udskrives i Monitor-vinduet &     &		%{\Huge \checkmark}
 	\\ \midrule
 	~ &\textit{Undtagelser} & ~ & ~ & 
 	\\ \midrule	
@@ -103,7 +107,7 @@
     \midrule
     ~ &\textit{Hovedforløb} & ~ & ~ &
     \\ \midrule
-    1. & Markér \textit{"Aktivér digitalt filtre"}  &    Filteret aktiveres og det filtreret blodtryksignal udskrives i Monitor-vinduet &   &		%{\Huge \checkmark}
+    1. & Aktivér digitalt filter &    Digitalt filter aktiveres og det filtrerede blodtrykssignal udskrives i Monitor-vinduet &   &		%{\Huge \checkmark}
    	\\ \midrule
 	~ &\textit{Undtagelser} & ~ & ~ & 
 	\\ \midrule	
@@ -123,15 +127,15 @@
     \midrule
     ~ &\textit{Hovedforløb} & ~ & ~ &
     \\ \midrule
-    1. & Tryk på "Gem"\--knappen &    Gem-vinduet åbnes &   &		%{\Huge \checkmark}
+    1. & Ønsker at gemme &    Gem-vinduet åbnes &   &		%{\Huge \checkmark}
     \\
-    2. & Indtast data & Datafelterne er udfyldt &		&	%{\Huge \checkmark}
+    2. & Indtaster metadata & Datafelterne udfyldes &		&	%{\Huge \checkmark}
     \\
-    3. & Tryk på "OK"\--knappen & Gem-vinduet lukkes ned og Monitor-vinduet åbnes. Gemme tidspunktet vises i Monitor-vinduet  &		& %{\Huge \checkmark}
+    3. & Trykker på "OK"\--knappen & System gemmer og bekræfter at data er gemt &		& %{\Huge \checkmark}
    	\\ \midrule
 	~ &\textit{Undtagelser} & ~ & ~ & 
 	\\ \midrule	
-	1a. &	Tryk på "Gem"\--knappen &  Gemme tidspunktet vises i Monitor-vinduet    &     &		%{\Huge \checkmark}
+	1a. & Ønsker at gemme &  System gemmer og Monitor-vinduet bekræfter at data er gemt  &     &		%{\Huge \checkmark}
 
  \\ \bottomrule
  
