@@ -4,19 +4,29 @@
 %\externaldocument[D-]{Dokumentation}
 
 \begin{document}	
-\frontmatter						% Nummereres med romerske tal.
+\frontmatter						
 \include{Rfiler/Rforside}
+\include{Rfiler/Resume}
+\include{Rfiler/Rgodkendelsesformular}
+\include{Rfiler/Runderskrifter}
+\include{Rfiler/Rordliste}
 
 \cleardoublepage		
 
-\tableofcontents*                   % Indsætter en indholdsfortegnelse før Indledning.
+\tableofcontents*                   
 
-\mainmatter                         % Her findes de nummererede kapitler modsat \frontmatter og \backmatter. Nummereres med arabiske tal.
+\mainmatter
+\include{Rfiler/Rindledning}
+\include{Rfiler/Rprojektformulering}
+\include{Rfiler/Rsystembeskrivelse}
+\include{Rfiler/Rkrav}
+\include{Rfiler/Rprojektbeskrivelse}
+\include{Rfiler/Rkonklusion}
+                         
 
 
 \backmatter
+\include{Rfiler/Rlitteratur}
 
-
-%\bibliography{bibliografi/PRJ3}    % Sætter bibliografien bagerst i dokumentet. Bruger bib-filen PRJ3.
 
 \end{document}

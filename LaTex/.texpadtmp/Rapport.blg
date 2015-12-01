@@ -3,11 +3,22 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: /Users/Lise/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Rapport.aux
 The style file: plain.bst
 A level-1 auxiliary file: Rfiler/Rforside.aux
+A level-1 auxiliary file: Rfiler/Resume.aux
+A level-1 auxiliary file: Rfiler/Rgodkendelsesformular.aux
+A level-1 auxiliary file: Rfiler/Runderskrifter.aux
+A level-1 auxiliary file: Rfiler/Rordliste.aux
+A level-1 auxiliary file: Rfiler/Rindledning.aux
+A level-1 auxiliary file: Rfiler/Rprojektformulering.aux
+A level-1 auxiliary file: Rfiler/Rsystembeskrivelse.aux
+A level-1 auxiliary file: Rfiler/Rkrav.aux
+A level-1 auxiliary file: Rfiler/Rprojektbeskrivelse.aux
+A level-1 auxiliary file: Rfiler/Rkonklusion.aux
+A level-1 auxiliary file: Rfiler/Rlitteratur.aux
 I found no \citation commands---while reading file /Users/Lise/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Rapport.aux
 I found no \bibdata command---while reading file /Users/Lise/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Rapport.aux
 You've used 0 entries,
             2118 wiz_defined-function locations,
-            497 strings with 4116 characters,
+            508 strings with 4381 characters,
 and the built_in function-call counts, 18 in all, are:
 = -- 0
 > -- 0
