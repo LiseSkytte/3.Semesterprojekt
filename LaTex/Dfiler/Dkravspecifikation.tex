@@ -195,28 +195,34 @@ Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forsk
     \toprule
     Navn &&    Gem måling\\
     Use case ID &&    6\\
-    Samtidige forløb &&   1.2...*\\
+    Samtidige forløb &&   1...*\\
     Primær aktør &&    Forsker\\
     Sekundære aktør &&	Database\\
     Mål &&    Forsker ønsker at gemme data i Database\\
     Initiering &&	Startes af Forsker\\
     Forudsætninger &&  System er aktivt og tilgængeligt. UC2 kører  \\
     Resultat &&		Data er gemt i Database                 \\ \midrule
-    Hovedforløb &    1. &    Forsker vælger at gemme \\[-1ex]	
-                &    2. &    System åbner Gem-vinduet \newline
-       						 [2.a \textit{Måleobjektets data er gemt fra forrige målinger}]\\
-                &    3.	&	 Forsker indtaster metadata for blodtryksmåling \\[-1ex]
-                &	 4. &    Forsker trykker på "OK"\--knappen  \\[-1ex]
-                &	 6.	&	 Det fremgår af Gem-vinduet at måling er gemt\newline
+    Hovedforløb &    1. &    Forsker skriver kommentar og bestemmer 						 maximum længde for måling \newline
+    						 [1.a \textit{Forsker ændrer ikke maximum længden for måling}]\newline
+    						 [1.b \textit{Forsker skriver ikke en kommentar til måling}]\\ 
+                &    2. &    Forsker igangsætter optagelse af måling 		 \\[-1ex] 
+                &    3.	&	 Forsker stopper optagelse af måling 			 \newline
+                			 [3.a \textit{Maximum længde for måling er nået}]\\
+                &	 4. &    System åbner Gem-vinduet \newline
+                			 [4.a \textit{Måleobjekts data er gemt fra forrige måling}]\\ 
+                &	 5. &	 Forsker indtaster metadata for 					 blodtryksmåling \\[-1ex]
+                &	 6. &	 Forsker trykker på "OK"\--knappen 				 \\[-1ex]
+                &	 7. &	 System gemmer måling \\[-1ex]
+                &	 8.	&	 Det fremgår af Monitor-vinduet at måling 		 er gemt\newline\\ \midrule
                 
-                \\ \midrule
-                
-    Undtagelser &   2.a  &  Det fremgår af Monitor-vinduet at måling er gemt   \\ \bottomrule
+    Undtagelser &    1.a &   Forsker ønsker ikke at ændre maximum 				længde for måling. Forsætter ved punkt 2 i UC6 \\
+    			&    1.b &   Forsker ønsker ikke at tilknytte en kommentar til måling. Forsætter ved punkt 2 i UC6 \\
+    			&    3.a &   System stopper optagelse af måling. Forsætter ved punkt 4 i UC6  \\
+    			&	 4.a &	 Forsætter ved punkt 7 i UC6. \\ \bottomrule
     
 \caption{Fully dressed Use Case 6.}
 \label{UC6}
 \end{longtabu}
-
 
 \section{Ikke-funktionelle krav}
 De ikke-funktionelle krav er specificeret ved brug af redskabet (F)URPS+, der står for hhv. Functionality, Usability, Reliability, Performance, Supportability og andre krav til fx brugssituationer og interface.  
