@@ -87,14 +87,14 @@ Bodeplottet i Figur 3.3 viser, at ved -3 dB, hvor cutofffrekvens befinder sig er
 \end{figure}
 
 \section{Test}
-Forstærkeren og filteret testes via Analog Discovery \& Waveforms.
+Forstærkeren og filteret testes via Analog Discovery \& Waveforms. De testes både være for sig og sidst sammen som signalbehandlingblok. 
 
-\subsection{Forstærkerblok}
+\subsection{Test af forstærkerblok}
 Testopstillingen kan ses på Figur 3.4. 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/Snip20151117_106}
+	\includegraphics[width=1\textwidth]{Figurer/Snip20151202_20}
 	\caption{Testopstilling for forstærkeren}
 \end{figure}
 
@@ -104,23 +104,23 @@ Der ønskes, at ved en indgangsspænding på 13,5 mV vil outputsspændingen vær
 	13 mV \cdot 370 = 4,8 V
 \end{equation} 
 
-Dette ser, at være det samme, når man tester forstærkeren. 
+Dette ser, at være det samme, når man tester forstærkeren, se figur 3.5. 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/2015-11-17}
+	\includegraphics[width=1\textwidth]{Figurer/Snip20151202_21}
 	\caption{Forstærker respons ved 13 mV}
 \end{figure}
 
 
-\subsection{Filterblok}
+\subsection{Test af filterblok}
 Testen af filteret foretaget, hvor der påtrykkes en AC spænding på 5 V, hvor frekvensen varieres imellem 1 Hz, 50 Hz og 500 Hz. \\ \\
 
 Testopstillingen ses på Figur 3.6.  
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/Filterblok}
+	\includegraphics[width=1\textwidth]{Figurer/Snip20151202_22}
 	\caption{Testopstilling af filteret}
 	\label{fig:Filter}
 \end{figure}
@@ -130,17 +130,17 @@ Channel 1 er indgangsspændingen og viser den varierende frekvens. Ændringen se
 \subsubsection{Filtering ved 1 Hz}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/Lavpasfilter_Praktisk_1Hz}
+	\includegraphics[width=1\textwidth]{Figurer/Snip20151202_23}
 	\caption{Lavpasfilter respons 1 Hz}
 	\label{fig:Filter}
 \end{figure}
 
-Indgangsspændingen  og outpusspændingen er den samme, 5 V. Dette er også det ønskede resultat, da filteret er et lavpasfilter, der er designet til at lukke de lave frekvenser igennem indtil 50 Hz. 
+På figur 3.7 ses det, at indgangsspændingen  og outputspændingen er den samme - 5 V ca. Dette er også det ønskede resultat, da filteret er et lavpasfilter, der er designet til at lukke de lave frekvenser igennem indtil 50 Hz. 
  
 \subsubsection{Filtering ved 50 Hz}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/Lavpasfilter_Praktisk_50Hz}
+	\includegraphics[width=1\textwidth]{Figurer/Snip20151202_24}
 	\caption{Lavpasfilter respons 50 Hz}
 	\label{fig:Filter}
 \end{figure}
@@ -149,30 +149,83 @@ Ved 50 Hz, som er filteret cutofffrekvens, skal indgangsspændingen være dæmpe
 
 \begin{equation}
 	3 dB = 20\cdot log(x) \\ \Longrightarrow \\
-	x = 0,707 V\\ \Longrightarrow \\
-	outputspænding = 5 V \cdot 0,707 V \\ \Longrightarrow \\
+	x = 0,707 \\ \Longrightarrow \\
+	outputspænding = 5 V \cdot 0,707 \\ \Longrightarrow \\
 	outputspænding = 3,535 V 
 \end{equation}
 
-På Figur 3.8 ses, at det i praksis er 3,8, hvilket der er acceptabelt. 
+På Figur 3.8 ses, at det i praksis er 3,362 V, hvilket der er acceptabelt. 
 
 \subsubsection{Filtering ved 500 Hz}
-Her forventes, der en dæmpning med 40 dB, da det er et andenordens lavpasfilter, og 500 Hz er en dekade efter cutofffrekvensen. I ligning (3.10) ses beregningen, hvad outputspændingen er efter en dæmpning med 40 dB. 
-
-\begin{equation}
-	40 dB = 20\cdot log(x) \\ \Longrightarrow \\
-	x = 0,01 V\\ \Longrightarrow \\
-	outputspænding = 5 V \cdot 0,01 V \\ \Longrightarrow \\
-	outputspænding = 0,05 V 
-\end{equation}
-
-På Figur 3.9 ses, at det i praksis er 633,6 mV.. Dette er ikke godt, da 633,6/1000 = 0,6, som ikke er tæt på 0,05....  
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/Lavpasfilter_Praktisk_500Hz}
+	\includegraphics[width=1\textwidth]{Figurer/Snip20151202_25}
 	\caption{Lavpasfilter respons 500 Hz}
 	\label{fig:Filter}
 \end{figure}
+
+Her forventes, der en dæmpning med 40 dB, da det er et andenordens lavpasfilter, og 500 Hz er en dekade efter cutofffrekvensen. I ligning (3.10) ses beregningen, hvad outputspændingen er efter en dæmpning på 40 dB. 
+
+\begin{equation}
+	40 dB = 20\cdot log(x) \\ \Longrightarrow \\
+	x = 0,01 \\ \Longrightarrow \\
+	outputspænding = 5 V \cdot 0,01  \\ \Longrightarrow \\
+	outputspænding = 0,05 V 
+\end{equation}
+
+På Figur 3.9 ses, at det i praksis er 47,8 mV. Det omregnes til 0,478 V, hvilket er acceptabelt i forhold til teorien. 
+
+\subsection{Test af signalbehandlingblok}
+
+Testopstillingen ses på Figur 3.10. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Snip20151202_26}
+	\caption{Testopstilling af signalbehandlingblok}
+	\label{fig:Signalbehanlding}
+\end{figure}
+
+Der laves tre forskellige tests, hvor frekvensen varieres mellem 1 Hz, 50 Hz og 500 Hz. Indgangsspændingen er i alle tests 13 mV. 
+\\
+\subsubsection{Test ved 1 Hz}
+På Figur 3.11 ses resultatet ved 1 Hz. Der forventes, at forstærkeren har forstærket signalet op til 5 V samt at filteret ikke har påvirket outputtet, da frekvensen er under 50 Hz, som er filteret cutoffrekvens.
+\\ \\
+I praksis er det lig med 4,874 V - hvilket er acceptabelt.  
+ 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Snip20151202_27}
+	\caption{Signalbehanlding respons 1 Hz}
+	\label{fig:Signalbehanlding}
+\end{figure}
+
+\subsubsection{Test ved 50 Hz}
+På Figur 3.12 ses resultatet ved 50 Hz. Der forventes, at forstærkeren har forstærket signalet op til 5 V samt at filteret har dæmpet outputspændingen med 3 dB, så outputspændingen er lig med 3,535 V. 
+\\ \\
+I praksis er det lig med 3,278 V - hvilket er acceptabelt.    
+  
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Snip20151202_28}
+	\caption{Signalbehanlding respons 50 Hz}
+	\label{fig:Signalbehanlding}
+\end{figure}
+
+\subsubsection{Test ved 500 Hz}
+På Figur 3.13 ses resultatet ved 500 Hz. Der forventes, at forstærkeren har forstærket signalet op til 5 V samt at filteret har dæmpet outputspændingen med 40 dB, så outputspændingen er lig med 0,05 V.    
+\\ \\
+I praksis er det lig med 0,0506 V - hvilket er acceptabelt. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Snip20151202_29}
+	\caption{Signalbehanlding respons 500 Hz}
+	\label{fig:Signalbehanlding}
+\end{figure}
+
+
 
 

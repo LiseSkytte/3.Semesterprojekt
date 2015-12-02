@@ -48,18 +48,22 @@
 \contentsline {subsubsection}{Standardform}{29}{section*.34}
 \contentsline {subsubsection}{Magnitude Bodeplot}{29}{section*.35}
 \contentsline {section}{\numberline {3.3}Test}{30}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Forst\IeC {\ae }rkerblok}{30}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Filterblok}{31}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.1}Test af forst\IeC {\ae }rkerblok}{30}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Test af filterblok}{31}{subsection.3.3.2}
 \contentsline {subsubsection}{Filtering ved 1 Hz}{33}{section*.40}
-\contentsline {subsubsection}{Filtering ved 50 Hz}{34}{section*.42}
+\contentsline {subsubsection}{Filtering ved 50 Hz}{33}{section*.42}
 \contentsline {subsubsection}{Filtering ved 500 Hz}{34}{section*.44}
-\contentsline {chapter}{\chapternumberline {4}SW implementering og test }{37}{chapter.4}
-\contentsline {chapter}{\chapternumberline {5}Acceptest}{39}{chapter.5}
-\contentsline {section}{\numberline {5.1}Accepttest af Use Cases}{39}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Use Case 1}{39}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Use Case 2}{40}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Use Case 3}{40}{subsection.5.1.3}
-\contentsline {subsection}{\numberline {5.1.4}Use Case 4}{40}{subsection.5.1.4}
-\contentsline {subsection}{\numberline {5.1.5}Use Case 5}{41}{subsection.5.1.5}
-\contentsline {subsection}{\numberline {5.1.6}Use Case 6}{41}{subsection.5.1.6}
-\contentsline {section}{\numberline {5.2}Accepttest af ikke-funktionelle krav}{42}{section.5.2}
+\contentsline {subsection}{\numberline {3.3.3}Test af signalbehandlingblok}{34}{subsection.3.3.3}
+\contentsline {subsubsection}{Test ved 1 Hz}{35}{section*.47}
+\contentsline {subsubsection}{Test ved 50 Hz}{36}{section*.49}
+\contentsline {subsubsection}{Test ved 500 Hz}{37}{section*.51}
+\contentsline {chapter}{\chapternumberline {4}SW implementering og test }{39}{chapter.4}
+\contentsline {chapter}{\chapternumberline {5}Acceptest}{41}{chapter.5}
+\contentsline {section}{\numberline {5.1}Accepttest af Use Cases}{41}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Use Case 1}{41}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Use Case 2}{42}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Use Case 3}{42}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}Use Case 4}{42}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.5}Use Case 5}{43}{subsection.5.1.5}
+\contentsline {subsection}{\numberline {5.1.6}Use Case 6}{43}{subsection.5.1.6}
+\contentsline {section}{\numberline {5.2}Accepttest af ikke-funktionelle krav}{44}{section.5.2}
