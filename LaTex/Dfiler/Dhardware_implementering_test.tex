@@ -14,9 +14,9 @@ Som forstærkerblok anvendes INA114, se Figur 3.1. Denne har den fordel, at gain
 INA114 er blevet udleveret som én komponent. Den sorte boks på Figur 3.1 viser, hvilke komponenter INA114 indeholder. Det ses også, at $R_{G}$ er placeret udenfor den sorte boks, hvilket betyder, at det er en variabel modstand, der skal tilkobles INA114.     
 
 \subsubsection{Forstærkning}
-Forstærkningen, Gain, skal forstærke den maksimale inputsspænding fra tryktransduceren, så outputtet bliver 5 V, hvilket er det maksimale DAQ'en kan registrere. Udregningen for forstærkning kan ses i ligning (2.4) til (2.5).
+Forstærkningen, Gain, skal forstærke den maksimale inputsspænding fra tryktransduceren, så outputtet bliver 5 V, hvilket er det interval, der er valgt for DAQ'en. Udregningen for forstærkning kan ses i ligning (2.4) til (2.5).
 \begin{equation}
-	Gain = 370
+	Gain = 666,667
 \end{equation}
 
 
@@ -26,20 +26,20 @@ Båndbredden for denne forstærkerblok, hvor gain er 370, er
 
 \begin{equation}
 	Gain \cdot BW = 1.000.000 \\ \Longrightarrow \\
-	BW = \frac{1.000.000}{370} \\ \Longrightarrow \\
-	BW = 2702 Hz
+	BW = \frac{1.000.000}{666,667} \\ \Longrightarrow \\
+	BW = 1500 Hz
 \end{equation} 
 
 Båndbredden er større end 50 Hz, som var det, båndbredden mindst skulle være. 
 
 \subsubsection{Gainmodstand}
-Gainmodstanden, $R_{G}$ er en variabel modstand, der bestemmer forstærkningen i INA114. INA114 skal have en gain på 370. Ud fra ligning (3.3) kan $R_{G}$ isoleres og beregnes.\\
+Gainmodstanden, $R_{G}$ er en variabel modstand, der bestemmer forstærkningen i INA114. INA114 skal have en gain på 666,667. Ud fra ligning (3.3) kan $R_{G}$ isoleres og beregnes.\\
 
 \begin{equation}
 	Gain = 1+\frac{50k\Omega}{R_g} \\ \Longrightarrow \\
 	R_{G} = \frac{50k\Omega}{Gain - 1} \\ \Longrightarrow \\
-	R_{G} = \frac{50k\Omega}{370 - 1} \\ \Longrightarrow \\
-	R_{G} = 135,5\Omega
+	R_{G} = \frac{50k\Omega}{666,667 - 1} \\ \Longrightarrow \\
+	R_{G} = 75\Omega
 \end{equation}
 
 
@@ -77,6 +77,8 @@ Kondensatoren, C2, skal være 680 nF og kondensatoren, C1, bestemmes til 340 nF,
 	R = 6620 \Omega
 \end{equation}
 
+Ved realiseringen af de to modstande vælge 3k$\Omega$ og 3.6k$\Omega$.  
+
 \subsubsection{Magnitude Bodeplot}
 Bodeplottet i Figur 3.3 viser, at ved -3 dB, hvor cutofffrekvens befinder sig er frekvensen 50 Hz, som var et krav. Det ses også, at grafen er faldet med 40 dB en dekade efter, 500 Hz, som også var et krav.   
 \begin{figure}[H]
@@ -87,7 +89,8 @@ Bodeplottet i Figur 3.3 viser, at ved -3 dB, hvor cutofffrekvens befinder sig er
 \end{figure}
 
 \section{Test}
-Forstærkeren og filteret testes via Analog Discovery \& Waveforms. De testes både være for sig og sidst sammen som signalbehandlingblok. 
+Forstærkeren og filteret testes via Analog Discovery \& Waveforms. De testes både være for sig og sidst sammen som signalbehandlingblok.\\
+Signalbehandlingsblokken testes også, hvor det er tryktransduceren, der leverer spændingen. Dette gøres via en vandsøjle, hvor der skabes et tryk, som tryktransduceren tranformere til en elektrisk spænding.  
 
 \subsection{Test af forstærkerblok}
 Testopstillingen kan ses på Figur 3.4. 
