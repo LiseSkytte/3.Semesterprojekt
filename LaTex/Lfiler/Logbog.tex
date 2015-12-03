@@ -161,15 +161,25 @@ Vi har desuden fået skabt et overblik over hvilke "små" ændringer der skal la
 	\item \end{itemize}
 
 SE LOGBOG 17-11-2015 \\
-Vi har fået rettet BDD, IBD, Grænseflader(2.2 & 2.33), tekst til kondensator (på lager), filter/forstærkerblok, indgangsimpedans og test af forstærkerblok.
+Vi har fået rettet BDD, IBD, Grænseflader(2.2 og 2.33), tekst til kondensator (på lager), filter/forstærkerblok, indgangsimpedans og test af forstærkerblok.
 \\
 \\
 Vi har forsøgt at realisere vores hardware fra fumlebræt til hul-board. Dette arbejdes der videre med imorgen (3.12).
 Vi har rettet UC6 og dertil hørende accepttest. 
 Der er blevet begyndt på software sq diagrammer, og der er blevet programmeret på nulpunktsjusterings funktionen. 
 Der er lavet ændringer i vores GUI pga. rettelser i UC6 efter møde med Peter.
+	
+	
+	
+% Logbog for den 03-12-2015\section{Dato: 03-12-2015 }\hrule\textbf{Omhandler:} Hardware\textbf{Ansvarlig:} Lise og Jakob\textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Hardware\end{itemize}
+
+Vi har idag arbejdet med at flytte vores hardware design fra fumlebræt og over til et veroboard, og samtidig gøre det muligt at tilslutte vores tryktransducer til boardet.\\ 
+Vi fik både filter og forstærker til at virke på vores veroboard, og vi fik også bekræftet at vores hardwaredel virker med tryktransduceren tilsluttet. Dette testede vi ved at puste i transduceren, og se på skærmen at trykket(spændingen) steg.	\\
+Vi skal have kigget på beregninger til implementering af hardware, da vi har påsat en regulator som kontrollerer at der hele tiden kommer 5V som input til transduceren. Den omformer altså de ca. 9V fra batteriet, da tryktransduceren (sandsynligvis) ikke kan holde til et input på 9V.\\
+Med et ændret input fra 9V til 5V, vil der også været et ændret max antal mV fra de tidligere 13,5 mV til ca. 7,5 mV. Kig nærmere på alle de beregninger der knytter sig til det.
+
 
 	
 	
-	
 % Logbog for den 00-00-2015\section{Dato: 00-00-2015 }\hrule\textbf{Omhandler:} \textbf{Ansvarlig:} Nina, Lise, Annsofie, Toke, Anders og Jakob\textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item \end{itemize}
+
