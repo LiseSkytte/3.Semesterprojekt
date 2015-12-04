@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.16)  2 DEC 2015 09:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.16)  3 DEC 2015 15:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1948,34 +1948,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 457--462
 
  []
 
-./Lfiler/Logbog.tex:468: Misplaced alignment tab character &.
-l.468 ...ået rettet BDD, IBD, Grænseflader(2.2 &
-                                                   2.33), tekst til kondensa...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
 
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 473.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 473.
-
-Underfull \hbox (badness 10000) in paragraph at lines 480--485
+Underfull \hbox (badness 10000) in paragraph at lines 467--475
 
  []
 
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 485.
+(babel)             in language  on input line 479.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 485.
+(babel)             in language  on input line 479.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 485.
+(babel)             in language  on input line 479.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 485.
-[9])
+(babel)             in language  on input line 479.
+[9]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 479.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 479.
+
+Underfull \hbox (badness 10000) in paragraph at lines 486--491
+
+ []
+
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 503.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 503.
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--515
+
+ []
+
+)
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 8.
 Package babel Info: Redefining danish shorthand "~
@@ -2000,18 +2005,18 @@ Package rerunfilecheck Info: File `Logbog.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 13.
  ) 
 Here is how much of TeX's memory you used:
- 26859 strings out of 493117
- 477717 string characters out of 6135433
+ 26861 strings out of 493117
+ 477741 string characters out of 6135433
  798921 words of memory out of 5000000
- 29927 multiletter control sequences out of 15000+600000
+ 29928 multiletter control sequences out of 15000+600000
  17001 words of font info for 52 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  40i,13n,40p,10459b,846s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb>
-Output written on /Users/jakobdegn/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Logbog.pdf (10 pages, 97209 bytes).
+Output written on /Users/jakobdegn/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Logbog.pdf (10 pages, 98279 bytes).
 PDF statistics:
- 164 PDF objects out of 1000 (max. 8388607)
- 145 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
- 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 168 PDF objects out of 1000 (max. 8388607)
+ 149 compressed objects within 2 object streams
+ 32 named destinations out of 1000 (max. 500000)
+ 169 words of extra memory for PDF output out of 10000 (max. 10000000)
 

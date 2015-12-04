@@ -223,3 +223,39 @@ Evt. et teori afsnit omkring wheatstone bro, bt osv.
 \\
 \\
 Figurer: Der skal altid være figur tekst. Sammen med figuren og figurteksten, skal man kunne forstå hvad det drejer sig om. Så kan man lave en dokumentations tekst under, hvor man uddyber det mere. 
+
+
+
+\section{Dato: 02-12-2015}
+\hrule
+
+\textbf{Fremmødte:} Lise, Nina, Annsofie, Toke, Anders og Jakob
+
+\textbf{Fraværende:} 
+\\
+\\
+\textbf{Dagsorden}
+\begin{itemize}
+	\item Programmering - kalibrering
+\end{itemize}
+
+\textbf{Referat}
+\\
+Nulpunktsjustering: måler relativt til atmosfærisk tryk
+
+Kalibrering: Portene (afmærkninger) på vandsøjlen passer til faste tryk. Tallet som fås ved kalibrering skal deles op ved analyse, så værdierne/spændingen passer. 
+Kalibrer i software; softwaren undersøger gennemsnittet af de sidste 10 samples (spændingen). 
+
+Least significant bit: Den skal vi IKKE tænke på.
+
+Digital filtrering: Lavpas filter, omkring 30-50 Hz (Peter siger 30). Der skal undersøges, om der er mulighed for at bruge Matlab (FIR-filter) i C sharp. 
+
+Print: Det er okay at sige, at man var tidspresset. Men undersøg mulighederne for at påsætte flere kondensatorer på Rune's print. Alternativet er at lave et Vevo(?)-board. 
+
+Software-diagrammer: Hvad skal der med? Hvad der har relevans. 
+
+Det som gemmes i databasen skal være rådata. Rådata som i mmHg. 
+Selve signalet skal ikke slettes/overskrives. Vi skal tænke mere forskning, hvor man kan gå ind og påvirke blodtrykket og så gemme værdierne. Hver gang der trykkes på "Gem" tilføjes der en ny række med nyt tidsstempel, måleid etc. 
+En tidsbegrænsning på "Gem"-funktionen (af blodtryk), så den fx gemmer (record) 10 sekunder frem(brugerdefineret tid, evt. med en øvre grænse på 60 sek.). Mest af alt så man ikke får 2 timers data. "Gem måling" UC skal derfor ændres. Når man gemmer må der gerne kunne tilføjes en kommentar (optional). 
+	En default tidsværdi (maks), hvis man fx ved at man skal optage i maks 60 sekunder. Skal ændres inden man trykker på "Gem" i Monitor-vindue. 
+

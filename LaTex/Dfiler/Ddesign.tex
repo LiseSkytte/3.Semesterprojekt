@@ -58,13 +58,14 @@ P = Tryk\\
 K = sensitivitet\\
 $V_{+}$ = indgangsspænding\\
 
-For systemet er der valgt, at tryktransducerens målbare område skal ligge i intervallet 0-300 mmHg. Den maksimale udgangsspænding bliver derfor udtrykt fra det maksimale tryk på 300 mmHg, sensitiviteten på 5 $\mu$ og indgangsspændingen på 9 V. 
+For systemet er der valgt, at tryktransducerens målbare område skal ligge i intervallet 0-300 mmHg. Den maksimale udgangsspænding bliver derfor udtrykt fra det maksimale tryk på 300 mmHg, sensitiviteten på 5 $\mu$ og indgangsspændingen på 5 V. Indgangspændingen kommer reelt fra 9 V batterier, men der er valgt at indsætte en 5 V regulator, så man er sikker på, hvad indgangspændingen er, da batterier er ustabile.  
+
 
 \begin{equation}
-	V_{max} = 300 mmHg \cdot 5\mu V \cdot 9 V\\
+	V_{max} = 300 mmHg \cdot 5\mu V \cdot 5 V\\
 \end{equation}
 \begin{equation}
-	V_{max} = 13,5 mV
+	V_{max} = 7,5 mV
 \end{equation}
 
 
@@ -74,8 +75,8 @@ For systemet er der valgt, at tryktransducerens målbare område skal ligge i in
 	\textbf{Grænseflade} & \textbf{Signal} & \textbf{Type} & \textbf{Format} & \textbf{Værdi} \\[-1ex]
 	\midrule
 	Tryktransducer & Blodtryk & in & Tryk & 0 - 300 mmHg \\[-1ex]
-				& Analogt & out & Spænding & +/- 13,5 mV \\[-1ex]
-	Signalbehandling  & Analogt & in & Spænding & +/- 13,5 mV \\[-1ex]
+				& Analogt & out & Spænding & +/- 7,5 mV \\[-1ex]
+	Signalbehandling  & Analogt & in & Spænding & +/- 7,5 mV \\[-1ex]
 			 & Forstærket og filteret analogt & out & Spænding & +/- 5 V \\[-1ex]
 	DAQ			& Forstærket og filteret analogt & in & Spænding & +/- 5 V \\[-1ex]	
 				& Digitalt & out & 16-bit double & 0-5 V \\[-1ex]
@@ -88,9 +89,11 @@ For systemet er der valgt, at tryktransducerens målbare område skal ligge i in
 Herunder er de krævede specifikationer for signalbehandlingsblokken beskrevet. Tryktransducerens beskrives ligeledes, da denne har indflydelse for forstærkerblokkens specifikationer. 
 
 \subsubsection{Tryktransducer}
-Tryktransduceren skal omsætte det fysiske tryk til en elektrisk spænding. Tryktransduceren har en meget høj common mode rejection samt en høj sensitivitet på 5 $\mu$V/V/mmHg +/- 1 \% \footnote{Se datablad for tryktransduceren i bilag} , da de forventede trykændringer er små. Enheden for sensitiviteten angiver hvor mange $\mu$V output, der kommer fra tryktransduceren pr. antal V i tryktransducerens eksitationsspænding pr. mmHg.     
+Tryktransduceren skal omsætte det fysiske tryk til en elektrisk spænding. Tryktransduceren har en meget høj common mode rejection samt en høj sensitivitet på 5 $\mu$V/V/mmHg +/- 1 \% \footnote{Se datablad for tryktransduceren i bilag} , da de forventede trykændringer er små. Enheden for sensitiviteten angiver hvor mange $\mu$V output, der kommer fra tryktransduceren pr. antal V i tryktransducerens eksitationsspænding pr. mmHg.
+
 \subsubsection{Forstærkerblok}
-Forstærkerblokken sørger for, at det meget svage spændingssignal fra tryktransduceren bliver forstærket op til en spænding, der ligger indenfor det måleinterval, der svarer til DAQ'en, som er +/- 5 V. 
+Forstærkerblokken sørger for, at det meget svage spændingssignal fra tryktransduceren bliver forstærket op til en spænding, der ligger indenfor det måleinterval, der svarer til DAQ'en, som er valgt til +/- 5 V.
+ 
 \subsubsection{Filterblok}
 Filterets formål er at frasortere signalets frekvenser, der er højere end 50 Hz, da disse ikke har nogen relevans for blodtryksignalet. Dette skal realiseres ved et andenordens lavpasfilter. 
  
@@ -119,7 +122,7 @@ På figur 2.4 ses IBD for signalbehandlingsblokken. IBD viser, hvordan forstærk
 	\textbf{Grænseflade} & \textbf{Signal} & \textbf{Type} & \textbf{Format} & \textbf{Værdi} \\[-1ex]
 	\midrule
 	Forstærker & Batteri & in & Spænding & +/- 9 V \\[-1ex]
-			   & Analogt & in & Spænding & +/- 13,5 mV \\[-1ex]
+			   & Analogt & in & Spænding & +/- 7,5 mV \\[-1ex]
 			   & Jord	 & out & Spænding & 0 V \\[-1ex]
 			   & Forstærket analogt & out & Spænding & +/- 5 V \\[-1ex]
 	Filter	   & Forstærket analogt & in & Spænding & +/- 5 V\\[-1ex]
@@ -141,13 +144,13 @@ På figur 2.4 ses IBD for signalbehandlingsblokken. IBD viser, hvordan forstærk
  	
  	\begin{equation}
  		Gain = \frac{V_{out}}{V_{in}} \\ \Longrightarrow \\
- 		Gain = \frac{5 V}{13,5 mV}\\ \Longrightarrow \\
- 		Gain = 370
+ 		Gain = \frac{5000 mV}{7,5 mV}\\ \Longrightarrow \\
+ 		Gain = 666,667
  	\end{equation}
  	
  	
  	
- 	\item Indgangspænding: +/- 13,5 mV
+ 	\item Indgangspænding: +/- 7,5 mV
  	\item Eksitationsspænding: +/- 9 V
  	\item Outputspænding: +/- 5 V
  	\item Minimum en båndbredde på 50 Hz
