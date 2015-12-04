@@ -16,30 +16,30 @@ INA114 er blevet udleveret som én komponent. Den sorte boks på Figur 3.1 viser
 \subsubsection{Forstærkning}
 Forstærkningen, Gain, skal forstærke den maksimale inputsspænding fra tryktransduceren, så outputtet bliver 5 V, hvilket er det interval, der er valgt for DAQ'en. Udregningen for forstærkning kan ses i ligning (2.4) til (2.5).
 \begin{equation}
-	Gain = 666,667
+	Gain = 1333,33
 \end{equation}
 
 
 \subsubsection{Båndbredde}
 For INA114 er produktet af båndbredden og forstærkningen en konstant på 1.000.000 \footnote{Se datablad for INA114 s. 2 i bilag}.
-Båndbredden for denne forstærkerblok, hvor gain er 370, er 
+Båndbredden for denne forstærkerblok, hvor gain er 1333,33, er 
 
 \begin{equation}
 	Gain \cdot BW = 1.000.000 \\ \Longrightarrow \\
-	BW = \frac{1.000.000}{666,667} \\ \Longrightarrow \\
-	BW = 1500 Hz
+	BW = \frac{1.000.000}{1333,33} \\ \Longrightarrow \\
+	BW = 750 Hz
 \end{equation} 
 
 Båndbredden er større end 50 Hz, som var det, båndbredden mindst skulle være. 
 
 \subsubsection{Gainmodstand}
-Gainmodstanden, $R_{G}$ er en variabel modstand, der bestemmer forstærkningen i INA114. INA114 skal have en gain på 666,667. Ud fra ligning (3.3) kan $R_{G}$ isoleres og beregnes.\\
+Gainmodstanden, $R_{G}$ er en variabel modstand, der bestemmer forstærkningen i INA114. INA114 skal have en gain på 1333,33. Ud fra ligning (3.3) kan $R_{G}$ isoleres og beregnes.\\
 
 \begin{equation}
 	Gain = 1+\frac{50k\Omega}{R_g} \\ \Longrightarrow \\
 	R_{G} = \frac{50k\Omega}{Gain - 1} \\ \Longrightarrow \\
-	R_{G} = \frac{50k\Omega}{666,667 - 1} \\ \Longrightarrow \\
-	R_{G} = 75\Omega
+	R_{G} = \frac{50k\Omega}{1333,33 - 1} \\ \Longrightarrow \\
+	R_{G} = 37,53\Omega
 \end{equation}
 
 
@@ -104,7 +104,7 @@ Testopstillingen kan ses på Figur 3.4.
 Der ønskes, at ved en indgangsspænding på 13,5 mV vil outputsspændingen være forstærket op til 5 V. Der kunne ikke påtrykkes en spænding på 13,5 mV, men istedet med 13 mV. Outputsspændingen ved 13 mV er 
 
 \begin{equation}
-	13 mV \cdot 370 = 4,8 V
+	7 mV \cdot 1333,33 = 9,3 V
 \end{equation} 
 
 Dette ser, at være det samme, når man tester forstærkeren, se figur 3.5. 

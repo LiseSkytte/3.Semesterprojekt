@@ -89,10 +89,10 @@ For systemet er der valgt, at tryktransducerens målbare område skal ligge i in
 Herunder er de krævede specifikationer for signalbehandlingsblokken beskrevet. Tryktransducerens beskrives ligeledes, da denne har indflydelse for forstærkerblokkens specifikationer. 
 
 \subsubsection{Tryktransducer}
-Tryktransduceren skal omsætte det fysiske tryk til en elektrisk spænding. Tryktransduceren har en meget høj common mode rejection samt en høj sensitivitet på 5 $\mu$V/V/mmHg +/- 1 \% \footnote{Se datablad for tryktransduceren i bilag} , da de forventede trykændringer er små. Enheden for sensitiviteten angiver hvor mange $\mu$V output, der kommer fra tryktransduceren pr. antal V i tryktransducerens eksitationsspænding pr. mmHg.
+Tryktransduceren skal omsætte det fysiske tryk til en elektrisk spænding. Tryktransduceren har en meget høj common mode rejection samt en høj sensitivitet på 5 $\mu$V/V/mmHg +/- 1 \% \footnote{Se datablad for tryktransduceren i bilag} , da de forventede trykændringer er små. Enheden for sensitiviteten angiver hvor mange $\mu$V output, der kommer fra tryktransduceren pr. antal V i tryktransducerens eksitationsspænding pr. mmHg. For at være sikker på, at strømmen igennem wheatestone broen ikke bliver for høj og dermed i sidst ende kan brænder stain-gages af, er der blevet vagt at indsætte en regulator, der omdanner eksitationsspænding fra 9 V batterier til 5 V. 
 
 \subsubsection{Forstærkerblok}
-Forstærkerblokken sørger for, at det meget svage spændingssignal fra tryktransduceren bliver forstærket op til en spænding, der ligger indenfor det måleinterval, der svarer til DAQ'en, som er valgt til +/- 5 V.
+Forstærkerblokken sørger for, at det meget svage spændingssignal fra tryktransduceren bliver forstærket op til en spænding, der ligger indenfor det måleinterval, der svarer til DAQ'en, som er valgt til +/- 10 V.
  
 \subsubsection{Filterblok}
 Filterets formål er at frasortere signalets frekvenser, der er højere end 50 Hz, da disse ikke har nogen relevans for blodtryksignalet. Dette skal realiseres ved et andenordens lavpasfilter. 
@@ -124,10 +124,10 @@ På figur 2.4 ses IBD for signalbehandlingsblokken. IBD viser, hvordan forstærk
 	Forstærker & Batteri & in & Spænding & +/- 9 V \\[-1ex]
 			   & Analogt & in & Spænding & +/- 7,5 mV \\[-1ex]
 			   & Jord	 & out & Spænding & 0 V \\[-1ex]
-			   & Forstærket analogt & out & Spænding & +/- 5 V \\[-1ex]
-	Filter	   & Forstærket analogt & in & Spænding & +/- 5 V\\[-1ex]
+			   & Forstærket analogt & out & Spænding & +/- 10 V \\[-1ex]
+	Filter	   & Forstærket analogt & in & Spænding & +/- 10 V\\[-1ex]
 			   & Jord	 & out & Spænding & 0 V\\[-1ex]
-			   & Filteret analogt & out & Spænding & +/- 5 V\\[-1ex]
+			   & Filteret analogt & out & Spænding & +/- 10 V\\[-1ex]
 	\caption{Kommunikationsprotokol for Instrumenteringsforstærke}	
 \end{longtabu}
 
@@ -135,7 +135,7 @@ På figur 2.4 ses IBD for signalbehandlingsblokken. IBD viser, hvordan forstærk
  \subsection{Forstærkerblok}
  \subsubsection{Specifikationer}
  \begin{itemize}
- 	\item Forstærkningen, Gain, skal forstærke den maksimale inputsspænding, så outputtet bliver 5 V
+ 	\item Forstærkningen, Gain, skal forstærke den maksimale inputsspænding, så outputtet bliver 10 V
  	\begin{equation}
  		Gain \cdot V_{in} = V_{out}
  	\end{equation}
@@ -144,15 +144,15 @@ På figur 2.4 ses IBD for signalbehandlingsblokken. IBD viser, hvordan forstærk
  	
  	\begin{equation}
  		Gain = \frac{V_{out}}{V_{in}} \\ \Longrightarrow \\
- 		Gain = \frac{5000 mV}{7,5 mV}\\ \Longrightarrow \\
- 		Gain = 666,667
+ 		Gain = \frac{10000 mV}{7,5 mV}\\ \Longrightarrow \\
+ 		Gain = 1333,333
  	\end{equation}
  	
  	
  	
  	\item Indgangspænding: +/- 7,5 mV
  	\item Eksitationsspænding: +/- 9 V
- 	\item Outputspænding: +/- 5 V
+ 	\item Outputspænding: +/- 10 V
  	\item Minimum en båndbredde på 50 Hz
  	\item Uendelig indgangsimpedans i teorien
  \end{itemize}
@@ -166,7 +166,7 @@ På figur 2.4 ses IBD for signalbehandlingsblokken. IBD viser, hvordan forstærk
  	\item Unity gain (ingen forstærkning)
  	\item -40 dB ved 500 Hz
  	\item Uendelig indgangsimpedans i teorien
- 	\item Indgangsspænding +/- 5 V
+ 	\item Indgangsspænding +/- 10 V
  	\item Eksitationsspænding +/- 9 V
  \end{itemize}
  
