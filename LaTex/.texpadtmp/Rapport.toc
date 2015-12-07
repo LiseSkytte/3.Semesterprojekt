@@ -8,7 +8,7 @@
 \contentsline {chapter}{\chapternumberline {2}Projektformulering}{3}{chapter.2}
 \contentsline {chapter}{\chapternumberline {3}Baggrund}{5}{chapter.3}
 \contentsline {section}{\numberline {3.1}Blodtryk}{5}{section.3.1}
-\contentsline {section}{\numberline {3.2}Invasiv blodtryksm\IeC {\r a}ling}{6}{section.3.2}
+\contentsline {section}{\numberline {3.2}Invasiv blodtryksm\IeC {\r a}ling}{7}{section.3.2}
 \contentsline {section}{\numberline {3.3}V\IeC {\ae }skefyldt kateter}{8}{section.3.3}
 \contentsline {chapter}{\chapternumberline {4}Systembeskrivelse}{13}{chapter.4}
 \contentsline {chapter}{\chapternumberline {5}Krav}{15}{chapter.5}
