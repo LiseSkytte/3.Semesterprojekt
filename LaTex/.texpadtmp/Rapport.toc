@@ -6,18 +6,19 @@
 \contentsline {chapter}{Ordliste}{vii}{chapter*.4}
 \contentsline {chapter}{\chapternumberline {1}Indledning}{1}{chapter.1}
 \contentsline {chapter}{\chapternumberline {2}Projektformulering}{3}{chapter.2}
-\contentsline {chapter}{\chapternumberline {3}Systembeskrivelse}{5}{chapter.3}
-\contentsline {chapter}{\chapternumberline {4}Krav}{7}{chapter.4}
-\contentsline {chapter}{\chapternumberline {5}Projektbeskrivelse}{9}{chapter.5}
-\contentsline {section}{\numberline {5.1}Projektgennemf\IeC {\o }relse}{9}{section.5.1}
-\contentsline {section}{\numberline {5.2}Metode}{9}{section.5.2}
-\contentsline {section}{\numberline {5.3}Specifikation og analyse}{9}{section.5.3}
-\contentsline {section}{\numberline {5.4}Arkitektur}{9}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Design}{9}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Implementering og test af SW}{9}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}Implementering og test af HW}{9}{subsection.5.4.3}
-\contentsline {section}{\numberline {5.5}Resultater og diskussion}{9}{section.5.5}
-\contentsline {section}{\numberline {5.6}Opn\IeC {\r a}ede erfaringer}{9}{section.5.6}
-\contentsline {section}{\numberline {5.7}Fremtidigt arbejde}{9}{section.5.7}
-\contentsline {chapter}{\chapternumberline {6}Konklusion}{11}{chapter.6}
-\contentsline {chapter}{Litteratur}{13}{chapter*.5}
+\contentsline {chapter}{\chapternumberline {3}Baggrund}{5}{chapter.3}
+\contentsline {chapter}{\chapternumberline {4}Systembeskrivelse}{7}{chapter.4}
+\contentsline {chapter}{\chapternumberline {5}Krav}{9}{chapter.5}
+\contentsline {chapter}{\chapternumberline {6}Projektbeskrivelse}{11}{chapter.6}
+\contentsline {section}{\numberline {6.1}Projektgennemf\IeC {\o }relse}{11}{section.6.1}
+\contentsline {section}{\numberline {6.2}Metode}{11}{section.6.2}
+\contentsline {section}{\numberline {6.3}Specifikation og analyse}{11}{section.6.3}
+\contentsline {section}{\numberline {6.4}Arkitektur}{11}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Design}{11}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Implementering og test af SW}{11}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Implementering og test af HW}{11}{subsection.6.4.3}
+\contentsline {section}{\numberline {6.5}Resultater og diskussion}{11}{section.6.5}
+\contentsline {section}{\numberline {6.6}Opn\IeC {\r a}ede erfaringer}{11}{section.6.6}
+\contentsline {section}{\numberline {6.7}Fremtidigt arbejde}{11}{section.6.7}
+\contentsline {chapter}{\chapternumberline {7}Konklusion}{13}{chapter.7}
+\contentsline {chapter}{Litteratur}{15}{chapter*.5}

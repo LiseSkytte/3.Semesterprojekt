@@ -9,6 +9,7 @@ A level-1 auxiliary file: Rfiler/Runderskrifter.aux
 A level-1 auxiliary file: Rfiler/Rordliste.aux
 A level-1 auxiliary file: Rfiler/Rindledning.aux
 A level-1 auxiliary file: Rfiler/Rprojektformulering.aux
+A level-1 auxiliary file: Rfiler/Rbaggrund.aux
 A level-1 auxiliary file: Rfiler/Rsystembeskrivelse.aux
 A level-1 auxiliary file: Rfiler/Rkrav.aux
 A level-1 auxiliary file: Rfiler/Rprojektbeskrivelse.aux
@@ -18,7 +19,7 @@ I found no \citation commands---while reading file /Users/Lise/Desktop/3.Semeste
 I found no \bibdata command---while reading file /Users/Lise/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Rapport.aux
 You've used 0 entries,
             2118 wiz_defined-function locations,
-            508 strings with 4381 characters,
+            509 strings with 4401 characters,
 and the built_in function-call counts, 18 in all, are:
 = -- 0
 > -- 0
