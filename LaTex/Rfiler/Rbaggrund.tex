@@ -36,10 +36,17 @@ Invasive blodtryksmålinger bruges ofte til monitorering af hæmodynamiske data,
 	\caption{Måleopstilling}
 \end{figure}
 
-På Figur 3.1 ses måleopstillingen for den invasive blodtryksmåling.  
+På Figur 3.1 ses måleopstillingen for den invasive blodtryksmåling. Der føres et væskefyldt kateter ind i personens arterien. Trykposen på Figur 3.1 er fyldt med natriumklorid og fungerer som en del af flushmekanismen. Trykket i posen pumpes op til mellem 180 til 300 mmHg, hvilket er over det systoliske blodtryk. \\
+Slangen fra trykposen går ned til tryktransduceren og flushsystemet. Flushsystemet benyttes til at fjerne bobler fra det væskefyldte kateter. Når fluchsystemet startes, vil man på monitoren kunne se, at trykket stiger til det tryk, der er i trykposen. Når dette stoppes, er systemet udviklet således, at der altid vil løber en dråbe natriumklorid ind i kateteret. Dette forhindre blod i at strømme ud i kateteret. Trykket i det væskefyldte kateter er lig med trykket i personens arterie. Det er dette tryk tryktransduceren transformere om til et elektrisk signal, som kontinuert vises på monitoren. \\
+Tryktransduceren består af fire strain gauges. Strain gauges er en modstandståd, der kan foldes og limes på et hvilket som helst materiale. Modstanden, R bestemmes ud fra længden, l, resistiviteten, $\varrho$ og tværsnitsarealet, A. 
 
-Der føres et væskefyldt kateter ind i arterien. Trykposen på billedet er fyldt med natriumklorid og fungerer som en del af flushmekanismen. Trykket i posen pumpes op til over et systoliske tryk, som ligger mellem 180 til 300 mmHg. Slangen fra trykposen går ned til tryktransduceren og det automatiske flushsystem. Det automatiske flushsystem sidder ved strain gaugen og benyttes desuden til at fjerne bobler således, at en rigtig compliance opnås.  Når det automatiske flushsystem startes, stiger trykket på monitoren. Når dette stoppes, er det udviklet således, at der altid går en dråbe vand ind i kateteret, der skal forhindre blodet i at strømme ud i kateteret. En ændring i arterieblodet medfører også en ændring i kateteret, hvilket man kan se på trykmonitoren. \\\\
-Tryktransduceren indeholder en strain gauge, der måler trykvariationer. Variationerne forekommer, når der sker en forøgelse af inputtrykket i kateteret, som føres videre gennem kateteret og ud til diaphragm/membranen. Dette forårsager en ændring i membranen, hvorpå strain gaugen er fastsat. Strain gaugen transformerer trykændringen til et elektrisk signal, som videresendes til trykmonitoren. Trykmonitoren kan afbilde blodtrykket grafisk, som kan ses på nedenstående figur. Figuren er en afbildning af en invasiv blodtryksmåling, hvor man kan aflæse det diastoliske og systoliske tryk. Det diastoliske tryk svarer til minimumspunkterne, hvor toppunkterne svarer til det systoliske tryk. 
+\begin{equation}
+	R = \frac{l \cdot \varrho}{A}
+\end{equation}
+
+Ændres en eller flere af disse, vil modstandsværdien ændres efterfølgende. Det materiale strain gauges er limet fast på kan altså ændre form, hvilket strain gauges registere. Det er dette denne tryktransducere benytter sig af. De fire strain gauges er limet fast på en membran, som sidder for enden af det væskefyldte kateter. Når blodtrykket ændre sig påvirkes membranen, da den har en meget højere compliance end selve det væskefyldte kateter. Denne forskel i compliance er en af grundene til at dette system kan registrer selv de mindste trykændringer. \\ 
+Trykændringer registreres af de fire strain gauges og transformere dem om til det elektriske signal, som afbildes grafisk. På figur 3.2 ses afbildningen af en invasiv blodtryksmåling, hvor det også er muligt at aflæse det diastoliske- og systoliske blodtryk.  Det diastoliske tryk svarer til minimumspunkterne, hvor toppunkterne svarer til det systoliske tryk.
+
 
 \begin{figure}[H]
 	\centering
@@ -47,33 +54,55 @@ Tryktransduceren indeholder en strain gauge, der måler trykvariationer. Variati
 	\caption{Grafisk afbildning af en invasiv blodtryksmåling}
 \end{figure}
 
-\section{Væskefyldt kateter}
-Et væskefyldt kateter har inerti, friktion og elastiske egenskaber, der også kan betegnes som inertans, modstand og compliance (eftergivelighed). Disse egenskaber kan beskrives som elektriske komponenter i form af en induktor, resistor og kapacitor. 
-\\ \\
-For at kunne måle trykændringen skal compliance af diaphragm/membranen være markant større end compliance for selve kateterets materiale. Derudover må der ikke være bobler i væsken i kateteret, da dette vil medføre en stigning af compliance, så trykændringen ikke længere vil være reel. 
+Strain gauges benyttes i dette tilfældes, da man ønsker, at selv den mindste trykændring skal registreres. Da disse modstandsændringer er så små ønskes disse forstærkes op. For at kunne gøre dette bedst muligt, skal der benyttes et måle setup, som er centraliseret omkring nul. Til dette bruges en Wheatstone bro, nærmere en helbro, se Figur 3.3. 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.5\textwidth]{Figurer/Snip20151207_57}
-	\caption{Wheatstone Bridge i ubalance}
+	\includegraphics[width=0.5\textwidth]{Figurer/Snip20151207_63}
+	\caption{Wheatstone bro}
 \end{figure}
 
-På baggrund af disse forskelle i compliance er det muligt for strain gaugen at måle selv de mindste trykændringer. Strain gaugen udgør Wheatstone broen. Når strain gaugen ændrer sig på grund af en trykændring, vil der ske en spændingsændring mellem de to punkter, C og D.\\ 
-Outputtet bliver derfor ændret, og er ikke længere 0 V. Når denne spændingsændring sker, så går broen i ubalance, og man vil kunne beregne spændingsændringen.
-Det gøres ud ved formlen: 
+En Wheatstone bro er et kredsløb, der består af to serieforbindelser af to modstande, som sidder i parallelforbindelse. I mellem serieforbindelserne kan $V_{out}$ beregnes ud fra spændingen ved punkt C og punkt D.
+
+\begin{equation}
+	V_{out} = V_{C} - V_{D}
+\end{equation} 
+
+Hvis modstandene $R_{1}$ og $R_{3}$ samt $R_{2}$ og $R_{4}$ er ens, vil $V_{out}$ være lig med nul og broen vil være i balance, se Figur 3.4. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{Figurer/Snip20151207_64}
+	\caption{Wheatstone bro i balance}
+\end{figure}
+
+Hvis modstandene $R_{1}$ og $R_{3}$ samt $R_{2}$ og $R_{4}$ er forskellige af hinanden, vil $V_{out}$ være forskellig fra nul og broen vil være i ubalance, se Figur 3.5. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{Figurer/Snip20151207_65}
+	\caption{Wheatstone bro i ubalance}
+\end{figure}
+
+Så når trykændringerne påvirker membranen, vil de fire strain gauges ændre form og dermed ændre modstandsværdi. Dette skaber ubalance i Wheatestone broen og spændingen ændre sig i takt med dette. Spændingsændringen kan beregnes ud fra fomlen (3.5).
+
 
 \begin{equation}
 \centering
 \frac{v_{0}}{v_{in}} = \frac{\Delta R}{R}
 \end{equation}
 
-$\Delta$R beskriver ændringen af modstanden(e). En Wheatstone Bridge benyttes derfor til beregne en modstandsændring ud fra forskellige spændingsfald over de to serieforbindelser, hvorved spændingen mellem C og D er forskellig.
+
+\subsection{Dynamiske egenskaber}
+Et væskefyldt kateter har inerti, friktion og elastiske egenskaber, der også kan betegnes som inertans, modstand og compliance (eftergivelighed). Disse egenskaber kan beskrives som elektriske komponenter i form af en induktor, resistor og kapacitor, se Figur 3.6.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/Snip20151207_58}
 	\caption{Anden ordens lavpassystem}
 \end{figure}
+
+De forskellige egenskaber kan udtrykkes ved ligninger (3.6), (3.7) og (3.8). 
 
 \begin{equation}
 \centering
@@ -89,7 +118,7 @@ R = \frac{8\cdot \mu\cdot l}{\pi\cdot r^4}
 C = \frac{\Delta V}{\Delta P} = \frac{1}{E_{d}}
 \end{equation}
 
-Ovenstående figur viser et anden ordens lavpassystem, der kan beskrives med følgende to overføringsfunktioner:
+Figur 3.6 viser et anden ordens lavpassystem, der kan beskrives med følgende to overføringsfunktioner:
 
 \begin{equation}
 T(s) = \frac{K s}{s^2 + 2\cdot \zeta\cdot \omega_{0}\cdot s + \omega_{0}^2}
@@ -108,25 +137,46 @@ f_{0} = \frac{r}{2} \cdot \sqrt{\frac{1}{l\cdot p \cdot \pi}\cdot \frac{\Delta P
 \begin{equation}
 Q = \frac{r^3}{8 \cdot \mu} \cdot \sqrt{\frac{\rho \cdot \pi}{l}\cdot \frac{\Delta P}{\Delta V}}
 \end{equation}
+ \\
+ 
+Figur 3.7 viser et bodeplot for amplitude og fasen for lavpasfilteret.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/Snip20151207_61}
+	\includegraphics[width=0.8\textwidth]{Figurer/Snip20151207_61}
 	\caption{Bodeplot}
 \end{figure}
 
-Det interessante ved ovenstående, er, at knækfrekvensen ligger på 90 Hz. Dette betyder, at systemet kan medtage frekvenser op til de 90 Hz, hvilket er mere end hvad systemet skal kunne klare ift. en blodtryksmåling, som sker ved omkring 50 Hz. 
+Det interessante er, at knækfrekvensen ligger ved 90 Hz. Dette betyder, at systemet medtager frekvenser op til de 90 Hz, hvilket er mere end, hvad systemet skal kunne klare ift. en blodtryksmåling, hvis frekvenser ikke kommer over 50 Hz.
+\\\\ 
+
+På figur 3.8 kan man se, hvorledes bobler i systemet påvirker systemets knækfrekvens og dermed dens båndbredde samt dæmpningsfaktoren.   
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{Figurer/Snip20151207_62}
-	\caption{Diagram over knækfrekvensen og båndbredden påvirket af bobler og uden}
+	\includegraphics[width=0.5\textwidth]{Figurer/Snip20151207_62}
+	\caption{Diagram over knækfrekvensen og dæmpningsfaktoren påvirket af bobler og uden}
 \end{figure}
 
-Hvis der er bobler tilstede i kateteret, bliver der samtidig tilført ekstra compliance. Dette medvirker til, at knækfrekvensen forekommer tidligere, hvilket betyder, at båndbredden bliver mindre. Som det ses i ovenstående figur, er knækfrekvensen mindre og dæmpningsfaktoren større, når der er bobler tilstede i kateteret. En mindre knækfrekvens forårsager, at systemet kun lukker frekvenser fra 0 til 22 Hz igennem, hvilket ikke er tilstrækkeligt til at repræsentere en optimal blodtryksmåling, da denne normalt ligger mellem 0 til 50 Hz. Dæmpningsfaktoren øges, når compliance stiger. Det vil sige, at jo større dæmpningsfaktor og compliance, jo mindre quality, jo større tab over system. Det ses ved ligningen for dæmpningsfaktoren:
+Hvis der er bobler tilstede i kateteret, bliver der samtidig tilført ekstra compliance. Dette medvirker til, at knækfrekvensen forekommer tidligere, hvilket betyder, at båndbredden bliver mindre. Som det ses i Figur 3.8, er knækfrekvensen mindre og dæmpningsfaktoren større, når der er bobler tilstede i kateteret.\\ 
+En mindre knækfrekvens forårsager, at systemet kun lukker frekvenser fra 0 til 22 Hz igennem, hvilket ikke er tilstrækkeligt til at repræsentere en optimal blodtryksmåling. Dæmpningsfaktoren øges, når compliance stiger. Det vil sige, at jo større dæmpningsfaktor og compliance, jo mindre quality, jo større tab over system. Det ses ved ligningen for dæmpningsfaktoren:
 \begin{equation}
 \centering
 \zeta = \frac{1}{2 \cdot Q}
 \end{equation}
 
 For at undgå bobler i væsken, kan man benytte føromtalte flushmekanisme, hvor man vha. trykposen kan erstatte luftbobler med natriumklorid.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
