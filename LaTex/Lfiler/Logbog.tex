@@ -2,15 +2,20 @@
 
 % Logbog for den 08-09-2015\section{Dato: 08-09-2015 }\hrule\textbf{Omhandler:} Udarbejdelse af samarbejdskonkrakt \textbf{Ansvarlig:} Lise, Nina, Toke, Anders og Jakob\textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Udarbejdelse af samarbejdsaftale	\item Forklaring af Github	\item Planlægning af vejledermøde\end{itemize}Samarbejdsaftalen er udarbejdet og er blevet lagt på Github til godkendelse af alle gruppens medlemmer.\newline Lise introducerede Github til gruppens medlemer.\newline Annsofie skriver til vores vejleder angående møde mandag d. 14-09-2015 kl. 10.15\newline Til næste møde skal "vejledning til 3. semester projekt" være læst og forstået.\newline
 	
-% Logbog for den 21-09-2015\section{Dato: 21-09-2015 }\hrule\textbf{Omhandler:} Kravspecifikation\textbf{Ansvarlig:} Lise, Nina, Annsofie, Toke, Anders og Jakob\textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Kravspecifikation\end{itemize}Vi vil implementere systole og diastole på vores blodtryksmåler.En knap i GUI'en til at bestemme om filteret skal være aktivt eller passivt.En knap i GUI'en til at kalibrere.En 'Start/record'-knap der også optager lyd de første 30 sek. eks.EN 'Start'-knap til at starte blodtryksmåling.Vi dropper login funktionen.Vi talte om en form for talefunktion, der optager når lægen råber patientens informationer op. Den lydfil skal så kobles til den blodtryksmåling, som foretages fx. i ambulancen. Vi skal have defineret: System, borger, UI
+
+
+% Logbog for den 21-09-2015\section{Dato: 21-09-2015 }\hrule\textbf{Omhandler:} Kravspecifikation\textbf{Ansvarlig:} Lise, Nina, Annsofie, Toke, Anders og Jakob\textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Kravspecifikation\end{itemize}Vi vil implementere systole og diastole på vores blodtryksmåler.En knap i GUI'en til at bestemme om filteret skal være aktivt eller passivt.En knap i GUI'en til at kalibrere.En 'Start/record'-knap der også optager lyd de første 30 sek. eks.EN 'Start'-knap til at starte blodtryksmåling.Vi dropper login funktionen.Vi talte om en form for talefunktion, der optager når lægen råber patientens informationer op. Den lydfil skal så kobles til den blodtryksmåling, som foretages fx. i ambulancen. Vi skal have defineret: System, borger, UI
+
 
 
 % Logbog for den 23-09-2015\section{Dato: 23-09-2015 }\hrule\textbf{Omhandler:} Kravspecfikation \textbf{Ansvarlig:} Lise, Nina, Annsofie, Toke, Anders og Jakob\textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Definationer	\item Aktør-kontekst diagram	\item Use Case diagram	\item Use Case forløb\end{itemize}Ordliste:\\ Use Case 1 = UC1 \\PhysioNet + Analog-Discovery = Borger, som er en Package \\Analog-Discovery = AD \\Der er blevet lavet et udkast til AK og UC-diagram. \\Vi har en Bruger som primær aktør. Vi har lavet en package med PhysioNet og AD, som repræsentere Borger. DAQ er en sekundær aktør, der påvirker Borger. Databasen er også en sekundær aktør. Vision for BT-måler:\\Apperatet skal være fungerende som en "normal" BT-måler med mulighed for visning af kontinuerligt BT med/uden filter. Derudover skal der være mulighed for at optage lydsekvenser direkte på apperatet som kan bruges som metadata til målingen, uden at bruger skal indtaste data på UI. Dette skal implementeres i en Rec. knap der tænder for mikrofonen og optagen en lydsekvens på f.eks. 30 sek, og derefter slukker. Denne lydsekvens kunne bruges til at dokumentere information om Borger. Disse kunne være alder, køn, traume, ABCDE (førsthjælp), mv. på Borger der monitoreres. Når blodtryksmålingen gemmes på database eller fil, bliver lydsekvensen gemt sammen med denne. Dette kan anvendes til forskning senere. Vi ønsker også at vis dia/sys i UI. 
+
 
 	
 
 % Logbog for den 29-09-2015\section{Dato: 29-09-2015 }\hrule\textbf{Omhandler:} Kravspecifikation \textbf{Ansvarlig:} Alle \textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}\item Lave UC's om samt AK- og UC-diagammer\end{itemize}Efter mødet med Peter i torsdags måtte vi indse, at ideen med optagelse ikke var nogen god ide - eller Peter mente i hvert fald ikke, det var nødvendigt. Han vil meget heller have, at vi kigger forskningsbaseret på opgaven og holder os indenfor de krav, der er stillet til projektet.\\Derfor er vi gået over til, at holde det til kravene. Derfor har vi udarbejdet nogle nye UC's - der er kommet 5 indtil videre. \begin{itemize}	\item Vis måling 	\item Kalibrer	\item Nulpunktjustér 	\item Aktivér digitalt filter	\item Gem \end{itemize}Disse fik vi udformet og aftalte at mødes i morgen igen, for at få alle de ikke-funktionelle krav og AT. Anders og Lise gik lidt igang med at kigge på hardwarddelen. Altså har siddet også udregnet lidt på, hvad det er for nogle komponentværdier, vi skal arbejde med for at designe vores lavpasfiltre.  
 
+	
 	
 % Logbog for den 30-09-2015\section{Dato: 30-09-2015 }\hrule\textbf{Omhandler:} Kravspecifikation og Accepttest  \textbf{Ansvarlig:} Alle \textbf{Logbog}\\
 \\
@@ -19,6 +24,7 @@
 	
 Igen snakkede vi lidt om funktionaliteten af vores produkt og kom frem til at der skulle ændres lidt igen. Nu har vi altså 6 UC, hvor vi også byttede om på 1 og 2. Så nu hedder det: \begin{itemize}	\item Kalibrer	\item Vis måling 	\item Nulpunktjustér 	\item Deaktivér filter 	\item Aktivér filter	\item Gem \end{itemize}Ikke-funktionelle krav er nedskrevet i forhold til (F)RUPS(+). Accepttest er også blevet lavet færdig til Review. 
 
+	
 	
 
 % Logbog for den 01-10-2015\section{Dato: 01-10-2015 }\hrule\textbf{Omhandler:} Brødtekst til Kravspecifikation \textbf{Ansvarlig:} Lise \textbf{Logbog}\\
@@ -30,9 +36,11 @@ Igen snakkede vi lidt om funktionaliteten af vores produkt og kom frem til at de
 
 Lavede lige hurtig lidt brødtekst til indledning, AK-diagram samt UC-diagram. 
 
+
 % Logbog for den 06-10-2015\section{Dato: 06-10-2015 }\hrule\textbf{Omhandler:} Review, tidsplan og hardware  \textbf{Ansvarlig:} Nina, Lise, Toke, Anders og Jakob
 
 \textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Review af gruppe 2's KS og AT	\item Udvikling af tidsplan	\item Videreudvikling af hardware\end{itemize}Der er blevet lavet review af gruppe 2's KS og AT, og givet kommentarer hertil. Der er i gruppen blevet udarbejdet en tidsplan, hvori deadlines fra IHA er inkluderet for accepttest, kravspecifikation, design, accepttest med vejleder aflevering. Dertil har gruppen selv tilføjet en række deadlines for software, hardware, rapportskrivning, dokumentation og korrekturlæsning. Alle deadlines er lagt ind i en tabel for at skabe overblik, således at tidsplanen kan benyttes som pejlmærke for hvad vi skal lave og hvornår.Der er desuden blevet udarbejdet en detaljeret tidsplan, hvor vi beskriver det grundlæggende for udviklingsprocessen.Anders og Toke arbejdede videre med hardware delen på fumlebrættet.Forsøger at aftale et møde med Peter mandag eller tirsdag efter kl. 12.00 i uge 43.
+	
 	
 
 % Logbog for den 08-10-2015\section{Dato: 08-10-2015 }\hrule\textbf{Omhandler:} Review af kravspecifikation og accepttest \textbf{Ansvarlig:} Alle\textbf{Logbog}\\
@@ -41,11 +49,13 @@ Lavede lige hurtig lidt brødtekst til indledning, AK-diagram samt UC-diagram.
 
 	
 
+
 % Logbog for den 19-10-2015\section{Dato: 19-10-2015 }\hrule\textbf{Omhandler:} Design \textbf{Ansvarlig:} Annsofie, Nina, Jakob og Lise
 \textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Udarbejdelse af BDD diagram for systemet
 	\item Udarbejdelse af SD'er(generel form) for alle use cases
 	\item Videreudvikling af hardwaredelen\end{itemize}Der er blevet startet på BDD diagrammet for systemet + beskrivelsen. Ikke færdiggjort.
 Der blevet lavet udkast for SD i generel form til samtlige use cases. 
+
 
 
 
@@ -59,6 +69,8 @@ Der er blevet lavet om på BDD, så der nu er ports med. Der er også blevet lav
 Vi har snakket med Kim om vores SD, og vi fandt ud af, at vi havde lavet en blanding af de to forskellige sekvensdiagrammer. Vi har valgt, at vi vil lave sekvensdiagrammer for softwaren (dem der er i applikationsmodellen) dog for hver UC.
 \\ \\
 I morgen skal vi hele gruppe side og snakke om sekvensdiagrammerne, så vi bliver enige om, hvordan softwaren skal bygges op.  
+	
+	
 	
 
 % Logbog for den 27-10-2015\section{Dato: 27-10-2015 }\hrule\textbf{Omhandler:} Rettelse af use cases, ak-diagram og kravspec\textbf{Ansvarlig:} Jakob, Toke, Nina, Annsofie, Lise 
@@ -77,6 +89,7 @@ Vi mangler stadig at opdatere nogle de ikke-funktionelle krav ift. de GUI krav v
 
 
 
+
 % Logbog for den 28-10-2015
 \section{Dato: 28-10-2015 }\hrule\textbf{Omhandler:} Anders har fået Texpad til at virke. \textbf{Ansvarlig:} Anders
  \textbf{Logbog}
@@ -90,6 +103,7 @@ Dag 28. Jeg har omsider fået Texpad til at typesette. Dette medfører at jeg ka
 
 
 
+
 % Logbog for den 02-11-2015
 \section{Dato: 02-11-2015 }\hrule\textbf{Omhandler:} Udarbejdelse af design  \textbf{Ansvarlig:} Lise, Annsofie, Toke, Anders og Jakob
 \textbf{Logbog}\\\\
@@ -98,6 +112,7 @@ Dag 28. Jeg har omsider fået Texpad til at typesette. Dette medfører at jeg ka
 
 Vi har udarbejdet en domænemodel, samt skrevet uddybbende tekster til design/diagrammer. 
 Klassediagrammer er blevet skrevet ind i Visio. 
+
 
 
 
@@ -120,11 +135,13 @@ Der er lavet en versionshistorik for designfasen.
 
 
 
+
 % Logbog for den 12-11-2015
 \section{Dato: 12-11-2015 }\hrule\textbf{Omhandler:} Review \textbf{Ansvarlig:} Lise, Annsofie, Nina, Toke, Anders og Jakob
 \textbf{Logbog}\\\\
 \textbf{Dagsorden:}\begin{itemize}	\item Rettelser af design efter review
 \end{itemize}
+
 
 
 
@@ -153,8 +170,10 @@ Vi har desuden fået skabt et overblik over hvilke "små" ændringer der skal la
 
 
 
+
 % Logbog for den 01-12-2015\section{Dato: 01-12-2015 }\hrule\textbf{Omhandler:} Rapport\textbf{Ansvarlig:} Lise\textbf{Logbog}\\
 \\Rapport dokumentet er blevet oprettet med de forskellige afsnit den skal indeholde. 
+
 
 % Logbog for den 02-12-2015\section{Dato: 02-12-2015 }\hrule\textbf{Omhandler:} \textbf{Ansvarlig:} Nina, Lise, Annsofie, Toke, Anders og Jakob\textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Ret use case navne mv.
 	\item Lav sq diagrammer til software design
@@ -171,6 +190,7 @@ Der er lavet ændringer i vores GUI pga. rettelser i UC6 efter møde med Peter.
 	
 	
 	
+	
 % Logbog for den 03-12-2015\section{Dato: 03-12-2015 }\hrule\textbf{Omhandler:} Hardware\textbf{Ansvarlig:} Lise og Jakob\textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Hardware\end{itemize}
 
 Vi har idag arbejdet med at flytte vores hardware design fra fumlebræt og over til et veroboard, og samtidig gøre det muligt at tilslutte vores tryktransducer til boardet.\\ 
@@ -181,5 +201,14 @@ Med et ændret input fra 9V til 5V, vil der også været et ændret max antal mV
 
 	
 	
-% Logbog for den 00-00-2015\section{Dato: 00-00-2015 }\hrule\textbf{Omhandler:} \textbf{Ansvarlig:} Nina, Lise, Annsofie, Toke, Anders og Jakob\textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item \end{itemize}
+% Logbog for den 07-12-2015\section{Dato: 07-12-2015 }\hrule\textbf{Omhandler:} Færdiggørelse af produkt\textbf{Ansvarlig:} Nina, Lise, Annsofie, Toke, Anders og Jakob\textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Færdiggøre hardware
+	\item Færdiggøre software
+	\item Baggrundsafsnit\end{itemize}
 
+Vi har fået testet på vores vero-board, og det er nu klar til at blive implementeret sammen med softwaren. 
+Der er blevet skrevet videre på baggrundsafsnittet - herunder om wheatstonebridge.
+
+
+	
+	
+% Logbog for den 00-00-2015\section{Dato: 00-00-2015 }\hrule\textbf{Omhandler:} \textbf{Ansvarlig:} Nina, Lise, Annsofie, Toke, Anders og Jakob\textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item \end{itemize}
