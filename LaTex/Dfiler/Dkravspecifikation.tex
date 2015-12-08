@@ -91,18 +91,15 @@ Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forsk
     Initiering &&	Startes af Forsker\\
     Forudsætninger &&  System er aktivt og tilgængeligt\\
     Resultat &&		System er kalibreret                         \\ \midrule
-    Hovedforløb &    1. &	 Kalibrering-vinduet vises ved opstart\\[-1ex]  				
-    			&    2. &    Tidligere kalibreringsdata vises i Kalibrering-vindue\\[-1ex]
-    			&	 3. &	 Forsker ønsker at udføre kalibrering    			\newline
-    						 [3.a \textit{Forsker vælger ikke at kalibrere}]\\
-    			&    4.	&	 Forsker indtaster målte kalibreringsdata
-\newline
-    						 [4.a \textit{Indtastede kalibreringsdata er ugyldige}]\\
-                &    5.	&	 System kalibrerer\\
-                &	 6. &	 Det fremgår i Kalibrering-vinduet at kalibrering er udført \newline\\ \midrule
+    Hovedforløb &    1. &	 Kalibrering-vinduet vises ved opstart og 					tidligere kalibreringsdata vises\\[-1ex]  
+    			&	 2. &	 Forsker indtaster målte kalibreringsdata    			\newline
+    						 [2.a \textit{Forsker vælger ikke at kalibrere}]\newline
+    						 [2.b \textit{Indtastede kalibreringsdata er ugyldige}]\\
+                &    3.	&	 System kalibrerer\\
+                &	 4. &	 Det fremgår i Kalibrering-vinduet, at kalibrering er udført \newline\\ \midrule
                 
-    Undtagelser &    3.a &   Forsker ønsker ingen kalibrering. UC1 afsluttes og Kalibrering-vinduet lukkes  \\
-    			&	 4.a &	 Det fremgår i Kalibrering-vinduet at indtastede kalibreringsdata er ugyldige. Forsætter ved UC1 punkt 4  \\ \bottomrule
+    Undtagelser &    2.a &   Forsker ønsker ingen kalibrering. UC1 afsluttes og Kalibrering-vinduet lukkes  \\
+    			&	 2.b &	 Det fremgår i Kalibrering-vinduet, at indtastede kalibreringsdata er ugyldige. Forsætter ved UC1 punkt 2  \\ \bottomrule
 \caption{Fully dressed Use Case 1.}
 \label{UC1}
 \end{longtabu}
@@ -202,19 +199,17 @@ Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forsk
     Initiering &&	Startes af Forsker\\
     Forudsætninger &&  System er aktivt og tilgængeligt. UC2 kører  \\
     Resultat &&		Data er gemt i Database                 \\ \midrule
-    Hovedforløb &    1. &    Forsker bestemmer optagelses længde for målingen \newline
-    						 [1.a \textit{Forsker ændrer ikke optagelses længden for målingen}]\\   						 
+    Hovedforløb &    1. &    Forsker bestemmer optagelseslængde for målingen \newline
+    						 [1.a \textit{Forsker ændrer ikke optagelseslængden for målingen}]\\   						 
                 &    2. &    Forsker igangsætter optagelse af målingen 		 \\[-1ex] 
                 &    3.	&	 Målingen stopper\newline
-                			 [3.a \textit{Forsker stopper optagelsen af måling inden optagelses længden er nået}]\\
-                &	 4.	&	 Forsker vælger at gemme målingen\\[-1ex]			 
-                &	 5. &    System åbner Gem-vinduet \\[-1ex]
-                &	 6. &	 Forsker indtaster oplysninger om målingen \\[-1ex]
-                &	 7. &	 Forsker trykker på "OK"\--knappen 				 \\[-1ex]
-                &	 8. &	 System gemmer målingen \\[-1ex]
-                &	 9.	&	 Det fremgår af 	Gem-vinduet, at målingen 		 er gemt\newline\\ \midrule
+                			 [3.a \textit{Forsker stopper optagelsen af måling inden optagelseslængden er nået}]\\
+                &	 4.	&	 Forsker vælger at gemme målingen og Gem-vinduet åbnes\\[-1ex]			 
+                &	 5. &	 Forsker indtaster oplysninger om målingen \\[-1ex]
+                &	 6. &	 Forsker trykker på "OK"\--knappen og system gemmer målingen				 \\[-1ex]
+                &	 7.	&	 Det fremgår af 	Gem-vinduet, at målingen 		 er gemt\newline\\ \midrule
                 
-    Undtagelser &    1.a &   Forsker ønsker ikke at ændre optagelses				længde for målingen. Forsætter ved punkt 2 i UC6 \\
+    Undtagelser &    1.a &   Forsker ønsker ikke at ændre optagelseslængde for målingen. Forsætter ved punkt 2 i UC6 \\
       			&    3.a &   Forsker stopper optagelse af målingen. Forsætter ved punkt 4 i UC6  \\
 \bottomrule
     
@@ -229,7 +224,7 @@ De ikke-funktionelle krav er specificeret ved brug af redskabet (F)URPS+, der st
 \subsection{Functionality}
 \begin{itemize}
 	\item System skal kunne vise en kontinuerlig blodtryksignal i Monitor-vinduet.
-	\item System skal kunne vise Systole-, Diastole- og Pulsværdier med op til tre cifre.
+	\item System skal kunne vise systole-, diastole- og pulsværdier med op til tre cifre.
 	\item System skal kunne vise et blodtrykssignal med og uden et digitalt filter.
 	\item System skal kunne nulpunktsjustere blodtrykssignalet.
 	\item System skal kunne gemme en blodtryksmåling i en database.
@@ -268,7 +263,9 @@ De ikke-funktionelle krav er specificeret ved brug af redskabet (F)URPS+, der st
 	\item Blodtrykssignalet skal vises maksimalt 5 sekunder efter UC1 er afsluttet.
 	\item Systemet skal vise en graf for blodtryksmålingen, hvor y-aksen er mmHg og x-aksen er tid i sekunder.
 	\item Systemet skal kunne måle blodtryksværdier fra 0 til 300 mmHg.
-	\item Blodtrykssignalet vises ????????????
+	\item Blodtrykssignalet vises kontinuerligt over et interval af fire sekunder af gangen.
+	\item Blodtrykssignalet vises via en rød kurve. 
+	\item Y-aksen varierer efter blodtrykssignalets maksimum- og minimumværdier.  
 \end{itemize}
 
 \subsection{Supportability}

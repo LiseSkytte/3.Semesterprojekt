@@ -6,6 +6,7 @@
     \midrule
     1.0		&	30-09-2015	& Alle 	&	Første udkast. Klar til Review\\[-1ex]
     2.0		&	08-10-2015	& Alle		&	Rettelser efter review møde\\[-1ex] 
+    3.0		&	08-12-2015	& Alle	&	Rettelse efter ændringer i UC\\[-1ex]
 \label{version_Systemark}
 \end{longtabu}
 
@@ -23,15 +24,15 @@
     \\ \midrule
     1. & Start system &   Kalibrering-vinduet og seneste kalibreringstidspunkt vises  &     &		%{\Huge \checkmark}
     \\
-    2. & Indtast kalibreringsdata &   Der kan indtastes kalibreringsdata i de forskellige tekstbokse  &     &		%{\Huge \checkmark}
+    2. & Indtast kalibreringsdata  &   Der kan indtastes kalibreringsdata i de forskellige tekstbokse   &     &		%{\Huge \checkmark}
     \\
-    3. & Udfør kalibrering &    System kalibrerer og bekræfter fuldført kalibrering  &    &		%{\Huge \checkmark}
+    3. & Tryk på "OK"\--knap for at udføre kalibrering  &     System kalibrerer og bekræfter fuldført kalibrering  &    &		%{\Huge \checkmark}
 	\\ \midrule
 	~ &\textit{Undtagelse} & ~ & ~ & 
 	\\ \midrule	
-    1a. & Ønsker ikke kalibrering &    Kalibrering-vinduet lukkes ned  &     &		%{\Huge \checkmark}
+    2a. & Tryk på det røde kryds øverst i højre hjørne, hvis kalibrering ikke ønskes &    Kalibrering-vinduet lukkes ned  &     &		%{\Huge \checkmark}
     \\
-    2a. & Kalibreringsdata er ugyldige &    System informerer om ugylidge kalibreringsdata  &     &		%{\Huge \checkmark}
+    2b. & Indtast ugyldige kalibreringsdata &    System informerer om ugyldige kalibreringsdata  &     &		%{\Huge \checkmark}
  \\ \bottomrule
  
 \caption{Accepttest af Use Case 1.}\\
@@ -47,7 +48,7 @@
 	\midrule
 	&\textit{Hovedforløb} & & & 
 	\\ \midrule
-	1. &System viser Monitor-vinduet & Blodtryksignal samt Systole-, Diastole- og pulsværdier udskrives i Monitor-vinduet& & %{\Huge \checkmark}
+	1. &Udfør Use Case 1 og observér Monitor-vinduet & Det filtrerede blodtryksignal samt systole-, diastole- og pulsværdier udskrives i Monitor-vinduet& & %{\Huge \checkmark}
 	\\ \midrule
 		~ &\textit{Undtagelse} & ~ & ~ & 
 	\\ \midrule
@@ -67,12 +68,15 @@
     \midrule
     ~ &\textit{Hovedforløb} & ~ & ~ &
     \\ \midrule
-    1. & Udfør nulpunktsjustering &    System nulpunktsjusterer og bekræfter fuldført nulpunktsjustering. Tidsstempel opdateres  &    &		%{\Huge (\checkmark)}
+    1. & Tryk på "Nulpunktjustér"\--knap &    System nulpunktsjusterer  &    &		%{\Huge (\checkmark)}
+    \\
+    2. & Observér kurven & Værdien af kurven er lig 0 &		 & %{\Huge (\checkmark)}
+    \\
+    3. & Observér Monitor-vinduet & Tidsstempel for nulpunktjustering vises & 	& %{\Huge (\checkmark)}
 	\\ \midrule
 	~ &\textit{Undtagelser} & ~ & ~ & 
 	\\ \midrule	
  \\ \bottomrule
- 
 \caption{Accepttest af Use Case 3.}\\
 \label{AT_UC3}
 \end{longtabu}
@@ -87,7 +91,9 @@
     \midrule
     ~ &\textit{Hovedforløb} & ~ & ~ &
     \\ \midrule
-    1. & Deaktivér digitalt filter &    Digital filter deaktiveres og det ufiltrerede blodtrykssignal udskrives i Monitor-vinduet &     &		%{\Huge \checkmark}
+    1. & Markér "Off"\--knap under "Filter" i Monitor-vinduet &    Digital filter deaktiveres &     &		%{\Huge \checkmark}
+    \\
+    2. & Observér blodtrykssignalet & Det ufiltrerede blodtrykssignal udskrives i Monitor-vindue & & 		%{\Huge \checkmark}
 	\\ \midrule
 	~ &\textit{Undtagelser} & ~ & ~ & 
 	\\ \midrule	
@@ -107,7 +113,9 @@
     \midrule
     ~ &\textit{Hovedforløb} & ~ & ~ &
     \\ \midrule
-    1. & Aktivér digitalt filter &    Digitalt filter aktiveres og det filtrerede blodtrykssignal udskrives i Monitor-vinduet &   &		%{\Huge \checkmark}
+    1. & Markér "On"\--knap under "Filter" i Monitor-vinduet &    Digitalt filter aktiveres &   &		%{\Huge \checkmark}
+    \\
+    2. & Observér blodtrykssignalet & Det filtrerede blodtrykssignal udskrives i Monitor-vinduet & & 	%{\Huge \checkmark}
    	\\ \midrule
 	~ &\textit{Undtagelser} & ~ & ~ & 
 	\\ \midrule	
@@ -127,15 +135,19 @@
     \midrule
     ~ &\textit{Hovedforløb} & ~ & ~ &
     \\ \midrule
-    1. & Skriv kommentar og fastsæt maximum længde for måling i Moniter-vinduet &    Kommentar og ændret maximum længde for måling vises i Monitor-vinduet &   &		%{\Huge \checkmark}
+    1. & Indtast ønsket optagelseslængde for målingen &    Optagelseslængden ændres &   &		%{\Huge \checkmark}
     \\
-    2. & Igangsæt optagelse af måling & Optagelse af måling igangsættes &		&	%{\Huge \checkmark}
+    2. & Tryk på "Rec"\--knap & Optagelse af måling igangsættes og nedtælling vises &		&	%{\Huge \checkmark}
     \\
-    3. & Stop optagelse af måling & Optagelse af måling stoppes og Gem-vinduet åbnes &		&	%{\Huge \checkmark}
+    3. & Vent til optagelseslængden er nået & Optagelse af måling stoppes &		&	%{\Huge \checkmark}
     \\
-    4. & Indtast metadata & Datafelterne udfyldes &		&	%{\Huge \checkmark}
+    4. & Tryk på "Gem"\--knap & Gem-vinduet åbnes &		&	%{\Huge \checkmark}
     \\
-    5. & Tryk på "OK"\--knappen & System gemmer og bekræfter at data er gemt i Monitor-vinduet &		& %{\Huge \checkmark}
+    5. & Indtast oplysninger om målingen & Tekstboksene er blevet udfyldt &		& %{\Huge \checkmark}
+    \\
+    6. & Tryk på "OK"\--knap &	System gemmer målingen, og det er ikke muligt at trykke på andre knapper end det røde kryds øverst i højre hjørne & & %{\Huge \checkmark}
+    \\
+    7. & Observér Gem-vinduet & Det fremgår af Gem-vinduet, at målingen er gemt & & %{\Huge \checkmark}
    	\\ \midrule
 	~ &\textit{Undtagelser} & ~ & ~ & 
 	\\ \midrule	

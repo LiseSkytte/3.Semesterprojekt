@@ -63,7 +63,7 @@
 \contentsline {subsection}{\numberline {5.1.1}Use Case 1}{41}{subsection.5.1.1}
 \contentsline {subsection}{\numberline {5.1.2}Use Case 2}{42}{subsection.5.1.2}
 \contentsline {subsection}{\numberline {5.1.3}Use Case 3}{42}{subsection.5.1.3}
-\contentsline {subsection}{\numberline {5.1.4}Use Case 4}{42}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.4}Use Case 4}{43}{subsection.5.1.4}
 \contentsline {subsection}{\numberline {5.1.5}Use Case 5}{43}{subsection.5.1.5}
-\contentsline {subsection}{\numberline {5.1.6}Use Case 6}{43}{subsection.5.1.6}
+\contentsline {subsection}{\numberline {5.1.6}Use Case 6}{44}{subsection.5.1.6}
 \contentsline {section}{\numberline {5.2}Accepttest af ikke-funktionelle krav}{44}{section.5.2}
