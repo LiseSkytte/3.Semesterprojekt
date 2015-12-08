@@ -13,7 +13,7 @@
 \contentsline {subsection}{\numberline {1.4.2}Usability}{9}{subsection.1.4.2}
 \contentsline {subsection}{\numberline {1.4.3}Reliability}{9}{subsection.1.4.3}
 \contentsline {subsection}{\numberline {1.4.4}Performance}{9}{subsection.1.4.4}
-\contentsline {subsection}{\numberline {1.4.5}Supportability}{9}{subsection.1.4.5}
+\contentsline {subsection}{\numberline {1.4.5}Supportability}{10}{subsection.1.4.5}
 \contentsline {subsection}{\numberline {1.4.6}Andre(+)}{10}{subsection.1.4.6}
 \contentsline {chapter}{\chapternumberline {2}Design}{11}{chapter.2}
 \contentsline {section}{\numberline {2.1}Systemarkitektur}{11}{section.2.1}

@@ -93,16 +93,16 @@ Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forsk
     Resultat &&		System er kalibreret                         \\ \midrule
     Hovedforløb &    1. &	 Kalibrering-vinduet vises ved opstart\\[-1ex]  				
     			&    2. &    Tidligere kalibreringsdata vises i Kalibrering-vindue\\[-1ex]
-    			&	 3. &	 Forsker indtaster målte kalibreringsdata
-    			\newline
+    			&	 3. &	 Forsker ønsker at udføre kalibrering    			\newline
     						 [3.a \textit{Forsker vælger ikke at kalibrere}]\\
-    			&    4.	&	 Forsker vælger at udføre kalibrering\newline
-    						 [4.a \textit{Indtastede kalibreringsdata ugyldige}]\\
+    			&    4.	&	 Forsker indtaster målte kalibreringsdata
+\newline
+    						 [4.a \textit{Indtastede kalibreringsdata er ugyldige}]\\
                 &    5.	&	 System kalibrerer\\
                 &	 6. &	 Det fremgår i Kalibrering-vinduet at kalibrering er udført \newline\\ \midrule
                 
     Undtagelser &    3.a &   Forsker ønsker ingen kalibrering. UC1 afsluttes og Kalibrering-vinduet lukkes  \\
-    			&	 4.a &	 Det fremgår i Kalibrering-vinduet at indtastede kalibreringsdata er ugyldige \\ \bottomrule
+    			&	 4.a &	 Det fremgår i Kalibrering-vinduet at indtastede kalibreringsdata er ugyldige. Forsætter ved UC1 punkt 4  \\ \bottomrule
 \caption{Fully dressed Use Case 1.}
 \label{UC1}
 \end{longtabu}
@@ -118,7 +118,7 @@ Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forsk
     Sekundære aktør &&	 Måleobjekt og Tryktransducer\\
     Mål &&    Forsker ønsker at vise blodtrykssignal med digitalt filter\\
     Initiering &&	Startes efter afsluttet UC1\\
-    Forudsætninger &&  System er aktivt og tilgængeligt. Digitalt filter er aktivt. Måleobjekt og Tryktransducer er tilsluttet system\\
+    Forudsætninger &&  System er aktivt og tilgængeligt. Digitalt filter er aktivt. Tryktransducer er tilsluttet system\\
     Resultat &&		Det filtrerede blodtrykssignal udskrives                         \\ \midrule
     Hovedforløb &    1. &    Det filtrerede blodtrykssignal vises i en graf i Monitor-vinduet\newline\\ \midrule
                 
@@ -138,7 +138,7 @@ Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forsk
     Sekundære aktør && \\
     Mål &&    Forsker ønsker at nulpunktsjustere system\\
     Initiering &&	Startes af Forsker\\
-    Forudsætninger &&  System er aktivt og tilgængeligt. UC2 kører \\    
+    Forudsætninger &&  System er aktivt og tilgængeligt. UC2 kører. Tryktransduceren skal befinde sig i atmosfærisk luft  \\    
     Resultat &&		System er nulpunktsjusteret\\ \midrule
     Hovedforløb &    1. &    Forsker vælger at udføre en nulpunktsjustering\\[-1ex]   						 	
                 &    2. &    System nulpunktsjusterer\\[-1ex]
@@ -202,23 +202,21 @@ Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forsk
     Initiering &&	Startes af Forsker\\
     Forudsætninger &&  System er aktivt og tilgængeligt. UC2 kører  \\
     Resultat &&		Data er gemt i Database                 \\ \midrule
-    Hovedforløb &    1. &    Forsker skriver kommentar og bestemmer 						 maximum længde for måling \newline
-    						 [1.a \textit{Forsker ændrer ikke maximum længden for måling}]\newline
-    						 [1.b \textit{Forsker skriver ikke en kommentar til måling}]\\ 
-                &    2. &    Forsker igangsætter optagelse af måling 		 \\[-1ex] 
-                &    3.	&	 Forsker stopper optagelse af måling 			 \newline
-                			 [3.a \textit{Maximum længde for måling er nået}]\\
-                &	 4. &    System åbner Gem-vinduet \newline
-                			 [4.a \textit{Måleobjekts data er gemt fra forrige måling}]\\ 
-                &	 5. &	 Forsker indtaster metadata for 					 blodtryksmåling \\[-1ex]
-                &	 6. &	 Forsker trykker på "OK"\--knappen 				 \\[-1ex]
-                &	 7. &	 System gemmer måling \\[-1ex]
-                &	 8.	&	 Det fremgår af Monitor-vinduet at måling 		 er gemt\newline\\ \midrule
+    Hovedforløb &    1. &    Forsker bestemmer optagelses længde for målingen \newline
+    						 [1.a \textit{Forsker ændrer ikke optagelses længden for målingen}]\\   						 
+                &    2. &    Forsker igangsætter optagelse af målingen 		 \\[-1ex] 
+                &    3.	&	 Målingen stopper\newline
+                			 [3.a \textit{Forsker stopper optagelsen af måling inden optagelses længden er nået}]\\
+                &	 4.	&	 Forsker vælger at gemme målingen\\[-1ex]			 
+                &	 5. &    System åbner Gem-vinduet \\[-1ex]
+                &	 6. &	 Forsker indtaster oplysninger om målingen \\[-1ex]
+                &	 7. &	 Forsker trykker på "OK"\--knappen 				 \\[-1ex]
+                &	 8. &	 System gemmer målingen \\[-1ex]
+                &	 9.	&	 Det fremgår af 	Gem-vinduet, at målingen 		 er gemt\newline\\ \midrule
                 
-    Undtagelser &    1.a &   Forsker ønsker ikke at ændre maximum 				længde for måling. Forsætter ved punkt 2 i UC6 \\
-    			&    1.b &   Forsker ønsker ikke at tilknytte en kommentar til måling. Forsætter ved punkt 2 i UC6 \\
-    			&    3.a &   System stopper optagelse af måling. Forsætter ved punkt 4 i UC6  \\
-    			&	 4.a &	 Forsætter ved punkt 7 i UC6. \\ \bottomrule
+    Undtagelser &    1.a &   Forsker ønsker ikke at ændre optagelses				længde for målingen. Forsætter ved punkt 2 i UC6 \\
+      			&    3.a &   Forsker stopper optagelse af målingen. Forsætter ved punkt 4 i UC6  \\
+\bottomrule
     
 \caption{Fully dressed Use Case 6.}
 \label{UC6}
@@ -244,9 +242,14 @@ De ikke-funktionelle krav er specificeret ved brug af redskabet (F)URPS+, der st
 	\item Monitor-vinduet skal indeholde en ”Nulpunktsjustér”\--knap.
 	\item Monitor-vinduet skal indeholde et tidsstempel for seneste nulpunktsjustering.
 	\item Monitor-vinduet skal indeholde to radiobuttons til aktivering og deaktivering af digitalt filter.
-	\item Kalibrering-vinduet skal indeholde en ”Ja”\--knap og en ”Nej”\--knap.
-	\item Kalibrering-vinduet skal indeholde et datostempel for seneste kalibrering.
-	\item Gem-vinduet skal indeholde tekstbokse til data indtastning for målingen. 
+	\item Monitor-vinduet skal indeholde en tekstboks til ændring af optagelses længden.  
+	\item Monitor-vinduet skal indeholde en "Rec"\--knap.
+	\item Monitor-vinduet skal indeholde en "Stop"\--knap.
+	\item Kalibrering-vinduet skal indeholde tekstbokse til indtastning af kalibreringsdata. 
+	\item Kalibrering-vinduet skal indeholde en "Beregn"\--knap. 
+	\item Kalibrering-vinduet skal indeholde en "OK"\--knap.
+	\item Kalibrering-vinduet skal indeholde et tidsstempel for seneste kalibrering.
+	\item Gem-vinduet skal indeholde tekstbokse til indtastning af oplysninger om målingen. 
 	\item Gem-vinduet skal indeholde en ”OK”\--knap.
 	\item Det skal være muligt at aflæse værdier på Monitor-vinduet fra 2 meters afstand med normalt syn.
 \end{itemize}
@@ -265,6 +268,7 @@ De ikke-funktionelle krav er specificeret ved brug af redskabet (F)URPS+, der st
 	\item Blodtrykssignalet skal vises maksimalt 5 sekunder efter UC1 er afsluttet.
 	\item Systemet skal vise en graf for blodtryksmålingen, hvor y-aksen er mmHg og x-aksen er tid i sekunder.
 	\item Systemet skal kunne måle blodtryksværdier fra 0 til 300 mmHg.
+	\item Blodtrykssignalet vises ????????????
 \end{itemize}
 
 \subsection{Supportability}
