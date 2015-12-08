@@ -165,60 +165,81 @@
 	& Ikke-funktionelt krav & Test/handling & Forventet resultat & Faktiske observationer & Godkendt
 	\\[-1ex] \midrule
 	&  \textit{Functionality} &  &  & & \\ \midrule
-	& System skal kunne vise et kontinuerligt blodtryksignal i Monitor-vinduet & Der ses om GUI'en viser et kontinuerligt blodtrykssignal & System viser et kontinuerligt blodtrykssignal &  & %{\Huge \checkmark}
+	& System skal kunne vise et kontinuert blodtrykssignal i Monitor-vinduet & Observér Monitor-vinduet & I Monitor-vinduet vises et kontinuert blodtrykssignal &  & %{\Huge \checkmark}
 	\\ \midrule
-	& System skal kunne vise Systole-, Diastole- og Pulsværdier med op til tre cifre & Der ses om GUI'en indeholder Systole-, Diastole- og Pulsværdier med op til tre cifre & GUI'en indeholder Systole-, Diastole- og Pulsværdier med op til tre cifre &  & %{\Huge \checkmark}
+	& System skal kunne vise systole-, diastole- og pulsværdier med op til tre cifre & Observér Monitor-vinduet & Monitor-vinduet indeholder systole-, diastole- og pulsværdier med op til tre cifre &  & %{\Huge \checkmark}
 	\\ \midrule
-	& System skal kunne vise et blodtrykssignal med og uden et digitalt filter & Der ses om GUI'en kan vise et blodtrykssignal med og uden digitalt filter & GUI'en kan vise et blodtrykssignal med og uden digitalt filter &  & %{\Huge \checkmark}
+	& System skal kunne vise et blodtrykssignal med og uden et digitalt filter & Markér "On"- og "Off"\--knap og Observér Monitor-vinduet & Monitor-vinduet viser et blodtrykssignal med eller uden digitalt filter &  & %{\Huge \checkmark}
 	\\ \midrule
-	& System skal kunne nulpunktsjustere blodtrykssignalet & Der ses i GUI'en om blodtrykssignalet kan nulpunktsjusteres & Blodtrykssignalet kan nulpunktjusteres &  & %{\Huge \checkmark}
+	& System skal kunne nulpunktsjustere kurven & Tryk på "Nulpunktjustér"\--knap og observér Monitor-vinduet & Kurvens værdi er lig 0 &  & %{\Huge \checkmark}
 	\\ \midrule
-	& System skal kunne gemme en blodtryksmåling i en database & Der trykkes på "Gem"\--knappen i Monitor-vinduet og der indtastes gyldige værdier i Gem-vinduet og trykkes på "OK"\--knappen & System gemmer data i en database og udskriver tidsstempel for gemt data i Monitor-vinduet &  & %{\Huge \checkmark}
+	& System skal kunne gemme en blodtryksmåling i en database & Der trykkes på "Gem"\--knap i Monitor-vinduet, og der indtastes gyldige værdier i Gem-vinduet og trykkes på "OK"\--knap & System gemmer data i en database og udskriver stempel for gemt data i Gem-vinduet &  & %{\Huge \checkmark}
 	\\ \midrule
-	& System skal kunne kalibreres & Der trykkes på "Ja"\--knappen i kalibrering-vinduet & System er kalibreret &  & %{\Huge \checkmark}
+	& System skal kunne kalibreres & Indtast gyldige kalibreringsdata. Tryk på "Beregn"\--knap efterfulgt af "OK"\--knap & System kalibrerer og udskriver tidsstempel i Kalibrering-vinduet &  & %{\Huge \checkmark}
 	\\ \midrule
 	& \textit{Usability} &  &  & & \\ \midrule
-	& Monitor-vinduet skal indeholde en ”Gem”\--knap & Der ses i Monitor-vinduet om der er en ”Gem”\--knap & Der er en ”Gem”\--knap i Monitor-vinduet &  & %{\Huge \checkmark}
+	& Monitor-vinduet skal indeholde en ”Gem”\--knap & Der ses i Monitor-vinduet, om der er en ”Gem”\--knap & Der er en ”Gem”\--knap i Monitor-vinduet &  & %{\Huge \checkmark}
 	\\ \midrule
-	& Monitor-vinduet skal indeholde en ”Nulpunktsjustér”\--knap & Der ses i Monitor-vinduet om der er en ”Nulpunktsjustér”\--knap & Der er en ”Nulpunktsjustér”\--knap i Monitor-vinduet &  & %{\Huge \checkmark}
+	& Monitor-vinduet skal indeholde en ”Nulpunktsjustér”\--knap & Der ses i Monitor-vinduet, om der er en ”Nulpunktsjustér”\--knap & Der er en ”Nulpunktsjustér”\--knap i Monitor-vinduet &  & %{\Huge \checkmark}
 	\\ \midrule 
 	& Monitor-vinduet skal indeholde et tidsstempel for seneste nulpunktsjustering & Der ses i Monitor-vinduet, om der er et tidsstempel for seneste nulpunktsjustering & Der er et tidsstempel for seneste nulpunktsjustering i Monitor-vinduet & & %{\Huge \checkmark}
 	\\ \midrule
-	& Monitor-vinduet skal indeholde to radiobuttons til aktivering og deaktivering af digitalt filter & Der ses i Monitor-vinduet om der er to radiobuttons til aktivering og deaktivering af digitalt filter & Der er to radiobuttons til aktivering og deaktivering af digitalt filter i Monitor-vinduet &  & %{\Huge \checkmark}
+	& Monitor-vinduet skal indeholde to radiobuttons til aktivering og deaktivering af digitalt filter & Der ses i Monitor-vinduet, om der er to radiobuttons til aktivering og deaktivering af digitalt filter & Der er to radiobuttons til aktivering og deaktivering af digitalt filter i Monitor-vinduet &  & %{\Huge \checkmark}
 	\\ \midrule
-	& Kalibrering-vinduet skal indeholde en ”Ja”\--knap og en ”Nej”\--knap & Der ses i kalibrering-vinduet om der er en ”Ja”\--knap og en ”Nej”\--knap & Der er en ”Ja”\--knap og en ”Nej”\--knap i kalibrering-vinduet &  & %{\Huge \checkmark}
+	& Monitor-vinduet skal indeholde en tekstboks til ændring af optagelseslængde & Der ses i Monitor-vinduet, om der er en tekstboks til ændring af optagelseslængde & Der er en tekstboks til ændring af optagelseslængde i Monitor-vinduet & & %{\Huge \checkmark}
+	\\ \midrule 
+	& Monitor-vinduet skal indeholde en "Rec"\--knap & Der ses i Monitor-vinduet, om der er en "Rec"\--knap & Der er en "Rec"\--knap i Monitor-vinduet & & %{\Huge \checkmark}
+	\\ \midrule 
+	& Monitor-vinduet skal indeholde en "Stop"\--knap & Der ses i Monitor-vinduet, om der er en "Stop"\--knap & Der er en "Stop"\--knap i Monitor-vinduet & & %{\Huge \checkmark}
+	\\ \midrule 
+	& Kalibrering-vinduet skal indeholde tekstbokse til indtastning af kalibreringsdata & Der ses i kalibrering-vinduet, om der er tekstbokse til indtastning af kalibreringsdata & Der er tekstbokse til indtastning af kalibreringsdata i Kalibrering-vinduet &  & %{\Huge \checkmark}
 	\\ \midrule
-	& Kalibrering-vinduet skal indeholde et datostempel for seneste kalibrering & Der ses i kalibrering-vinduet om der er et tidsstempel for seneste kalibrering & Der er et tidsstempel for seneste kalibrering i kalibrering-vinduet &  & %{\Huge \checkmark}
+	& Kalibrering-vinduet skal indeholde en ”Ja”\--knap og en ”Nej”\--knap & Der ses i kalibrering-vinduet om der er en ”Ja”\--knap og en ”Nej”\--knap & Der er en ”Ja”\--knap og en ”Nej”\--knap i Kalibrering-vinduet &  & %{\Huge \checkmark}
 	\\ \midrule
-	& Gem-vinduet skal indeholde tekstbokse til data indtastning for målingen & Der ses i Gem-vinduet, om der er tekstbokse til indtastning af data & Der er tekstbokse til indtastning af data i Gem-vinduet & & %{\Huge \checkmark}
+	& Kalibrering-vinduet skal indeholde en ”Beregn”\--knap & Der ses i Kalibrering-vinduet, om der er en ”Beregn”\--knap & Der er en ”Beregn”\--knap i Kalibrering-vinduet &  & %{\Huge \checkmark}
 	\\ \midrule
-	& Gem-vinduet skal indeholde en ”OK”\--knap & Der ses i Gem-vinduet om der er en "OK"\--knap & Der er en "OK"\--knap i Gem-vinduet& & %{\Huge \checkmark}
+	& Kalibrering-vinduet skal indeholde en ”OK”\--knap & Der ses i Kalibrering-vinduet, om der er en ”OK”\--knap & Der er en ”OK”\--knap i Kalibrering-vinduet &  & %{\Huge \checkmark}
 	\\ \midrule
-	& Det skal være muligt at aflæse værdier på Monitor-vinduet fra 2 meters afstand med normalt syn & Der testes af 5 personer med forskellige aldre med en synsstyrke på +/- 0,25, som placeres 2 meter fra Monitor-vinduet & Det er muligt for de 5 at aflæse værdierne på 2 meters afstand & & %{\Huge \checkmark}
+	& Kalibrering-vinduet skal indeholde et tidsstempel for seneste kalibrering & Der ses i Kalibrering-vinduet, om der er et tidsstempel for seneste kalibrering & Der er et tidsstempel for seneste kalibrering i Kalibrering-vinduet &  & %{\Huge \checkmark}
+	\\ \midrule
+	& Gem-vinduet skal indeholde tekstbokse til indtastning af oplysninger om målingen & Der ses i Gem-vinduet, om der er tekstbokse til indtastning af oplysninger om målingen & Der er tekstbokse til indtastning af oplysninger om målingen i Gem-vinduet & & %{\Huge \checkmark}
+	\\ \midrule
+	& Gem-vinduet skal indeholde en ”OK”\--knap & Der ses i Gem-vinduet, om der er en "OK"\--knap & Der er en "OK"\--knap i Gem-vinduet & & %{\Huge \checkmark}
+	\\ \midrule
+	& Det skal være muligt at aflæse værdier på Monitor-vinduet fra 2 meters afstand med normalt syn & Der testes på 5 personer af forskellige aldre med en synsstyrke på +/- 0,25, som placeres 2 meter fra Monitor-vinduet & Det er muligt for de 5 personer at aflæse værdierne på 2 meters afstand & & %{\Huge \checkmark}
 	\\ \midrule
 	& \textit{Reliability} & & & & \\ \midrule
-	& Systemet skal have en effektiv MTBF på 20 minutter og MTTR på 1 minut & Køre programmet i 20 minutter. Genstart derefter programmet, hvor der tages tid med et stopur & Programmet har kørt i 20 minutter og genstartes indenfor 1 minut  &  & %{\Huge \checkmark}
+	& Systemet skal have en effektiv MTBF på 99 timer og MTTR på 20 minutter & Ikke testbar &   &  & %{\Huge \checkmark}
 	\\ \midrule
 	& \textit{Performance} & & & & \\ \midrule
-	& Blodtrykssignalet skal vises maksimalt 5 sekunder efter UC1 er afsluttet & UC1 afsluttes samtidig med startes et stopur på en iPhone 5s. Når blodtrykssignalet vises stoppes uret & Blodtryksignalet vises indenfor de 5 sekunder & & %{\Huge \checkmark}
+	& Blodtrykssignalet skal vises maksimalt 5 sekunder efter, UC1 er afsluttet & UC1 afsluttes samtidig med, at et stopur startes på en iPhone 5s. Når blodtrykssignalet vises, stoppes uret & Blodtryksignalet vises indenfor de 5 sekunder & & %{\Huge \checkmark}
 	\\ \midrule
-	& Systemet skal vise en graf for blodtryksmålingen, hvor y-aksen er mmHg og x-aksen er tid i sekunder & Der ses på grafen for blodtrykssignalet, om y-aksen er mmHg og x-aksen er tid i sekunder & Blodtryksignalets y-akse er mmHg og x-aksen er tid i sekunder & & %{\Huge \checkmark}
+	& Systemet skal vise en kurve for blodtryksmålingen, hvor y-aksen er mmHg og x-aksen er tid i sekunder & Der ses på Monitor-vinduet, om y-aksen er mmHg og x-aksen er tid i sekunder & Blodtryksignalets y-akse er mmHg og x-aksen er tid i sekunder & & %{\Huge \checkmark}
 	\\ \midrule
-	& Systemet skal kunne måle blodtryksværdier fra 0 til 300 mmHg & Der foretages målinger hvor trykket er henholdsvis 280-295 og +300 (?) & (?) & & %{\Huge \checkmark}
+	& Systemet skal kunne måle blodtryksværdier fra 0 til 300 mmHg & Ikke testbar &  & & %{\Huge \checkmark}
+	\\ \midrule
+	& Blodtrykssignalet vises kontinuerligt over et interval af fire sekunder af gangen & Der ses på Monitor-vinduet, om blodtrykssignalet vises kontinuerligt over et interval af fire sekunder af gangen  & Blodtrykssignalet vises kontinuerligt over et interval af fire sekunder af gangen & & %{\Huge \checkmark}
+	\\ \midrule
+	& Blodtrykssignalet vises via en rød kurve & Der ses på Monitor-vinduet, om blodtrykssignalet vises via en rød kurve & Blodtrykssignalet vises via en rød kurve & & %{\Huge \checkmark}
+	\\ \midrule
+	& Y-aksen varierer efter blodtrykssignalets maksimum- og minimumsværdier & Der ses på Monitor-vinduet, om blodtrykssignalets maksimum- og minimumsværdier vises & Blodtrykssignalets maksimum- og minimumsværdier vises & & %{\Huge \checkmark}
 	\\ \midrule
 	& \textit{Supportability} & & & & \\ \midrule
-	& Softwaren skal opbygges efter trelagsmodellen & Der kigges i koden efter data-lag, logik-lag og GUI-lag & Data-lag, logik-lag og GUI-lag er at find i koden & & %{\Huge \checkmark}
+	& Softwaren skal opbygges efter trelagsmodellen & Der kigges i koden efter data-lag, logik-lag og GUI-lag & Data-lag, logik-lag og GUI-lag er at finde i koden & & %{\Huge \checkmark}
 	\\ \midrule
 	& \textit{Andet(+)} & & & & \\ \midrule
-	& Der skal være adgang til en computer med Windows 7 eller nyere – computeren skal have minimum 4 GB RAM & Der ses om der er installeret Windows 7 eller nyere og om der er minimum 4 GB RAM & Det ses at der er installeret Windows 7 eller nyere og om der er minimum 4 GB RAM & & %{\Huge \checkmark}
+	& Der skal være adgang til en computer med Windows 7 eller nyere – computeren skal have minimum 4 GB RAM & Der ses, om der er installeret Windows 7 eller nyere, og om der er minimum 4 GB RAM & Det ses, at der er installeret Windows 7 eller nyere, og om der er minimum 4 GB RAM & & %{\Huge \checkmark}
 	\\ \midrule
-	& Blodtryks-diagrammet skal fylde minimum 1/3 af Monitor-vinduet & Der ses om blodtryksdiagrammet fylder minimum 1/3 af Monitor-vinduet & Blodtryksdiagrammet fylder minimum 1/3 af Monitor-vinduet& & %{\Huge \checkmark}
+	& Der skal være adgang til en computer, hvor National Instruments er installeret & Der ses, om der er installeret National Instruments på computeren & Det ses, at der er installeret National Instruments på computeren & & %{\Huge \checkmark}
 	\\ \midrule
-	& Baggrunden i Monitor-vinduet skal være mørk & Der ses i Monitor-vinduet om baggrunden er mørk & Baggrunden i Monitor-vinduet er mørk& & %{\Huge \checkmark}
+	& \textit{Interface} & & & & \\ \midrule
+	& Blodtryks-diagrammet skal fylde minimum 1/3 af Monitor-vinduet & Der ses, om blodtryksdiagrammet fylder minimum 1/3 af Monitor-vinduet & Blodtryksdiagrammet fylder minimum 1/3 af Monitor-vinduet& & %{\Huge \checkmark}
 	\\ \midrule
-	& Blodtrykssignal og -værdier(systole og diastole) skal være røde og puls skal være grøn & Der ses på blodtryksdiagrammet om blodtrykssignal og -værdier er røde og puls er grøn & Blodtrykssignal og -værdier(systole og diastole) er røde og puls er grøn & & %{\Huge \checkmark}
+	& Baggrunden i Monitor-vinduet skal være mørk & Der ses i Monitor-vinduet, om baggrunden er mørk & Baggrunden i Monitor-vinduet er mørk & & %{\Huge \checkmark}
 	\\ \midrule
-	& Systolisk og diastolisk blodtryk skal fremhæves ved større skriftstørrelse end andre værdier i Monitor-vinduet (fx værdier på akserne) & Der ses i Monitor-vinduet om det systoliske og det diastoliske blodtryk er fremhævet ved større skriftstørrelse end andre værdier i Monitor-vinduet  & Det ses i Monitor-vinduet at det systoliske og det diastoliske blodtryk er fremhævet ved større skriftstørrelse end andre værdier i Monitor-vinduet & &%{\Huge \checkmark}
+	& Blodtrykssignal og -værdier(systole og diastole) skal være røde, og puls skal være grøn & Der ses på Monitor-vinduet om blodtrykssignal og -værdier er røde, og om puls er grøn & Blodtrykssignal og -værdier(systole og diastole) er røde, og puls er grøn & & %{\Huge \checkmark}
+	\\ \midrule
+	& Systolisk og diastolisk blodtryk skal fremhæves øverst i ihøjre hjørne ved større skriftstørrelse end andre værdier i Monitor-vinduet (fx værdier på akserne) & Der ses i Monitor-vinduet, om det systoliske og det diastoliske blodtryk er fremhævet ved større skriftstørrelse end andre værdier i Monitor-vinduet  & Det ses i Monitor-vinduet, at det systoliske og det diastoliske blodtryk er fremhævet ved større skriftstørrelse end andre værdier i Monitor-vinduet & &%{\Huge \checkmark}
 	\\ \bottomrule
 \caption{Accepttest af Ikke-funktionelle krav}
 \end{longtabu}
