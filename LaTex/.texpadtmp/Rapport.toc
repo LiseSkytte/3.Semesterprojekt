@@ -24,4 +24,4 @@
 \contentsline {section}{\numberline {6.6}Opn\IeC {\r a}ede erfaringer}{21}{section.6.6}
 \contentsline {section}{\numberline {6.7}Fremtidigt arbejde}{21}{section.6.7}
 \contentsline {chapter}{\chapternumberline {7}Konklusion}{23}{chapter.7}
-\contentsline {chapter}{Litteratur}{25}{chapter*.15}
+\contentsline {chapter}{Litteratur}{25}{chapter*.16}
