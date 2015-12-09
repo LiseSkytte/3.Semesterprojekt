@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.10)  9 DEC 2015 09:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.10)  9 DEC 2015 11:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2618,12 +2618,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--40
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 40--40
+[]\T1/cmr/m/n/10.95 Kalibrering-vinduet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+\T1/cmr/m/n/10.95 og se-ne-ste ka-li-bre-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
 []\T1/cmr/m/n/10.95 Indtast ka-li-bre-rings-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 40--40
 \T1/cmr/m/n/10.95 da-ta og tryk på
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+\T1/cmr/m/n/10.95 li-bre-rings-da-ta i de
+ []
+
+
+Underfull \hbox (badness 1975) in paragraph at lines 40--40
+\T1/cmr/m/n/10.95 for-skel-li-ge tekst-bok-se
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+\T1/cmr/m/n/10.95 og stig-nin-gen-stal-
+ []
+
+
+Underfull \hbox (badness 3492) in paragraph at lines 40--40
+\T1/cmr/m/n/10.95 let for hvor man-ge
  []
 
 
@@ -2657,6 +2687,11 @@ Underfull \hbox (badness 1092) in paragraph at lines 40--40
  []
 
 
+Underfull \hbox (badness 1092) in paragraph at lines 40--40
+[]\T1/cmr/m/n/10.95 System ka-li-bre-rer og
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 40--40
 []\T1/cmr/m/n/10.95 Tryk på det rø-de
  []
@@ -2669,6 +2704,11 @@ Underfull \hbox (badness 1308) in paragraph at lines 40--40
 
 Underfull \hbox (badness 2837) in paragraph at lines 40--40
 \T1/cmr/m/n/10.95 hjør-ne, hvis ka-li-bre-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+[]\T1/cmr/m/n/10.95 Kalibrering-vinduet
  []
 
 
@@ -2719,6 +2759,26 @@ Underfull \hbox (badness 2237) in paragraph at lines 59--59
 \T1/cmr/m/n/10.95 puls-vær-di-er ud-skri-ves
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
+[]\T1/cmr/m/n/10.95 Det fil-tre-re-de blod-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
+\T1/cmr/m/n/10.95 tryks-ig-nal samt
+ []
+
+
+Underfull \hbox (badness 2671) in paragraph at lines 59--59
+\T1/cmr/m/n/10.95 systole-, diastole- og
+ []
+
+
+Underfull \hbox (badness 2237) in paragraph at lines 59--59
+\T1/cmr/m/n/10.95 puls-vær-di-er ud-skri-ves
+ []
+
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 63.
 Package babel Info: Redefining danish shorthand "~
@@ -2739,6 +2799,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--82
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 82--82
+[]\T1/cmr/m/n/10.95 System nul-punkt-s-ju-
+ []
+
+
 Underfull \hbox (badness 6526) in paragraph at lines 82--82
 []\T1/cmr/m/n/10.95 Observér kur-ven og
  []
@@ -2746,6 +2811,11 @@ Underfull \hbox (badness 6526) in paragraph at lines 82--82
 
 Underfull \hbox (badness 10000) in paragraph at lines 82--82
 []\T1/cmr/m/n/10.95 Observér Monitor-
+ []
+
+
+Underfull \hbox (badness 2726) in paragraph at lines 82--82
+[]\T1/cmr/m/n/10.95 Tidsstempel for nul-
  []
 
 
@@ -2771,10 +2841,20 @@ Underfull \hbox (badness 2080) in paragraph at lines 104--104
 []\T1/cmr/m/n/10.95 Det ufil-tre-re-de blod-
  []
 
+
+Underfull \hbox (badness 2080) in paragraph at lines 104--104
+[]\T1/cmr/m/n/10.95 Det ufil-tre-re-de blod-
+ []
+
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 108.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 108.
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--126
+[]\T1/cmr/m/n/10.95 Det fil-tre-re-de blod-
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 126--126
 []\T1/cmr/m/n/10.95 Det fil-tre-re-de blod-
@@ -2805,6 +2885,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 163--163
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 163--163
+[]\T1/cmr/m/n/10.95 Optagelseslængden
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--163
+[]\T1/cmr/m/n/10.95 Optagelse af må-
+ []
+
+
+Underfull \hbox (badness 6859) in paragraph at lines 163--163
+\T1/cmr/m/n/10.95 ling igang-sæt-tes og
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--163
 []\T1/cmr/m/n/10.95 Optagelse af må-
  []
 
@@ -2824,6 +2919,11 @@ Underfull \hbox (badness 2772) in paragraph at lines 163--163
  []
 
 
+Underfull \hbox (badness 2772) in paragraph at lines 163--163
+[]\T1/cmr/m/n/10.95 Optagelse af må-ling
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 163--163
 []\T1/cmr/m/n/10.95 Indtast op-lys-nin-ger
  []
@@ -2831,6 +2931,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 163--163
 
 Underfull \hbox (badness 1152) in paragraph at lines 163--163
 []\T1/cmr/m/n/10.95 Tekstboksene er ble-
+ []
+
+
+Underfull \hbox (badness 1152) in paragraph at lines 163--163
+[]\T1/cmr/m/n/10.95 Tekstboksene er ble-
+ []
+
+
+Underfull \hbox (badness 1314) in paragraph at lines 163--163
+[]\T1/cmr/m/n/10.95 System gem-mer må-
+ []
+
+
+Underfull \hbox (badness 1721) in paragraph at lines 163--163
+\T1/cmr/m/n/10.95 ke mu-ligt at tryk-ke
  []
 
 
@@ -2922,8 +3037,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--244
  []
 
 
+Underfull \hbox (badness 4608) in paragraph at lines 244--244
+[]\T1/cmr/m/n/10.95 System ka-li-bre-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 tids-stem-pel i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 Kalibrering-
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 244--244
 []\T1/cmr/m/n/10.95 Observér
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+[]\T1/cmr/m/n/10.95 I Monitor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 vinduet vi-ses
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 et kon-ti-nu-ert
  []
 
 
@@ -2967,6 +3112,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--244
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+[]\T1/cmr/m/n/10.95 Monitor-vinduet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 in-de-hol-der
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 systole-,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 diastole- og
+ []
+
+
 Underfull \hbox (badness 1661) in paragraph at lines 244--244
 \T1/cmr/m/n/10.95 tryks-sig-nal med
  []
@@ -2984,6 +3149,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--244
 
 Underfull \hbox (badness 10000) in paragraph at lines 244--244
 \T1/cmr/m/n/10.95 og Ob-servér
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+[]\T1/cmr/m/n/10.95 Monitor-vinduet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 vi-ser et blod-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 tryks-sig-nal
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 med el-ler uden
  []
 
 
@@ -3102,6 +3287,26 @@ Underfull \hbox (badness 7504) in paragraph at lines 244--244
  []
 
 
+Underfull \hbox (badness 1424) in paragraph at lines 244--244
+[]\T1/cmr/m/n/10.95 System gem-mer
+ []
+
+
+Underfull \hbox (badness 4024) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 da-ta i en da-
+ []
+
+
+Underfull \hbox (badness 7907) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 ta-ba-se og ud-
+ []
+
+
+Underfull \hbox (badness 7504) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 skri-ver stem-pel
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 244--244
 []\T1/cmr/m/n/10.95 Kalibrering-
  []
@@ -3134,6 +3339,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--244
 
 Underfull \hbox (badness 10000) in paragraph at lines 244--244
 \T1/cmr/m/n/10.95 ind-tast-ning af
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 af ka-li-bre-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 rings-da-ta i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 Kalibrering-
  []
 
 
@@ -3193,6 +3413,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--244
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 244--244
+[]\T1/cmr/m/n/10.95 Der er en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 ^^QBeregn^^Q--knap
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 i Kalibrering-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
 []\T1/cmr/m/n/10.95 Kalibrering-
  []
 
@@ -3209,6 +3444,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--244
 
 Underfull \hbox (badness 10000) in paragraph at lines 244--244
 []\T1/cmr/m/n/10.95 Der ses i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 Kalibrering-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+[]\T1/cmr/m/n/10.95 Der er en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 ^^QOK^^Q--knap i
  []
 
 
@@ -3274,6 +3524,21 @@ Underfull \hbox (badness 2547) in paragraph at lines 244--244
 
 Underfull \hbox (badness 3514) in paragraph at lines 244--244
 \T1/cmr/m/n/10.95 pel for se-ne-ste
+ []
+
+
+Underfull \hbox (badness 1097) in paragraph at lines 244--244
+[]\T1/cmr/m/n/10.95 Der er et tids-
+ []
+
+
+Underfull \hbox (badness 2134) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 stem-pel for se-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 i Kalibrering-
  []
 
 
@@ -3363,6 +3628,16 @@ Overfull \hbox (8.67499pt too wide) in paragraph at lines 244--244
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 244--244
+[]\T1/cmr/m/n/10.95 Der er en
+ []
+
+
+Overfull \hbox (8.67499pt too wide) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 ^^QNulpunktsjustér^^Q-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
 []\T1/cmr/m/n/10.95 Monitor-vinduet
  []
 
@@ -3394,6 +3669,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--244
 
 Underfull \hbox (badness 1838) in paragraph at lines 244--244
 \T1/cmr/m/n/10.95 der er et tids-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 stem-pel for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 se-ne-ste nul-
+ []
+
+
+Underfull \hbox (badness 1097) in paragraph at lines 244--244
+[]\T1/cmr/m/n/10.95 Der er et tids-
  []
 
 
@@ -3518,6 +3808,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--244
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 af op-ta-gel-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 ses-læng-de i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
 []\T1/cmr/m/n/10.95 Monitor-vinduet
  []
 
@@ -3549,6 +3849,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--244
 
 Underfull \hbox (badness 10000) in paragraph at lines 244--244
 \T1/cmr/m/n/10.95 vinduet, om
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 -knap/"Stop"--
  []
 
 
@@ -3608,12 +3913,32 @@ Underfull \hbox (badness 3623) in paragraph at lines 244--244
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 af op-lys-nin-ger
+ []
+
+
+Underfull \hbox (badness 3623) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 om må-lin-gen i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
 []\T1/cmr/m/n/10.95 Gem-vinduet
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 244--244
 \T1/cmr/m/n/10.95 skal in-de-hol-de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+[]\T1/cmr/m/n/10.95 Der er en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 "OK"--knap i
  []
 
 
@@ -3703,6 +4028,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--244
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 af-læ-se systole-,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 diastole- og
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
 []\T1/cmr/m/n/10.95 Systemet skal
  []
 
@@ -3734,6 +4069,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--244
 
 Underfull \hbox (badness 10000) in paragraph at lines 244--244
 \T1/cmr/m/n/10.95 sig-na-let vi-ses,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+[]\T1/cmr/m/n/10.95 Blodtryksignalet
  []
 
 
@@ -3782,6 +4122,11 @@ Overfull \hbox (3.38373pt too wide) in paragraph at lines 244--244
  []
 
 
+Overfull \hbox (3.38373pt too wide) in paragraph at lines 244--244
+[]\T1/cmr/m/n/10.95 Blodtryksignalets
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 244--244
 []\T1/cmr/m/n/10.95 Systemet skal
  []
@@ -3794,6 +4139,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--244
 
 Underfull \hbox (badness 10000) in paragraph at lines 244--244
 \T1/cmr/m/n/10.95 blod-tryks-vær-di-
+ []
+
+
+Underfull \hbox (badness 2486) in paragraph at lines 244--244
+[]\T1/cmr/m/n/10.95 Trykket si-mu-le-
+ []
+
+
+Underfull \hbox (badness 3260) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 res op til 300
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+[]\T1/cmr/m/n/10.95 Det ses i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 Monitor-vinduet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+[]\T1/cmr/m/n/10.95 Det ses i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 Monitor-vinduet
  []
 
 
@@ -3888,6 +4263,31 @@ Overfull \hbox (3.38373pt too wide) in paragraph at lines 244--244
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 vi-ses kon-ti-nu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 er-ligt over et
+ []
+
+
+Underfull \hbox (badness 4505) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 in-ter-val af fi-re
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 se-kun-der af
+ []
+
+
+Overfull \hbox (3.38373pt too wide) in paragraph at lines 244--244
+[]\T1/cmr/m/n/10.95 Blodtrykssignalet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
 []\T1/cmr/m/n/10.95 Der ses på
  []
 
@@ -3904,6 +4304,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--244
 
 Underfull \hbox (badness 10000) in paragraph at lines 244--244
 \T1/cmr/m/n/10.95 blod-tryks-sig-na-
+ []
+
+
+Overfull \hbox (3.38373pt too wide) in paragraph at lines 244--244
+[]\T1/cmr/m/n/10.95 Blodtrykssignalet
  []
 
 
@@ -3977,6 +4382,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--244
  []
 
 
+Overfull \hbox (7.67918pt too wide) in paragraph at lines 244--244
+[]\T1/cmr/m/n/10.95 Blodtrykssignalets
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 maksimum- og
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 mini-mums-vær-di-
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 244--244
 []\T1/cmr/m/n/10.95 Softwaren skal
  []
@@ -3997,6 +4417,11 @@ Underfull \hbox (badness 3271) in paragraph at lines 244--244
  []
 
 
+Underfull \hbox (badness 3271) in paragraph at lines 244--244
+[]\T1/cmr/m/n/10.95 Data-lag, logik-
+ []
+
+
 Underfull \hbox (badness 1205) in paragraph at lines 244--244
 \T1/cmr/m/n/10.95 skal ha-ve mini-
  []
@@ -4009,6 +4434,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--244
 
 Underfull \hbox (badness 4518) in paragraph at lines 244--244
 \T1/cmr/m/n/10.95 er mini-mum 4
+ []
+
+
+Underfull \hbox (badness 2080) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 in-stal-le-ret Win-
  []
 
 
@@ -4067,6 +4497,11 @@ Underfull \hbox (badness 1668) in paragraph at lines 244--244
  []
 
 
+Underfull \hbox (badness 1668) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 nal In-stru-ments
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 244--244
 []\T1/cmr/m/n/10.95 Blodtryks-
  []
@@ -4102,6 +4537,11 @@ Overfull \hbox (23.88255pt too wide) in paragraph at lines 244--244
  []
 
 
+Overfull \hbox (23.88255pt too wide) in paragraph at lines 244--244
+[]\T1/cmr/m/n/10.95 Blodtryksdiagrammet
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 244--244
 []\T1/cmr/m/n/10.95 Baggrunden i
  []
@@ -4129,6 +4569,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--244
 
 Underfull \hbox (badness 10000) in paragraph at lines 244--244
 \T1/cmr/m/n/10.95 bag-grun-den er
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+[]\T1/cmr/m/n/10.95 Baggrunden i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 Monitor-vinduet
  []
 
 
@@ -4179,6 +4629,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--244
 
 Underfull \hbox (badness 1102) in paragraph at lines 244--244
 \T1/cmr/m/n/10.95 nal og -værdier
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+[]\T1/cmr/m/n/10.95 Blodtrykssignal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 og -
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 værdier(systole
+ []
+
+
+Underfull \hbox (badness 3568) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 og di-a-sto-le) er
  []
 
 
@@ -4254,6 +4724,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--244
 
 Underfull \hbox (badness 10000) in paragraph at lines 244--244
 \T1/cmr/m/n/10.95 vinduet, om
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 det sy-sto-li-ske
+ []
+
+
+Underfull \hbox (badness 6204) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 og det di-a-sto-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 li-ske blod-tryk
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 er frem-hæ-vet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 stør-rel-se end
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+[]\T1/cmr/m/n/10.95 Det ses i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 Monitor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/cmr/m/n/10.95 vinduet, at
  []
 
 
@@ -4418,19 +4928,19 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 24.
  ) 
 Here is how much of TeX's memory you used:
- 27519 strings out of 493117
- 490452 string characters out of 6135433
- 868941 words of memory out of 5000000
- 30324 multiletter control sequences out of 15000+600000
- 29725 words of font info for 79 fonts, out of 8000000 for 9000
+ 27550 strings out of 493117
+ 490937 string characters out of 6135433
+ 880941 words of memory out of 5000000
+ 30351 multiletter control sequences out of 15000+600000
+ 36400 words of font info for 106 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  53i,13n,90p,10469b,1033s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm2488.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/bookman/u
-bkl8a.pfb>
-Output written on "/Users/Lise/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Dokumentation .pdf" (56 pages, 13713245 bytes).
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm2488.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/u
+rw/bookman/ubkd8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb>
+Output written on "/Users/Lise/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Dokumentation .pdf" (56 pages, 13721747 bytes).
 PDF statistics:
- 794 PDF objects out of 1000 (max. 8388607)
- 635 compressed objects within 7 object streams
+ 798 PDF objects out of 1000 (max. 8388607)
+ 638 compressed objects within 7 object streams
  196 named destinations out of 1000 (max. 500000)
  552 words of extra memory for PDF output out of 10000 (max. 10000000)
 
