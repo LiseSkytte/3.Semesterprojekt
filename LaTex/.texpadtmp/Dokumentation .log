@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.10)  8 DEC 2015 15:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.10)  9 DEC 2015 08:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2618,6 +2618,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--40
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+\T1/cmr/m/n/10.95 da-ta og tryk på
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+\T1/cmr/m/n/10.95 li-bre-rings-da-ta i de
+ []
+
+
+Underfull \hbox (badness 1975) in paragraph at lines 40--40
+\T1/cmr/m/n/10.95 for-skel-li-ge tekst-bok-se
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+\T1/cmr/m/n/10.95 og stig-nin-gen-stal-let
+ []
+
+
+Underfull \hbox (badness 3396) in paragraph at lines 40--40
+\T1/cmr/m/n/10.95 for hvor-man-ge mm-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+\T1/cmr/m/n/10.95 Hg/V ud-skri-ves i
+ []
+
+
 Underfull \hbox (badness 1701) in paragraph at lines 40--40
 []\T1/cmr/m/n/10.95 Tryk på "OK"--knap
  []
@@ -2829,6 +2859,15 @@ Underfull \hbox (badness 5274) in paragraph at lines 160--160
 \T1/cmr/m/n/10.95 kræf-ter at da-ta er
  []
 
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 160.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 160.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 160.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 160.
+[44]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 162.
 Package babel Info: Redefining danish shorthand "~
@@ -4331,16 +4370,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 245.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 245.
-[44]
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 245.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 245.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 245.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 245.
- [45]
+[45]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 245.
 Package babel Info: Redefining danish shorthand "~
@@ -4376,7 +4406,16 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 245.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 245.
- [49])
+ [49]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 245.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 245.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 245.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 245.
+ [50])
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 19.
 Package babel Info: Redefining danish shorthand "~
@@ -4385,7 +4424,19 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 19.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 19.
- [50] 
+ [51]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 21.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 21.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 21.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 21.
+ [52
+
+
+] 
 AED: lastpage setting LastPage
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 24.
@@ -4408,19 +4459,19 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 24.
  ) 
 Here is how much of TeX's memory you used:
- 27521 strings out of 493117
- 490477 string characters out of 6135433
- 875941 words of memory out of 5000000
+ 27523 strings out of 493117
+ 490491 string characters out of 6135433
+ 869941 words of memory out of 5000000
  30328 multiletter control sequences out of 15000+600000
  29725 words of font info for 79 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  53i,13n,90p,10469b,1033s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm2488.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/bookman/u
 bkl8a.pfb>
-Output written on "/Users/Lise/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Dokumentation .pdf" (54 pages, 13712043 bytes).
+Output written on "/Users/Lise/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Dokumentation .pdf" (56 pages, 13712979 bytes).
 PDF statistics:
- 785 PDF objects out of 1000 (max. 8388607)
- 628 compressed objects within 7 object streams
- 194 named destinations out of 1000 (max. 500000)
+ 794 PDF objects out of 1000 (max. 8388607)
+ 635 compressed objects within 7 object streams
+ 196 named destinations out of 1000 (max. 500000)
  552 words of extra memory for PDF output out of 10000 (max. 10000000)
 
