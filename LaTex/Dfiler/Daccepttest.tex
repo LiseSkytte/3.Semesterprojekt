@@ -24,7 +24,7 @@
     \\ \midrule
     1. & Start system &   Kalibrering-vinduet og seneste kalibreringstidspunkt vises  &     &		%{\Huge \checkmark}
     \\
-    2. & Indtast kalibreringsdata og tryk på "Beregn"\--knap  &   Der er indtastet kalibreringsdata i de forskellige tekstbokse og stigningenstallet for hvormange mmHg/V udskrives i Kalibrering-vinduet   &     &		%{\Huge \checkmark}
+    2. & Indtast kalibreringsdata og tryk på "Beregn"\--knap  &   Der er indtastet kalibreringsdata i de forskellige tekstbokse og stigningenstallet for hvor mange mmHg/V udskrives i Kalibrering-vinduet   &     &		%{\Huge \checkmark}
     \\
     3. & Tryk på "OK"\--knap for at udføre kalibrering  &     System kalibrerer og bekræfter fuldført kalibrering  &    &		%{\Huge \checkmark}
 	\\ \midrule
@@ -70,7 +70,7 @@
     \\ \midrule
     1. & Tryk på "Nulpunktjustér"\--knap &    System nulpunktsjusterer  &    &		%{\Huge (\checkmark)}
     \\
-    2. & Observér kurven & Værdien af kurven er lig 0 &		 & %{\Huge (\checkmark)}
+    2. & Observér kurven og Monitor-vinduet & Værdien af kurven er lig 0 samt tidsstempel for seneste nulpunktjustering vises i Monitor-vinduet &		 & %{\Huge (\checkmark)}
     \\
     3. & Observér Monitor-vinduet & Tidsstempel for nulpunktjustering vises & 	& %{\Huge (\checkmark)}
 	\\ \midrule
@@ -91,7 +91,7 @@
     \midrule
     ~ &\textit{Hovedforløb} & ~ & ~ &
     \\ \midrule
-    1. & Markér "Off"\--knap under "Filter" i Monitor-vinduet &    Digital filter deaktiveres &     &		%{\Huge \checkmark}
+    1. & Markér "Off"\--knap under "Filter"\ i Monitor-vinduet &    Digital filter deaktiveres &     &		%{\Huge \checkmark}
     \\
     2. & Observér blodtrykssignalet & Det ufiltrerede blodtrykssignal udskrives i Monitor-vindue & & 		%{\Huge \checkmark}
 	\\ \midrule
@@ -113,7 +113,7 @@
     \midrule
     ~ &\textit{Hovedforløb} & ~ & ~ &
     \\ \midrule
-    1. & Markér "On"\--knap under "Filter" i Monitor-vinduet &    Digitalt filter aktiveres &   &		%{\Huge \checkmark}
+    1. & Markér "On"\--knap under "Filter"\ i Monitor-vinduet &    Digitalt filter aktiveres &   &		%{\Huge \checkmark}
     \\
     2. & Observér blodtrykssignalet & Det filtrerede blodtrykssignal udskrives i Monitor-vinduet & & 	%{\Huge \checkmark}
    	\\ \midrule
@@ -147,7 +147,8 @@
     \\
     6. & Tryk på "OK"\--knap &	System gemmer målingen, og det er ikke muligt at trykke på andre knapper end det røde kryds øverst i højre hjørne & & %{\Huge \checkmark}
     \\
-    7. & Observér Gem-vinduet & Det fremgår af Gem-vinduet, at målingen er gemt & & %{\Huge \checkmark}
+    7. & Observér Gem-vinduet & Det fremgår af Gem-vinduet, at målingen er gemt og der tjekkes i Databasen om målingen er gemt & & %{\Huge \checkmark}
+   
    	\\ \midrule
 	~ &\textit{Undtagelser} & ~ & ~ & 
 	\\ \midrule	
@@ -167,6 +168,8 @@
 	& Ikke-funktionelt krav & Test/handling & Forventet resultat & Faktiske observationer & Godkendt
 	\\[-1ex] \midrule
 	&  \textit{Functionality} &  &  & & \\ \midrule
+	& System skal kunne kalibreres & Indtast gyldige kalibreringsdata. Tryk på "Beregn"\--knap efterfulgt af "OK"\--knap & System kalibrerer og udskriver tidsstempel i Kalibrering-vinduet &  & %{\Huge \checkmark}
+	\\ \midrule
 	& System skal kunne vise et kontinuert blodtrykssignal i Monitor-vinduet & Observér Monitor-vinduet & I Monitor-vinduet vises et kontinuert blodtrykssignal &  & %{\Huge \checkmark}
 	\\ \midrule
 	& System skal kunne vise systole-, diastole- og pulsværdier med op til tre cifre & Observér Monitor-vinduet & Monitor-vinduet indeholder systole-, diastole- og pulsværdier med op til tre cifre &  & %{\Huge \checkmark}
@@ -177,9 +180,15 @@
 	\\ \midrule
 	& System skal kunne gemme en blodtryksmåling i en database & Der trykkes på "Gem"\--knap i Monitor-vinduet, og der indtastes gyldige værdier i Gem-vinduet og trykkes på "OK"\--knap & System gemmer data i en database og udskriver stempel for gemt data i Gem-vinduet &  & %{\Huge \checkmark}
 	\\ \midrule
-	& System skal kunne kalibreres & Indtast gyldige kalibreringsdata. Tryk på "Beregn"\--knap efterfulgt af "OK"\--knap & System kalibrerer og udskriver tidsstempel i Kalibrering-vinduet &  & %{\Huge \checkmark}
-	\\ \midrule
 	& \textit{Usability} &  &  & & \\ \midrule
+	& Kalibrering-vinduet skal indeholde tekstbokse til indtastning af kalibreringsdata & Der ses i kalibrering-vinduet, om der er tekstbokse til indtastning af kalibreringsdata & Der er tekstbokse til indtastning af kalibreringsdata i Kalibrering-vinduet &  & %{\Huge \checkmark}
+	\\ \midrule
+	& Kalibrering-vinduet skal indeholde en ”Beregn”\--knap & Der ses i Kalibrering-vinduet, om der er en ”Beregn”\--knap & Der er en ”Beregn”\--knap i Kalibrering-vinduet &  & %{\Huge \checkmark}
+	\\ \midrule
+	& Kalibrering-vinduet skal indeholde en ”OK”\--knap & Der ses i Kalibrering-vinduet, om der er en ”OK”\--knap & Der er en ”OK”\--knap i Kalibrering-vinduet &  & %{\Huge \checkmark}
+	\\ \midrule
+	& Kalibrering-vinduet skal indeholde et tidsstempel for seneste kalibrering & Der ses i Kalibrering-vinduet, om der er et tidsstempel for seneste kalibrering & Der er et tidsstempel for seneste kalibrering i Kalibrering-vinduet &  & %{\Huge \checkmark}
+	\\ \midrule
 	& Monitor-vinduet skal indeholde en ”Gem”\--knap & Der ses i Monitor-vinduet, om der er en ”Gem”\--knap & Der er en ”Gem”\--knap i Monitor-vinduet &  & %{\Huge \checkmark}
 	\\ \midrule
 	& Monitor-vinduet skal indeholde en ”Nulpunktsjustér”\--knap & Der ses i Monitor-vinduet, om der er en ”Nulpunktsjustér”\--knap & Der er en ”Nulpunktsjustér”\--knap i Monitor-vinduet &  & %{\Huge \checkmark}
@@ -190,25 +199,13 @@
 	\\ \midrule
 	& Monitor-vinduet skal indeholde en tekstboks til ændring af optagelseslængde & Der ses i Monitor-vinduet, om der er en tekstboks til ændring af optagelseslængde & Der er en tekstboks til ændring af optagelseslængde i Monitor-vinduet & & %{\Huge \checkmark}
 	\\ \midrule 
-	& Monitor-vinduet skal indeholde en "Rec"\--knap & Der ses i Monitor-vinduet, om der er en "Rec"\--knap & Der er en "Rec"\--knap i Monitor-vinduet & & %{\Huge \checkmark}
+	& Monitor-vinduet skal indeholde en "Rec"\--knap/"Stop"\--knap & Der ses i Monitor-vinduet, om der er en "Rec"\--knap/"Stop"\--knap & Der er en "Rec"\--knap/"Stop"\--knap i Monitor-vinduet & & %{\Huge \checkmark}
 	\\ \midrule 
-	& Monitor-vinduet skal indeholde en "Stop"\--knap & Der ses i Monitor-vinduet, om der er en "Stop"\--knap & Der er en "Stop"\--knap i Monitor-vinduet & & %{\Huge \checkmark}
-	\\ \midrule 
-	& Kalibrering-vinduet skal indeholde tekstbokse til indtastning af kalibreringsdata & Der ses i kalibrering-vinduet, om der er tekstbokse til indtastning af kalibreringsdata & Der er tekstbokse til indtastning af kalibreringsdata i Kalibrering-vinduet &  & %{\Huge \checkmark}
-	\\ \midrule
-	& Kalibrering-vinduet skal indeholde en ”Ja”\--knap og en ”Nej”\--knap & Der ses i kalibrering-vinduet om der er en ”Ja”\--knap og en ”Nej”\--knap & Der er en ”Ja”\--knap og en ”Nej”\--knap i Kalibrering-vinduet &  & %{\Huge \checkmark}
-	\\ \midrule
-	& Kalibrering-vinduet skal indeholde en ”Beregn”\--knap & Der ses i Kalibrering-vinduet, om der er en ”Beregn”\--knap & Der er en ”Beregn”\--knap i Kalibrering-vinduet &  & %{\Huge \checkmark}
-	\\ \midrule
-	& Kalibrering-vinduet skal indeholde en ”OK”\--knap & Der ses i Kalibrering-vinduet, om der er en ”OK”\--knap & Der er en ”OK”\--knap i Kalibrering-vinduet &  & %{\Huge \checkmark}
-	\\ \midrule
-	& Kalibrering-vinduet skal indeholde et tidsstempel for seneste kalibrering & Der ses i Kalibrering-vinduet, om der er et tidsstempel for seneste kalibrering & Der er et tidsstempel for seneste kalibrering i Kalibrering-vinduet &  & %{\Huge \checkmark}
-	\\ \midrule
 	& Gem-vinduet skal indeholde tekstbokse til indtastning af oplysninger om målingen & Der ses i Gem-vinduet, om der er tekstbokse til indtastning af oplysninger om målingen & Der er tekstbokse til indtastning af oplysninger om målingen i Gem-vinduet & & %{\Huge \checkmark}
 	\\ \midrule
 	& Gem-vinduet skal indeholde en ”OK”\--knap & Der ses i Gem-vinduet, om der er en "OK"\--knap & Der er en "OK"\--knap i Gem-vinduet & & %{\Huge \checkmark}
 	\\ \midrule
-	& Det skal være muligt at aflæse værdier på Monitor-vinduet fra 2 meters afstand med normalt syn & Der testes på 5 personer af forskellige aldre med en synsstyrke på +/- 0,25, som placeres 2 meter fra Monitor-vinduet & Det er muligt for de 5 personer at aflæse værdierne på 2 meters afstand & & %{\Huge \checkmark}
+	& Det skal være muligt at aflæse systole-, diastole- og pulsværdier på Monitor-vinduet fra 2 meters afstand med normalt syn & Der testes på 5 personer af forskellige aldre med en synsstyrke på +/- 0,25, som placeres 2 meter fra Monitor-vinduet & Det er muligt for de 5 personer at aflæse systole-, diastole- og pulsværdier på 2 meters afstand & & %{\Huge \checkmark}
 	\\ \midrule
 	& \textit{Reliability} & & & & \\ \midrule
 	& Systemet skal have en effektiv MTBF på 99 timer og MTTR på 20 minutter & Ikke testbar &   &  & %{\Huge \checkmark}
