@@ -7,7 +7,7 @@
 \contentsline {chapter}{\chapternumberline {1}Indledning}{1}{chapter.1}
 \contentsline {chapter}{\chapternumberline {2}Projektformulering}{3}{chapter.2}
 \contentsline {chapter}{\chapternumberline {3}Baggrund}{5}{chapter.3}
-\contentsline {section}{\numberline {3.1}Blodtryk}{5}{section.3.1}
+\contentsline {section}{\numberline {3.1}Kroppens kredsl\IeC {\o }b}{5}{section.3.1}
 \contentsline {section}{\numberline {3.2}Invasiv blodtryksm\IeC {\r a}ling}{9}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Dynamiske egenskaber}{13}{subsection.3.2.1}
 \contentsline {chapter}{\chapternumberline {4}Systembeskrivelse}{17}{chapter.4}
