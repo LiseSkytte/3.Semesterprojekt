@@ -115,7 +115,7 @@ Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forsk
     Sekundære aktør &&	 Måleobjekt og Tryktransducer\\
     Mål &&    Forsker ønsker at vise blodtrykssignal med digitalt filter\\
     Initiering &&	Startes efter afsluttet UC1\\
-    Forudsætninger &&  System er aktivt og tilgængeligt. Digitalt filter er aktivt. Tryktransducer er tilsluttet system\\
+    Forudsætninger &&  System er aktivt og tilgængeligt. Digitalt filter er aktivt. Tryktransducer er tilsluttet system. Måleobjekt er tilsluttet tryktransducer\\
     Resultat &&		Det filtrerede blodtrykssignal udskrives                         \\ \midrule
     Hovedforløb &    1. &    Det filtrerede blodtrykssignal vises i en graf i Monitor-vinduet\newline\\ \midrule
                 
@@ -197,16 +197,16 @@ Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forsk
     Sekundære aktør &&	Database\\
     Mål &&    Forsker ønsker at gemme data i Database\\
     Initiering &&	Startes af Forsker\\
-    Forudsætninger &&  System er aktivt og tilgængeligt. UC2 kører  \\
+    Forudsætninger &&  System er aktivt og tilgængeligt. UC4 eller UC5 kører  \\
     Resultat &&		Data er gemt i Database                 \\ \midrule
-    Hovedforløb &    1. &    Forsker bestemmer optagelseslængde for målingen \newline
+    Hovedforløb &    1. &    Forsker bestemmer optagelseslængde for målingen i Monitorvindue \newline
     						 [1.a \textit{Forsker ændrer ikke optagelseslængden for målingen}]\\   						 
                 &    2. &    Forsker igangsætter optagelse af målingen 		 \\[-1ex] 
                 &    3.	&	 Målingen stopper\newline
                 			 [3.a \textit{Forsker stopper optagelsen af måling inden optagelseslængden er nået}]\\
-                &	 4.	&	 Forsker vælger at gemme målingen og Gem-vinduet åbnes\\[-1ex]			 
+                &	 4.	&	 Forsker åbner Gem-vinduet\\[-1ex]			 
                 &	 5. &	 Forsker indtaster oplysninger om målingen \\[-1ex]
-                &	 6. &	 Forsker trykker på "OK"\--knappen og system gemmer målingen				 \\[-1ex]
+                &	 6. &	 Forsker trykker på "OK"\--knappen og system gemmer målingen i Database				 \\[-1ex]
                 &	 7.	&	 Det fremgår af 	Gem-vinduet, at målingen 		 er gemt\newline\\ \midrule
                 
     Undtagelser &    1.a &   Forsker ønsker ikke at ændre optagelseslængde for målingen. Forsætter ved punkt 2 i UC6 \\
