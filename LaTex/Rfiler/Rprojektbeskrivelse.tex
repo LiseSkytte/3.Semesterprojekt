@@ -9,6 +9,36 @@ Ud fra den givne projektformulering og tilgang til emnet er der udformet en tids
 \end{figure}
 Udviklingsprocessen, Scrum, er blandt andet blevet brugt i nedbrydning af selve opgaven i delelementer, hvor de vigtigste delopgaver er prioriteret først. Via Scrum inddeles arbejdet i sprints, hvilket tidsplanen ligeledes er blevet. Sprints er forskellige faser, som eksempelvis projektopstart, kravspecifikation, accepttest, design osv.\\\\
 I tidsplanen er der markeret et P for det planlagte arbejde, hvor reviews er markeret med bogstavet R. Derudover er der markeret flueben i tidsplanen for udført arbejde. Flueben i parentes repræsenterer, hvornår arbejdet skulle have været færdig, men ikke blev det. Uge 42 er markeret med orange farve, da der var efterårsferie, og her var der heller ikke planlagt arbejde. Uge 47 og 48 er også markeret med orange farve og bogstavet P, da der i denne periode har været planlagt arbejde. Dette arbejde er dog ikke blevet udført grundet eksamenslæsning og eksamen.
+\\\\
+\\\\
+\\\\
+\subsection{Deadlines}
+Der er fra projektets start blevet stillet deadlines til forskellige dele af projektet.
+
+\begin{longtabu} to \linewidth{@{}l X[j]@{}}
+	Dato &    Deadlines \\[-1ex]
+	\midrule
+	02.10.2015		&	Aflevering af kravspecifikation og accepttest til review-gruppen \\[-1ex]
+	09.10.2015			&	Review af kravspecifikation og accepttest færdiggjort med review-gruppen\\[-1ex]
+	06.11.2015		&	Aflevering af design til review-gruppen \\[-1ex]	
+	13.11.2015		&	Review af design færdiggjort med review-gruppen \\[-1ex] 
+	11.12.2015		&	Accepttest med vejleder\\[-1ex]
+	16.12.2015		&	Aflevering af projekt\\[-1ex]
+	\caption{Deadlines}
+\end{longtabu}
+De første to deadlines i Tabel 6.1 har omhandlet kravspecifikation og accepttesten, hvor kravspecifikation er blevet udarbejdet først, efterfulgt af accepttesten. 
+ hvor de efterfølgende to har omhandlet design. 
+
+Der har fra projektets start været deadlines til forskellige dele af projektet. Første deadline omhandlede, som det kan ses i tidsplanen (tabel 2), kravspecifikation og accepttest. Disse to dokumenter udvikledes parallelt, og gruppen arbejdede i fællesskab om at definere problemet, løsningen og kravene til projektet. 
+
+Der har derudover været deadlines i forhold til design og implementering. Der er igennem hele forløbet blevet arbejdet med de forskellige dele af projektet, hvor også den samtidige Indledende System Engineering-undervisning (ISE) er blevet brugt til beskrivelse af systemet. 
+
+Sidste deadline i projektet er accepttest med en kunde, som i dette tilfælde er vejlederen. 
+
+
+\subsection{Mødestruktur}
+
+
 \subsection{ASE-modellen}
 Projektets udviklingsproces har taget udgangspunkt i ASE-modellen, som ses på nedenstående figur. Denne afspejles desuden også i den overordnede tidsplan. 
 \begin{figure}[H]
@@ -18,6 +48,7 @@ Projektets udviklingsproces har taget udgangspunkt i ASE-modellen, som ses på n
 \end{figure}
 ASE-modellen er en udviklingsmodel, der tager udgangspunkt i use cases, som defineres i kravspecifikationen i starten af projektarbejdet. ASE-modellen er inspireret af vandfaldsmodellen, hvor projektarbejdet opdeles i faser. Der fastlægges en opgaveformulering, kravspecifikation og systemarkitektur, for derefter at designe, implementere og teste de enkelte moduler i iterationer. Ud fra projektformuleringen specificeres kravspecifikationen som en række use cases, der beskriver de forskellige aktørers interaktion med systemet. Dette giver et overblik over, hvilke krav, der stilles til systemets funktionalitet. Ud fra kravspecifikationen bliver systemets accepttest udarbejdet. Efter kravspecifikationen er fastlagt, udarbejdes systemarkitekturen. Ud fra systemarkitekturen designes systemet ved at nedbryde det efter funktionalitet, som kan bindes til både software og hardware. \\\\
 De første step i udviklingen af projektet iflg. ASE-modellen er blevet udarbejdet af alle gruppens medlemmer. Alle har bidraget til projektformuleringen, kravspecifikationen og accepttesten. I begyndelsen var der primært fokus på, at få dette færdiggjort, men der blev allerede her arbejdet på komponentværdier og udkast til hardwaren. I starten af projektarbejdet var det udtænkt, at alle gruppens medlemmer skulle arbejde med alle områder i projektet. Dette kunne ikke udføres rent tidsmæssigt, og derfor var en opdeling af arbejdsopgaver i mindre grupper nødvendig. Det blev delt op i software- og hardwarehold, dog var en del af hardwaren allerede beregnet og implementeret, da denne opdeling fandt sted. Tilbage af hardwaredelen var at lodde det på et veroboard og derefter teste det.\\\\
+
 \subsection{V-modellen}
 V-modellen er en udviklingsmodel opdelt i forskellige faser, der beskriver udviklingsfaserne og testfasrrne i projektet sideløbende. Denne model er blevet benyttet sideløbende med ASE-modellen, og fungerer således, at specifikationen af tests foregår sideløbende med udviklingen af selve systemet. Hver fase skal færdiggøres inden næste fase påbegyndes, hvilket også var tiltænkt i projektet. Dette blev dog ikke helt opfyldt i projektet, da der ofte blev rettet i tidligere faser, selvom de reelt skulle have været færdiggjort.
 \begin{figure}[H]
@@ -25,14 +56,16 @@ V-modellen er en udviklingsmodel opdelt i forskellige faser, der beskriver udvik
 	\includegraphics[width=1\textwidth]{Figurer/vmodel}
 	\caption{V-modellen}
 \end{figure}
-På ovenstående figur ses V-modellen, hvor den første fase er udvikingen af kravspecifikationen. Hertil udvikles en tilhørende accepttest, som gør det muligt, at tjekke om systemet opfylder de stillede krav. 
+På ovenstående figur ses V-modellen, hvor den første fase er udvikingen af kravspecifikationen. Hertil udvikles en tilhørende accepttest, som gør det muligt, at tjekke om systemet opfylder de stillede krav. Næste fase er systemarkitekturen, hvor der ligeledes udvikles en tilhørende test. Testen skal undersøge integrationen mellem de implementerede moduler. De to sidste faser er design og implementering, som der udføres løbende tests af. 
 
-\subsection{Deadlines}
-
-\subsection{Mødestruktur}
-
- 
-
+\subsection{Vandfaldsmodellen}
+Vandfaldsmodellen er en model, der ofte benyttes for udviklingen af software. Udviklingen af software foregår på den måde, at en ny fase af modulen først påbegyndes, når den foranliggende fase er færdiggjort, som kan ses på figuren nedenfor. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/vfmodel}
+	\caption{Vandfaldsmodellen}
+\end{figure}
+De tre udviklingsmodeller hænger alle sammen på den måde, at der arbejdes i kronologisk logisk rækkefølge. De har suppleret hinanden alle tre, hvor ASE-modellen har skabt det overordnede overblik. Vandfaldsmodellen er den udviklingsproces, som der er blevet arbejdet efter i alle projektets facetter. V-modellen har sikret, at de nødvendige tests af systemet og de enkelte moduler har fundet sted. 
 
 
 
