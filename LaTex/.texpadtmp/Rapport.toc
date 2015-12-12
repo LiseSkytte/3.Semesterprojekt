@@ -14,19 +14,20 @@
 \contentsline {chapter}{\chapternumberline {5}Krav}{19}{chapter.5}
 \contentsline {chapter}{\chapternumberline {6}Projektbeskrivelse}{23}{chapter.6}
 \contentsline {section}{\numberline {6.1}Projektgennemf\IeC {\o }relse}{23}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}ASE-modellen}{23}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}V-modellen}{24}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}Deadlines}{25}{subsection.6.1.3}
-\contentsline {subsection}{\numberline {6.1.4}M\IeC {\o }destruktur}{25}{subsection.6.1.4}
-\contentsline {section}{\numberline {6.2}Metode}{25}{section.6.2}
-\contentsline {subsubsection}{Arbejdsredskaber}{26}{section*.21}
-\contentsline {section}{\numberline {6.3}Specifikation og analyse}{27}{section.6.3}
-\contentsline {section}{\numberline {6.4}Arkitektur}{27}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Design}{27}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Implementering og test af SW}{27}{subsection.6.4.2}
-\contentsline {subsection}{\numberline {6.4.3}Implementering og test af HW}{27}{subsection.6.4.3}
-\contentsline {section}{\numberline {6.5}Resultater og diskussion}{27}{section.6.5}
-\contentsline {section}{\numberline {6.6}Opn\IeC {\r a}ede erfaringer}{27}{section.6.6}
-\contentsline {section}{\numberline {6.7}Fremtidigt arbejde}{27}{section.6.7}
-\contentsline {chapter}{\chapternumberline {7}Konklusion}{29}{chapter.7}
-\contentsline {chapter}{Litteratur}{31}{chapter*.22}
+\contentsline {subsection}{\numberline {6.1.1}Deadlines}{24}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}M\IeC {\o }destruktur}{24}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}ASE-modellen}{24}{subsection.6.1.3}
+\contentsline {subsection}{\numberline {6.1.4}V-modellen}{25}{subsection.6.1.4}
+\contentsline {subsection}{\numberline {6.1.5}Vandfaldsmodellen}{26}{subsection.6.1.5}
+\contentsline {section}{\numberline {6.2}Metode}{27}{section.6.2}
+\contentsline {subsubsection}{Arbejdsredskaber}{28}{section*.22}
+\contentsline {section}{\numberline {6.3}Specifikation og analyse}{29}{section.6.3}
+\contentsline {section}{\numberline {6.4}Arkitektur}{29}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Design}{29}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Implementering og test af SW}{29}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Implementering og test af HW}{29}{subsection.6.4.3}
+\contentsline {section}{\numberline {6.5}Resultater og diskussion}{29}{section.6.5}
+\contentsline {section}{\numberline {6.6}Opn\IeC {\r a}ede erfaringer}{29}{section.6.6}
+\contentsline {section}{\numberline {6.7}Fremtidigt arbejde}{29}{section.6.7}
+\contentsline {chapter}{\chapternumberline {7}Konklusion}{31}{chapter.7}
+\contentsline {chapter}{Litteratur}{33}{chapter*.23}
