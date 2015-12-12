@@ -21,7 +21,10 @@
 \contentsline {subsection}{\numberline {6.1.5}Vandfaldsmodellen}{26}{subsection.6.1.5}
 \contentsline {section}{\numberline {6.2}Metode}{27}{section.6.2}
 \contentsline {subsubsection}{Arbejdsredskaber}{28}{section*.22}
-\contentsline {section}{\numberline {6.3}Specifikation og analyse}{29}{section.6.3}
+\contentsline {section}{\numberline {6.3}Specifikation og analyse}{28}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Hardware}{28}{subsection.6.3.1}
+\contentsline {subsubsection}{Tryktransducer}{29}{section*.23}
+\contentsline {subsubsection}{Forst\IeC {\ae }rker}{29}{section*.24}
 \contentsline {section}{\numberline {6.4}Arkitektur}{29}{section.6.4}
 \contentsline {subsection}{\numberline {6.4.1}Design}{29}{subsection.6.4.1}
 \contentsline {subsection}{\numberline {6.4.2}Implementering og test af SW}{29}{subsection.6.4.2}
@@ -30,4 +33,4 @@
 \contentsline {section}{\numberline {6.6}Opn\IeC {\r a}ede erfaringer}{29}{section.6.6}
 \contentsline {section}{\numberline {6.7}Fremtidigt arbejde}{29}{section.6.7}
 \contentsline {chapter}{\chapternumberline {7}Konklusion}{31}{chapter.7}
-\contentsline {chapter}{Litteratur}{33}{chapter*.23}
+\contentsline {chapter}{Litteratur}{33}{chapter*.25}

@@ -83,7 +83,15 @@ Alle SysML- og UML-diagrammer er udarbejdet i programmet Visio. Koden er skrevet
 
 \section{Specifikation og analyse}
 \subsection{Hardware}
+Den udviklede hardware består af en forstærker samt et filter. Forstærkeren har til opgave at forstærke det elektriske signal, som tryktransduceren har transformeret ud fra en given trykændring. Filterets opgave er at frafiltrere unødige frekvenser for at få det mest optimale signal.
+\\\\
+\subsubsection{Tryktransducer}
+Eksitationsspændingen for forstærkeren og filteret leveres af to 9 volts batterier. Der er valgt, at sætte en 5 volts regulator i forbindelse med tryktransduceren for at sikre, at strømmen gennem Wheatestone broen ikke bliver for stor. En for stor strøm kan give anledning til, at Wheatestone bro vil drive og de fire strain gauges i sidste ende kan brande af.\\
+  
 
+\subsubsection{Forstærker}
+
+    
 
 \section{Arkitektur}
 \subsection{Design}
