@@ -188,6 +188,92 @@ Det talte antal pulsslag holdes op mod dem der er talt af metoden beregnpuls.
 
 Den beregnede puls er 90, hvilket stemmer overens med 15 pulsslag på 10 sekunder.Denne test kan bekræfte at metoden fungerer efter hensigten.
 
+\subsection{UC1 Kalibrer}
+
+Forsker indtaster (målte) kalibreringsdata. Kalibreringsdata for seneste kalibreringsdata vises.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Test_Kalibrer_1}
+	\caption{Kalibreringsdata indtastet}
+\end{figure}
+
+De målte værdier beregnes.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Test_Kalibrer_2}
+	\caption{Kalibreringskonstant udregnes}
+\end{figure}
+
+Kalibreringskonstanten implementeres ved udskrivning på graf.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Test_Kalibrer_3}
+	\caption{Kalibreringsdata anvendes}
+\end{figure}
+Det kontrolleres at kalibreringsfilen er opdateret
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Test_Kalibrer_4}
+	\caption{Kalibreringsdata er gemt til fil}
+\end{figure}
+
+\subsection{UC2 Vis måling}
+Et inputsignal på 1 Hz, 1 V amplitude og 0 V offset bruges til input på den fysiske DAQ. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Test_Vis_1}
+	\caption{Inputsignal til DAQ}
+\end{figure}
+
+Det ses at kalibreringskonstanten (mmHg/V) = 57,9.
+Nulpunktsjusteringsværdien er tæt på 0.
+Maksværdien på signalet (Systole) skal være 58 mmHg.
+Minimumsværdien på signalet skal være -58mmHg. 
+Pulsen skal være 60 = 1 Hz.
+
+Kalibreringskonstante er 57,9. Det udskrevne "blodtryk" er 57,9 mm Hg.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Test_Vis_2}
+	\caption{Output på monitor-vindue}
+\end{figure}
+
+
+
+
+\subsection{UC3 Nulpunktsjuster}
+
+Et DC signal på 1 V bruges til indgangssignal til DAQ.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Test_Nul_1}
+	\caption{Inputsignal til DAQ}
+\end{figure}
+
+Det ses at kalibreringskonstanten er på 57, og inputsignalet genererer det korrekte "blodtryk"
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Test_Nul_2}
+	\caption{Inputsignal til DAQ}
+\end{figure}
+
+Der trykkes på knappen "Nulpunktsjuster" og grafens værdi falder til 0. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Test_Nul_3}
+	\caption{Inputsignal til DAQ}
+\end{figure}
+
+
+
+
+
+
+
+
 
 \subsection{Filter}
 
@@ -197,6 +283,4 @@ Filteret er bygget op som et FIR-filter med 10 filterkoefficienter. Hver udskrev
 
 
 I denne liste indsættes en variabel, som sørger for at samples stiger med 10 pr. indsat værdi. Spændingen findes ved at tage y-værdien til den givne sample og de foregående ni værdier og beregner gennemsnittet af disse. Denne værdi indsættes i listen for vores filter, som så videre kan behandles før den udskrives i Monitor-vinduet.
-
-\subsection{Kalibrer}
 
