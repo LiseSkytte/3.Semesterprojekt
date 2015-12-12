@@ -30,7 +30,7 @@ På figur 2.1 ses BDD for systemet. BDD viser de forskellige hardware blokke for
 	Blodtryksmåler & Det overordnede system, som indeholder Tryktransducer, Signalbehandling, DAQ og Computer.\\[-1ex]
 	Tryktransducer & Registrerer en fysisk størrelse i form af en trykændring. Tryktransduceren har til opgave at transformere den fysiske størrelse til en elektrisk spænding, som viderebehandles gennem de resterne hardware blokke.  \\[-1ex]
 	Signalbehandling & Består af to dele. En forstærkerdel og en filteringsdel. Det analoge signal fra tryktransduceren bliver via denne blok forstærket og filteret.\\[-1ex]
-	DAQ & Konverterer det forstærkede og filterede analoge signal til et digitalt signal.\\[-1ex]
+	DAQ & Konverterer det forstærkede og filterede analoge signal til et digitalt signal. Der er valgt et spændingsområde fra +/- 5 V.\\[-1ex]
 	Computer & Indeholder software til systemet, som er kodet i Visual Studio C\#. Softwaren kan blandt andet vise det digitale signal grafisk. Softwaren kan ligeledes kalibrere, nulpunktsjustere og gemme målinger samt aktivere og deaktiver filter.\\[-1ex]
 	\caption{Beskrivelse af blokkene for systemet}
 	\end{longtabu}
@@ -77,8 +77,8 @@ For systemet er der valgt, at tryktransducerens målbare område skal ligge i in
 	Tryktransducer & Blodtryk & in & Tryk & 0 - 300 mmHg \\[-1ex]
 				& Analogt & out & Spænding & +/- 7,5 mV \\[-1ex]
 	Signalbehandling  & Analogt & in & Spænding & +/- 7,5 mV \\[-1ex]
-			 & Forstærket og filteret analogt & out & Spænding & +/- 10 V \\[-1ex]
-	DAQ			& Forstærket og filteret analogt & in & Spænding & +/- 10 V \\[-1ex]	
+			 & Forstærket og filteret analogt & out & Spænding & +/- 5 V \\[-1ex]
+	DAQ			& Forstærket og filteret analogt & in & Spænding & +/- 5 V \\[-1ex]	
 				& Digitalt & out & 14-bit double & 0-5 V \\[-1ex]
 	Computer	& Digitalt & in & 14-bit double &  0-5 V \\[-1ex]
 	\caption{Kommunikationsprotokol}	

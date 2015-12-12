@@ -15,48 +15,49 @@
 \contentsline {subsection}{\numberline {1.4.4}Performance}{9}{subsection.1.4.4}
 \contentsline {subsection}{\numberline {1.4.5}Supportability}{10}{subsection.1.4.5}
 \contentsline {subsection}{\numberline {1.4.6}Andre(+)}{10}{subsection.1.4.6}
+\contentsline {subsection}{\numberline {1.4.7}GUI}{10}{subsection.1.4.7}
 \contentsline {chapter}{\chapternumberline {2}Design}{11}{chapter.2}
 \contentsline {section}{\numberline {2.1}Systemarkitektur}{11}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}BDD}{11}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}IBD}{12}{subsection.2.1.2}
 \contentsline {section}{\numberline {2.2}Gr\IeC {\ae }nseflader}{13}{section.2.2}
 \contentsline {section}{\numberline {2.3}Hardware arkitektur}{14}{section.2.3}
-\contentsline {subsubsection}{Tryktransducer}{14}{section*.6}
-\contentsline {subsubsection}{Forst\IeC {\ae }rkerblok}{14}{section*.7}
-\contentsline {subsubsection}{Filterblok}{15}{section*.8}
+\contentsline {subsubsection}{Tryktransducer}{14}{section*.7}
+\contentsline {subsubsection}{Forst\IeC {\ae }rkerblok}{14}{section*.8}
+\contentsline {subsubsection}{Filterblok}{15}{section*.9}
 \contentsline {subsection}{\numberline {2.3.1}BDD}{15}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}IBD}{15}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Gr\IeC {\ae }nseflader}{15}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}Forst\IeC {\ae }rkerblok}{16}{subsection.2.3.4}
-\contentsline {subsubsection}{Specifikationer}{16}{section*.11}
-\contentsline {subsection}{\numberline {2.3.5}Filterblok}{16}{subsection.2.3.5}
 \contentsline {subsubsection}{Specifikationer}{16}{section*.12}
+\contentsline {subsection}{\numberline {2.3.5}Filterblok}{16}{subsection.2.3.5}
+\contentsline {subsubsection}{Specifikationer}{16}{section*.13}
 \contentsline {section}{\numberline {2.4}Software arkitektur}{17}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Dom\IeC {\ae }nemodel}{17}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Applikationsmodel}{17}{subsection.2.4.2}
-\contentsline {subsubsection}{Sekvensdiagram}{17}{section*.14}
-\contentsline {subsubsection}{Opdateret klassediagram}{22}{section*.21}
+\contentsline {subsubsection}{Sekvensdiagram}{17}{section*.15}
+\contentsline {subsubsection}{Opdateret klassediagram}{22}{section*.22}
 \contentsline {chapter}{\chapternumberline {3}HW implementering og test}{27}{chapter.3}
 \contentsline {section}{\numberline {3.1}Implementering}{27}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Forst\IeC {\ae }rkerblok}{27}{subsection.3.1.1}
-\contentsline {subsubsection}{Forst\IeC {\ae }rkning}{28}{section*.30}
-\contentsline {subsubsection}{B\IeC {\r a}ndbredde}{28}{section*.31}
-\contentsline {subsubsection}{Gainmodstand}{28}{section*.32}
+\contentsline {subsubsection}{Forst\IeC {\ae }rkning}{28}{section*.31}
+\contentsline {subsubsection}{B\IeC {\r a}ndbredde}{28}{section*.32}
+\contentsline {subsubsection}{Gainmodstand}{28}{section*.33}
 \contentsline {section}{\numberline {3.2}Filterblok}{29}{section.3.2}
-\contentsline {subsubsection}{Beregning af komponentv\IeC {\ae }rdier}{29}{section*.35}
-\contentsline {subsubsection}{Overf\IeC {\o }ringsfunktion}{29}{section*.36}
-\contentsline {subsubsection}{Standardform}{30}{section*.37}
-\contentsline {subsubsection}{Magnitude Bodeplot}{30}{section*.38}
+\contentsline {subsubsection}{Beregning af komponentv\IeC {\ae }rdier}{29}{section*.36}
+\contentsline {subsubsection}{Overf\IeC {\o }ringsfunktion}{29}{section*.37}
+\contentsline {subsubsection}{Standardform}{30}{section*.38}
+\contentsline {subsubsection}{Magnitude Bodeplot}{30}{section*.39}
 \contentsline {section}{\numberline {3.3}Test}{31}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Test af forst\IeC {\ae }rkerblok}{31}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Test af filterblok}{32}{subsection.3.3.2}
-\contentsline {subsubsection}{Filtering ved 1 Hz}{34}{section*.43}
-\contentsline {subsubsection}{Filtering ved 50 Hz}{34}{section*.45}
-\contentsline {subsubsection}{Filtering ved 500 Hz}{35}{section*.47}
+\contentsline {subsubsection}{Filtering ved 1 Hz}{34}{section*.44}
+\contentsline {subsubsection}{Filtering ved 50 Hz}{34}{section*.46}
+\contentsline {subsubsection}{Filtering ved 500 Hz}{35}{section*.48}
 \contentsline {subsection}{\numberline {3.3.3}Test af signalbehandlingblok}{35}{subsection.3.3.3}
-\contentsline {subsubsection}{Test ved 1 Hz}{36}{section*.50}
-\contentsline {subsubsection}{Test ved 50 Hz}{37}{section*.52}
-\contentsline {subsubsection}{Test ved 500 Hz}{38}{section*.54}
+\contentsline {subsubsection}{Test ved 1 Hz}{36}{section*.51}
+\contentsline {subsubsection}{Test ved 50 Hz}{37}{section*.53}
+\contentsline {subsubsection}{Test ved 500 Hz}{38}{section*.55}
 \contentsline {chapter}{\chapternumberline {4}SW implementering og test }{39}{chapter.4}
 \contentsline {chapter}{\chapternumberline {5}Acceptest}{41}{chapter.5}
 \contentsline {section}{\numberline {5.1}Accepttest af Use Cases}{41}{section.5.1}
