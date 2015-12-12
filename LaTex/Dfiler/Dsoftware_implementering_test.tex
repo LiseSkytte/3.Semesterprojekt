@@ -40,19 +40,48 @@ Beregninger er hovedsageligt et lag hvor logiske beregninger foretages.\\Herund
 \end{figure}
 
 \subsubsection{Monitor}
-Monitorlaget er brugerens generelle visuelle interaktionslag med systemet. Heri observeres udskrevne blodtrykssignaler over 4-sekunders intervaller. Værdierne puls, systolisk og diastolisk blodtryk udskrives også her. Designet er inspireret fra i forvejen eksisterende blodtryks monitoreringssystemer. \\Der er mulighed for at vælge en længde af optagelse af måling, op påbegyndelse/stoppe med en ”Rec” knap. Herefter kan gem vinduet åbnes hvor den optagne sekvens kan gemmes. Der er en knap til udførelse af nulpunktsjustering. Den kørende måling kan vises med et filter, eller uden med 2 radio butons. Y- og X-akse kan påsættes med 2 radio buttons. 
+Monitorlaget er forskerens generelle visuelle interaktionslag med systemet. Heri observeres udskrevne blodtrykssignaler over 4-sekunders intervaller. Værdierne puls, systolisk og diastolisk blodtryk udskrives også her. Designet er inspireret fra i forvejen eksisterende blodtryks monitoreringssystemer. \\Der er mulighed for at vælge en længde af optagelse af måling, op påbegyndelse/stoppe med en ”Rec” knap. Herefter kan gem vinduet åbnes hvor den optagne sekvens kan gemmes. Der er en knap til udførelse af nulpunktsjustering. Den kørende måling kan vises med et filter, eller uden med 2 radio butons. Y- og X-akse kan påsættes med 2 radio buttons. 
 
 \subsubsection{Gem}
 Vinduet udskriver den optagne sekvens i et vindue der visuelt ligner monitor vinduet. Der er to tekstbokse, hvor en kommentar og et navn, for den ansvarlige af målingen, kan indtastes.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Gem}
+	\caption{Gem vindue, med 10 sekunders måling}
+\end{figure}
 
 \subsubsection{Kalibrer}
 Vinduet indeholder to tekstbokse til indtastning af tryk og tekstbokse til dertilhørende spænding. Spændingerne kan måles automatisk ved tryk på knapperne ”mål”.Kalibreringskonstanten kan udregnes med knappen ”Beregn”, og gemmes og anvendes ved tryk på ”OK” knappen.
 
 \subsection{DTO}
 DTO er et namespace det indeholder data transfer object (DTO). Alle den andre lag ”kender” dette lag, og kan oprette instanser af klassen DTO.\\Denne klasse har attributterne tid og spænding. Formålet med denne klasse er at overføre sampleværdier fra DAQ i et format der har en korrekt tidsværdi, samt et tryk (blodtryk) korrigeret for nulpunktstryk samt kalibrering.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{Figurer/DTO_kode}
+	\caption{DTO klassen med metoder}
+\end{figure}
 
 \subsubsection{Publisher/subscriber pattern}
-Data ”strømmen” fra DAQ klassen, er styrende for alle de andre klasser, bl.a. udskrivning af blodtrykket i monitor vinduet. Den fysiske DAQ måler i med 1000 Hz og returnerer data til DAQ klassen med 50 ms intervaller. Dette måleinterval indeholder 50 sampleværdier. Disse data sendes videre til beregninger klassen, og fra beregninger klassen til monitor klassen vha. Publisher/Subscriber mønstret. Når data befinder sig i monitor klassen kan der laver logiske beregninger og manipulation på data i beregninger klassen.Forholdet imellem klasserne er således; DAQ klassen og beregninger klassen har et publisher/subscriber forhold, og  beregninger og monitor har et publisher/subscriber forhold.
+Data ”strømmen” fra DAQ klassen, er styrende for alle de andre klasser, bl.a. udskrivning af blodtrykket i monitor vinduet. Den fysiske DAQ måler i med 1000 Hz og returnerer data til DAQ klassen med 50 ms intervaller. Dette måleinterval indeholder 50 sampleværdier. Disse data sendes videre til beregninger klassen, og fra beregninger klassen til monitor klassen vha. Publisher/Subscriber mønstret. Når data befinder sig i monitor klassen kan der laver logiske beregninger og manipulation på data i beregninger klassen.Forholdet imellem klasserne er således; DAQ klassen og beregninger klassen har et publisher/subscriber forhold, og  beregninger og monitor har et publisher/subscriber forhold. \\
+Hierakiet fremgår af figurerne herunder.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{Figurer/DAQ_pub}
+	\caption{DAQ klassens arvehieraki}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{Figurer/Beregninger_subpub}
+	\caption{Beregninger klassens arvehieraki}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{Figurer/Monitor_sub}
+	\caption{Monitor klassens arvehieraki}
+\end{figure}
+
 
 \subsection{Metodebeskrivelser}
 Metoden der beregner puls, har to logiske grene til udregning af pulsen. Den første (til venstre i diagram) regner pulsen når der er mellem 3000 og 10000 samples til rådighed, altså når den fysiske DAQ har målt imellem 3 og 10 sekunder.\\Metodikken består i at lokalisere toppunkter i signalet, for at udregne det gennemsnitlige interval herimellem. Herudfra kan pulsen estimeres. \\En for-løkke bruges til at evaluere alle sampleværdier i forhold til de før liggende og efterfølgende samples. Hvis værdien på den pågældende sample har større værdi end den før liggende og efterfølgende, gemmes tidspunktet for dette sample i en liste.\\ 
@@ -67,40 +96,62 @@ For at sikre at ”toppunktet” ikke er et mindre toppunkt, fra fx støj eller 
 
 
 \subsection{Sekvensdiagrammer}
-******INDSÆT KORT INDLEDNING TIL NEDENSTÅENDE SEKVENSDIAGRAMMER******
+Sekvensdiagrammerne beskriver kommunikationen imellem software klasserne der er involveret i de respektive Use Cases.\\
 
+
+\subsubsection{UC1}
+Forsker trykker på knappen "Beregn" anmoder kalibrerings klassen om metoden 'beregn' i klassen Beregninger. Den udregnede kalibreringskonstant returneres.\\
+Forsker trykker på knappen "OK" og metoden 'gemkalibrering' afvikles i klassen beregninger. Herfra afvikles metoden gemkalibrering i Datagem klassen. Datagem returnerer en bool der beskriver om gemningen var succesfuld.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/UC1_SD}
+	\includegraphics[width=1\textwidth]{Figurer/UC1_SD_SW}
 	\caption{Sekvensdiagram for UC1}
 \end{figure}
 
+\subsubsection{UC2}
+Når monitor vinduet åbnes (når programmet starter) afvikles metoden 'startreader' i DAQ. Vha. publisher/subscriber metoden 'NotifySubscriber' returneres rådata til Beregninger og videre til Monitor.\\
+Rådata sendes til Beregninger og omregnes til tid og blodtryk vha DTO klassen.
+'beregnSYS', 'beregnDIA' og 'beregnPuls' returnerer ligeledes double værdier med systolisk og diastolisk blodtryk samt puls.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/UC2_SD}
+	\includegraphics[width=1\textwidth]{Figurer/UC2_SD_SW}
 	\caption{Sekvensdiagram for UC2}
 \end{figure}
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1\textwidth]{Figurer/UC3_SD}
-	\caption{Sekvensdiagram for UC3}
-\end{figure}
+\subsubsection{UC3}
+'getNulpunktsstring' returnerer en string der indeholder data om seneste nulpunktsjustering. Denne udskrives på Monitor.\\
+Forsker trykker på knappen 'Nulpunktsjuster' og Beregninger udfører en nulpunktsjustering, gemmer data i Datagem, og returnerer en ny string der beskriver seneste (denne) nulpunktsjusterin.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/UC4_SD}
+	\includegraphics[width=1\textwidth]{Figurer/UC3_SD_SW}
+	\caption{Sekvensdiagram for UC3}
+\end{figure}
+\subsubsection{UC4}
+Forsker sætter radibutton til filter til "off".
+Bool "filteron" sættes til false, og sendes med metoden der udregner blodtryk' beregnBlodtryk', i beregninger. Den returnerede liste af DTO'er, som udskrives i Monitor, er ufiltrerede.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/UC4_SD_SW}
 	\caption{Sekvensdiagram for UC4}
 \end{figure}
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1\textwidth]{Figurer/UC5_SD}
-	\caption{Sekvensdiagram for UC5}
-\end{figure}
+\subsubsection{UC5}
+Forsker sætter radibutton til filter til "on".
+Bool "filteron" sættes til true, og sendes med metoden der udregner blodtryk 'beregnBlodtryk', i beregninger. Den returnerede liste af DTO'er, som udskrives i Monitor, er filtrerede.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/UC6_SD}
+	\includegraphics[width=1\textwidth]{Figurer/UC5_SD_SW}
+	\caption{Sekvensdiagram for UC5}
+\end{figure}
+
+\subsubsection{UC6}
+Forsker vælger en optagelseslængde og trykker på "record". Monitor-vinduet sender så en bool til beregninger der startes en optagelse af signalet. Når 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/UC6_SD_SW}
 	\caption{Sekvensdiagram for UC6}
 \end{figure}

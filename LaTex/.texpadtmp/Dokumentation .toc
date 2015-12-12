@@ -42,18 +42,18 @@
 \contentsline {subsubsection}{Forst\IeC {\ae }rkning}{26}{section*.26}
 \contentsline {subsubsection}{B\IeC {\r a}ndbredde}{26}{section*.27}
 \contentsline {subsubsection}{Gainmodstand}{26}{section*.28}
-\contentsline {section}{\numberline {3.2}Filterblok}{27}{section.3.2}
+\contentsline {subsection}{\numberline {3.1.2}Filterblok}{27}{subsection.3.1.2}
 \contentsline {subsubsection}{Beregning af komponentv\IeC {\ae }rdier}{27}{section*.31}
 \contentsline {subsubsection}{Overf\IeC {\o }ringsfunktion}{27}{section*.32}
 \contentsline {subsubsection}{Standardform}{28}{section*.33}
 \contentsline {subsubsection}{Magnitude Bodeplot}{28}{section*.34}
-\contentsline {section}{\numberline {3.3}Test}{29}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Test af forst\IeC {\ae }rkerblok}{29}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Test af filterblok}{30}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.2}Test}{29}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Test af forst\IeC {\ae }rkerblok}{29}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Test af filterblok}{30}{subsection.3.2.2}
 \contentsline {subsubsection}{Filtering ved 1 Hz}{32}{section*.39}
 \contentsline {subsubsection}{Filtering ved 50 Hz}{32}{section*.41}
 \contentsline {subsubsection}{Filtering ved 500 Hz}{33}{section*.43}
-\contentsline {subsection}{\numberline {3.3.3}Test af signalbehandlingblok}{33}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.2.3}Test af signalbehandlingblok}{33}{subsection.3.2.3}
 \contentsline {subsubsection}{Test ved 1 Hz}{34}{section*.46}
 \contentsline {subsubsection}{Test ved 50 Hz}{35}{section*.48}
 \contentsline {subsubsection}{Test ved 500 Hz}{36}{section*.50}
@@ -68,17 +68,23 @@
 \contentsline {subsection}{\numberline {4.1.3}Pr\IeC {\ae }sentations lag}{39}{subsection.4.1.3}
 \contentsline {subsubsection}{Monitor}{39}{section*.59}
 \contentsline {subsubsection}{Gem}{40}{section*.60}
-\contentsline {subsubsection}{Kalibrer}{40}{section*.61}
+\contentsline {subsubsection}{Kalibrer}{40}{section*.62}
 \contentsline {subsection}{\numberline {4.1.4}DTO}{40}{subsection.4.1.4}
-\contentsline {subsubsection}{Publisher/subscriber pattern}{40}{section*.62}
-\contentsline {subsection}{\numberline {4.1.5}Metodebeskrivelser}{40}{subsection.4.1.5}
-\contentsline {subsection}{\numberline {4.1.6}Sekvensdiagrammer}{41}{subsection.4.1.6}
-\contentsline {chapter}{\chapternumberline {5}Acceptest}{47}{chapter.5}
-\contentsline {section}{\numberline {5.1}Accepttest af Use Cases}{47}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Use Case 1}{47}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Use Case 2}{48}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Use Case 3}{48}{subsection.5.1.3}
-\contentsline {subsection}{\numberline {5.1.4}Use Case 4}{49}{subsection.5.1.4}
-\contentsline {subsection}{\numberline {5.1.5}Use Case 5}{49}{subsection.5.1.5}
-\contentsline {subsection}{\numberline {5.1.6}Use Case 6}{50}{subsection.5.1.6}
-\contentsline {section}{\numberline {5.2}Accepttest af ikke-funktionelle krav}{51}{section.5.2}
+\contentsline {subsubsection}{Publisher/subscriber pattern}{41}{section*.64}
+\contentsline {subsection}{\numberline {4.1.5}Metodebeskrivelser}{42}{subsection.4.1.5}
+\contentsline {subsection}{\numberline {4.1.6}Sekvensdiagrammer}{43}{subsection.4.1.6}
+\contentsline {subsubsection}{UC1}{43}{section*.69}
+\contentsline {subsubsection}{UC2}{44}{section*.71}
+\contentsline {subsubsection}{UC3}{45}{section*.73}
+\contentsline {subsubsection}{UC4}{45}{section*.75}
+\contentsline {subsubsection}{UC5}{46}{section*.77}
+\contentsline {subsubsection}{UC6}{47}{section*.79}
+\contentsline {chapter}{\chapternumberline {5}Acceptest}{49}{chapter.5}
+\contentsline {section}{\numberline {5.1}Accepttest af Use Cases}{49}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Use Case 1}{49}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Use Case 2}{50}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Use Case 3}{50}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}Use Case 4}{51}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.5}Use Case 5}{51}{subsection.5.1.5}
+\contentsline {subsection}{\numberline {5.1.6}Use Case 6}{52}{subsection.5.1.6}
+\contentsline {section}{\numberline {5.2}Accepttest af ikke-funktionelle krav}{53}{section.5.2}
