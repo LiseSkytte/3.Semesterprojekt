@@ -31,8 +31,8 @@
 \contentsline {subsection}{\numberline {6.4.1}Hardwarearkitektur}{30}{subsection.6.4.1}
 \contentsline {subsection}{\numberline {6.4.2}Softwarearkitektur}{31}{subsection.6.4.2}
 \contentsline {section}{\numberline {6.5}Design}{32}{section.6.5}
-\contentsline {subsection}{\numberline {6.5.1}Implementering og test af SW}{32}{subsection.6.5.1}
-\contentsline {subsection}{\numberline {6.5.2}Implementering og test af HW}{32}{subsection.6.5.2}
+\contentsline {subsection}{\numberline {6.5.1}Implementering og test af HW}{32}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Implementering og test af SW}{32}{subsection.6.5.2}
 \contentsline {section}{\numberline {6.6}Resultater og diskussion}{32}{section.6.6}
 \contentsline {section}{\numberline {6.7}Opn\IeC {\r a}ede erfaringer}{32}{section.6.7}
 \contentsline {section}{\numberline {6.8}Fremtidigt arbejde}{32}{section.6.8}
