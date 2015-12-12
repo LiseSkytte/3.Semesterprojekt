@@ -98,7 +98,6 @@ For at sikre at ”toppunktet” ikke er et mindre toppunkt, fra fx støj eller 
 \subsection{Sekvensdiagrammer}
 Sekvensdiagrammerne beskriver kommunikationen imellem software klasserne der er involveret i de respektive Use Cases.\\
 
-
 \subsubsection{UC1}
 Forsker trykker på knappen "Beregn" anmoder kalibrerings klassen om metoden 'beregn' i klassen Beregninger. Den udregnede kalibreringskonstant returneres.\\
 Forsker trykker på knappen "OK" og metoden 'gemkalibrering' afvikles i klassen beregninger. Herfra afvikles metoden gemkalibrering i Datagem klassen. Datagem returnerer en bool der beskriver om gemningen var succesfuld.
@@ -155,3 +154,49 @@ Forsker vælger en optagelseslængde og trykker på "record". Monitor-vinduet se
 	\includegraphics[width=1\textwidth]{Figurer/UC6_SD_SW}
 	\caption{Sekvensdiagram for UC6}
 \end{figure}
+
+\section{Test}
+Til at teste de forskellige metoder i softwaren har benyttes debugging. Debugging gør det muligt at følge compilerens sekventielle udførelse af programmet. Når der udføres handlinger og attributværdier sættes kan dette følges, og sættes op mod de forventede resultater. Såfremt der skulle opstå fejl gør debugging det muligt at fokuserer på enkelte metoder og undersøge, hvor fejlen opstår.
+\subsection{Puls}
+Til at teste pulsmetoden startes en optagelse fra starten af målingen. Målelængden sættes til 10 sek. Disse parametre sætte i monitor-vinduets constructor.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{Figurer/Pulstest_record}
+	\caption{Monitor vinduets default constructor ved puls-test}
+\end{figure}
+Et break point sættes ved metoden der returnerer en puls efter baseret på 10000 samples. Metoden har talt 15 pulsslag.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Pulstest_debug}
+	\caption{Puls efter 10 sekunders måling}
+\end{figure}
+Antallet af pulsslag tællet på gem vinduet for de 10 sekunder. Her er der talt 15 pulsslag. Kun 4 sekunder kan vises ad gangen.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Pulstest_gemmevindue}
+	\caption{Puls efter 10 sekunders måling}
+\end{figure}
+
+Det talte antal pulsslag holdes op mod dem der er talt af metoden beregnpuls.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Pulstest_monitor}
+	\caption{Puls efter 10 sekunders måling}
+\end{figure}
+
+
+Den beregnede puls er 90, hvilket stemmer overens med 15 pulsslag på 10 sekunder.Denne test kan bekræfte at metoden fungerer efter hensigten.
+
+
+\subsection{Filter}
+
+
+
+Filteret er bygget op som et FIR-filter med 10 filterkoefficienter. Hver udskrevet punkt på grafen, er et gennemsnitsværdi af de foregående 10 værdier.
+
+
+I denne liste indsættes en variabel, som sørger for at samples stiger med 10 pr. indsat værdi. Spændingen findes ved at tage y-værdien til den givne sample og de foregående ni værdier og beregner gennemsnittet af disse. Denne værdi indsættes i listen for vores filter, som så videre kan behandles før den udskrives i Monitor-vinduet.
+
+\subsection{Kalibrer}
+

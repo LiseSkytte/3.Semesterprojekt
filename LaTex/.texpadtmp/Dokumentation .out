@@ -44,12 +44,16 @@
 \BOOKMARK [2][-]{subsection.4.1.4}{DTO}{section.4.1}% 44
 \BOOKMARK [2][-]{subsection.4.1.5}{Metodebeskrivelser}{section.4.1}% 45
 \BOOKMARK [2][-]{subsection.4.1.6}{Sekvensdiagrammer}{section.4.1}% 46
-\BOOKMARK [0][-]{chapter.5}{Acceptest}{}% 47
-\BOOKMARK [1][-]{section.5.1}{Accepttest af Use Cases}{chapter.5}% 48
-\BOOKMARK [2][-]{subsection.5.1.1}{Use Case 1}{section.5.1}% 49
-\BOOKMARK [2][-]{subsection.5.1.2}{Use Case 2}{section.5.1}% 50
-\BOOKMARK [2][-]{subsection.5.1.3}{Use Case 3}{section.5.1}% 51
-\BOOKMARK [2][-]{subsection.5.1.4}{Use Case 4}{section.5.1}% 52
-\BOOKMARK [2][-]{subsection.5.1.5}{Use Case 5}{section.5.1}% 53
-\BOOKMARK [2][-]{subsection.5.1.6}{Use Case 6}{section.5.1}% 54
-\BOOKMARK [1][-]{section.5.2}{Accepttest af ikke-funktionelle krav}{chapter.5}% 55
+\BOOKMARK [1][-]{section.4.2}{Test}{chapter.4}% 47
+\BOOKMARK [2][-]{subsection.4.2.1}{Puls}{section.4.2}% 48
+\BOOKMARK [2][-]{subsection.4.2.2}{Filter}{section.4.2}% 49
+\BOOKMARK [2][-]{subsection.4.2.3}{Kalibrer}{section.4.2}% 50
+\BOOKMARK [0][-]{chapter.5}{Acceptest}{}% 51
+\BOOKMARK [1][-]{section.5.1}{Accepttest af Use Cases}{chapter.5}% 52
+\BOOKMARK [2][-]{subsection.5.1.1}{Use Case 1}{section.5.1}% 53
+\BOOKMARK [2][-]{subsection.5.1.2}{Use Case 2}{section.5.1}% 54
+\BOOKMARK [2][-]{subsection.5.1.3}{Use Case 3}{section.5.1}% 55
+\BOOKMARK [2][-]{subsection.5.1.4}{Use Case 4}{section.5.1}% 56
+\BOOKMARK [2][-]{subsection.5.1.5}{Use Case 5}{section.5.1}% 57
+\BOOKMARK [2][-]{subsection.5.1.6}{Use Case 6}{section.5.1}% 58
+\BOOKMARK [1][-]{section.5.2}{Accepttest af ikke-funktionelle krav}{chapter.5}% 59
