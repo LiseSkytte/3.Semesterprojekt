@@ -81,16 +81,31 @@ Alle SysML- og UML-diagrammer er udarbejdet i programmet Visio. Koden er skrevet
 
 
 \section{Specifikation og analyse}
+Dette afsnit har til formål at beskrive de løsninger, der benyttes i forhold til de valgte hardware- og software specifikationer. 
+
 \subsection{Hardware}
-Den udviklede hardware består af en forstærker samt et filter. Forstærkeren har til opgave at forstærke det elektriske signal, som tryktransduceren har transformeret ud fra en given trykændring. Filterets opgave er at frafiltrere unødige frekvenser for at få det mest optimale signal.
+Den udviklede hardward, som omtales signalbehandlingsblok, består af en forstærker samt et filter. Forstærkeren har til opgave at forstærke det elektriske signal, som tryktransduceren har transformeret ud fra en given trykændring. Filterets opgave er at frafiltrere unødige frekvenser for at få det mest optimale signal.
 \\\\
 \subsubsection{Tryktransducer}
 Eksitationsspændingen for forstærkeren og filteret leveres af to 9 volts batterier. Der er valgt, at sætte en 5 volts regulator i forbindelse med tryktransduceren for at sikre, at strømmen gennem Wheatestone broen ikke bliver for stor. En for stor strøm kan give anledning til, at Wheatestone bro vil drive og de fire strain gauges i sidste ende kan brande af.\\
-  
+For at kunne beregne de tilstrækkelige komponentværdier for forstærkeren og filteret bestemmes en maksimal trykændring, den udviklede hardware skal kunne klare. Den maksimal trykændring for dette system er 0-300 mmHg. Da det er blodtryk, systemet skal kunne monitorere, er denne trykændring tilstrækkelig, da man ikke forventer, at et blodtryk vil komme over 300 mmHg.
 
 \subsubsection{Forstærker}
+Tryktransduceren vil transformere et tryk på 300 mmHg om til 7,5 mV, se Projektdokumentationen uden grænsefalder for udregningen (2.2). Denne spændingen er forholdsvis lille og vil ikke udnytte DAQ'ens måleområde optimalt, som er valgt til +/- 5 V. Så for at få den bedste konvertering af det analoge signal til det digitale signal, skal spændingen forstærkes op til 5 V. 
+\\\\
+Til dette benyttes den ikke-inverterende operationsforstærker, INA114 samt et potentiometer, der fungere som gain-modstanden. Gain-modstanden er en variabel modstand, der kan variere i forhold til, hvilken forstærkning, der ønskes. Udregningen for forstærkningen ses i Projektdokumentationen under Hardware arkitektur (2.3) under ligningerne (2.4) og (2.4). Udregningen for gain-modstanden kan ses i Projektdokumentationen unden HW implementering og test (3) under udregningen (3.3).     
 
-    
+\subsubsection{Filteret}
+Det forstærkerede analoge signal skal videre filteres før det konventeres til det digitale signal. De relevante frekvenser, der udgør en blodtryksmåling, ligge mellem 0-50 Hz\footnote{Se bogen Medical Instrumentation s. 10}. Derfor ønskes alle frekvenser over 50 Hz dæmpet.
+\\\\
+Til dette designes et Sallen Key lavpasfilter med unity gain, hvor cutofffrekvensen er 50 Hz. Udregningerne for kompontværdierne til denne realisering, se HW implementering og test (3) i Projekdokumentationen under Filterblok (3.2).
+
+\subsection{Software} 
+
+
+
+
+        
 
 \section{Arkitektur}
 I følgende afsnit beskrives systemarkitekturen for blodtryksmålesystemet. Systemarkitekturen fungerer som en udviklingsramme for videreudviklingen af design og implementering. Her bliver systemets funktionalitet nedbrudt til overordnede moduler. Gennem dette afsnit ønskes der at skabe et overordnet overblik over systemet. Der benyttes diagrammer med tilhørende beskrivelser til at specificere og klarlægge systemkravene.
@@ -121,7 +136,8 @@ I domænemodellen ses interaktionen mellem de konceptuelle klasser og aktører. 
 For yderligere information om forløbene i de seks Use Cases (2.4.2) henvises der til Projektdokumentationen under Design. 
 
 
-\subsection{Design}
+\section{Design}
+
 \subsection{Implementering og test af SW}
 \subsection{Implementering og test af HW}
 
