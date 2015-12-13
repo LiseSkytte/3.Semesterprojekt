@@ -73,19 +73,19 @@
 \contentsline {subsubsection}{Publisher/subscriber pattern}{41}{section*.64}
 \contentsline {subsection}{\numberline {4.1.5}Metodebeskrivelser}{42}{subsection.4.1.5}
 \contentsline {subsection}{\numberline {4.1.6}Sekvensdiagrammer}{43}{subsection.4.1.6}
-\contentsline {subsubsection}{UC1}{43}{section*.69}
-\contentsline {subsubsection}{UC2}{44}{section*.71}
-\contentsline {subsubsection}{UC3}{45}{section*.73}
-\contentsline {subsubsection}{UC4}{45}{section*.75}
-\contentsline {subsubsection}{UC5}{46}{section*.77}
-\contentsline {subsubsection}{UC6}{47}{section*.79}
+\contentsline {subsubsection}{UC1 Kalibrer}{43}{section*.69}
+\contentsline {subsubsection}{UC2 Vis m\IeC {\r a}ling}{44}{section*.71}
+\contentsline {subsubsection}{UC3 Nulpunktjuster}{45}{section*.73}
+\contentsline {subsubsection}{UC4 Deaktiver filter}{45}{section*.75}
+\contentsline {subsubsection}{UC5 Aktiver filter}{46}{section*.77}
+\contentsline {subsubsection}{UC6 Gem m\IeC {\r a}ling}{47}{section*.79}
 \contentsline {section}{\numberline {4.2}Test}{47}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Puls}{48}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}UC1 Kalibrer}{49}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}UC2 Vis m\IeC {\r a}ling}{52}{subsection.4.2.3}
 \contentsline {subsection}{\numberline {4.2.4}UC3 Nulpunktsjuster}{53}{subsection.4.2.4}
 \contentsline {subsection}{\numberline {4.2.5}UC4 Deaktiver filter}{54}{subsection.4.2.5}
-\contentsline {subsection}{\numberline {4.2.6}UC5 Aktiver Filter}{56}{subsection.4.2.6}
+\contentsline {subsection}{\numberline {4.2.6}UC5 Aktiver filter}{56}{subsection.4.2.6}
 \contentsline {subsection}{\numberline {4.2.7}UC6 Gem m\IeC {\r a}ling}{58}{subsection.4.2.7}
 \contentsline {chapter}{\chapternumberline {5}Acceptest}{63}{chapter.5}
 \contentsline {section}{\numberline {5.1}Accepttest af Use Cases}{63}{section.5.1}

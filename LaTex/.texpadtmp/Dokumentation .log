@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.7)  13 DEC 2015 14:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.7)  13 DEC 2015 14:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2839,33 +2839,2704 @@ Package pdftex.def Info: Figurer/UC3_SD_SW.png used on input line 138.
  <Figurer/UC4_SD_SW.png, id=737, 865.73438pt x 508.90125pt>
 File: Figurer/UC4_SD_SW.png Graphic file (type png)
  <use Figurer/UC4_SD_SW.png>
-Package pdftex.def Info: Figurer/UC4_SD_SW.png used on input line 147.
+Package pdftex.def Info: Figurer/UC4_SD_SW.png used on input line 148.
 (pdftex.def)             Requested size: 426.0pt x 250.4121pt.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 150.
+(babel)             in language  on input line 151.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 150.
+(babel)             in language  on input line 151.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 150.
+(babel)             in language  on input line 151.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 150.
+(babel)             in language  on input line 151.
  [45 <./Figurer/UC3_SD_SW.png>] <Figurer/UC5_SD_SW.png, id=747, 1025.33063pt x 581.17125pt>
 File: Figurer/UC5_SD_SW.png Graphic file (type png)
  <use Figurer/UC5_SD_SW.png>
-Package pdftex.def Info: Figurer/UC5_SD_SW.png used on input line 158.
+Package pdftex.def Info: Figurer/UC5_SD_SW.png used on input line 159.
 (pdftex.def)             Requested size: 426.0pt x 241.46535pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--167
+Underfull \hbox (badness 10000) in paragraph at lines 164--168
 
  []
 
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 167.
+(babel)             in language  on input line 168.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 167.
+(babel)             in language  on input line 168.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 167.
+(babel)             in language  on input line 168.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 167.
+(babel)             in language  on input line 168.
 [46 <./Figurer/UC4_SD_SW.png> <./Figurer/UC5_SD_SW.png>] <Figurer/UC6_SD_SW.png, id=757, 449.13345pt x 437.78215pt>
-File: Figurer/UC6_SD_SW.
+File: Figurer/UC6_SD_SW.png Graphic file (type png)
+ <use Figurer/UC6_SD_SW.png>
+Package pdftex.def Info: Figurer/UC6_SD_SW.png used on input line 174.
+(pdftex.def)             Requested size: 426.0pt x 415.23604pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 178.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 178.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 180.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 180.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 180.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 180.
+ [47 <./Figurer/UC6_SD_SW.png>]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 180.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 180.
+ <Figurer/Pulstest_record.png, id=766, 331.8366pt x 376.1067pt>
+File: Figurer/Pulstest_record.png Graphic file (type png)
+ <use Figurer/Pulstest_record.png>
+Package pdftex.def Info: Figurer/Pulstest_record.png used on input line 184.
+(pdftex.def)             Requested size: 213.0pt x 241.41908pt.
+ <Figurer/Pulstest_debug.png, id=767, 526.70073pt x 183.51283pt>
+File: Figurer/Pulstest_debug.png Graphic file (type png)
+ <use Figurer/Pulstest_debug.png>
+Package pdftex.def Info: Figurer/Pulstest_debug.png used on input line 190.
+(pdftex.def)             Requested size: 426.0pt x 148.42896pt.
+ <Figurer/Pulstest_gemmevindue.png, id=768, 752.21341pt x 365.51215pt>
+File: Figurer/Pulstest_gemmevindue.png Graphic file (type png)
+ <use Figurer/Pulstest_gemmevindue.png>
+Package pdftex.def Info: Figurer/Pulstest_gemmevindue.png used on input line 196.
+(pdftex.def)             Requested size: 426.0pt x 207.00554pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 199.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 199.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 199.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 199.
+ [48 <./Figurer/Pulstest_record.png> <./Figurer/Pulstest_debug.png>] <Figurer/Pulstest_monitor.png, id=777, 731.40266pt x 367.02565pt>
+File: Figurer/Pulstest_monitor.png Graphic file (type png)
+ <use Figurer/Pulstest_monitor.png>
+Package pdftex.def Info: Figurer/Pulstest_monitor.png used on input line 204.
+(pdftex.def)             Requested size: 426.0pt x 213.77667pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 211.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 211.
+ <Figurer/Test_Kalibrer_1.png, id=778, 299.29617pt x 287.18811pt>
+File: Figurer/Test_Kalibrer_1.png Graphic file (type png)
+ <use Figurer/Test_Kalibrer_1.png>
+Package pdftex.def Info: Figurer/Test_Kalibrer_1.png used on input line 217.
+(pdftex.def)             Requested size: 426.0pt x 408.78278pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 220.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 220.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 220.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 220.
+ [49 <./Figurer/Pulstest_gemmevindue.png> <./Figurer/Pulstest_monitor.png>] <Figurer/Test_Kalibrer_2.png, id=787, 1284.8pt x 803.0pt>
+File: Figurer/Test_Kalibrer_2.png Graphic file (type png)
+ <use Figurer/Test_Kalibrer_2.png>
+Package pdftex.def Info: Figurer/Test_Kalibrer_2.png used on input line 225.
+(pdftex.def)             Requested size: 426.0pt x 266.25285pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 228.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 228.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 228.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 228.
+ [50 <./Figurer/Test_Kalibrer_1.png>] <Figurer/Test_Kalibrer_3.png, id=794, 1284.8pt x 803.0pt>
+File: Figurer/Test_Kalibrer_3.png Graphic file (type png)
+ <use Figurer/Test_Kalibrer_3.png>
+Package pdftex.def Info: Figurer/Test_Kalibrer_3.png used on input line 232.
+(pdftex.def)             Requested size: 426.0pt x 266.25285pt.
+ <Figurer/Test_Kalibrer_4.png, id=795, 719.2946pt x 256.16121pt>
+File: Figurer/Test_Kalibrer_4.png Graphic file (type png)
+ <use Figurer/Test_Kalibrer_4.png>
+Package pdftex.def Info: Figurer/Test_Kalibrer_4.png used on input line 238.
+(pdftex.def)             Requested size: 426.0pt x 151.71228pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 241.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 241.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 241.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 241.
+ [51 <./Figurer/Test_Kalibrer_2.png> <./Figurer/Test_Kalibrer_3.png>]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 242.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 242.
+ <Figurer/Test_Vis_1.png, id=805, 1284.8pt x 803.0pt>
+File: Figurer/Test_Vis_1.png Graphic file (type png)
+ <use Figurer/Test_Vis_1.png>
+Package pdftex.def Info: Figurer/Test_Vis_1.png used on input line 246.
+(pdftex.def)             Requested size: 426.0pt x 266.25285pt.
+ <Figurer/Test_Vis_2.png, id=806, 1284.8pt x 803.0pt>
+File: Figurer/Test_Vis_2.png Graphic file (type png)
+ <use Figurer/Test_Vis_2.png>
+Package pdftex.def Info: Figurer/Test_Vis_2.png used on input line 259.
+(pdftex.def)             Requested size: 426.0pt x 266.25285pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 262.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 262.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 262.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 262.
+ [52 <./Figurer/Test_Kalibrer_4.png> <./Figurer/Test_Vis_1.png>]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 266.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 266.
+ <Figurer/Test_Nul_1.png, id=815, 1284.8pt x 803.0pt>
+File: Figurer/Test_Nul_1.png Graphic file (type png)
+ <use Figurer/Test_Nul_1.png>
+Package pdftex.def Info: Figurer/Test_Nul_1.png used on input line 271.
+(pdftex.def)             Requested size: 426.0pt x 266.25285pt.
+ <Figurer/Test_Nul_2.png, id=816, 1284.8pt x 803.0pt>
+File: Figurer/Test_Nul_2.png Graphic file (type png)
+ <use Figurer/Test_Nul_2.png>
+Package pdftex.def Info: Figurer/Test_Nul_2.png used on input line 278.
+(pdftex.def)             Requested size: 426.0pt x 266.25285pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 281.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 281.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 281.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 281.
+ [53 <./Figurer/Test_Vis_2.png> <./Figurer/Test_Nul_1.png>] <Figurer/Test_Nul_3.png, id=825, 1284.8pt x 803.0pt>
+File: Figurer/Test_Nul_3.png Graphic file (type png)
+ <use Figurer/Test_Nul_3.png>
+Package pdftex.def Info: Figurer/Test_Nul_3.png used on input line 286.
+(pdftex.def)             Requested size: 426.0pt x 266.25285pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 291.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 291.
+ <Figurer/Test_Deaktiver_1.png, id=826, 732.91618pt x 367.40404pt>
+File: Figurer/Test_Deaktiver_1.png Graphic file (type png)
+ <use Figurer/Test_Deaktiver_1.png>
+Package pdftex.def Info: Figurer/Test_Deaktiver_1.png used on input line 297.
+(pdftex.def)             Requested size: 426.0pt x 213.54858pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 300.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 300.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 300.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 300.
+ [54 <./Figurer/Test_Nul_2.png> <./Figurer/Test_Nul_3.png>] <Figurer/Test_Deaktiver_2.png, id=835, 537.29529pt x 223.99916pt>
+File: Figurer/Test_Deaktiver_2.png Graphic file (type png)
+ <use Figurer/Test_Deaktiver_2.png>
+Package pdftex.def Info: Figurer/Test_Deaktiver_2.png used on input line 305.
+(pdftex.def)             Requested size: 426.0pt x 177.60338pt.
+
+<Figurer/Test_Deaktiver_3.png, id=836, 626.21387pt x 312.53937pt>
+File: Figurer/Test_Deaktiver_3.png Graphic file (type png)
+ <use Figurer/Test_Deaktiver_3.png>
+Package pdftex.def Info: Figurer/Test_Deaktiver_3.png used on input line 313.
+(pdftex.def)             Requested size: 426.0pt x 212.61932pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 316.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 316.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 316.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 316.
+ [55 <./Figurer/Test_Deaktiver_1.png> <./Figurer/Test_Deaktiver_2.png>] <Figurer/Test_Deaktiver_4.png, id=845, 525.18723pt x 358.32298pt>
+File: Figurer/Test_Deaktiver_4.png Graphic file (type png)
+ <use Figurer/Test_Deaktiver_4.png>
+Package pdftex.def Info: Figurer/Test_Deaktiver_4.png used on input line 321.
+(pdftex.def)             Requested size: 426.0pt x 290.66103pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 325.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 325.
+ <Figurer/Test_Aktiver_1.png, id=846, 733.29456pt x 366.64728pt>
+File: Figurer/Test_Aktiver_1.png Graphic file (type png)
+ <use Figurer/Test_Aktiver_1.png>
+Package pdftex.def Info: Figurer/Test_Aktiver_1.png used on input line 331.
+(pdftex.def)             Requested size: 426.0pt x 213.00243pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 334.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 334.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 334.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 334.
+ [56 <./Figurer/Test_Deaktiver_3.png> <./Figurer/Test_Deaktiver_4.png>] <Figurer/Test_Aktiver_2.png, id=855, 525.18723pt x 358.32298pt>
+File: Figurer/Test_Aktiver_2.png Graphic file (type png)
+ <use Figurer/Test_Aktiver_2.png>
+Package pdftex.def Info: Figurer/Test_Aktiver_2.png used on input line 339.
+(pdftex.def)             Requested size: 426.0pt x 290.66103pt.
+ <Figurer/Test_Aktiver_3.png, id=856, 626.21387pt x 312.161pt>
+File: Figurer/Test_Aktiver_3.png Graphic file (type png)
+ <use Figurer/Test_Aktiver_3.png>
+Package pdftex.def Info: Figurer/Test_Aktiver_3.png used on input line 347.
+(pdftex.def)             Requested size: 426.0pt x 212.36192pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 350.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 350.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 350.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 350.
+ [57 <./Figurer/Test_Aktiver_1.png> <./Figurer/Test_Aktiver_2.png>]
+File: Figurer/Test_Aktiver_3.png Graphic file (type png)
+ <use Figurer/Test_Aktiver_3.png>
+Package pdftex.def Info: Figurer/Test_Aktiver_3.png used on input line 355.
+(pdftex.def)             Requested size: 426.0pt x 212.36192pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 359.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 359.
+ <Figurer/UC6_InitialConditions.png, id=866, 656.48402pt x 331.45822pt>
+File: Figurer/UC6_InitialConditions.png Graphic file (type png)
+ <use Figurer/UC6_InitialConditions.png>
+Package pdftex.def Info: Figurer/UC6_InitialConditions.png used on input line 363.
+(pdftex.def)             Requested size: 426.0pt x 215.09125pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 366.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 366.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 366.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 366.
+ [58 <./Figurer/Test_Aktiver_3.png>] <Figurer/UC6_ForceRecEnd.png, id=874, 625.8355pt x 315.188pt>
+File: Figurer/UC6_ForceRecEnd.png Graphic file (type png)
+ <use Figurer/UC6_ForceRecEnd.png>
+Package pdftex.def Info: Figurer/UC6_ForceRecEnd.png used on input line 371.
+(pdftex.def)             Requested size: 426.0pt x 214.55104pt.
+ <Figurer/UC6_Record_Start.png, id=875, 1284.8pt x 803.0pt>
+File: Figurer/UC6_Record_Start.png Graphic file (type png)
+ <use Figurer/UC6_Record_Start.png>
+Package pdftex.def Info: Figurer/UC6_Record_Start.png used on input line 379.
+(pdftex.def)             Requested size: 426.0pt x 266.25285pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 382.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 382.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 382.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 382.
+ [59 <./Figurer/UC6_InitialConditions.png> <./Figurer/UC6_ForceRecEnd.png>] <Figurer/UC6_Record_Slut.png, id=884, 1284.8pt x 803.0pt>
+File: Figurer/UC6_Record_Slut.png Graphic file (type png)
+ <use Figurer/UC6_Record_Slut.png>
+Package pdftex.def Info: Figurer/UC6_Record_Slut.png used on input line 387.
+(pdftex.def)             Requested size: 426.0pt x 266.25285pt.
+ <Figurer/UC6_BtnGem.png, id=885, 847.56439pt x 222.86403pt>
+File: Figurer/UC6_BtnGem.png Graphic file (type png)
+ <use Figurer/UC6_BtnGem.png>
+Package pdftex.def Info: Figurer/UC6_BtnGem.png used on input line 395.
+(pdftex.def)             Requested size: 426.0pt x 112.01665pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 397.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 397.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 397.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 397.
+ [60 <./Figurer/UC6_Record_Start.png> <./Figurer/UC6_Record_Slut.png>] <Figurer/UC6_Vardier.png, id=894, 537.67366pt x 375.34995pt>
+File: Figurer/UC6_Vardier.png Graphic file (type png)
+ <use Figurer/UC6_Vardier.png>
+Package pdftex.def Info: Figurer/UC6_Vardier.png used on input line 403.
+(pdftex.def)             Requested size: 426.0pt x 297.39377pt.
+ <Figurer/UC6_Samplearray.png, id=895, 642.86246pt x 155.51294pt>
+File: Figurer/UC6_Samplearray.png Graphic file (type png)
+ <use Figurer/UC6_Samplearray.png>
+Package pdftex.def Info: Figurer/UC6_Samplearray.png used on input line 411.
+(pdftex.def)             Requested size: 426.0pt x 103.05411pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 414.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 414.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 414.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 414.
+ [61 <./Figurer/UC6_BtnGem.png> <./Figurer/UC6_Vardier.png>] <Figurer/UC6_MalSuc.png, id=904, 753.72691pt x 367.02565pt>
+File: Figurer/UC6_MalSuc.png Graphic file (type png)
+ <use Figurer/UC6_MalSuc.png>
+Package pdftex.def Info: Figurer/UC6_MalSuc.png used on input line 419.
+(pdftex.def)             Requested size: 426.0pt x 207.43707pt.
+ <Figurer/UC6_Database2.png, id=905, 740.86209pt x 145.67513pt>
+File: Figurer/UC6_Database2.png Graphic file (type png)
+ <use Figurer/UC6_Database2.png>
+Package pdftex.def Info: Figurer/UC6_Database2.png used on input line 428.
+(pdftex.def)             Requested size: 426.0pt x 83.76476pt.
+)
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 18.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 18.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 18.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 18.
+ [62 <./Figurer/UC6_Samplearray.png> <./Figurer/UC6_MalSuc.png> <./Figurer/UC6_Database2.png>]
+\openout2 = `Dfiler/Daccepttest.aux'.
+
+ (./Dfiler/Daccepttest.tex
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 13.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 13.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 17.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 17.
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+[]\T1/cmr/m/n/10.95 Kalibrering-vinduet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+\T1/cmr/m/n/10.95 og se-ne-ste ka-li-bre-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+[]\T1/cmr/m/n/10.95 Kalibrering-vinduet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+\T1/cmr/m/n/10.95 og se-ne-ste ka-li-bre-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+[]\T1/cmr/m/n/10.95 Indtast ka-li-bre-rings-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+\T1/cmr/m/n/10.95 da-ta og tryk på
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+\T1/cmr/m/n/10.95 li-bre-rings-da-ta i de
+ []
+
+
+Underfull \hbox (badness 1975) in paragraph at lines 40--40
+\T1/cmr/m/n/10.95 for-skel-li-ge tekst-bok-se
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+\T1/cmr/m/n/10.95 og stig-nin-gen-stal-
+ []
+
+
+Underfull \hbox (badness 3492) in paragraph at lines 40--40
+\T1/cmr/m/n/10.95 let for hvor man-ge
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+\T1/cmr/m/n/10.95 li-bre-rings-da-ta i de
+ []
+
+
+Underfull \hbox (badness 1975) in paragraph at lines 40--40
+\T1/cmr/m/n/10.95 for-skel-li-ge tekst-bok-se
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+\T1/cmr/m/n/10.95 og stig-nin-gen-stal-
+ []
+
+
+Underfull \hbox (badness 3492) in paragraph at lines 40--40
+\T1/cmr/m/n/10.95 let for hvor man-ge
+ []
+
+
+Underfull \hbox (badness 1701) in paragraph at lines 40--40
+[]\T1/cmr/m/n/10.95 Tryk på "OK"--knap
+ []
+
+
+Underfull \hbox (badness 1092) in paragraph at lines 40--40
+[]\T1/cmr/m/n/10.95 System ka-li-bre-rer og
+ []
+
+
+Underfull \hbox (badness 1092) in paragraph at lines 40--40
+[]\T1/cmr/m/n/10.95 System ka-li-bre-rer og
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+[]\T1/cmr/m/n/10.95 Tryk på det rø-de
+ []
+
+
+Underfull \hbox (badness 1308) in paragraph at lines 40--40
+\T1/cmr/m/n/10.95 kryds øverst i høj-re
+ []
+
+
+Underfull \hbox (badness 2837) in paragraph at lines 40--40
+\T1/cmr/m/n/10.95 hjør-ne, hvis ka-li-bre-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+[]\T1/cmr/m/n/10.95 Kalibrering-vinduet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+[]\T1/cmr/m/n/10.95 Kalibrering-vinduet
+ []
+
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 40.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 40.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 40.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 40.
+[63
+
+
+
+]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 43.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 43.
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
+[]\T1/cmr/m/n/10.95 Udfør Use Ca-se 1
+ []
+
+
+Underfull \hbox (badness 1052) in paragraph at lines 59--59
+\T1/cmr/m/n/10.95 og ob-servér Monitor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
+[]\T1/cmr/m/n/10.95 Det fil-tre-re-de blod-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
+\T1/cmr/m/n/10.95 tryks-ig-nal samt
+ []
+
+
+Underfull \hbox (badness 2671) in paragraph at lines 59--59
+\T1/cmr/m/n/10.95 systole-, diastole- og
+ []
+
+
+Underfull \hbox (badness 2237) in paragraph at lines 59--59
+\T1/cmr/m/n/10.95 puls-vær-di-er ud-skri-ves
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
+[]\T1/cmr/m/n/10.95 Det fil-tre-re-de blod-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
+\T1/cmr/m/n/10.95 tryks-ig-nal samt
+ []
+
+
+Underfull \hbox (badness 2671) in paragraph at lines 59--59
+\T1/cmr/m/n/10.95 systole-, diastole- og
+ []
+
+
+Underfull \hbox (badness 2237) in paragraph at lines 59--59
+\T1/cmr/m/n/10.95 puls-vær-di-er ud-skri-ves
+ []
+
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 63.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 63.
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--82
+[]\T1/cmr/m/n/10.95 Tryk på
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--82
+\T1/cmr/m/n/10.95 "Nulpunktjustér"--
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--82
+[]\T1/cmr/m/n/10.95 System nul-punkt-s-ju-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--82
+[]\T1/cmr/m/n/10.95 System nul-punkt-s-ju-
+ []
+
+
+Underfull \hbox (badness 6526) in paragraph at lines 82--82
+[]\T1/cmr/m/n/10.95 Observér kur-ven og
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--82
+[]\T1/cmr/m/n/10.95 Observér Monitor-
+ []
+
+
+Underfull \hbox (badness 2726) in paragraph at lines 82--82
+[]\T1/cmr/m/n/10.95 Tidsstempel for nul-
+ []
+
+
+Underfull \hbox (badness 2726) in paragraph at lines 82--82
+[]\T1/cmr/m/n/10.95 Tidsstempel for nul-
+ []
+
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 82.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 82.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 82.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 82.
+[64]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 86.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 86.
+
+Underfull \hbox (badness 2080) in paragraph at lines 104--104
+[]\T1/cmr/m/n/10.95 Det ufil-tre-re-de blod-
+ []
+
+
+Underfull \hbox (badness 2080) in paragraph at lines 104--104
+[]\T1/cmr/m/n/10.95 Det ufil-tre-re-de blod-
+ []
+
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 108.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 108.
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--126
+[]\T1/cmr/m/n/10.95 Det fil-tre-re-de blod-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--126
+[]\T1/cmr/m/n/10.95 Det fil-tre-re-de blod-
+ []
+
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 126.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 126.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 126.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 126.
+[65]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 130.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 130.
+
+Underfull \hbox (badness 1577) in paragraph at lines 162--162
+[]\T1/cmr/m/n/10.95 Indtast øn-sket op-ta-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--162
+[]\T1/cmr/m/n/10.95 Optagelseslængden
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--162
+[]\T1/cmr/m/n/10.95 Optagelseslængden
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--162
+[]\T1/cmr/m/n/10.95 Optagelse af må-
+ []
+
+
+Underfull \hbox (badness 6859) in paragraph at lines 162--162
+\T1/cmr/m/n/10.95 ling igang-sæt-tes og
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--162
+[]\T1/cmr/m/n/10.95 Optagelse af må-
+ []
+
+
+Underfull \hbox (badness 6859) in paragraph at lines 162--162
+\T1/cmr/m/n/10.95 ling igang-sæt-tes og
+ []
+
+
+Underfull \hbox (badness 6445) in paragraph at lines 162--162
+[]\T1/cmr/m/n/10.95 Vent til op-ta-gel-ses-
+ []
+
+
+Underfull \hbox (badness 2772) in paragraph at lines 162--162
+[]\T1/cmr/m/n/10.95 Optagelse af må-ling
+ []
+
+
+Underfull \hbox (badness 2772) in paragraph at lines 162--162
+[]\T1/cmr/m/n/10.95 Optagelse af må-ling
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--162
+[]\T1/cmr/m/n/10.95 Indtast op-lys-nin-ger
+ []
+
+
+Underfull \hbox (badness 1152) in paragraph at lines 162--162
+[]\T1/cmr/m/n/10.95 Tekstboksene er ble-
+ []
+
+
+Underfull \hbox (badness 1152) in paragraph at lines 162--162
+[]\T1/cmr/m/n/10.95 Tekstboksene er ble-
+ []
+
+
+Underfull \hbox (badness 1314) in paragraph at lines 162--162
+[]\T1/cmr/m/n/10.95 System gem-mer må-
+ []
+
+
+Underfull \hbox (badness 1721) in paragraph at lines 162--162
+\T1/cmr/m/n/10.95 ke mu-ligt at tryk-ke
+ []
+
+
+Underfull \hbox (badness 1314) in paragraph at lines 162--162
+[]\T1/cmr/m/n/10.95 System gem-mer må-
+ []
+
+
+Underfull \hbox (badness 1721) in paragraph at lines 162--162
+\T1/cmr/m/n/10.95 ke mu-ligt at tryk-ke
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--162
+[]\T1/cmr/m/n/10.95 Observér Gem-
+ []
+
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 162.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 162.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 162.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 162.
+[66]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 164.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 164.
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Ikke-funktionelt
+ []
+
+
+Underfull \hbox (badness 1895) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Forventet re-sul-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Faktiske ob-ser-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Indtast gyl-di-ge
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 ka-li-bre-rings-
+ []
+
+
+Underfull \hbox (badness 5847) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 da-ta. Tryk på
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 "Beregn"--knap
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 ef-ter-fulgt af
+ []
+
+
+Underfull \hbox (badness 4608) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 System ka-li-bre-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 tids-stem-pel i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 Kalibrering-
+ []
+
+
+Underfull \hbox (badness 4608) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 System ka-li-bre-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 tids-stem-pel i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 Kalibrering-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Observér
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 I Monitor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 vinduet vi-ses
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 et kon-ti-nu-ert
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 I Monitor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 vinduet vi-ses
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 et kon-ti-nu-ert
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Observér
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Monitor-vinduet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 in-de-hol-der
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 systole-,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 diastole- og
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Monitor-vinduet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 in-de-hol-der
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 systole-,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 diastole- og
+ []
+
+
+Underfull \hbox (badness 1661) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 tryks-sig-nal med
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Markér "On-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 og "Off"--knap
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 og Ob-servér
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Monitor-vinduet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 vi-ser et blod-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 tryks-sig-nal
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 med el-ler uden
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Monitor-vinduet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 vi-ser et blod-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 tryks-sig-nal
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 med el-ler uden
+ []
+
+
+Underfull \hbox (badness 2080) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 ne nul-punkt-s-ju-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Tryk på
+ []
+
+
+Overfull \hbox (7.09966pt too wide) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 "Nulpunktjustér"-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 -knap og ob-
+ []
+
+
+Underfull \hbox (badness 4001) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 servér Monitor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 System skal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 blod-tryks-må-ling
+ []
+
+
+Underfull \hbox (badness 1565) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Der tryk-kes på
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 "Gem"--knap
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 i Monitor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 vinduet, og
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 der ind-ta-stes
+ []
+
+
+Underfull \hbox (badness 6173) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 gyl-di-ge vær-di-er
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 i Gem-vinduet
+ []
+
+
+Underfull \hbox (badness 7907) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 og tryk-kes på
+ []
+
+
+Underfull \hbox (badness 1424) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 System gem-mer
+ []
+
+
+Underfull \hbox (badness 4024) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 da-ta i en da-
+ []
+
+
+Underfull \hbox (badness 7907) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 ta-ba-se og ud-
+ []
+
+
+Underfull \hbox (badness 7504) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 skri-ver stem-pel
+ []
+
+
+Underfull \hbox (badness 1424) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 System gem-mer
+ []
+
+
+Underfull \hbox (badness 4024) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 da-ta i en da-
+ []
+
+
+Underfull \hbox (badness 7907) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 ta-ba-se og ud-
+ []
+
+
+Underfull \hbox (badness 7504) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 skri-ver stem-pel
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Kalibrering-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 vinduet skal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 bok-se til ind-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 tast-ning af
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Der ses i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 kalibrering-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 ind-tast-ning af
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 af ka-li-bre-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 rings-da-ta i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 Kalibrering-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 af ka-li-bre-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 rings-da-ta i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 Kalibrering-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Kalibrering-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 vinduet skal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 in-de-hol-de en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Der ses i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 Kalibrering-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Der er en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 ^^QBeregn^^Q--knap
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 i Kalibrering-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Der er en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 ^^QBeregn^^Q--knap
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 i Kalibrering-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Kalibrering-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 vinduet skal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 in-de-hol-de en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Der ses i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 Kalibrering-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Der er en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 ^^QOK^^Q--knap i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 Kalibrering-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Der er en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 ^^QOK^^Q--knap i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 Kalibrering-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Kalibrering-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 vinduet skal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 in-de-hol-de et
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 tids-stem-pel for
+ []
+
+
+Underfull \hbox (badness 6641) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 se-ne-ste ka-li-bre-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Der ses i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 Kalibrering-
+ []
+
+
+Underfull \hbox (badness 2547) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 er et tids-stem-
+ []
+
+
+Underfull \hbox (badness 3514) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 pel for se-ne-ste
+ []
+
+
+Underfull \hbox (badness 1097) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Der er et tids-
+ []
+
+
+Underfull \hbox (badness 2134) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 stem-pel for se-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 i Kalibrering-
+ []
+
+
+Underfull \hbox (badness 1097) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Der er et tids-
+ []
+
+
+Underfull \hbox (badness 2134) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 stem-pel for se-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 i Kalibrering-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Monitor-vinduet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 skal in-de-hol-de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Der ses i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 Monitor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 vinduet, om
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Monitor-vinduet
+ []
+
+
+Overfull \hbox (8.67499pt too wide) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 ^^QNulpunktsjustér^^Q-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Der ses i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 Monitor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 vinduet, om
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 der er en
+ []
+
+
+Overfull \hbox (8.67499pt too wide) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 ^^QNulpunktsjustér^^Q-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Der er en
+ []
+
+
+Overfull \hbox (8.67499pt too wide) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 ^^QNulpunktsjustér^^Q-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Der er en
+ []
+
+
+Overfull \hbox (8.67499pt too wide) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 ^^QNulpunktsjustér^^Q-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Monitor-vinduet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 skal in-de-hol-de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 et tids-stem-pel
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Der ses i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 Monitor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 vinduet, om
+ []
+
+
+Underfull \hbox (badness 1838) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 der er et tids-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 stem-pel for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 se-ne-ste nul-
+ []
+
+
+Underfull \hbox (badness 1097) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Der er et tids-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 stem-pel for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 se-ne-ste nul-
+ []
+
+
+Underfull \hbox (badness 1097) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Der er et tids-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 stem-pel for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 se-ne-ste nul-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Monitor-vinduet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 skal in-de-hol-de
+ []
+
+
+Underfull \hbox (badness 3439) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 to ra-dio-but-tons
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 de-ak-ti-ve-ring af
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Der ses i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 Monitor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 vinduet, om
+ []
+
+
+Underfull \hbox (badness 6316) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 der er to ra-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 dio-but-tons til
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 ak-ti-ve-ring og
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 de-ak-ti-ve-ring af
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Monitor-vinduet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 skal in-de-hol-de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Der ses i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 Monitor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 vinduet, om
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 af op-ta-gel-ses-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 af op-ta-gel-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 ses-læng-de i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 af op-ta-gel-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 ses-læng-de i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Monitor-vinduet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 skal in-de-hol-de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 en "Rec"-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 -knap/"Stop"--
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Der ses i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 Monitor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 vinduet, om
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 -knap/"Stop"--
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 -knap/"Stop"--
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 -knap/"Stop"--
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Gem-vinduet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 skal in-de-hol-de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 tekst-bok-se til
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 ind-tast-ning af
+ []
+
+
+Underfull \hbox (badness 6825) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 op-lys-nin-ger om
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 ind-tast-ning af
+ []
+
+
+Underfull \hbox (badness 6825) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 op-lys-nin-ger om
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 af op-lys-nin-ger
+ []
+
+
+Underfull \hbox (badness 3623) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 om må-lin-gen i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 af op-lys-nin-ger
+ []
+
+
+Underfull \hbox (badness 3623) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 om må-lin-gen i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Gem-vinduet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 skal in-de-hol-de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Der er en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 "OK"--knap i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Der er en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 "OK"--knap i
+ []
+
+
+Underfull \hbox (badness 7238) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Det skal væ-re
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 mu-ligt at af-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 læ-se systole-,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 diastole- og
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 puls-vær-di-er på
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 Monitor-vinduet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 fra 2 me-ters
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 af-stand med
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Der te-stes på
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 5 per-so-ner af
+ []
+
+
+Underfull \hbox (badness 2922) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 for-skel-li-ge al-dre
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 med en syns-
+ []
+
+
+Underfull \hbox (badness 7030) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 styr-ke på +/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 af-læ-se systole-,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 diastole- og
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 af-læ-se systole-,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 diastole- og
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Systemet skal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 MTBF på 99
+ []
+
+
+Overfull \hbox (3.38373pt too wide) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Blodtrykssignalet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 ef-ter, UC1 er
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 UC1 af-slut-tes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 Når blod-tryks-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 sig-na-let vi-ses,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Blodtryksignalet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Blodtryksignalet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Systemet skal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 vi-se en kur-ve
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 for blod-tryks-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 må-lin-gen, hvor
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Der ses på
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 Monitor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 vinduet, om
+ []
+
+
+Overfull \hbox (3.38373pt too wide) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Blodtryksignalets
+ []
+
+
+Overfull \hbox (3.38373pt too wide) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Blodtryksignalets
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Systemet skal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 kun-ne må-le
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 blod-tryks-vær-di-
+ []
+
+
+Underfull \hbox (badness 2486) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Trykket si-mu-le-
+ []
+
+
+Underfull \hbox (badness 3260) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 res op til 300
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Det ses i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 Monitor-vinduet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Det ses i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 Monitor-vinduet
+ []
+
+
+Overfull \hbox (3.38373pt too wide) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Blodtrykssignalet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 vi-ses kon-ti-nu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 er-ligt over et
+ []
+
+
+Underfull \hbox (badness 4505) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 in-ter-val af fi-re
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 se-kun-der af
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Der ses på
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 Monitor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 vinduet, om
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 blod-tryks-sig-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 na-let vi-ses
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 kon-ti-nu-er-ligt
+ []
+
+
+Underfull \hbox (badness 1102) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 over et in-ter-val
+ []
+
+
+Overfull \hbox (3.38373pt too wide) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Blodtrykssignalet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 vi-ses kon-ti-nu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 er-ligt over et
+ []
+
+
+Underfull \hbox (badness 4505) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 in-ter-val af fi-re
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 se-kun-der af
+ []
+
+
+Overfull \hbox (3.38373pt too wide) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Blodtrykssignalet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 vi-ses kon-ti-nu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 er-ligt over et
+ []
+
+
+Underfull \hbox (badness 4505) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 in-ter-val af fi-re
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 se-kun-der af
+ []
+
+
+Overfull \hbox (3.38373pt too wide) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Blodtrykssignalet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Der ses på
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 Monitor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 vinduet, om
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 blod-tryks-sig-na-
+ []
+
+
+Overfull \hbox (3.38373pt too wide) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Blodtrykssignalet
+ []
+
+
+Overfull \hbox (3.38373pt too wide) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Blodtrykssignalet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 ef-ter blod-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 tryks-sig-na-lets
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 maksimum- og
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 mini-mums-vær-di-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Der ses på
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 Monitor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 vinduet, om
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 blod-tryks-sig-na-
+ []
+
+
+Underfull \hbox (badness 1668) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 lets maksimum-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 og mini-mums-
+ []
+
+
+Overfull \hbox (7.67918pt too wide) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Blodtrykssignalets
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 maksimum- og
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 mini-mums-vær-di-
+ []
+
+
+Overfull \hbox (7.67918pt too wide) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Blodtrykssignalets
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 maksimum- og
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 mini-mums-vær-di-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Softwaren skal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 op-byg-ges ef-ter
+ []
+
+
+Underfull \hbox (badness 1675) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 den ef-ter data-
+ []
+
+
+Underfull \hbox (badness 3271) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Data-lag, logik-
+ []
+
+
+Underfull \hbox (badness 3271) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Data-lag, logik-
+ []
+
+
+Underfull \hbox (badness 1205) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 skal ha-ve mini-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 er in-stal-le-ret
+ []
+
+
+Underfull \hbox (badness 4518) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 er mini-mum 4
+ []
+
+
+Underfull \hbox (badness 2080) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 in-stal-le-ret Win-
+ []
+
+
+Underfull \hbox (badness 2080) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 in-stal-le-ret Win-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Der skal væ-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 re ad-gang til
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 en com-pu-ter,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 hvor Na-tio-nal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 In-stru-ments er
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Der ses, om
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 der er in-stal-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 le-ret Na-tio-nal
+ []
+
+
+Underfull \hbox (badness 7522) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 In-stru-ments på
+ []
+
+
+Underfull \hbox (badness 1668) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 nal In-stru-ments
+ []
+
+
+Underfull \hbox (badness 1668) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 nal In-stru-ments
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Blodtryks-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 diagrammet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 mum 1/3 af
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Der ses, om
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 blod-tryks-di-a-
+ []
+
+
+Underfull \hbox (badness 4739) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 gram-met fyl-der
+ []
+
+
+Overfull \hbox (23.88255pt too wide) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Blodtryksdiagrammet
+ []
+
+
+Overfull \hbox (23.88255pt too wide) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Blodtryksdiagrammet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Baggrunden i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 Monitor-vinduet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Der ses i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 Monitor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 vinduet, om
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 bag-grun-den er
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Baggrunden i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 Monitor-vinduet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Baggrunden i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 Monitor-vinduet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Blodtrykssignal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 og -
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 værdier(systole
+ []
+
+
+Underfull \hbox (badness 8000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 væ-re rø-de, og
+ []
+
+
+Underfull \hbox (badness 4699) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 puls skal væ-re
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Der ses på
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 Monitor-vinduet
+ []
+
+
+Underfull \hbox (badness 1102) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 nal og -værdier
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Blodtrykssignal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 og -
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 værdier(systole
+ []
+
+
+Underfull \hbox (badness 3568) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 og di-a-sto-le) er
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Blodtrykssignal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 og -
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 værdier(systole
+ []
+
+
+Underfull \hbox (badness 3568) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 og di-a-sto-le) er
+ []
+
+
+Underfull \hbox (badness 2393) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 sto-lisk blod-tryk
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 skal frem-hæ-ves
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 øverst i ihøj-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 re hjør-ne ved
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 stør-re skrift-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 stør-rel-se end
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 Monitor-vinduet
+ []
+
+
+Underfull \hbox (badness 3907) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 (fx vær-di-er på
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Der ses i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 Monitor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 vinduet, om
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 det sy-sto-li-ske
+ []
+
+
+Underfull \hbox (badness 6204) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 og det di-a-sto-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 li-ske blod-tryk
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 er frem-hæ-vet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 stør-rel-se end
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Det ses i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 Monitor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 vinduet, at
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 det sy-sto-li-ske
+ []
+
+
+Underfull \hbox (badness 6204) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 og det di-a-sto-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 li-ske blod-tryk
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 er frem-hæ-vet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 stør-rel-se end
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\T1/cmr/m/n/10.95 Det ses i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 Monitor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 vinduet, at
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 det sy-sto-li-ske
+ []
+
+
+Underfull \hbox (badness 6204) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 og det di-a-sto-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 li-ske blod-tryk
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 er frem-hæ-vet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+\T1/cmr/m/n/10.95 stør-rel-se end
+ []
+
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 243.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 243.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 243.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 243.
+[67]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 243.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 243.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 243.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 243.
+ [68]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 243.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 243.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 243.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 243.
+ [69]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 243.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 243.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 243.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 243.
+ [70]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 243.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 243.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 243.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 243.
+ [71]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 243.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 243.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 243.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 243.
+ [72])
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 19.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 19.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 19.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 19.
+ [73]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 21.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 21.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 21.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 21.
+ [74
+
+
+] 
+AED: lastpage setting LastPage
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 24.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 24.
+\tf@toc=\write5
+\openout5 = `"Dokumentation .toc"'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 24.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 24.
+(/Users/AndersMac/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Dokumentation .aux (/Users/AndersMac/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Dfiler/Dforside.aux) (/Users/AndersMac/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Dfiler/Dkravspecifikation.aux) (/Users/AndersMac/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Dfiler/Ddesign.aux) (/Users/AndersMac/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Dfiler/Dhardware_implementering_test.aux) (/Users/AndersMac/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Dfiler/Dsoftware_implementering_test.aux) (/Users/AndersMac/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Dfiler/Daccepttest.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 24.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 24.
+Package rerunfilecheck Info: File `"Dokumentation ".out' has not changed.
+(rerunfilecheck)             Checksum: <no file>.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 24.
+ ) 
+Here is how much of TeX's memory you used:
+ 29925 strings out of 493089
+ 545477 string characters out of 6134842
+ 937152 words of memory out of 5000000
+ 32590 multiletter control sequences out of 15000+600000
+ 36400 words of font info for 106 fonts, out of 8000000 for 9000
+ 1143 hyphenation exceptions out of 8191
+ 53i,13n,90p,10494b,1033s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm2488.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/u
+rw/bookman/ubkd8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb>
+Output written on "/Users/AndersMac/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Dokumentation .pdf" (78 pages, 23564563 bytes).
+PDF statistics:
+ 1126 PDF objects out of 1200 (max. 8388607)
+ 864 compressed objects within 9 object streams
+ 289 named destinations out of 1000 (max. 500000)
+ 880 words of extra memory for PDF output out of 10000 (max. 10000000)
+

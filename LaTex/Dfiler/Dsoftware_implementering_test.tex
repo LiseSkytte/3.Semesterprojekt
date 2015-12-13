@@ -98,7 +98,7 @@ For at sikre at ”toppunktet” ikke er et mindre toppunkt, fra fx støj eller 
 \subsection{Sekvensdiagrammer}
 Sekvensdiagrammerne beskriver kommunikationen imellem software klasserne der er involveret i de respektive Use Cases.\\
 
-\subsubsection{UC1}
+\subsubsection{UC1 Kalibrer}
 Forsker trykker på knappen "Beregn" anmoder kalibrerings klassen om metoden 'beregn' i klassen Beregninger. Den udregnede kalibreringskonstant returneres.\\
 Forsker trykker på knappen "OK" og metoden 'gemkalibrering' afvikles i klassen beregninger. Herfra afvikles metoden gemkalibrering i Datagem klassen. Datagem returnerer en bool der beskriver om gemningen var succesfuld.
 \begin{figure}[H]
@@ -107,7 +107,7 @@ Forsker trykker på knappen "OK" og metoden 'gemkalibrering' afvikles i klassen 
 	\caption{Sekvensdiagram for UC1}
 \end{figure}
 
-\subsubsection{UC2}
+\subsubsection{UC2 Vis måling}
 Når monitor vinduet åbnes (når programmet starter) afvikles metoden 'startreader' i DAQ. Vha. publisher/subscriber metoden 'NotifySubscriber' returneres rådata til Beregninger og videre til Monitor.\\
 Rådata sendes til Beregninger og omregnes til tid og blodtryk vha DTO klassen.
 'beregnSYS', 'beregnDIA' og 'beregnPuls' returnerer ligeledes double værdier med systolisk og diastolisk blodtryk samt puls.
@@ -117,7 +117,7 @@ Rådata sendes til Beregninger og omregnes til tid og blodtryk vha DTO klassen.
 	\caption{Sekvensdiagram for UC2}
 \end{figure}
 
-\subsubsection{UC3}
+\subsubsection{UC3 Nulpunktjuster}
 'getNulpunktsstring' returnerer en string der indeholder data om seneste nulpunktsjustering. Denne udskrives på Monitor.\\
 Forsker trykker på knappen 'Nulpunktsjuster' og Beregninger udfører en nulpunktsjustering, gemmer data i Datagem, og returnerer en ny string der beskriver seneste (denne) nulpunktsjusterin.
 
@@ -126,7 +126,8 @@ Forsker trykker på knappen 'Nulpunktsjuster' og Beregninger udfører en nulpunk
 	\includegraphics[width=1\textwidth]{Figurer/UC3_SD_SW}
 	\caption{Sekvensdiagram for UC3}
 \end{figure}
-\subsubsection{UC4}
+
+\subsubsection{UC4 Deaktiver filter}
 Forsker sætter radibutton til filter til "off".
 Bool "filteron" sættes til false, og sendes med metoden der udregner blodtryk' beregnBlodtryk', i beregninger. Den returnerede liste af DTO'er, som udskrives i Monitor, er ufiltrerede.
 
@@ -136,7 +137,7 @@ Bool "filteron" sættes til false, og sendes med metoden der udregner blodtryk' 
 	\caption{Sekvensdiagram for UC4}
 \end{figure}
 
-\subsubsection{UC5}
+\subsubsection{UC5 Aktiver filter}
 Filteret er bygget op som et FIR-filter med 10 filterkoefficienter. Hver udskrevet punkt på grafen, er et gennemsnitsværdi af de foregående 10 værdier.
 Forsker sætter radibutton til filter til "on".
 Bool "filteron" sættes til true, og sendes med metoden der udregner blodtryk 'beregnBlodtryk', i beregninger. Den returnerede liste af DTO'er, som udskrives i Monitor, er filtrerede.
@@ -147,7 +148,7 @@ Bool "filteron" sættes til true, og sendes med metoden der udregner blodtryk 'b
 	\caption{Sekvensdiagram for UC5}
 \end{figure}
 
-\subsubsection{UC6}
+\subsubsection{UC6 Gem måling}
 Forsker vælger en optagelseslængde og trykker på "record". Record() metoden køres i Beregninger; det sættes en startværdi for målingen.
 Når tiden udløber, køres record() i Beregninger igen; en slutværdi for målingen sættes.
 Forsker trykker på "Gem" knappen i Monitor-vinduet. Et Gem vindue instantieres med data fra den optagne måling. Disse hentes vis metoder i Beregninger laget.\\
@@ -309,7 +310,7 @@ Beregninger klassen beregner med metoden med filter, da "filteron" = true.
 	\caption{Beregninger klassen opretter ufiltrerede DTO'er}
 \end{figure}
 
-\subsection{UC5 Aktiver Filter}
+\subsection{UC5 Aktiver filter}
 
 Filteret er ikke aktiveret, og det ufiltrerede signal udskrives.
 

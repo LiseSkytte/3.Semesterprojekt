@@ -1,0 +1,63 @@
+\BOOKMARK [0][-]{chapter.1}{Kravspecifikation}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Indledning}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Systembeskrivelse}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Funktionelle krav}{chapter.1}% 4
+\BOOKMARK [2][-]{subsection.1.3.1}{Akt\370r-kontekstdiagram}{section.1.3}% 5
+\BOOKMARK [2][-]{subsection.1.3.2}{Akt\370rbeskrivelse}{section.1.3}% 6
+\BOOKMARK [2][-]{subsection.1.3.3}{Use casediagram}{section.1.3}% 7
+\BOOKMARK [2][-]{subsection.1.3.4}{Use Cases}{section.1.3}% 8
+\BOOKMARK [1][-]{section.1.4}{Ikke-funktionelle krav}{chapter.1}% 9
+\BOOKMARK [2][-]{subsection.1.4.1}{Functionality}{section.1.4}% 10
+\BOOKMARK [2][-]{subsection.1.4.2}{Usability}{section.1.4}% 11
+\BOOKMARK [2][-]{subsection.1.4.3}{Reliability}{section.1.4}% 12
+\BOOKMARK [2][-]{subsection.1.4.4}{Performance}{section.1.4}% 13
+\BOOKMARK [2][-]{subsection.1.4.5}{Supportability}{section.1.4}% 14
+\BOOKMARK [2][-]{subsection.1.4.6}{Andre\(+\)}{section.1.4}% 15
+\BOOKMARK [2][-]{subsection.1.4.7}{GUI}{section.1.4}% 16
+\BOOKMARK [0][-]{chapter.2}{Design}{}% 17
+\BOOKMARK [1][-]{section.2.1}{Systemarkitektur}{chapter.2}% 18
+\BOOKMARK [2][-]{subsection.2.1.1}{Bdd}{section.2.1}% 19
+\BOOKMARK [2][-]{subsection.2.1.2}{ibd}{section.2.1}% 20
+\BOOKMARK [1][-]{section.2.2}{Gr\346nseflader}{chapter.2}% 21
+\BOOKMARK [1][-]{section.2.3}{Hardware arkitektur}{chapter.2}% 22
+\BOOKMARK [2][-]{subsection.2.3.1}{bdd}{section.2.3}% 23
+\BOOKMARK [2][-]{subsection.2.3.2}{Ibd}{section.2.3}% 24
+\BOOKMARK [2][-]{subsection.2.3.3}{Gr\346nseflader}{section.2.3}% 25
+\BOOKMARK [2][-]{subsection.2.3.4}{Forst\346rkerblok}{section.2.3}% 26
+\BOOKMARK [2][-]{subsection.2.3.5}{Filterblok}{section.2.3}% 27
+\BOOKMARK [1][-]{section.2.4}{Software arkitektur}{chapter.2}% 28
+\BOOKMARK [2][-]{subsection.2.4.1}{Dom\346nemodel}{section.2.4}% 29
+\BOOKMARK [2][-]{subsection.2.4.2}{Applikationsmodel}{section.2.4}% 30
+\BOOKMARK [0][-]{chapter.3}{HW implementering og test}{}% 31
+\BOOKMARK [1][-]{section.3.1}{Implementering}{chapter.3}% 32
+\BOOKMARK [2][-]{subsection.3.1.1}{Forst\346rkerblok}{section.3.1}% 33
+\BOOKMARK [2][-]{subsection.3.1.2}{Filterblok}{section.3.1}% 34
+\BOOKMARK [1][-]{section.3.2}{Test}{chapter.3}% 35
+\BOOKMARK [2][-]{subsection.3.2.1}{Test af Forst\346rkerblok}{section.3.2}% 36
+\BOOKMARK [2][-]{subsection.3.2.2}{Test af Filterblok}{section.3.2}% 37
+\BOOKMARK [2][-]{subsection.3.2.3}{Test af Signalbehandlingsblok}{section.3.2}% 38
+\BOOKMARK [0][-]{chapter.4}{SW implementering og test }{}% 39
+\BOOKMARK [1][-]{section.4.1}{Implementering}{chapter.4}% 40
+\BOOKMARK [2][-]{subsection.4.1.1}{Datalag}{section.4.1}% 41
+\BOOKMARK [2][-]{subsection.4.1.2}{Logik lag}{section.4.1}% 42
+\BOOKMARK [2][-]{subsection.4.1.3}{Pr\346sentations lag}{section.4.1}% 43
+\BOOKMARK [2][-]{subsection.4.1.4}{DTO}{section.4.1}% 44
+\BOOKMARK [2][-]{subsection.4.1.5}{Metodebeskrivelser}{section.4.1}% 45
+\BOOKMARK [2][-]{subsection.4.1.6}{Sekvensdiagrammer}{section.4.1}% 46
+\BOOKMARK [1][-]{section.4.2}{Test}{chapter.4}% 47
+\BOOKMARK [2][-]{subsection.4.2.1}{Puls}{section.4.2}% 48
+\BOOKMARK [2][-]{subsection.4.2.2}{UC1 Kalibrer}{section.4.2}% 49
+\BOOKMARK [2][-]{subsection.4.2.3}{UC2 Vis m\345ling}{section.4.2}% 50
+\BOOKMARK [2][-]{subsection.4.2.4}{UC3 Nulpunktsjuster}{section.4.2}% 51
+\BOOKMARK [2][-]{subsection.4.2.5}{UC4 Deaktiver filter}{section.4.2}% 52
+\BOOKMARK [2][-]{subsection.4.2.6}{UC5 Aktiver filter}{section.4.2}% 53
+\BOOKMARK [2][-]{subsection.4.2.7}{UC6 Gem m\345ling}{section.4.2}% 54
+\BOOKMARK [0][-]{chapter.5}{Acceptest}{}% 55
+\BOOKMARK [1][-]{section.5.1}{Accepttest af Use Cases}{chapter.5}% 56
+\BOOKMARK [2][-]{subsection.5.1.1}{Use Case 1}{section.5.1}% 57
+\BOOKMARK [2][-]{subsection.5.1.2}{Use Case 2}{section.5.1}% 58
+\BOOKMARK [2][-]{subsection.5.1.3}{Use Case 3}{section.5.1}% 59
+\BOOKMARK [2][-]{subsection.5.1.4}{Use Case 4}{section.5.1}% 60
+\BOOKMARK [2][-]{subsection.5.1.5}{Use Case 5}{section.5.1}% 61
+\BOOKMARK [2][-]{subsection.5.1.6}{Use Case 6}{section.5.1}% 62
+\BOOKMARK [1][-]{section.5.2}{Accepttest af ikke-funktionelle krav}{chapter.5}% 63
