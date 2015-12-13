@@ -137,6 +137,7 @@ Bool "filteron" sættes til false, og sendes med metoden der udregner blodtryk' 
 \end{figure}
 
 \subsubsection{UC5}
+Filteret er bygget op som et FIR-filter med 10 filterkoefficienter. Hver udskrevet punkt på grafen, er et gennemsnitsværdi af de foregående 10 værdier.
 Forsker sætter radibutton til filter til "on".
 Bool "filteron" sættes til true, og sendes med metoden der udregner blodtryk 'beregnBlodtryk', i beregninger. Den returnerede liste af DTO'er, som udskrives i Monitor, er filtrerede.
 
@@ -147,7 +148,13 @@ Bool "filteron" sættes til true, og sendes med metoden der udregner blodtryk 'b
 \end{figure}
 
 \subsubsection{UC6}
-Forsker vælger en optagelseslængde og trykker på "record". Monitor-vinduet sender så en bool til beregninger der startes en optagelse af signalet. Når 
+Forsker vælger en optagelseslængde og trykker på "record". Record() metoden køres i Beregninger; det sættes en startværdi for målingen.
+Når tiden udløber, køres record() i Beregninger igen; en slutværdi for målingen sættes.
+Forsker trykker på "Gem" knappen i Monitor-vinduet. Et Gem vindue instantieres med data fra den optagne måling. Disse hentes vis metoder i Beregninger laget.\\
+Det optagne signal vises i Gem-vinduet. Dette gøres vha en liste af DTO'er der oprettes.\\
+
+Forsker trykker på "OK"\--knappen
+og metoden gemmaalingtilDB() afvikles i DataGem klassen. Det målte signal, samt metadata gemmes. 
 
 \begin{figure}[H]
 	\centering
@@ -252,7 +259,7 @@ Et DC signal på 1 V bruges til indgangssignal til DAQ.
 	\caption{Inputsignal til DAQ}
 \end{figure}
 
-Det ses at kalibreringskonstanten er på 57, og inputsignalet genererer det korrekte "blodtryk"
+Det ses at kalibreringskonstanten er på 57,9 og inputsignalet genererer det korrekte "blodtryk"
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/Test_Nul_2}
@@ -268,19 +275,148 @@ Der trykkes på knappen "Nulpunktsjuster" og grafens værdi falder til 0.
 \end{figure}
 
 
+\subsection{UC4 Deaktiver filter}
+
+Filteret er aktiveret og det filtrerede signal vises i graf.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Test_Deaktiver_1}
+	\caption{Målingen vises med filter aktiverer}
+\end{figure}
+
+Beregninger klassen beregner med metoden uden filter, da "filteron" = false.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Test_Deaktiver_2}
+	\caption{Beregninger klassen opretter filtrerede DTO'er}
+\end{figure}
+
+I Monitor-vinduet aktiveres filter på radiobutton. Det filtrerede signal udskrives. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Test_Deaktiver_3}
+	\caption{Det filtrerede signal udskrives efter blå ring}
+\end{figure}
+
+Beregninger klassen beregner med metoden med filter, da "filteron" = true.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Test_Deaktiver_4}
+	\caption{Beregninger klassen opretter ufiltrerede DTO'er}
+\end{figure}
+
+\subsection{UC5 Aktiver Filter}
+
+Filteret er ikke aktiveret, og det ufiltrerede signal udskrives.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Test_Aktiver_1}
+	\caption{Ufiltreret signal udskrives i graf}
+\end{figure}
+
+Beregninger klassen beregner med metoden uden filter, da "filteron" = false.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Test_Aktiver_2}
+	\caption{Beregninger klassen opretter ufiltrerede}
+\end{figure}
+
+Filteret aktiveres, og det filtrerede signal udskrives efter blå ring.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Test_Aktiver_3}
+	\caption{Ufiltreret signal udskrives i graf}
+\end{figure}
+
+Beregninger klassen opretter filtrerede DTO'er, da "filteron" = true.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Test_Aktiver_3}
+	\caption{Beregninger klassen opretter filtrerede DTO'er}
+\end{figure}
+
+\subsection{UC6 Gem måling}
+Kalibreringskonstant (mmHg/V) og nulpunktsværdi (mmHg) for måling fremgår af billede.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/UC6_InitialConditions}
+	\caption{Monitorvindues initiale værdier(kalibreringskonstant og nulpunktstryk)}
+\end{figure}
+ 
+ Forsker vælger målelængde til 5 sek, og trykker på "rec"
+ 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/UC6_ForceRecEnd}
+	\caption{Monitor vindue efter tryk på rec}
+\end{figure}
+
+Metoden record() køres i Beregninger klassen. Her sættes startværdien for måling.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/UC6_Record_Start}
+	\caption{Beregninger klassens record() køres når moptagelse starter}
+\end{figure}
+
+Tiden udløber og optagelsen slutter. record() metoden køres igen, og slutværdien for optagelsen sættes i Beregninger. Det observeres om differencen mellem startværdi og slutværdi = 5 sekunder = 5000 samples.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/UC6_Record_Slut}
+	\caption{Beregninger klassens record() køres når optagelse slutter}
+\end{figure}
+
+Forsker trykker på "Gem" knap i monitorvinduer. Gem-vinduets constructor modtager værdier via metoder der afvikles i beregninger. Metoderne Visgemgraf() og Show() afvikles.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/UC6_BtnGem}
+	\caption{Oprettelse af nyt Gem-vindue}
+\end{figure}
+
+Det kontrolleres om Gem-klassens værdier er korrekte. Følgende værdier tjekkes: slope\_ = kalibreringskonstant, nulpunkt\_ = nulpunktstryk, startgem\_ = startværdi for måling, slutgem\_ = slutværdi for måling.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/UC6_Vardier}
+	\caption{Gem-vinduets værdier}
+\end{figure}
+
+Det kontrolleres om længden af "samplearray" i metoden gemmaalingtilDB() stemmer overens med de valgte 5 sek = 5000 samples.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/UC6_Samplearray}
+	\caption{Array af blodtryksværdier der gemmes til Database}
+\end{figure}
+
+Målingens ID noteres i Gem-vinduet.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/UC6_MalSuc}
+	\caption{Gem vinduet efter gemt måling}
+\end{figure}
+
+
+Det kontrolleres om den gemte måling befinder sig i Databasen. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/UC6_Database2}
+	\caption{array af blodtryksværdier der gemmes til Database}
+\end{figure}
 
 
 
 
-
-
-
-\subsection{Filter}
-
-
-
-Filteret er bygget op som et FIR-filter med 10 filterkoefficienter. Hver udskrevet punkt på grafen, er et gennemsnitsværdi af de foregående 10 værdier.
-
-
-I denne liste indsættes en variabel, som sørger for at samples stiger med 10 pr. indsat værdi. Spændingen findes ved at tage y-værdien til den givne sample og de foregående ni værdier og beregner gennemsnittet af disse. Denne værdi indsættes i listen for vores filter, som så videre kan behandles før den udskrives i Monitor-vinduet.
 

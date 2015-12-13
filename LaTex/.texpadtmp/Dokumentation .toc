@@ -6,7 +6,7 @@
 \contentsline {section}{\numberline {1.3}Funktionelle krav}{1}{section.1.3}
 \contentsline {subsection}{\numberline {1.3.1}Akt\IeC {\o }r-kontekstdiagram}{2}{subsection.1.3.1}
 \contentsline {subsection}{\numberline {1.3.2}Akt\IeC {\o }rbeskrivelse}{3}{subsection.1.3.2}
-\contentsline {subsection}{\numberline {1.3.3}Use case-diagram}{4}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {1.3.3}Use casediagram}{4}{subsection.1.3.3}
 \contentsline {subsection}{\numberline {1.3.4}Use Cases}{4}{subsection.1.3.4}
 \contentsline {section}{\numberline {1.4}Ikke-funktionelle krav}{8}{section.1.4}
 \contentsline {subsection}{\numberline {1.4.1}Functionality}{8}{subsection.1.4.1}
@@ -15,10 +15,10 @@
 \contentsline {subsection}{\numberline {1.4.4}Performance}{9}{subsection.1.4.4}
 \contentsline {subsection}{\numberline {1.4.5}Supportability}{10}{subsection.1.4.5}
 \contentsline {subsection}{\numberline {1.4.6}Andre(+)}{10}{subsection.1.4.6}
-\contentsline {subsection}{\numberline {1.4.7}GUI}{11}{subsection.1.4.7}
+\contentsline {subsection}{\numberline {1.4.7}GUI}{10}{subsection.1.4.7}
 \contentsline {chapter}{\chapternumberline {2}Design}{13}{chapter.2}
 \contentsline {section}{\numberline {2.1}Systemarkitektur}{13}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}bdd}{13}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.1}Bdd}{13}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}ibd}{14}{subsection.2.1.2}
 \contentsline {section}{\numberline {2.2}Gr\IeC {\ae }nseflader}{15}{section.2.2}
 \contentsline {section}{\numberline {2.3}Hardware arkitektur}{16}{section.2.3}
@@ -26,7 +26,7 @@
 \contentsline {subsubsection}{Forst\IeC {\ae }rkerblok}{16}{section*.10}
 \contentsline {subsubsection}{Filterblok}{17}{section*.11}
 \contentsline {subsection}{\numberline {2.3.1}bdd}{17}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}ibd}{17}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.2}Ibd}{17}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Gr\IeC {\ae }nseflader}{17}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}Forst\IeC {\ae }rkerblok}{18}{subsection.2.3.4}
 \contentsline {subsubsection}{Specifikationer}{18}{section*.14}
@@ -48,12 +48,12 @@
 \contentsline {subsubsection}{Standardform}{28}{section*.33}
 \contentsline {subsubsection}{Magnitude Bodeplot}{28}{section*.34}
 \contentsline {section}{\numberline {3.2}Test}{29}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Test af forst\IeC {\ae }rkerblok}{29}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Test af filterblok}{30}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.1}Test af Forst\IeC {\ae }rkerblok}{29}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Test af Filterblok}{30}{subsection.3.2.2}
 \contentsline {subsubsection}{Filtering ved 1 Hz}{32}{section*.39}
 \contentsline {subsubsection}{Filtering ved 50 Hz}{32}{section*.41}
 \contentsline {subsubsection}{Filtering ved 500 Hz}{33}{section*.43}
-\contentsline {subsection}{\numberline {3.2.3}Test af signalbehandlingblok}{33}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.3}Test af Signalbehandlingsblok}{33}{subsection.3.2.3}
 \contentsline {subsubsection}{Test ved 1 Hz}{34}{section*.46}
 \contentsline {subsubsection}{Test ved 50 Hz}{35}{section*.48}
 \contentsline {subsubsection}{Test ved 500 Hz}{36}{section*.50}
@@ -80,17 +80,19 @@
 \contentsline {subsubsection}{UC5}{46}{section*.77}
 \contentsline {subsubsection}{UC6}{47}{section*.79}
 \contentsline {section}{\numberline {4.2}Test}{47}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Puls}{47}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.1}Puls}{48}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}UC1 Kalibrer}{49}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}UC2 Vis m\IeC {\r a}ling}{52}{subsection.4.2.3}
 \contentsline {subsection}{\numberline {4.2.4}UC3 Nulpunktsjuster}{53}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}Filter}{55}{subsection.4.2.5}
-\contentsline {chapter}{\chapternumberline {5}Acceptest}{57}{chapter.5}
-\contentsline {section}{\numberline {5.1}Accepttest af Use Cases}{57}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Use Case 1}{57}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Use Case 2}{58}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Use Case 3}{58}{subsection.5.1.3}
-\contentsline {subsection}{\numberline {5.1.4}Use Case 4}{59}{subsection.5.1.4}
-\contentsline {subsection}{\numberline {5.1.5}Use Case 5}{59}{subsection.5.1.5}
-\contentsline {subsection}{\numberline {5.1.6}Use Case 6}{60}{subsection.5.1.6}
-\contentsline {section}{\numberline {5.2}Accepttest af ikke-funktionelle krav}{61}{section.5.2}
+\contentsline {subsection}{\numberline {4.2.5}UC4 Deaktiver filter}{54}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}UC5 Aktiver Filter}{56}{subsection.4.2.6}
+\contentsline {subsection}{\numberline {4.2.7}UC6 Gem m\IeC {\r a}ling}{58}{subsection.4.2.7}
+\contentsline {chapter}{\chapternumberline {5}Acceptest}{63}{chapter.5}
+\contentsline {section}{\numberline {5.1}Accepttest af Use Cases}{63}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Use Case 1}{63}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Use Case 2}{64}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Use Case 3}{64}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}Use Case 4}{65}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.5}Use Case 5}{65}{subsection.5.1.5}
+\contentsline {subsection}{\numberline {5.1.6}Use Case 6}{66}{subsection.5.1.6}
+\contentsline {section}{\numberline {5.2}Accepttest af ikke-funktionelle krav}{67}{section.5.2}
