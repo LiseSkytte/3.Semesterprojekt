@@ -18,15 +18,15 @@
 \contentsline {subsection}{\numberline {1.4.7}GUI}{11}{subsection.1.4.7}
 \contentsline {chapter}{\chapternumberline {2}Design}{13}{chapter.2}
 \contentsline {section}{\numberline {2.1}Systemarkitektur}{13}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}BDD}{13}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}IBD}{14}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.1}bdd}{13}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}ibd}{14}{subsection.2.1.2}
 \contentsline {section}{\numberline {2.2}Gr\IeC {\ae }nseflader}{15}{section.2.2}
 \contentsline {section}{\numberline {2.3}Hardware arkitektur}{16}{section.2.3}
 \contentsline {subsubsection}{Tryktransducer}{16}{section*.9}
 \contentsline {subsubsection}{Forst\IeC {\ae }rkerblok}{16}{section*.10}
 \contentsline {subsubsection}{Filterblok}{17}{section*.11}
-\contentsline {subsection}{\numberline {2.3.1}BDD}{17}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}IBD}{17}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.1}bdd}{17}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}ibd}{17}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Gr\IeC {\ae }nseflader}{17}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}Forst\IeC {\ae }rkerblok}{18}{subsection.2.3.4}
 \contentsline {subsubsection}{Specifikationer}{18}{section*.14}
@@ -82,9 +82,9 @@
 \contentsline {section}{\numberline {4.2}Test}{47}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Puls}{47}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}UC1 Kalibrer}{49}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}UC2 Vis m\IeC {\r a}ling, Systole, Diaslole}{52}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.3}UC2 Vis m\IeC {\r a}ling}{52}{subsection.4.2.3}
 \contentsline {subsection}{\numberline {4.2.4}UC3 Nulpunktsjuster}{53}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}Filter}{54}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.5}Filter}{55}{subsection.4.2.5}
 \contentsline {chapter}{\chapternumberline {5}Acceptest}{57}{chapter.5}
 \contentsline {section}{\numberline {5.1}Accepttest af Use Cases}{57}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Use Case 1}{57}{subsection.5.1.1}

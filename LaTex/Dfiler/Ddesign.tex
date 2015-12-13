@@ -3,25 +3,25 @@
 \begin{longtabu} to \linewidth{@{}l l l X[j]@{}}
     Version &    Dato &    Ansvarlig &    Beskrivelse\\[-1ex]
     \midrule
-    1.0		&	20-10-2015 &	 Alle	& Første udkast til domænemodel, BDD, IBD og sekvensdiagrammer	\\[-1ex]
-    1.1		&	21-10-2015	&	Alle	& Små ændringer i BDD og IBD efter møde med vejleder \\[-1ex]
-    1.2		&	27-10-2015	&	Alle	& Ændring af BDD og IBD efter møde med Kim; blokkene filter og forstærker er blevet lagt sammen under blokken Signalbehandling\\[-1ex]
+    1.0		&	20-10-2015 &	 Alle	& Første udkast til domænemodel, bdd, ibd og sekvensdiagrammer	\\[-1ex]
+    1.1		&	21-10-2015	&	Alle	& Små ændringer i bdd og ibd efter møde med vejleder \\[-1ex]
+    1.2		&	27-10-2015	&	Alle	& Ændring af bdd og ibd efter møde med Kim; blokkene filter og forstærker er blevet lagt sammen under blokken Signalbehandling\\[-1ex]
     1.3  	&	02-11-2015	&	Alle	& Begyndte at oprette Design-dokumentet. Udkast til klassediagrammer for UC \\[-1ex]
     1.4		&	04-11-2015	&	Alle	& Skrevet hardward design afsnittet. Små rettelser i de andre afsnit i design, så det er klar til review \\[-1ex]
 \label{version_Systemark}
 \end{longtabu}
 
 \section{Systemarkitektur} 
-Igennem BDD og IBD vil det overordnede blodtryksmålersystem beskrives i forhold til hvilke hardware blokke systemet består af, og hvordan de interagerer med hinanden. 
+Igennem bdd og ibd vil det overordnede blodtryksmålersystem beskrives i forhold til hvilke hardware blokke systemet består af, og hvordan de interagerer med hinanden. 
 
-\subsection{BDD}
-På figur 2.1 ses BDD for systemet. BDD viser de forskellige hardware blokke for systemet og hvilke porte de består af. I tabel 2.2 ses en beskrivelse af blokkene. 
+\subsection{bdd}
+På figur 2.1 ses bdd for systemet. bdd viser de forskellige hardware blokke for systemet og hvilke porte de består af. I tabel 2.2 ses en beskrivelse af blokkene. 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/Snip20151209_70}
-	\caption{BDD}
-	\label{fig:BDD}
+	\caption{bdd}
+	\label{fig:bdd}
 \end{figure}
 
 \begin{longtabu} to \linewidth{@{}l X[j]@{}}
@@ -35,14 +35,14 @@ På figur 2.1 ses BDD for systemet. BDD viser de forskellige hardware blokke for
 	\caption{Beskrivelse af blokkene for systemet}
 	\end{longtabu}
 	
-\subsection{IBD}
-På figur 2.2 ses IBD for systemet. IBD viser, hvordan de forskellige hardware blokke interagerer med hinanden. IBD fortæller signalets behandling gennem systemet - altså hvordan signalet transformeres fra et målt fysisk tryk til et digitalt signal, som softwaren kan videre behandle og vise grafisk. 
+\subsection{ibd}
+På figur 2.2 ses ibd for systemet. ibd viser, hvordan de forskellige hardware blokke interagerer med hinanden. ibd fortæller signalets behandling gennem systemet - altså hvordan signalet transformeres fra et målt fysisk tryk til et digitalt signal, som softwaren kan videre behandle og vise grafisk. 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{Figurer/Snip20151209_72}
-	\caption{IBD}
-	\label{fig:IBD}
+	\caption{ibd}
+	\label{fig:ibd}
 \end{figure}
 
 \section{Grænseflader}
@@ -97,23 +97,23 @@ Forstærkerblokken sørger for, at det meget svage spændingssignal fra tryktran
 \subsubsection{Filterblok}
 Filterets formål er at frasortere signalets frekvenser, der er højere end 50 Hz, da disse ikke har nogen relevans for blodtryksignalet. Dette skal realiseres ved et andenordens lavpasfilter. 
  
-\subsection{BDD}
-På figur 2.3 ses BDD for signalbehandlingsblokken, hvor forstærkerblokkens og filterblokkens indgang- og udgangsporte er vist.  
+\subsection{bdd}
+På figur 2.3 ses bdd for signalbehandlingsblokken, hvor forstærkerblokkens og filterblokkens indgang- og udgangsporte er vist.  
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/4}
-	\caption{BDD for Signalbehandling HW}
-	\label{fig:BDDhw-diagram}
+	\caption{bdd for Signalbehandling HW}
+	\label{fig:bddhw-diagram}
 \end{figure}
 
-\subsection{IBD}
-På figur 2.4 ses IBD for signalbehandlingsblokken. IBD viser, hvordan forstærkerblokken og filterblokken interagerer med hinanden. 
+\subsection{ibd}
+På figur 2.4 ses ibd for signalbehandlingsblokken. ibd viser, hvordan forstærkerblokken og filterblokken interagerer med hinanden. 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/5}
-	\caption{IBD for Signalbehandling HW}
-	\label{fig:IBDhw-diagram}
+	\caption{ibd for Signalbehandling HW}
+	\label{fig:ibdhw-diagram}
 \end{figure}
 
 \subsection{Grænseflader}
@@ -128,7 +128,7 @@ På figur 2.4 ses IBD for signalbehandlingsblokken. IBD viser, hvordan forstærk
 	Filter	   & Forstærket analogt & in & Spænding & +/- 5 V\\[-1ex]
 			   & Jord	 & out & Spænding & 0 V\\[-1ex]
 			   & Filteret analogt & out & Spænding & +/- 5 V\\[-1ex]
-	\caption{Kommunikationsprotokol for Instrumenteringsforstærke}	
+	\caption{Kommunikationsprotokol for Signalbehandlingsblok}	
 \end{longtabu}
 
 
