@@ -46,7 +46,7 @@ På Figur 2.2 ses ibd for systemet. Ibd viser, hvordan de forskellige hardwarebl
 \end{figure}
 
 \section{Grænseflader}
-Kommunikationsprotokol for hardwareblokkene ses i Tabel 2.3. Det er en beskrivelse og specifikation af hvilket indgangs- og udgangssignal, de forskellige hardwareblokke har. 
+Kommunikationsprotokol for hardwareblokkene ses i Tabel 2.3. Det er en beskrivelse og specifikation af hvilket input- og outputsignal, de forskellige hardwareblokke har. 
 \\  \\
 Tryktransducerens maksimale output, $V_{max}$, bestemmes ud fra følgende ligning:
 
@@ -56,9 +56,9 @@ Tryktransducerens maksimale output, $V_{max}$, bestemmes ud fra følgende lignin
 
 P = Tryk\\
 K = sensitivitet\\
-$V_{+}$ = indgangsspænding\\
+$V_{+}$ = inputspænding\\
 
-For systemet er der valgt, at Tryktransducerens målbare område skal ligge i intervallet 0-300 mmHg. Den maksimale udgangsspænding bliver derfor udtrykt fra det maksimale tryk på 300 mmHg, sensitiviteten på 5 $\mu$ og indgangsspændingen på 5 V. Indgangspændingen kommer reelt fra 9 V batterier, men der er valgt at indsætte en 5 V regulator, så man er sikker på, hvad indgangspændingen er, da batterier er ustabile.  
+For systemet er der valgt, at Tryktransducerens målbare område skal ligge i intervallet 0-300 mmHg. Den maksimale outputspænding bliver derfor udtrykt fra det maksimale tryk på 300 mmHg, sensitiviteten på 5 $\mu$ og inputspændingen på 5 V. Inputspændingen kommer reelt fra 9 V batterier, men der er valgt at indsætte en 5 V regulator, så man er sikker på, hvad inputspændingen er, da batterier er ustabile.  
 
 
 \begin{equation}
@@ -98,7 +98,7 @@ Forstærkerblokken sørger for, at det meget svage spændingssignal fra Tryktran
 Filterets formål er at frasortere blodtrykssignalets frekvenser, der er højere end 50 Hz, da disse ikke har nogen relevans for blodtrykssignalet. Dette skal realiseres ved et anden ordens lavpasfilter. 
  
 \subsection{bdd}
-På Figur 2.3 ses bdd for Signalbehandlingsblokken, hvor Forstærkerblokkens og Filterblokkens indgangs- og udgangsporte er vist.  
+På Figur 2.3 ses bdd for Signalbehandlingsblokken, hvor Forstærkerblokkens og Filterblokkens input- og outputporte er vist.  
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/4}
@@ -150,7 +150,7 @@ På Figur 2.4 ses ibd for Signalbehandlingsblokken. Ibd viser, hvordan Forstærk
  	
  	
  	
- 	\item Indgangspænding: +/- 7,5 mV
+ 	\item Inputspænding: +/- 7,5 mV
  	\item Eksitationsspænding: +/- 9 V
  	\item Outputspænding: +/- 5 V
  	\item Minimum en båndbredde på 50 Hz
@@ -166,7 +166,7 @@ På Figur 2.4 ses ibd for Signalbehandlingsblokken. Ibd viser, hvordan Forstærk
  	\item Unity gain (ingen forstærkning)
  	\item -40 dB ved 500 Hz
  	\item Uendelig indgangsimpedans i teorien
- 	\item Indgangspænding +/- 5 V
+ 	\item Inputspænding +/- 5 V
  	\item Eksitationsspænding +/- 9 V
  \end{itemize}
  
@@ -174,64 +174,64 @@ På Figur 2.4 ses ibd for Signalbehandlingsblokken. Ibd viser, hvordan Forstærk
 \section{Software arkitektur}
 
 \subsection{Domænemodel}
-Domænemodellen er skabt på baggrund af de seks Use Cases og fungerer som et middel til at skabe et samlet overblik over systemet. Gennem navneordsanalyse er de konceptuelle klasser fundet. I modellen beskrives, hvordan de konceptuelle klasser og aktører interagerer med hinanden. Controlleren er ikke en konceptuel klasse, men det er den, der sørger for at systemet fungerer optimalt, og udfører kommandoer.
+Domænemodellen er skabt på baggrund af de seks Use Cases og fungerer som et middel til at skabe et samlet overblik over systemet. Gennem navneordsanalyse er de konceptuelle klasser fundet. I modellen beskrives, hvordan de konceptuelle klasser og aktører interagerer med hinanden. Controlleren er ikke en konceptuel klasse, men det er den, der sørger for, at systemet fungerer optimalt og udfører kommandoer.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1 \textwidth]{Figurer/screenshot}
-	\caption{Domænemodel for blodtryksmålersystemet}
+	\caption{Domænemodel for blodtryksmålesystemet}
 \end{figure}
-I domænemodellen ses generelle principper om kommunikation, mellem klasser, og aktører. Kommunikationen kan derfor være af forskellig karakter, og funktionaliteten af den givne kommando kan variere fra Use Case til Use Case.
+I domænemodellen ses generelle principper om kommunikation mellem klasser og aktører. Kommunikationen kan derfor være af forskellig karakter, og funktionaliteten af den givne kommando kan variere fra Use Case til Use Case.
 
 \subsection{Applikationsmodel}
 
 \subsubsection{Sekvensdiagram}
-Sekvensdiagrammerne beskriver step-by-step, via metoder, forløbet i de forskellige Use Cases. Der er lavet et sekvensdiagram for hver Use Case, for at gøre systemet mere overskueligt. Et sekvensdiagram består af boundary-klasserne og domain-klasserne fra domænemodellen, samt en controller-klasse, med navn efter den specifikke Use Case.
+Sekvensdiagrammerne beskriver step-by-step, via metoder, forløbet i de forskellige Use Cases. Der er lavet et sekvensdiagram for hver Use Case for at gøre systemet mere overskueligt. Et sekvensdiagram består af boundary-klasserne og domain-klasserne fra domænemodellen, samt en controller-klasse, med navn efter den specifikke Use Case.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/UC1_SD}
-	\caption{Sekvensdiagram for UC1}
+	\caption{Sekvensdiagram for Use Case 1}
 \end{figure}
 
-Forsker interagerer med Monitorvindue. Kalibreringsmetoden bliver kaldt, når Forsker trykker på knappen ”Ja”. Derefter igangsættes kalibreringen og kalibrerings tidspunkt og værdi sendes og gemmes i databasen. 
+Forsker interagerer med Monitor-vindue. Kalibreringsmetoden bliver kaldt, når Forsker trykker på knappen ”Ja”. Derefter igangsættes kalibreringen og kalibrerings-tidspunkt og værdi sendes og gemmes i Databasen. 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/UC2_SD}
-	\caption{Sekvensdiagram for UC2}
+	\caption{Sekvensdiagram for Use Case 2}
 \end{figure}
 
-Controller henter data fra Tryktransducer, som henter data i form af tryk fra måleobjekt. Datafilerne sendes fra Måleobjekt via Tryktransducer tilbage til Controller, der kalder metoden. Monitorvindue opdateres, og herefter kan Forsker aflæse blodtryk. 
+Controller henter data fra Tryktransducer, som henter data i form af tryk fra Måleobjekt. Datafilerne sendes fra Måleobjekt via Tryktransducer tilbage til Controller, der kalder metoden. Monitor-vindue opdateres, og herefter kan Forsker aflæse blodtryk. 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/UC3_SD}
-	\caption{Sekvensdiagram for UC3}
+	\caption{Sekvensdiagram for Use Case 3}
 \end{figure}
 
-Forsker interagerer med Monitorvindue ved at trykke på knappen ”Nulpunktsjustér”. Derefter kaldes metoden, og nulpunktsjusteringen startes. Tidspunktet og værdien for nulpunktjusteringen sendes og gemmes i databasn, hvorefter Forsker får besked om, at nulpunktsjusteringen er foretaget. 
+Forsker interagerer med Monitor-vindue ved at trykke på knappen ”Nulpunktsjustér”. Derefter kaldes metoden, og nulpunktsjusteringen startes. Tidspunktet og værdien for nulpunktjusteringen sendes og gemmes i Databasen, hvorefter Forsker får besked om, at nulpunktsjusteringen er foretaget. 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/UC4_SD}
-	\caption{Sekvensdiagram for UC4}
+	\caption{Sekvensdiagram for Use Case 4}
 \end{figure}
 
-Forsker interagerer med Monitorvindue ved at markere i radiobutton ”Deaktivér digitalt filter”. Derefter kaldes metoden, og filteret deaktiveres, hvorefter signalet bliver udskrevet ufiltreret.
+Forsker interagerer med Monitor-vindue ved at markere i radiobutton ”Deaktivér digitalt filter”. Derefter kaldes metoden, og filteret deaktiveres, hvorefter signalet bliver udskrevet ufiltreret.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/UC5_SD}
-	\caption{Sekvensdiagram for UC5}
+	\caption{Sekvensdiagram for Use Case 5}
 \end{figure}
 
-Forsker interagerer med Monitorvindue ved at markere i radiobutton ”Aktivér digitalt filter”. Derefter kaldes metoden, og filteret aktiveres, hvorefter signalet bliver udskrevet filtreret.
+Forsker interagerer med Monitor-vindue ved at markere i radiobutton ”Aktivér digitalt filter”. Derefter kaldes metoden, og filteret aktiveres, hvorefter signalet bliver udskrevet filtreret.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/UC6_SD}
-	\caption{Sekvensdiagram for UC6}
+	\caption{Sekvensdiagram for Use Case 6}
 \end{figure}
 
-Forsker interagerer med Monitorvindue ved at trykke på knappen ”Gem”. Derefter kaldes metoden og Gem-vinduet åbnes. Første gang Forsker ønsker at gemme, indtastes data om målingen og der trykkes på knappen ”OK”. Kommando sendes og data gemmes. De efterfølgende gange, der ønskes at gemme, er data udfyldt fra første gang, og der trykkes blot på ”OK”, hvorefter kommandoen sendes. Data gemmes og Gem vinduet lukkes. Controller bekræfter til Monitorvindue, at data er gemt.
+Forsker interagerer med Monitor-vindue ved at trykke på knappen ”Gem”. Derefter kaldes metoden og Gem-vinduet åbnes. Første gang Forsker ønsker at gemme, indtastes data om målingen og der trykkes på knappen ”OK”. Kommando sendes og data gemmes. De efterfølgende gange, der ønskes at gemme, er data udfyldt fra første gang, og der trykkes blot på ”OK”, hvorefter kommandoen sendes. Data gemmes og Gem-vinduet lukkes. Controller bekræfter til Monitor-vindue, at data er gemt.
