@@ -2,14 +2,14 @@
 \select@language {danish}
 \contentsline {chapter}{Resum\IeC {\'e}}{i}{chapter*.1}
 \contentsline {chapter}{Godkendelsesformular}{iii}{chapter*.2}
-\contentsline {chapter}{Underskrifter}{v}{chapter*.3}
-\contentsline {chapter}{Ordliste}{vii}{chapter*.4}
+\contentsline {chapter}{Ordliste}{v}{chapter*.3}
 \contentsline {chapter}{\chapternumberline {1}Indledning}{1}{chapter.1}
 \contentsline {chapter}{\chapternumberline {2}Projektformulering og afgr\IeC {\ae }nsning}{3}{chapter.2}
 \contentsline {chapter}{\chapternumberline {3}Baggrund}{5}{chapter.3}
 \contentsline {section}{\numberline {3.1}Kroppens kredsl\IeC {\o }b}{5}{section.3.1}
 \contentsline {section}{\numberline {3.2}Invasiv blodtryksm\IeC {\r a}ling}{9}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Dynamiske egenskaber}{13}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.1}Dynamiske egenskaber}{12}{subsection.3.2.1}
+\contentsline {subsubsection}{Referancer}{15}{section*.15}
 \contentsline {chapter}{\chapternumberline {4}Systembeskrivelse}{17}{chapter.4}
 \contentsline {chapter}{\chapternumberline {5}Krav}{19}{chapter.5}
 \contentsline {chapter}{\chapternumberline {6}Projektbeskrivelse}{23}{chapter.6}
@@ -37,5 +37,5 @@
 \contentsline {section}{\numberline {6.7}Opn\IeC {\r a}ede erfaringer}{35}{section.6.7}
 \contentsline {section}{\numberline {6.8}Fremtidigt arbejde}{35}{section.6.8}
 \contentsline {chapter}{\chapternumberline {7}Konklusion}{37}{chapter.7}
-\contentsline {chapter}{Litteratur}{39}{chapter*.32}
-\contentsline {chapter}{Bilag}{41}{chapter*.33}
+\contentsline {chapter}{Litteratur}{39}{section*.33}
+\contentsline {chapter}{Bilag}{41}{chapter*.34}

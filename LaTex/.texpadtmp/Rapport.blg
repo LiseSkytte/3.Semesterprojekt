@@ -5,22 +5,78 @@ The style file: plain.bst
 A level-1 auxiliary file: Rfiler/Rforside.aux
 A level-1 auxiliary file: Rfiler/Resume.aux
 A level-1 auxiliary file: Rfiler/Rgodkendelsesformular.aux
-A level-1 auxiliary file: Rfiler/Runderskrifter.aux
 A level-1 auxiliary file: Rfiler/Rordliste.aux
 A level-1 auxiliary file: Rfiler/Rindledning.aux
 A level-1 auxiliary file: Rfiler/Rprojektformulering.aux
+White space in argument---line 3 of file Rfiler/Rprojektformulering.aux
+ : \citation{Billed
+ :                  for invasiv blodtryksmaling}
+I'm skipping whatever remains of this command
+White space in argument---line 4 of file Rfiler/Rprojektformulering.aux
+ : \citation{Billed
+ :                  for invasiv blodtryksmaling}
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: Rfiler/Rbaggrund.aux
+White space in argument---line 3 of file Rfiler/Rbaggrund.aux
+ : \citation{Legemkredslob
+ :                         billede}
+I'm skipping whatever remains of this command
+White space in argument---line 4 of file Rfiler/Rbaggrund.aux
+ : \citation{Legemkredslob
+ :                         billede}
+I'm skipping whatever remains of this command
+White space in argument---line 13 of file Rfiler/Rbaggrund.aux
+ : \citation{Billed
+ :                  for invasiv blodtryksmaling}
+I'm skipping whatever remains of this command
+White space in argument---line 14 of file Rfiler/Rbaggrund.aux
+ : \citation{Billed
+ :                  for invasiv blodtryksmaling}
+I'm skipping whatever remains of this command
+White space in argument---line 27 of file Rfiler/Rbaggrund.aux
+ : \citation{Billed
+ :                  for invasiv blodtryksmaling}
+I'm skipping whatever remains of this command
+White space in argument---line 28 of file Rfiler/Rbaggrund.aux
+ : \citation{Billed
+ :                  for invasiv blodtryksmaling}
+I'm skipping whatever remains of this command
+White space in argument---line 35 of file Rfiler/Rbaggrund.aux
+ : \citation{Billed
+ :                  for invasiv blodtryksmaling}
+I'm skipping whatever remains of this command
+White space in argument---line 36 of file Rfiler/Rbaggrund.aux
+ : \citation{Billed
+ :                  for invasiv blodtryksmaling}
+I'm skipping whatever remains of this command
+White space in argument---line 38 of file Rfiler/Rbaggrund.aux
+ : \citation{Billed
+ :                  for invasiv blodtryksmaling}
+I'm skipping whatever remains of this command
+White space in argument---line 39 of file Rfiler/Rbaggrund.aux
+ : \citation{Legemkredslob
+ :                         billede}
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: Rfiler/Rsystembeskrivelse.aux
 A level-1 auxiliary file: Rfiler/Rkrav.aux
 A level-1 auxiliary file: Rfiler/Rprojektbeskrivelse.aux
+White space in argument---line 32 of file Rfiler/Rprojektbeskrivelse.aux
+ : \citation{Billed
+ :                  for invasiv blodtryksmaling}
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: Rfiler/Rkonklusion.aux
 A level-1 auxiliary file: Rfiler/Rlitteratur.aux
 A level-1 auxiliary file: Rfiler/Rbilag.aux
-I found no \citation commands---while reading file /Users/Lise/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Rapport.aux
 I found no \bibdata command---while reading file /Users/Lise/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Rapport.aux
+Warning--I didn't find a database entry for "Hjertecyklus"
+Warning--I didn't find a database entry for "Wheatestone"
+Warning--I didn't find a database entry for "Diashow"
+Warning--I didn't find a database entry for "Sundhedbog"
+Warning--I didn't find a database entry for "Vejledning"
+Warning--I didn't find a database entry for "ISE"
 You've used 0 entries,
             2118 wiz_defined-function locations,
-            510 strings with 4418 characters,
+            521 strings with 4499 characters,
 and the built_in function-call counts, 18 in all, are:
 = -- 0
 > -- 0
@@ -59,4 +115,4 @@ warning$ -- 0
 while$ -- 0
 width$ -- 0
 write$ -- 2
-(There were 2 error messages)
+(There were 14 error messages)

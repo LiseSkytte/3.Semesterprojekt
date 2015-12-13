@@ -36,7 +36,7 @@ Projektets udviklingsproces har taget udgangspunkt i ASE-modellen, som ses på n
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/asemodel}
-	\caption{Udviklingsmodel: ASE-model}
+	\caption{Udviklingsmodel: ASE-model \protect\cite[s. 6]{Vejledning}}
 \end{figure}
 ASE-modellen er en udviklingsmodel, der tager udgangspunkt i use cases, som defineres i kravspecifikationen i starten af projektarbejdet. ASE-modellen er inspireret af vandfaldsmodellen, hvor projektarbejdet opdeles i faser. Der fastlægges en opgaveformulering, kravspecifikation og systemarkitektur, for derefter at designe, implementere og teste de enkelte moduler i iterationer. Ud fra projektformuleringen specificeres kravspecifikationen som en række use cases, der beskriver de forskellige aktørers interaktion med systemet. Dette giver et overblik over, hvilke krav, der stilles til systemets funktionalitet. Ud fra kravspecifikationen bliver systemets accepttest udarbejdet. Efter kravspecifikationen er fastlagt, udarbejdes systemarkitekturen. Ud fra systemarkitekturen designes systemet ved at nedbryde det efter funktionalitet, som kan bindes til både software og hardware. \\\\
 De første step i udviklingen af projektet iflg. ASE-modellen er blevet udarbejdet af alle gruppens medlemmer. Alle har bidraget til projektformuleringen, kravspecifikationen og accepttesten. I begyndelsen var der primært fokus på, at få dette færdiggjort, men der blev allerede her arbejdet på komponentværdier og udkast til hardwaren. I starten af projektarbejdet var det udtænkt, at alle gruppens medlemmer skulle arbejde med alle områder i projektet. Dette kunne ikke udføres rent tidsmæssigt, og derfor var en opdeling af arbejdsopgaver i mindre grupper nødvendig. Det blev delt op i software- og hardwarehold, dog var en del af hardwaren allerede beregnet og implementeret, da denne opdeling fandt sted. Tilbage af hardwaredelen var at lodde det på et veroboard og derefter teste det.\\\\
@@ -46,7 +46,7 @@ V-modellen er en udviklingsmodel opdelt i forskellige faser, der beskriver udvik
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/vmodel}
-	\caption{V-modellen}
+	\caption{V-modellen, \protect\cite[s. 4]{Vejledning}, \protect\cite{ISE}}
 \end{figure}
 På ovenstående figur ses V-modellen, hvor den første fase er udvikingen af kravspecifikationen. Hertil udvikles en tilhørende accepttest, som gør det muligt, at tjekke om systemet opfylder de stillede krav. Næste fase er systemarkitekturen, hvor der ligeledes udvikles en tilhørende test. Testen skal undersøge integrationen mellem de implementerede moduler. De to sidste faser er design og implementering, som der udføres løbende tests af. 
 
@@ -55,7 +55,7 @@ Vandfaldsmodellen er en model, der ofte benyttes for udviklingen af software. Ud
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{Figurer/vfmodel}
-	\caption{Vandfaldsmodellen}
+	\caption{Vandfaldsmodellen, \protect\cite{ISE}}
 \end{figure}
 De tre udviklingsmodeller hænger alle sammen på den måde, at der arbejdes i kronologisk logisk rækkefølge. De har suppleret hinanden alle tre, hvor ASE-modellen har skabt det overordnede overblik. Vandfaldsmodellen er den udviklingsproces, som der er blevet arbejdet efter i alle projektets facetter. V-modellen har sikret, at de nødvendige tests af systemet og de enkelte moduler har fundet sted. 
 
@@ -96,7 +96,7 @@ Tryktransduceren vil transformere et tryk på 300 mmHg om til 7,5 mV, se Projekt
 Til dette benyttes den ikke-inverterende operationsforstærker, INA114 samt et potentiometer, der fungere som gain-modstanden. Gain-modstanden er en variabel modstand, der kan variere i forhold til, hvilken forstærkning, der ønskes. Udregningen for forstærkningen ses i Projektdokumentationen under Hardware arkitektur (2.3) under ligningerne (2.4) og (2.5). Udregningen for gain-modstanden kan ses i Projektdokumentationen unden HW implementering og test (3) under ligning (3.3).     
 
 \subsubsection{Filteret}
-Det forstærkerede analoge signal skal videre filteres før det konventeres til det digitale signal. De relevante frekvenser, der udgør en blodtryksmåling, ligge mellem 0-50 Hz\footnote{Se bogen Medical Instrumentation s. 10}. Derfor ønskes alle frekvenser over 50 Hz dæmpet.
+Det forstærkerede analoge signal skal videre filteres før det konventeres til det digitale signal. De relevante frekvenser, der udgør en blodtryksmåling, ligge mellem 0-50 Hz \cite[s. 10]{Billed for invasiv blodtryksmaling} . Derfor ønskes alle frekvenser over 50 Hz dæmpet.
 \\\\
 Til dette designes et Sallen Key anden ordens lavpasfilter med unity gain, hvor cutofffrekvensen er 50 Hz. Udregningerne for kompontværdierne til denne realisering, se HW implementering og test (3) i Projektdokumentationen under Filterblok (3.2).
 
