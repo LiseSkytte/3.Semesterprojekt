@@ -5,22 +5,22 @@
     Version &    Dato &    Ansvarlig &    Beskrivelse\\[-1ex]
     \midrule
     1.0		&	23-09-2015 &		Alle	&	Første udkast til Use Cases. I alt 4, hvor en af funktionaliteterne var, at man kunne optage en lydsekvens\\[-1ex]
-    1.1		&	29-09-2015	&	Alle	&	Ændring af Use Cases efter møde med Peter. I alt 5, hvor funktionaliteterne kun dækker over de opstillede krav til projektet. \\[-1ex]
-    1.2		&	30-09-2015	&	Alle	&	Små ændring af formuleringerne samt byttet om på UC1 og UC2 og tilføjet en UC6. De ikke-funktionelle krav er blevet tilføjet. Klar til Review\\[-1ex]	
+    1.1		&	29-09-2015	&	Alle	&	Ændring af Use Cases efter møde med Peter. I alt fem, hvor funktionaliteterne kun dækker over de opstillede krav til projektet. \\[-1ex]
+    1.2		&	30-09-2015	&	Alle	&	Små ændring af formuleringerne samt byttet om på Use Case 1 og Use Case 2 og tilføjet en Use Case 6. De ikke-funktionelle krav er blevet tilføjet. Klar til Review\\[-1ex]	
     2.0		&	08-10-2015	& Alle		&	Rettelser efter review møde\\[-1ex] 
-    2.1		&	04-11-2015	& Alle		&	Tilføjet Tryktransducer som en sekundæraktør \\[-1ex]
+    2.1		&	04-11-2015	& Alle		&	Tilføjet Tryktransducer som en sekundær aktør \\[-1ex]
 
 \label{version_Systemark}
 \end{longtabu}
 
 \section{Indledning}
-Kravspecifikationen vil gennem seks Use Cases beskrive blodtryksmålerens funktionelle krav. Systemets ikke-funktionelle krav er udarbejdet på baggrund af (F)URPS+. Dertil vil der være aktør-kontekst- og Use Casesdiagram samt beskrivelse af de forskellige aktører, der interagerer med systemet.  
+Kravspecifikationen vil gennem seks Use Cases beskrive blodtryksmålerens funktionelle krav. Systemets ikke-funktionelle krav er udarbejdet på baggrund af FURPS+. Dertil vil der være aktør-kontekstdiagram og Use Case diagram samt beskrivelse af de forskellige aktører, der interagerer med systemet.  
 
 \section{Systembeskrivelse}
- Systemet skal kunne vise et blodtryksignal kontinuert i en graf. Derudover skal systemet kunne kalibrere, nulpunktsjustere samt gemme data for målingen i en lokal database. Systemet er udvilket som en prototype, der er mulig at teste udfra de givne rammer. 
+ Systemet skal kunne vise et blodtrykssignal kontinuert i en graf. Derudover skal systemet kunne kalibrere, nulpunktsjustere samt gemme data for målingen i en lokal database. Systemet er udvilket som en prototype, der er mulig at teste udfra de givne rammer. 
 
 \section{Funktionelle krav}
-De funktionelle krav vil nedenstående beskrives ud fra Aktør-kontekstdiagram, aktørbeskrivelse, Use Cases samt Use Case diagram. 
+De funktionelle krav vil nedenstående beskrives ud fra aktør-kontekstdiagram, aktørbeskrivelse, Use Cases samt Use Case diagram. 
 
 \subsection{Aktør-kontekstdiagram}
 \begin{figure}[H]
@@ -30,8 +30,8 @@ De funktionelle krav vil nedenstående beskrives ud fra Aktør-kontekstdiagram, 
 	\label{fig:aktoerbeskrivelse}
 \end{figure}
 
-Systemet består af en software- og en hardward-del. Softwaredelen er udarbejdet i Visual Studio C\#. Hardwaredelen består af flere komponenter sat sammen. Tryktransducer, Instrumentationforstærker, et aktivt 2. ordens lavpasfilter af typen Sallen-Key med unity gain og en DAQ. Det er selve systemet. \\
-Primær aktøren i dette projekt er en Forsker. Sekundære aktører er Database, Tryktransducer og Måleobjekt. Måleobjekt er en package af Physionet og Analog Discovery, som er eksterne aktører.   
+Systemet består af en software- og en hardwaredel. Softwaredelen er udarbejdet i Visual Studio C\#. Hardwaredelen består af flere komponenter sat sammen. Tryktransducer, Instrumentationforstærker, et aktivt anden ordens lavpasfilter af typen Sallen-Key med unity gain og en DAQ. Det er selve systemet. \\
+Primæraktøren i dette projekt er en Forsker. Sekundære aktører er Database, Tryktransducer og Måleobjekt. Måleobjekt er en package af Physionet og Analog Discovery, som er eksterne aktører.   
 
 \subsection{Aktørbeskrivelse}
 
@@ -47,11 +47,11 @@ Primær aktøren i dette projekt er en Forsker. Sekundære aktører er Database,
      \midrule
      Aktørnavn & Måleobjekt  \\
      Type & Sekundær \\
-     Beskrivelse  & Måleobjekt i det færdigudviklede produkt er et signal genereret enten in vitro eller in vivo. I prototypen er Måleobjekt en kombination af Physionet og Analog Discovery. Måleobjekt repræsenterer data fra Physionet leveret til blodtryksmålingssystemet igennem Analog Discovery \\
+     Beskrivelse  & Måleobjekt i det færdigudviklede produkt er et signal genereret enten in vitro eller in vivo. I prototypen er Måleobjekt en kombination af Physionet og Analog Discovery. Måleobjekt repræsenterer data fra Physionet leveret til blodtryksmålesystem igennem Analog Discovery \\
      \midrule
      Aktørnavn & Database \\
      Type & Sekundær \\
-     Beskrivelse  & Database bruges i blodtryksmålingssystemet til at gemme data \\ 
+     Beskrivelse  & Database bruges i blodtrykmålesystemet til at gemme data \\ 
      \midrule
      Atørnavn & Physionet \\
      Type & Ekstern  \\
@@ -59,7 +59,7 @@ Primær aktøren i dette projekt er en Forsker. Sekundære aktører er Database,
      \midrule
      Aktørnavn & Analog Discovery  \\
      Type & Ekstern \\
-     Beskrivelse  & Analog Discovery omdanner data fra Physionet til at analogt signal \\                                                                                                                                                                          
+     Beskrivelse  & Analog Discovery omdanner data fra Physionet til et analogt signal \\                                                                                                                                                                          
      \bottomrule                                                                                                                   
     \end{tabularx}
     \caption {Aktørbeskrivelse}
@@ -67,7 +67,7 @@ Primær aktøren i dette projekt er en Forsker. Sekundære aktører er Database,
 	
 \end{table}
 
-\subsection{Use case-diagram}
+\subsection{Use casediagram}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/1}
@@ -75,7 +75,7 @@ Primær aktøren i dette projekt er en Forsker. Sekundære aktører er Database,
 	\label{fig:Use case-diagram}
 \end{figure}
 
-Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forskeren, der sætter alle Use Cases igang og styrer, hvad der skal ske og hvornår. Tryktransducer, som er en af de sekundære aktører, interagerer i UC2. Tryktransduceren behandler tryk fra den anden sekundære aktør Måleobjekt, og omformer det til et analog signal. Blodtryksmålingen skal vises i UC2. For at få gemt data interagerer den sekundære aktør Database med UC6.  
+Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forskeren, der sætter alle Use Cases igang og styrer, hvad der skal ske og hvornår. Tryktransducer, som er en af de sekundære aktører, interagerer i Use Case 2. Tryktransduceren behandler tryk fra den anden sekundære aktør, Måleobjekt, og omformer det til et analogt signal. Blodtryksmålingen skal vises i Use Case 2. For at få gemt data interagerer den sekundære aktør Database med Use Case 6.  
 
 \subsection{Use Cases}
 
@@ -91,15 +91,15 @@ Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forsk
     Initiering &&	Startes af Forsker\\
     Forudsætninger &&  System er aktivt og tilgængeligt\\
     Resultat &&		System er kalibreret                         \\ \midrule
-    Hovedforløb &    1. &	 Kalibrering-vinduet vises ved opstart og 					tidligere kalibreringsdata vises\\[-1ex]  
+    Hovedforløb &    1. &	 Kalibrerings-vinduet vises ved opstart og 					tidligere kalibreringsdata vises\\[-1ex]  
     			&	 2. &	 Forsker indtaster målte kalibreringsdata    			\newline
     						 [2.a \textit{Forsker vælger ikke at kalibrere}]\newline
     						 [2.b \textit{Indtastede kalibreringsdata er ugyldige}]\\
                 &    3.	&	 System kalibrerer\\
-                &	 4. &	 Det fremgår i Kalibrering-vinduet, at kalibrering er udført \newline\\ \midrule
+                &	 4. &	 Det fremgår i Kalibrerings-vinduet, at kalibrering er udført \newline\\ \midrule
                 
-    Undtagelser &    2.a &   Forsker ønsker ingen kalibrering. UC1 afsluttes og Kalibrering-vinduet lukkes  \\
-    			&	 2.b &	 Det fremgår i Kalibrering-vinduet, at indtastede kalibreringsdata er ugyldige. Forsætter ved UC1 punkt 2  \\ \bottomrule
+    Undtagelser &    2.a &   Forsker ønsker ingen kalibrering. Use Case 1 afsluttes og Kalibrerings-vinduet lukkes  \\
+    			&	 2.b &	 Det fremgår i Kalibrerings-vinduet, at indtastede kalibreringsdata er ugyldige. Forsætter ved Use Case 1 punkt 2  \\ \bottomrule
 \caption{Fully dressed Use Case 1.}
 \label{UC1}
 \end{longtabu}
@@ -114,8 +114,8 @@ Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forsk
     Primær aktør &&    Forsker\\
     Sekundære aktør &&	 Måleobjekt og Tryktransducer\\
     Mål &&    Forsker ønsker at vise blodtrykssignal med digitalt filter\\
-    Initiering &&	Startes efter afsluttet UC1\\
-    Forudsætninger &&  System er aktivt og tilgængeligt. Digitalt filter er aktivt. Tryktransducer er tilsluttet system. Måleobjekt er tilsluttet tryktransducer\\
+    Initiering &&	Startes efter afsluttet Use Case 1\\
+    Forudsætninger &&  System er aktivt og tilgængeligt. Digitalt filter er aktivt. Tryktransducer er tilsluttet systemet. Måleobjekt er tilsluttet Tryktransducer\\
     Resultat &&		Det filtrerede blodtrykssignal udskrives                         \\ \midrule
     Hovedforløb &    1. &    Det filtrerede blodtrykssignal vises i en graf i Monitor-vinduet\newline\\ \midrule
                 
@@ -135,7 +135,7 @@ Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forsk
     Sekundære aktør && \\
     Mål &&    Forsker ønsker at nulpunktsjustere system\\
     Initiering &&	Startes af Forsker\\
-    Forudsætninger &&  System er aktivt og tilgængeligt. UC2 kører. Tryktransduceren skal befinde sig i atmosfærisk luft  \\    
+    Forudsætninger &&  System er aktivt og tilgængeligt. Use Case 2 kører. Tryktransduceren skal befinde sig i atmosfærisk luft  \\    
     Resultat &&		System er nulpunktsjusteret\\ \midrule
     Hovedforløb &    1. &    Forsker vælger at udføre en nulpunktsjustering\\[-1ex]   						 	
                 &    2. &    System nulpunktsjusterer\\[-1ex]
@@ -156,10 +156,10 @@ Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forsk
     Sekundære aktør &&	 \\
     Mål &&    Forsker ønsker at deaktivere det digitale filter\\
     Initiering &&	Startes af Forsker\\
-    Forudsætninger &&  System er aktivt og tilgængeligt. UC2 kører  \\
+    Forudsætninger &&  System er aktivt og tilgængeligt. Use Case 2 kører  \\
     Resultat &&		Ufiltreret blodtrykssignal vises i Monitor-vinduet                 \\ \midrule
     Hovedforløb &    1. &    Forsker vælger at deaktivere digitalt filter \\[-1ex]   						 	
-                &    2. &    System udskriver det ufiltrerede blodtryksignal\newline\\ \midrule
+                &    2. &    System udskriver det ufiltrerede blodtrykssignal\newline\\ \midrule
                 
     Undtagelser &     &      \\ \bottomrule
 \caption{Fully dressed Use Case 4.}
@@ -177,7 +177,7 @@ Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forsk
     Sekundære aktør &&	 \\
     Mål &&    Forsker ønsker at aktivere det digitale filter\\
     Initiering &&	Startes af Forsker\\
-    Forudsætninger &&  System er aktivt og tilgængeligt. UC4 er afsluttet  \\
+    Forudsætninger &&  System er aktivt og tilgængeligt. Use Case 4 er afsluttet  \\
     Resultat &&		Filtreret blodtrykssignal vises i Monitor-vindet                 \\ \midrule
     Hovedforløb &    1. &    Forsker vælger at aktivere digitalt filter\\[-1ex]   						 	
                 &    2. &    System udskriver det filtrerede blodtrykssignal\newline\\ \midrule
@@ -197,9 +197,9 @@ Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forsk
     Sekundære aktør &&	Database\\
     Mål &&    Forsker ønsker at gemme data i Database\\
     Initiering &&	Startes af Forsker\\
-    Forudsætninger &&  System er aktivt og tilgængeligt. UC4 eller UC5 kører  \\
+    Forudsætninger &&  System er aktivt og tilgængeligt. Use Case 4 eller Use Case 5 kører  \\
     Resultat &&		Data er gemt i Database                 \\ \midrule
-    Hovedforløb &    1. &    Forsker bestemmer optagelseslængde for målingen i Monitorvindue \\[-1ex] 
+    Hovedforløb &    1. &    Forsker bestemmer optagelseslængde for målingen i Monitor-vinduet \\[-1ex] 
   						 
                 &    2. &    Forsker igangsætter optagelse af målingen 		 \\[-1ex] 
                 &    3.	&	 Målingen stopper\newline
@@ -209,7 +209,7 @@ Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forsk
                 &	 6. &	 Forsker trykker på "OK"\--knappen og system gemmer målingen i Database				 \\[-1ex]
                 &	 7.	&	 Det fremgår af 	Gem-vinduet, at målingen 		 er gemt\newline\\ \midrule
                 
-      			&    3.a &   Forsker stopper optagelse af målingen. Forsætter ved punkt 4 i UC6  \\
+      			&    3.a &   Forsker stopper optagelse af målingen. Forsætter ved punkt 4 i Use Case 6  \\
 \bottomrule
     
 \caption{Fully dressed Use Case 6.}
@@ -217,7 +217,7 @@ Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forsk
 \end{longtabu}
 
 \section{Ikke-funktionelle krav}
-De ikke-funktionelle krav er specificeret ved brug af redskabet (F)URPS+, der står for hhv. Functionality, Usability, Reliability, Performance, Supportability og andre krav til fx brugssituationer og interface.  
+De ikke-funktionelle krav er specificeret ved brug af redskabet FURPS+, der står for henholdsvis Functionality, Usability, Reliability, Performance, Supportability og andre krav til eksempelvis brugssituationer og interface.  
 
 
 \subsection{Functionality}
@@ -225,27 +225,27 @@ De ikke-funktionelle krav er specificeret ved brug af redskabet (F)URPS+, der st
 	\item System skal kunne kalibreres. 
 	\item System skal kunne vise et kontinuert blodtrykssignal i Monitor-vinduet.
 	\item System skal kunne vise systole-, diastole- og pulsværdier med op til tre cifre.
-	\item System skal kunne vise et blodtrykssignal med og uden et digitalt filter.
+	\item System skal kunne vise et blodtrykssignal med og uden digitalt filter.
 	\item System skal kunne nulpunktsjustere blodtrykssignalet.
 	\item System skal kunne gemme en blodtryksmåling i en database.
 \end{itemize}
 
 \subsection{Usability}
 \begin{itemize}
-	\item Kalibrering-vinduet skal indeholde tekstbokse til indtastning af kalibreringsdata. 
-	\item Kalibrering-vinduet skal indeholde en "Beregn"\--knap. 
-	\item Kalibrering-vinduet skal indeholde en "OK"\--knap.
-	\item Kalibrering-vinduet skal indeholde et tidsstempel for seneste kalibrering.
+	\item Kalibrerings-vinduet skal indeholde tekstbokse til indtastning af kalibreringsdata. 
+	\item Kalibrerings-vinduet skal indeholde en "Beregn"\--knap. 
+	\item Kalibrerings-vinduet skal indeholde en "OK"\--knap.
+	\item Kalibrerings-vinduet skal indeholde et tidsstempel for seneste kalibrering.
 	\item Monitor-vinduet skal indeholde en ”Gem”\--knap.
 	\item Monitor-vinduet skal indeholde en ”Nulpunktsjustér”\--knap.
 	\item Monitor-vinduet skal indeholde et tidsstempel for seneste nulpunktsjustering.
 	\item Monitor-vinduet skal indeholde to radiobuttons til aktivering og deaktivering af digitalt filter.
 	\item Monitor-vinduet skal indeholde en tekstboks til ændring af optagelseslængden.  
-	\item Monitor-vinduet skal indeholde en "Rec"\--knap/.
+	\item Monitor-vinduet skal indeholde en "Rec"\--knap.
 	\item Monitor-vinduet skal indeholde en "Stop"\--knap.
 	\item Gem-vinduet skal indeholde tekstbokse til indtastning af oplysninger om målingen. 
 	\item Gem-vinduet skal indeholde en ”OK”\--knap.
-	\item Det skal være muligt at aflæse systole-, diastole- og pulsværdier på Monitor-vinduet fra 2 meters afstand med normalt syn.
+	\item Det skal være muligt at aflæse systole-, diastole- og pulsværdier på Monitor-vinduet fra to meters afstand med normalt syn.
 \end{itemize}
 
 \subsection{Reliability}
@@ -259,10 +259,10 @@ De ikke-funktionelle krav er specificeret ved brug af redskabet (F)URPS+, der st
 
 \subsection{Performance}
 \begin{itemize}
-	\item Blodtrykssignalet skal vises maksimalt 5 sekunder efter UC1 er afsluttet.
+	\item Blodtrykssignalet skal vises maksimalt fem sekunder efter Use Case 1 er afsluttet.
 	\item Systemet skal vise en graf for blodtryksmålingen, hvor y-aksen er mmHg og x-aksen er tid i sekunder.
 	\item Systemet skal kunne måle blodtryksværdier fra 0 til 300 mmHg.
-	\item Blodtrykssignalet vises kontinuerligt over et interval af fire sekunder af gangen.
+	\item Blodtrykssignalet vises kontinuert over et interval af fire sekunder ad gangen.
 	\item Blodtrykssignalet vises via en rød kurve. 
 	\item Y-aksen varierer efter blodtrykssignalets maksimum- og minimumværdier.  
 \end{itemize}
@@ -283,32 +283,34 @@ De ikke-funktionelle krav er specificeret ved brug af redskabet (F)URPS+, der st
 	\item Blodtryksdiagrammet skal fylde minimum 1/3 af Monitor-vinduet.
 	\item Baggrunden i Monitor-vinduet skal være mørk.
 	\item Blodtrykssignal og -værdier(systole og diastole) skal være røde, og puls skal være grøn.
-	\item Systolisk og diastolisk blodtryk skal fremhæves øverst i højre hjørne ved større skriftstørrelse end andre værdier i Monitor-vinduet (fx værdier på akserne).
+	\item Systolisk og diastolisk blodtryk skal fremhæves øverst i højre hjørne ved større skriftstørrelse end andre værdier i Monitor-vinduet eksempelvis værdier på akserne.
 \end{itemize}
 
 \subsection{GUI}
-I følgende vil der være indsat figurer af hvorledes det ønskes brugergrænsefladerne skal designes. Brugergrænsefladen et bindeleddet mellem systemet og dets bruger, og her er der opbygget efter principperne om en god brugergrænseflade. Det har været prioriteret at programmet skal være let at anvende og knapperne på brugergrænsefladen skal være forståelige samt give en indikation af hvad der sker når der trykkes.  
-På Figur 1.3 ses en skitse til hvordan kalibrerings-vinduet ønskes designet på brugergrænsefladen. 
+I det følgende afsnit vil der være indsat figurer af, hvorledes det ønskes, at brugergrænsefladerne skal designes. Brugergrænsefladen er bindeleddet mellem systemet og dets bruger. Her stilles krav til, at programmet skal være let anvendeligt, og designet med fokus på slutbrugeren. Yderligere specifikationer om designfasen af programmets brugergrænseflade kan findes i Projektdokumentationen under Design (X.X).
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/Kalibrer2}
-	\caption{GUI  Kalibrerings vindue}
+	\caption{GUI:  Kalibrerings-vindue}
 	\label{fig:GUI  Kalibrerings vindue}
 \end{figure}
+På Figur 1.3 ses en skitse over, hvorledes Kalibrerings-vinduets brugergrænseflade ønskes designet. 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/m}
-	\caption{GUI  Monitor vindue}
+	\caption{GUI:  Monitor-vindue}
 	\label{fig:GUI  Monitor vindue}
 \end{figure}
+På Figur 1.4 ses en skitse over, hvorledes Monitor-vinduets brugergrænseflade ønskes designet.\\\\
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/Gem}
 	\caption{GUI  Gem vindue}
-	\label{fig:GUI  Gem vindue}
+	\label{fig:GUI: 	Gem vindue}
 \end{figure}
+På Figur 1.5 ses en skitse over, hvorledes Gem-vinduets brugergrænseflade ønskes designet.
 
 
 

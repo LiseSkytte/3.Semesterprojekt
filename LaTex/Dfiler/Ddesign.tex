@@ -5,17 +5,17 @@
     \midrule
     1.0		&	20-10-2015 &	 Alle	& Første udkast til domænemodel, bdd, ibd og sekvensdiagrammer	\\[-1ex]
     1.1		&	21-10-2015	&	Alle	& Små ændringer i bdd og ibd efter møde med vejleder \\[-1ex]
-    1.2		&	27-10-2015	&	Alle	& Ændring af bdd og ibd efter møde med Kim; blokkene filter og forstærker er blevet lagt sammen under blokken Signalbehandling\\[-1ex]
-    1.3  	&	02-11-2015	&	Alle	& Begyndte at oprette Design-dokumentet. Udkast til klassediagrammer for UC \\[-1ex]
-    1.4		&	04-11-2015	&	Alle	& Skrevet hardward design afsnittet. Små rettelser i de andre afsnit i design, så det er klar til review \\[-1ex]
+    1.2		&	27-10-2015	&	Alle	& Ændring af bdd og ibd efter møde med Kim; blokkene Filter og Forstærker er blevet lagt sammen under blokken Signalbehandling\\[-1ex]
+    1.3  	&	02-11-2015	&	Alle	& Begyndte at oprette Design-dokumentet. Udkast til klassediagrammer for Use Cases \\[-1ex]
+    1.4		&	04-11-2015	&	Alle	& Skrevet hardwaredesign afsnittet. Små rettelser i de andre afsnit i Design således, det er klar til review \\[-1ex]
 \label{version_Systemark}
 \end{longtabu}
 
 \section{Systemarkitektur} 
-Igennem bdd og ibd vil det overordnede blodtryksmålersystem beskrives i forhold til hvilke hardware blokke systemet består af, og hvordan de interagerer med hinanden. 
+Igennem bdd og ibd vil det overordnede blodtryksmålesystem beskrives i forhold til hvilke hardwareblokke, systemet består af, og hvordan de interagerer med hinanden. 
 
-\subsection{bdd}
-På figur 2.1 ses bdd for systemet. bdd viser de forskellige hardware blokke for systemet og hvilke porte de består af. I tabel 2.2 ses en beskrivelse af blokkene. 
+\subsection{Bdd}
+På Figur 2.1 ses bdd for systemet. Bdd viser de forskellige hardwareblokke for systemet og hvilke porte, de består af. I Tabel 2.2 ses en beskrivelse af blokkene. 
 
 \begin{figure}[H]
 	\centering
@@ -29,14 +29,14 @@ På figur 2.1 ses bdd for systemet. bdd viser de forskellige hardware blokke for
 	\midrule
 	Blodtryksmåler & Det overordnede system, som indeholder Tryktransducer, Signalbehandling, DAQ og Computer.\\[-1ex]
 	Tryktransducer & Registrerer en fysisk størrelse i form af en trykændring. Tryktransduceren har til opgave at transformere den fysiske størrelse til en elektrisk spænding, som viderebehandles gennem de resterne hardware blokke.  \\[-1ex]
-	Signalbehandling & Består af to dele. En forstærkerdel og en filteringsdel. Det analoge signal fra tryktransduceren bliver via denne blok forstærket og filteret.\\[-1ex]
+	Signalbehandling & Består af to dele. En forstærkerdel og en filteringsdel. Det analoge signal fra Tryktransduceren bliver via denne blok forstærket og filteret.\\[-1ex]
 	DAQ & Konverterer det forstærkede og filterede analoge signal til et digitalt signal. Der er valgt et spændingsområde fra +/- 5 V.\\[-1ex]
-	Computer & Indeholder software til systemet, som er kodet i Visual Studio C\#. Softwaren kan blandt andet vise det digitale signal grafisk. Softwaren kan ligeledes kalibrere, nulpunktsjustere og gemme målinger samt aktivere og deaktiver filter.\\[-1ex]
+	Computer & Indeholder software til systemet, som er kodet i Visual Studio C\#. Softwaren kan blandt andet vise det digitale signal grafisk. Softwaren kan ligeledes kalibrere, nulpunktsjustere og gemme målinger samt aktivere og deaktivere filter.\\[-1ex]
 	\caption{Beskrivelse af blokkene for systemet}
 	\end{longtabu}
 	
 \subsection{ibd}
-På figur 2.2 ses ibd for systemet. ibd viser, hvordan de forskellige hardware blokke interagerer med hinanden. ibd fortæller signalets behandling gennem systemet - altså hvordan signalet transformeres fra et målt fysisk tryk til et digitalt signal, som softwaren kan videre behandle og vise grafisk. 
+På Figur 2.2 ses ibd for systemet. Ibd viser, hvordan de forskellige hardwareblokke interagerer med hinanden. Ibd fortæller signalets behandling gennem systemet - altså hvordan signalet transformeres fra et målt fysisk tryk til et digitalt signal, som softwaren kan viderebehandle og vise grafisk. 
 
 \begin{figure}[H]
 	\centering
@@ -46,9 +46,9 @@ På figur 2.2 ses ibd for systemet. ibd viser, hvordan de forskellige hardware b
 \end{figure}
 
 \section{Grænseflader}
-Kommunikationsprotokol for hardware blokkene ses i tabel 2.3. Det er en beskrivelse og specifikation af hvilket indgang- og udgangssignal, de forskellige hardware blokke har. 
+Kommunikationsprotokol for hardwareblokkene ses i Tabel 2.3. Det er en beskrivelse og specifikation af hvilket indgangs- og udgangssignal, de forskellige hardwareblokke har. 
 \\  \\
-Tryktransducerens maximale output, $V_{max}$, bestemmes ud fra følgende ligning:
+Tryktransducerens maksimale output, $V_{max}$, bestemmes ud fra følgende ligning:
 
 \begin{equation}
 	V_{max} = P \cdot K \cdot V_{+}
@@ -58,11 +58,11 @@ P = Tryk\\
 K = sensitivitet\\
 $V_{+}$ = indgangsspænding\\
 
-For systemet er der valgt, at tryktransducerens målbare område skal ligge i intervallet 0-300 mmHg. Den maksimale udgangsspænding bliver derfor udtrykt fra det maksimale tryk på 300 mmHg, sensitiviteten på 5 $\mu$ og indgangsspændingen på 5 V. Indgangspændingen kommer reelt fra 9 V batterier, men der er valgt at indsætte en 5 V regulator, så man er sikker på, hvad indgangspændingen er, da batterier er ustabile.  
+For systemet er der valgt, at Tryktransducerens målbare område skal ligge i intervallet 0-300 mmHg. Den maksimale udgangsspænding bliver derfor udtrykt fra det maksimale tryk på 300 mmHg, sensitiviteten på 5 $\mu$ og indgangsspændingen på 5 V. Indgangspændingen kommer reelt fra 9 V batterier, men der er valgt at indsætte en 5 V regulator, så man er sikker på, hvad indgangspændingen er, da batterier er ustabile.  
 
 
 \begin{equation}
-	V_{max} = 300 mmHg \cdot 5\mu V \cdot 5 V\\
+	V_{max} = 300  mmHg \cdot 5\mu V \cdot 5 V\\
 \end{equation}
 \begin{equation}
 	V_{max} = 7,5 mV
@@ -86,34 +86,34 @@ For systemet er der valgt, at tryktransducerens målbare område skal ligge i in
 
 
 \section{Hardware arkitektur}
-Herunder er de krævede specifikationer for signalbehandlingsblokken beskrevet. Tryktransducerens beskrives ligeledes, da denne har indflydelse for forstærkerblokkens specifikationer. 
+Herunder er de krævede specifikationer for Signalbehandlingsblokken beskrevet. Tryktransducerens beskrives ligeledes, da denne har indflydelse for Forstærkerblokkens specifikationer. 
 
 \subsubsection{Tryktransducer}
-Tryktransduceren skal omsætte det fysiske tryk til en elektrisk spænding. Tryktransduceren har en meget høj common mode rejection samt en høj sensitivitet på 5 $\mu$V/V/mmHg +/- 1 \% \footnote{Se datablad for tryktransduceren i bilag} , da de forventede trykændringer er små. Enheden for sensitiviteten angiver hvor mange $\mu$V output, der kommer fra tryktransduceren pr. antal V i tryktransducerens eksitationsspænding pr. mmHg. For at være sikker på, at strømmen igennem wheatestone broen ikke bliver for høj og dermed i sidst ende kan brænder stain-gages af, er der blevet vagt at indsætte en regulator, der omdanner eksitationsspænding fra 9 V batterier til 5 V. 
+Tryktransduceren skal omsætte det fysiske tryk til en elektrisk spænding. Tryktransduceren har en meget høj common mode rejection samt en høj sensitivitet på 5 $\mu$V/V/mmHg +/- 1 \% \footnote{Se datablad for Tryktransduceren i bilag} , da de forventede trykændringer er små. Enheden for sensitiviteten angiver, hvor mange $\mu$V output, der kommer fra Tryktransduceren pr. antal V i Tryktransducerens eksitationsspænding pr. mmHg. For at være sikker på, at strømmen igennem Wheatstone broen ikke bliver for høj og dermed i sidst ende kan brænde strain gauges af, er der blevet valgt at indsætte en regulator, der omdanner eksitationsspænding fra 9 V batterier til 5 V. 
 
 \subsubsection{Forstærkerblok}
-Forstærkerblokken sørger for, at det meget svage spændingssignal fra tryktransduceren bliver forstærket op til en spænding, der ligger indenfor det måleinterval, der svarer til DAQ'en, som er valgt til +/- 5 V.
+Forstærkerblokken sørger for, at det meget svage spændingssignal fra Tryktransduceren bliver forstærket til en spænding, der ligger indenfor det måleinterval, der svarer til DAQ'en, som er valgt til +/- 5 V.
  
 \subsubsection{Filterblok}
-Filterets formål er at frasortere signalets frekvenser, der er højere end 50 Hz, da disse ikke har nogen relevans for blodtryksignalet. Dette skal realiseres ved et andenordens lavpasfilter. 
+Filterets formål er at frasortere blodtrykssignalets frekvenser, der er højere end 50 Hz, da disse ikke har nogen relevans for blodtrykssignalet. Dette skal realiseres ved et anden ordens lavpasfilter. 
  
 \subsection{bdd}
-På figur 2.3 ses bdd for signalbehandlingsblokken, hvor forstærkerblokkens og filterblokkens indgang- og udgangsporte er vist.  
+På Figur 2.3 ses bdd for Signalbehandlingsblokken, hvor Forstærkerblokkens og Filterblokkens indgangs- og udgangsporte er vist.  
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/4}
 	\caption{bdd for Signalbehandling HW}
-	\label{fig:bddhw-diagram}
+	\label{fig:bdd hw}
 \end{figure}
 
-\subsection{ibd}
-På figur 2.4 ses ibd for signalbehandlingsblokken. ibd viser, hvordan forstærkerblokken og filterblokken interagerer med hinanden. 
+\subsection{Ibd}
+På Figur 2.4 ses ibd for Signalbehandlingsblokken. Ibd viser, hvordan Forstærkerblokken og Filterblokken interagerer med hinanden. 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/5}
 	\caption{ibd for Signalbehandling HW}
-	\label{fig:ibdhw-diagram}
+	\label{fig:ibd hw}
 \end{figure}
 
 \subsection{Grænseflader}
@@ -135,12 +135,12 @@ På figur 2.4 ses ibd for signalbehandlingsblokken. ibd viser, hvordan forstærk
  \subsection{Forstærkerblok}
  \subsubsection{Specifikationer}
  \begin{itemize}
- 	\item Forstærkningen, Gain, skal forstærke den maksimale inputsspænding, så outputtet bliver 10 V
+ 	\item Forstærkningen, gain, skal forstærke den maksimale inputspænding, så outputtet bliver 10 V
  	\begin{equation}
  		Gain \cdot V_{in} = V_{out}
  	\end{equation}
  	
- 	$V_{out}$ og $V_{in}$ er kendt, så Gain isoleres
+ 	$V_{out}$ og $V_{in}$ er kendt, så gain isoleres
  	
  	\begin{equation}
  		Gain = \frac{V_{out}}{V_{in}} \\ \Longrightarrow \\
@@ -161,12 +161,12 @@ På figur 2.4 ses ibd for signalbehandlingsblokken. ibd viser, hvordan forstærk
  \subsection{Filterblok}
  \subsubsection{Specifikationer}
  \begin{itemize}
- 	\item Andenordens lavpasfilter
- 	\item Cutofffrekvens ved 50 Hz
+ 	\item Anden ordens lavpasfilter
+ 	\item Cutoff frekvens ved 50 Hz
  	\item Unity gain (ingen forstærkning)
  	\item -40 dB ved 500 Hz
  	\item Uendelig indgangsimpedans i teorien
- 	\item Indgangsspænding +/- 5 V
+ 	\item Indgangspænding +/- 5 V
  	\item Eksitationsspænding +/- 9 V
  \end{itemize}
  
