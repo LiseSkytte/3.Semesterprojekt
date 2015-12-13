@@ -4,9 +4,9 @@
 \begin{longtabu} to \linewidth{@{}l l l X[j]@{}}
     Version &    Dato &    Ansvarlig &    Beskrivelse\\[-1ex]
     \midrule
-    1.0		&	30-09-2015	& Alle 	&	Første udkast. Klar til Review\\[-1ex]
-    2.0		&	08-10-2015	& Alle		&	Rettelser efter review møde\\[-1ex] 
-    3.0		&	08-12-2015	& Alle	&	Rettelse efter ændringer i UC\\[-1ex]
+    1.0		&	30-09-2015	& Alle 	&	Første udkast. Klar til review\\[-1ex]
+    2.0		&	08-10-2015	& Alle		&	Rettelser efter reviewmøde\\[-1ex] 
+    3.0		&	08-12-2015	& Alle	&	Rettelse efter ændringer i Use Cases\\[-1ex]
 \label{version_Systemark}
 \end{longtabu}
 
@@ -22,15 +22,15 @@
     \midrule
     ~ &\textit{Hovedforløb} & ~ & ~ &
     \\ \midrule
-    1. & Start system &   Kalibrering-vinduet og seneste kalibreringstidspunkt vises  &   Kalibrering-vinduet og seneste kalibreringstidspunkt vises  &		{\Huge \checkmark}
+    1. & Start system &   Kalibrerings-vinduet og seneste kalibreringstidspunkt vises  &   Kalibrerings-vinduet og seneste kalibreringstidspunkt vises  &		{\Huge \checkmark}
     \\
-    2. & Indtast kalibreringsdata og tryk på "Beregn"\--knap  &   Der er indtastet kalibreringsdata i de forskellige tekstbokse og stigningenstallet for hvor mange mmHg/V udskrives i Kalibrering-vinduet   &  Der er indtastet kalibreringsdata i de forskellige tekstbokse og stigningenstallet for hvor mange mmHg/V udskrives i Kalibrering-vinduet   &		{\Huge \checkmark}
+    2. & Indtast kalibreringsdata og tryk på "Beregn"\--knap  &   Der er indtastet kalibreringsdata i de forskellige tekstbokse og stigningenstallet for, hvor mange mmHg/V udskrives i Kalibrerings-vinduet   &  Der er indtastet kalibreringsdata i de forskellige tekstbokse og stigningenstallet for, hvor mange mmHg/V udskrives i Kalibrerings-vinduet   &		{\Huge \checkmark}
     \\
     3. & Tryk på "OK"\--knap for at udføre kalibrering  &     System kalibrerer og bekræfter fuldført kalibrering  & System kalibrerer og bekræfter fuldført kalibrering   &		{\Huge \checkmark}
 	\\ \midrule
 	~ &\textit{Undtagelse} & ~ & ~ & 
 	\\ \midrule	
-    2.a & Tryk på det røde kryds øverst i højre hjørne, hvis kalibrering ikke ønskes &    Kalibrering-vinduet lukkes ned  &   Kalibrering-vinduet lukkes ned   &		{\Huge \checkmark}
+    2.a & Tryk på det røde kryds øverst i højre hjørne, hvis kalibrering ikke ønskes &    Kalibrerings-vinduet lukkes ned  &   Kalibrerings-vinduet lukkes ned   &		{\Huge \checkmark}
     \\
     2.b & Indtast ugyldige kalibreringsdata &    System informerer om ugyldige kalibreringsdata  &   System informerer om ugyldige kalibreringsdata  &		{\Huge \checkmark}
  \\ \bottomrule
@@ -48,7 +48,7 @@
 	\midrule
 	&\textit{Hovedforløb} & & & 
 	\\ \midrule
-	1. &Udfør Use Case 1 og observér Monitor-vinduet & Det filtrerede blodtryksignal samt systole-, diastole- og pulsværdier udskrives i Monitor-vinduet & Det filtrerede blodtryksignal samt systole-, diastole- og pulsværdier udskrives i Monitor-vinduet & {\Huge \checkmark}
+	1. &Udfør Use Case 1 og observér Monitor-vinduet & Det filtrerede blodtrykssignal samt systole-, diastole- og pulsværdier udskrives i Monitor-vinduet & Det filtrerede blodtrykssignal samt systole-, diastole- og pulsværdier udskrives i Monitor-vinduet & {\Huge \checkmark}
 	\\ \midrule
 		~ &\textit{Undtagelse} & ~ & ~ & 
 	\\ \midrule
@@ -68,11 +68,11 @@
     \midrule
     ~ &\textit{Hovedforløb} & ~ & ~ &
     \\ \midrule
-    1. & Tryk på "Nulpunktjustér"\--knap &    System nulpunktsjusterer  &  System nulpunktsjusterer  &		{\Huge (\checkmark)}
+    1. & Tryk på "Nulpunktsjustér"\--knap &    System nulpunktsjusterer  &  System nulpunktsjusterer  &		{\Huge (\checkmark)}
     \\
-    2. & Observér kurven og Monitor-vinduet & Værdien af kurven er lig 0 samt tidsstempel for seneste nulpunktjustering vises i Monitor-vinduet &	Værdien af kurven er lig 0 samt tidsstempel for seneste nulpunktjustering vises i Monitor-vinduet	 & {\Huge (\checkmark)}
+    2. & Observér kurven og Monitor-vinduet & Værdien af kurven er lig 0 samt tidsstempel for seneste nulpunktsjustering vises i Monitor-vinduet &	Værdien af kurven er lig 0 samt tidsstempel for seneste nulpunktsjustering vises i Monitor-vinduet	 & {\Huge (\checkmark)}
     \\
-    3. & Observér Monitor-vinduet & Tidsstempel for nulpunktjustering vises & Tidsstempel for nulpunktjustering vises	& {\Huge (\checkmark)}
+    3. & Observér Monitor-vinduet & Tidsstempel for nulpunktsjustering vises & Tidsstempel for nulpunktsjustering vises	& {\Huge (\checkmark)}
 	\\ \midrule
 	~ &\textit{Undtagelser} & ~ & ~ & 
 	\\ \midrule	
@@ -167,7 +167,7 @@
 	& Ikke-funktionelt krav & Test/handling & Forventet resultat & Faktiske observationer & Godkendt
 	\\[-1ex] \midrule
 	&  \textit{Functionality} &  &  & & \\ \midrule
-	& System skal kunne kalibreres & Indtast gyldige kalibreringsdata. Tryk på "Beregn"\--knap efterfulgt af "OK"\--knap & System kalibrerer og udskriver tidsstempel i Kalibrering-vinduet & System kalibrerer og udskriver tidsstempel i Kalibrering-vinduet & {\Huge \checkmark}
+	& System skal kunne kalibreres & Indtast gyldige kalibreringsdata. Tryk på "Beregn"\--knap efterfulgt af "OK"\--knap & System kalibrerer og udskriver tidsstempel i Kalibrerings-vinduet & System kalibrerer og udskriver tidsstempel i Kalibrerings-vinduet & {\Huge \checkmark}
 	\\ \midrule
 	& System skal kunne vise et kontinuert blodtrykssignal i Monitor-vinduet & Observér Monitor-vinduet & I Monitor-vinduet vises et kontinuert blodtrykssignal &  I Monitor-vinduet vises et kontinuert blodtrykssignal & {\Huge \checkmark}
 	\\ \midrule
@@ -175,18 +175,18 @@
 	\\ \midrule
 	& System skal kunne vise et blodtrykssignal med og uden et digitalt filter & Markér "On"- og "Off"\--knap og Observér Monitor-vinduet & Monitor-vinduet viser et blodtrykssignal med eller uden digitalt filter & Monitor-vinduet viser et blodtrykssignal med eller uden digitalt filter & {\Huge \checkmark}
 	\\ \midrule
-	& System skal kunne nulpunktsjustere kurven & Tryk på "Nulpunktjustér"\--knap og observér Monitor-vinduet & Kurvens værdi er lig 0 & Kurvens værdi er lig 0 & {\Huge \checkmark}
+	& System skal kunne nulpunktsjustere kurven & Tryk på "Nulpunktsjustér"\--knap og observér Monitor-vinduet & Kurvens værdi er lig 0 & Kurvens værdi er lig 0 & {\Huge \checkmark}
 	\\ \midrule
-	& System skal kunne gemme en blodtryksmåling i en database & Der trykkes på "Gem"\--knap i Monitor-vinduet, og der indtastes gyldige værdier i Gem-vinduet og trykkes på "OK"\--knap & System gemmer data i en database og udskriver stempel for gemt data i Gem-vinduet & System gemmer data i en database og udskriver stempel for gemt data i Gem-vinduet & {\Huge \checkmark}
+	& System skal kunne gemme en blodtryksmåling i en database & Der trykkes på "Gem"\--knap i Monitor-vinduet, og der indtastes gyldige værdier i Gem-vinduet og trykkes på "OK"\--knap & System gemmer data i en Database og udskriver stempel for gemt data i Gem-vinduet & System gemmer data i en Database og udskriver stempel for gemt data i Gem-vinduet & {\Huge \checkmark}
 	\\ \midrule
 	& \textit{Usability} &  &  & & \\ \midrule
-	& Kalibrering-vinduet skal indeholde tekstbokse til indtastning af kalibreringsdata & Der ses i kalibrering-vinduet, om der er tekstbokse til indtastning af kalibreringsdata & Der er tekstbokse til indtastning af kalibreringsdata i Kalibrering-vinduet & Der er tekstbokse til indtastning af kalibreringsdata i Kalibrering-vinduet & {\Huge \checkmark}
+	& Kalibrerings-vinduet skal indeholde tekstbokse til indtastning af kalibreringsdata & Der ses i Kalibrerings-vinduet, om der er tekstbokse til indtastning af kalibreringsdata & Der er tekstbokse til indtastning af kalibreringsdata i Kalibrerings-vinduet & Der er tekstbokse til indtastning af kalibreringsdata i Kalibrerings-vinduet & {\Huge \checkmark}
 	\\ \midrule
-	& Kalibrering-vinduet skal indeholde en ”Beregn”\--knap & Der ses i Kalibrering-vinduet, om der er en ”Beregn”\--knap & Der er en ”Beregn”\--knap i Kalibrering-vinduet & Der er en ”Beregn”\--knap i Kalibrering-vinduet & {\Huge \checkmark}
+	& Kalibrerings-vinduet skal indeholde en ”Beregn”\--knap & Der ses i Kalibrerings-vinduet, om der er en ”Beregn”\--knap & Der er en ”Beregn”\--knap i Kalibrerings-vinduet & Der er en ”Beregn”\--knap i Kalibrerings-vinduet & {\Huge \checkmark}
 	\\ \midrule
-	& Kalibrering-vinduet skal indeholde en ”OK”\--knap & Der ses i Kalibrering-vinduet, om der er en ”OK”\--knap & Der er en ”OK”\--knap i Kalibrering-vinduet &  Der er en ”OK”\--knap i Kalibrering-vinduet & {\Huge \checkmark}
+	& Kalibrerings-vinduet skal indeholde en ”OK”\--knap & Der ses i Kalibrerings-vinduet, om der er en ”OK”\--knap & Der er en ”OK”\--knap i Kalibrerings-vinduet &  Der er en ”OK”\--knap i Kalibrerings-vinduet & {\Huge \checkmark}
 	\\ \midrule
-	& Kalibrering-vinduet skal indeholde et tidsstempel for seneste kalibrering & Der ses i Kalibrering-vinduet, om der er et tidsstempel for seneste kalibrering & Der er et tidsstempel for seneste kalibrering i Kalibrering-vinduet & Der er et tidsstempel for seneste kalibrering i Kalibrering-vinduet & {\Huge \checkmark}
+	& Kalibrerings-vinduet skal indeholde et tidsstempel for seneste kalibrering & Der ses i Kalibrerings-vinduet, om der er et tidsstempel for seneste kalibrering & Der er et tidsstempel for seneste kalibrering i Kalibrerings-vinduet & Der er et tidsstempel for seneste kalibrering i Kalibrerings-vinduet & {\Huge \checkmark}
 	\\ \midrule
 	& Monitor-vinduet skal indeholde en ”Gem”\--knap & Der ses i Monitor-vinduet, om der er en ”Gem”\--knap & Der er en ”Gem”\--knap i Monitor-vinduet &  Der er en ”Gem”\--knap i Monitor-vinduet& {\Huge \checkmark}
 	\\ \midrule
@@ -210,13 +210,13 @@
 	& Systemet skal have en effektiv MTBF på 99 timer og MTTR på 20 minutter & Ikke testbar &   &  & %{\Huge \checkmark}
 	\\ \midrule
 	& \textit{Performance} & & & & \\ \midrule
-	& Blodtrykssignalet skal vises maksimalt 5 sekunder efter, UC1 er afsluttet & UC1 afsluttes samtidig med, at et stopur startes på en iPhone 5s. Når blodtrykssignalet vises, stoppes uret & Blodtryksignalet vises indenfor de 5 sekunder & Blodtryksignalet vises indenfor de 5 sekunder & {\Huge \checkmark}
+	& Blodtrykssignalet skal vises maksimalt 5 sekunder efter, Use Case 1 er afsluttet & Use Case 1 afsluttes samtidig med, at et stopur startes på en iPhone 5s. Når blodtrykssignalet vises, stoppes uret & Blodtryksignalet vises indenfor de 5 sekunder & Blodtryksignalet vises indenfor de 5 sekunder & {\Huge \checkmark}
 	\\ \midrule
-	& Systemet skal vise en kurve for blodtryksmålingen, hvor y-aksen er mmHg og x-aksen er tid i sekunder & Der ses på Monitor-vinduet, om y-aksen er mmHg og x-aksen er tid i sekunder & Blodtryksignalets y-akse er mmHg og x-aksen er tid i sekunder & Blodtryksignalets y-akse er mmHg og x-aksen er tid i sekunder  & {\Huge \checkmark}
+	& Systemet skal vise en kurve for blodtryksmålingen, hvor y-aksen er mmHg og x-aksen er tid i sekunder & Der ses på Monitor-vinduet, om y-aksen er mmHg og x-aksen er tid i sekunder & Blodtrykssignalets y-akse er mmHg og x-aksen er tid i sekunder & Blodtrykssignalets y-akse er mmHg og x-aksen er tid i sekunder  & {\Huge \checkmark}
 	\\ \midrule
-	& Systemet skal kunne måle blodtryksværdier fra 0 til 300 mmHg & Trykket simuleres op til 300 mmHg & Det ses i Monitor-vinduet at trykket er ca. 300 mmHg & Det ses i Monitor-vinduet at trykket er ca. 300 mmHg & {\Huge \checkmark}
+	& Systemet skal kunne måle blodtryksværdier fra 0 til 300 mmHg & Trykket simuleres op til 300 mmHg & Det ses i Monitor-vinduet at trykket er ca. 300 mmHg & Det ses i Monitor-vinduet, at trykket er ca. 300 mmHg & {\Huge \checkmark}
 	\\ \midrule
-	& Blodtrykssignalet vises kontinuerligt over et interval af fire sekunder af gangen & Der ses på Monitor-vinduet, om blodtrykssignalet vises kontinuerligt over et interval af fire sekunder af gangen  & Blodtrykssignalet vises kontinuerligt over et interval af fire sekunder af gangen & Blodtrykssignalet vises kontinuerligt over et interval af fire sekunder af gangen & {\Huge \checkmark}
+	& Blodtrykssignalet vises kontinuerligt over et interval af 4 sekunder af gangen & Der ses på Monitor-vinduet, om blodtrykssignalet vises kontinuerligt over et interval af fire sekunder af gangen  & Blodtrykssignalet vises kontinuerligt over et interval af fire sekunder af gangen & Blodtrykssignalet vises kontinuerligt over et interval af 4 sekunder af gangen & {\Huge \checkmark}
 	\\ \midrule
 	& Blodtrykssignalet vises via en rød kurve & Der ses på Monitor-vinduet, om blodtrykssignalet vises via en rød kurve & Blodtrykssignalet vises via en rød kurve & Blodtrykssignalet vises via en rød kurve & {\Huge \checkmark}
 	\\ \midrule
@@ -231,7 +231,7 @@
 	& Der skal være adgang til en computer, hvor National Instruments er installeret & Der ses, om der er installeret National Instruments på computeren & Det ses, at der er installeret National Instruments på computeren & Det ses, at der er installeret National Instruments på computeren & {\Huge \checkmark}
 	\\ \midrule
 	& \textit{Interface} & & & & \\ \midrule
-	& Blodtryks-diagrammet skal fylde minimum 1/3 af Monitor-vinduet & Der ses, om blodtryksdiagrammet fylder minimum 1/3 af Monitor-vinduet & Blodtryksdiagrammet fylder minimum 1/3 af Monitor-vinduet& Blodtryksdiagrammet fylder minimum 1/3 af Monitor-vinduet & {\Huge \checkmark}
+	& Blodtryks-diagrammet skal fylde minimum 1/3 af Monitor-vinduet & Der ses, om blodtryks-diagrammet fylder minimum 1/3 af Monitor-vinduet & Blodtryks-diagrammet fylder minimum 1/3 af Monitor-vinduet& Blodtryks-diagrammet fylder minimum 1/3 af Monitor-vinduet & {\Huge \checkmark}
 	\\ \midrule
 	& Baggrunden i Monitor-vinduet skal være mørk & Der ses i Monitor-vinduet, om baggrunden er mørk & Baggrunden i Monitor-vinduet er mørk & Baggrunden i Monitor-vinduet er mørk & {\Huge \checkmark}
 	\\ \midrule

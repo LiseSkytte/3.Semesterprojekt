@@ -1,7 +1,7 @@
 \chapter{SW implementering og test }
 
 \section{Implementering}
-Softwaren i blodtryksmåleren er opbygget omkring 3-lags modellen. 
+Softwaren i blodtryksmålesystemet er opbygget omkring trelagsmodellen. 
 
 \begin{figure}[H]
 	\centering
@@ -16,23 +16,26 @@ Softwaren i blodtryksmåleren er opbygget omkring 3-lags modellen.
 \end{figure}
 
 \subsection{Datalag}
-Datalaget kommunikerer med DAQ, database og computers HDD. 
+Datalaget kommunikerer med DAQ, Database og computerens harddisk. 
 
 \subsubsection{DAQ}
-Herunder er en klasse, DAQ, hovedsageligt med software fra National Instruments, der kan udveksle data med den fysiske DAQ 6009. Denne kan betragtes som af typen ”black box”. Dette betyder at undertegnede ikke har et begreb om den interne mekanisme i klassen. Som udgangspunkt ved vi at funktionen af klassen er at levere data omkring de målinger der foretages i den fysiske DAQ.\\De styrbare parametre i denne klasse er bl.a.: Sampling frekvens og måleområde. 
+Herunder er en klasse, DAQ, hovedsageligt med software fra National Instruments, der kan udveksle data med den fysiske DAQ 6009. Denne kan betragtes som af typen ”black box”. Dette betyder, at undertegnede ikke har et begreb om den interne mekanisme i klassen. Som udgangspunkt er funktionen af klassen at levere data omkring de målinger, der foretages i den fysiske DAQ.\\
+De styrbare parametre i denne klasse er blandt andet samplingfrekvens og måleområde. 
 
 \subsubsection{Datahent}
-Klassen henter data fra database og lokale tekstfiler. Fra databasen indhentes data om tidligere målingers nummerering således at de målinger der skal gemmes i fremtiden kan blive nummereret korrekt.\\De lokale tekstfiler indeholder data omkring tidligere kalibreringer og nulpunktsjusteringer.
+Klassen henter data fra Database og lokale tekstfiler. Fra Databasen indhentes data om tidligere målingers nummerering således, at de målinger, der skal gemmes i fremtiden kan blive nummereret korrekt.\\
+De lokale tekstfiler indeholder data omkring tidligere kalibreringer og nulpunktsjusteringer.
 
 \subsubsection{DataGem}
-Klassen gemmer data, på database, og lokale tekstfiler.
+Klassen gemmer data på Database og lokale tekstfiler.
 
-\subsection{Logik lag}
+\subsection{Logiklag}
 
 \subsubsection{Beregninger}
-Beregninger er hovedsageligt et lag hvor logiske beregninger foretages.\\Herunder beregnes ting som systolisk og diastolisk blodtryk og puls. Beregninger i forbindelse med kalibrering og nulpunktsjustering foregår også her. Ydermere forbinder logik laget data laget med form laget. Dette tillader at metoder fra datalaget kan anvendes fra form laget.
+Beregninger er hovedsageligt et lag, hvor logiske beregninger foretages.\\
+Herunder beregnes ting som systolisk og diastolisk blodtryk samt puls. Beregninger i forbindelse med kalibrering og nulpunktsjustering foregår ligeledes her. Ydermere skaber logiklaget forbindelse mellem datalaget og præsentationslaget, hvilket tillader, at metoder fra datalaget kan anvendes fra præsentationslaget.
 
-\subsection{Præsentations lag}
+\subsection{Præsentationslag}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/Monitor_vindue_Recording}
@@ -40,21 +43,24 @@ Beregninger er hovedsageligt et lag hvor logiske beregninger foretages.\\Herund
 \end{figure}
 
 \subsubsection{Monitor}
-Monitorlaget er forskerens generelle visuelle interaktionslag med systemet. Heri observeres udskrevne blodtrykssignaler over 4-sekunders intervaller. Værdierne puls, systolisk og diastolisk blodtryk udskrives også her. Designet er inspireret fra i forvejen eksisterende blodtryks monitoreringssystemer. \\Der er mulighed for at vælge en længde af optagelse af måling, op påbegyndelse/stoppe med en ”Rec” knap. Herefter kan gem vinduet åbnes hvor den optagne sekvens kan gemmes. Der er en knap til udførelse af nulpunktsjustering. Den kørende måling kan vises med et filter, eller uden med 2 radio butons. Y- og X-akse kan påsættes med 2 radio buttons. 
+Monitorlaget er Forskerens generelle visuelle interaktionslag med systemet. Heri observeres udskrevne blodtrykssignaler over 4-sekunders intervaller. Værdierne puls, systolisk og diastolisk blodtryk udskrives ligeledes her. Designet er inspireret fra i forvejen eksisterende blodtryksmonitoreringssystemer. \\
+Der er mulighed for at vælge en optagelseslængde for målingen, og start/stop med en ”Rec”\--knap/"Stop"\--knap. Herefter kan Gem-vinduet åbnes, hvor den optagede sekvens kan gemmes. Derudover er der en knap til udførelse af nulpunktsjustering. Den kørende måling kan vises med eller uden et filter ved at ændre på de to radio buttons. Y- og X-akse kan påsættes med to radio buttons. 
 
 \subsubsection{Gem}
-Vinduet udskriver den optagne sekvens i et vindue der visuelt ligner monitor vinduet. Der er to tekstbokse, hvor en kommentar og et navn, for den ansvarlige af målingen, kan indtastes.
+Vinduet udskriver den optagede sekvens i et vindue, der visuelt ligner Monitor-vinduet. Der er to tekstbokse, hvor en kommentar og et navn for den ansvarlige af målingen, kan indtastes.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/Gem}
-	\caption{Gem vindue, med 10 sekunders måling}
+	\caption{Gem-vindue med 10 sekunders måling}
 \end{figure}
 
-\subsubsection{Kalibrer}
-Vinduet indeholder to tekstbokse til indtastning af tryk og tekstbokse til dertilhørende spænding. Spændingerne kan måles automatisk ved tryk på knapperne ”mål”.Kalibreringskonstanten kan udregnes med knappen ”Beregn”, og gemmes og anvendes ved tryk på ”OK” knappen.
+\subsubsection{Kalibrér}
+Vinduet indeholder to tekstbokse til indtastning af tryk samt tekstbokse til dertilhørende spænding. Spændingerne kan måles automatisk ved tryk på ”Mål”\--knapperne.
+Kalibreringskonstanten kan udregnes med knappen ”Beregn” og gemmes samt anvendes ved tryk på ”OK”\--knappen.
 
 \subsection{DTO}
-DTO er et namespace det indeholder data transfer object (DTO). Alle den andre lag ”kender” dette lag, og kan oprette instanser af klassen DTO.\\Denne klasse har attributterne tid og spænding. Formålet med denne klasse er at overføre sampleværdier fra DAQ i et format der har en korrekt tidsværdi, samt et tryk (blodtryk) korrigeret for nulpunktstryk samt kalibrering.
+DTO er et namespace, som indeholder data transfer object (DTO). Alle de andre lag har adgang til dette lag og kan oprette instanser af klassen DTO.\\
+Denne klasse har attributterne tid og spænding. Formålet med denne klasse er at overføre sampleværdier fra DAQ til et format, der har en korrekt tidsværdi, samt et tryk (blodtryk) korrigeret for nulpunktstryk samt kalibrering.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.5\textwidth]{Figurer/DTO_kode}
@@ -62,8 +68,9 @@ DTO er et namespace det indeholder data transfer object (DTO). Alle den andre la
 \end{figure}
 
 \subsubsection{Publisher/subscriber pattern}
-Data ”strømmen” fra DAQ klassen, er styrende for alle de andre klasser, bl.a. udskrivning af blodtrykket i monitor vinduet. Den fysiske DAQ måler i med 1000 Hz og returnerer data til DAQ klassen med 50 ms intervaller. Dette måleinterval indeholder 50 sampleværdier. Disse data sendes videre til beregninger klassen, og fra beregninger klassen til monitor klassen vha. Publisher/Subscriber mønstret. Når data befinder sig i monitor klassen kan der laver logiske beregninger og manipulation på data i beregninger klassen.Forholdet imellem klasserne er således; DAQ klassen og beregninger klassen har et publisher/subscriber forhold, og  beregninger og monitor har et publisher/subscriber forhold. \\
-Hierakiet fremgår af figurerne herunder.
+Datastrømmen fra DAQ klassen er styrende for alle de andre klasser, blandt andet udskrivning af blodtrykket i Monitor-vinduet. Den fysiske DAQ måler med 1000 Hz og returnerer data til DAQ klassen med 50 ms intervaller. Dette måleinterval indeholder 50 sampleværdier. Disse data sendes videre til Beregningerklassen, og fra Beregningerklassen til Monitorklassen ved hjælp af publisher/subscriber mønstret. Når data befinder sig i Monitorklassen kan der laves logiske beregninger og manipulation på data i BeregningerKlassen.
+Forholdet mellem klasserne er således; DAQklassen og Beregningerklassen har et publisher/subscriber forhold, og  Beregninger- og Monitorklassen har et publisher/subscriber forhold. \\
+Hierakiet fremgår af figurerne nedenfor.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.5\textwidth]{Figurer/DAQ_pub}
@@ -84,9 +91,14 @@ Hierakiet fremgår af figurerne herunder.
 
 
 \subsection{Metodebeskrivelser}
-Metoden der beregner puls, har to logiske grene til udregning af pulsen. Den første (til venstre i diagram) regner pulsen når der er mellem 3000 og 10000 samples til rådighed, altså når den fysiske DAQ har målt imellem 3 og 10 sekunder.\\Metodikken består i at lokalisere toppunkter i signalet, for at udregne det gennemsnitlige interval herimellem. Herudfra kan pulsen estimeres. \\En for-løkke bruges til at evaluere alle sampleværdier i forhold til de før liggende og efterfølgende samples. Hvis værdien på den pågældende sample har større værdi end den før liggende og efterfølgende, gemmes tidspunktet for dette sample i en liste.\\ 
-For at sikre at ”toppunktet” ikke er et mindre toppunkt, fra fx støj eller højfrekvent signalindhold, evalueres der kun for hver 50'ende værdier, og tidspunktet gemmes kun hvis værdien ligger 0,1 V over gennemsnittet af alle sampleværdier der evalueres. Ud fra gennemsnitsintervallet imellem toppunkterne beregnes pulsen.\\
-\\Den anden logiske gren regner pulsen når der er over 10000 samples til rådighed, altså efter den fysiske DAQ har målt i over 10 sekunder.\\ Metodikken er den samme som ovenfor, men i stedet for at gemme et tidspunkt for toppunktet, tælles en counter op. Når antallet af toppunkter for 10 sekunder er fundet, kan pulsen beregnes.
+Metoden, der beregner puls, har to logiske grene til udregning af pulsen. Den første gren til venstre i Figur 4.9 beregner pulsen, når der er mellem 3000 og 10000 samples til rådighed - altså når den fysiske DAQ har målt mellem 3 og 10 sekunder.\\
+Metodikken består i at lokalisere toppunkter i signalet for at udregne det gennemsnitlige interval herimellem. Herudfra kan pulsen estimeres. \\
+En for-løkke bruges til at evaluere alle sampleværdier i forhold til de førliggende og efterfølgende samples. Hvis værdien på den pågældende sample har større værdi end den før liggende og efterfølgende, gemmes tidspunktet for dette sample i en liste.\\ 
+For at sikre, at toppunktet ikke er et mindre toppunkt, fra eksempelvis støj eller højfrekvent signalindhold, evalueres der kun for hver 50. værdi, og tidspunktet gemmes kun, hvis værdien ligger 0,1 V over gennemsnittet af alle sampleværdier der evalueres. Ud fra gennemsnitsintervallet mellem toppunkterne beregnes pulsen.
+\\
+\\
+Den anden logiske gren regner pulsen, når der er over 10000 samples til rådighed - altså efter den fysiske DAQ har målt i over 10 sekunder.\\ 
+Metodikken er den samme som ovenfor, men i stedet for at gemme et tidspunkt for toppunktet, tælles en counter op. Når antallet af toppunkter for 10 sekunder er fundet, kan pulsen beregnes.
 
 \begin{figure}[H]
 	\centering
@@ -96,63 +108,63 @@ For at sikre at ”toppunktet” ikke er et mindre toppunkt, fra fx støj eller 
 
 
 \subsection{Sekvensdiagrammer}
-Sekvensdiagrammerne beskriver kommunikationen imellem software klasserne der er involveret i de respektive Use Cases.\\
+Sekvensdiagrammerne beskriver kommunikationen mellem software klasserne der er involveret i de respektive Use Cases.\\
 
-\subsubsection{UC1 Kalibrer}
-Forsker trykker på knappen "Beregn" anmoder kalibrerings klassen om metoden 'beregn' i klassen Beregninger. Den udregnede kalibreringskonstant returneres.\\
-Forsker trykker på knappen "OK" og metoden 'gemkalibrering' afvikles i klassen beregninger. Herfra afvikles metoden gemkalibrering i Datagem klassen. Datagem returnerer en bool der beskriver om gemningen var succesfuld.
+\subsubsection{Use Case 1: Kalibrer}
+Forsker trykker på knappen "Beregn" og anmoder Kalibreringsklassen om metoden 'beregn' i Beregningerklassen. Den udregnede kalibreringskonstant returneres.\\
+Forsker trykker på knappen "OK" og metoden 'gemkalibrering' afvikles i Beregningerklassen. Herfra afvikles metoden 'gemkalibrering' i Datagemklassen. Datagem returnerer en bool, der beskriver om gemningen var succesfuld.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/UC1_SD_SW}
-	\caption{Sekvensdiagram for UC1}
+	\caption{Sekvensdiagram for Use Case 1}
 \end{figure}
 
-\subsubsection{UC2 Vis måling}
-Når monitor vinduet åbnes (når programmet starter) afvikles metoden 'startreader' i DAQ. Vha. publisher/subscriber metoden 'NotifySubscriber' returneres rådata til Beregninger og videre til Monitor.\\
-Rådata sendes til Beregninger og omregnes til tid og blodtryk vha DTO klassen.
-'beregnSYS', 'beregnDIA' og 'beregnPuls' returnerer ligeledes double værdier med systolisk og diastolisk blodtryk samt puls.
+\subsubsection{Use Case 2: Vis måling}
+Når Monitor-vinduet åbnes ved opstart af program afvikles metoden 'startreader' i DAQ. Ved hjælp af publisher/subscriber metoden, 'NotifySubscriber', returneres rådata til Beregninger og videre til Monitor.\\
+Rådata sendes til Beregninger og omregnes til tid og blodtryk ved hjælp af DTO klassen.
+'BeregnSYS', 'beregnDIA' og 'beregnPuls' returnerer ligeledes double værdier med systolisk og diastolisk blodtryk samt puls.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/UC2_SD_SW}
-	\caption{Sekvensdiagram for UC2}
+	\caption{Sekvensdiagram for Use Case 2}
 \end{figure}
 
-\subsubsection{UC3 Nulpunktjuster}
-'getNulpunktsstring' returnerer en string der indeholder data om seneste nulpunktsjustering. Denne udskrives på Monitor.\\
-Forsker trykker på knappen 'Nulpunktsjuster' og Beregninger udfører en nulpunktsjustering, gemmer data i Datagem, og returnerer en ny string der beskriver seneste (denne) nulpunktsjusterin.
+\subsubsection{Use Case 3: Nulpunktjuster}
+'GetNulpunktsstring' returnerer en string, der indeholder data om seneste nulpunktsjustering. Denne udskrives på Monitor.\\
+Forsker trykker på knappen 'Nulpunktsjuster', og Beregninger udfører en nulpunktsjustering, gemmer data i Datagem og returnerer en ny string der beskriver seneste (denne) nulpunktsjustering.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/UC3_SD_SW}
-	\caption{Sekvensdiagram for UC3}
+	\caption{Sekvensdiagram for Use Case 3}
 \end{figure}
 
-\subsubsection{UC4 Deaktiver filter}
-Forsker sætter radibutton til filter til "off".
-Bool "filteron" sættes til false, og sendes med metoden der udregner blodtryk' beregnBlodtryk', i beregninger. Den returnerede liste af DTO'er, som udskrives i Monitor, er ufiltrerede.
+\subsubsection{Use Case 4: Deaktiver filter}
+Forsker sætter radibutton for filter til "off".
+Bool "filteron" sættes til false, og sendes med metoden, der udregner blodtryk 'beregnBlodtryk', i beregninger. Den returnerede liste af DTO'er, som udskrives i Monitor, er ufiltrerede.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/UC4_SD_SW}
-	\caption{Sekvensdiagram for UC4}
+	\caption{Sekvensdiagram for Use Case 4}
 \end{figure}
 
-\subsubsection{UC5 Aktiver filter}
-Filteret er bygget op som et FIR-filter med 10 filterkoefficienter. Hver udskrevet punkt på grafen, er et gennemsnitsværdi af de foregående 10 værdier.
-Forsker sætter radibutton til filter til "on".
-Bool "filteron" sættes til true, og sendes med metoden der udregner blodtryk 'beregnBlodtryk', i beregninger. Den returnerede liste af DTO'er, som udskrives i Monitor, er filtrerede.
+\subsubsection{Use Case 5: Aktiver filter}
+Filteret er bygget op som et FIR-filter med 10 filterkoefficienter. Hvert udskrevet punkt på grafen er et gennemsnitsværdi af de foregående 10 værdier.
+Forsker sætter radibutton for filter til "on".
+Bool "filteron" sættes til true, og sendes med metoden, der udregner blodtryk 'beregnBlodtryk', i beregninger. Den returnerede liste af DTO'er, som udskrives i Monitor, er filtrerede.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/UC5_SD_SW}
-	\caption{Sekvensdiagram for UC5}
+	\caption{Sekvensdiagram for Use Case 5}
 \end{figure}
 
-\subsubsection{UC6 Gem måling}
-Forsker vælger en optagelseslængde og trykker på "record". Record() metoden køres i Beregninger; det sættes en startværdi for målingen.
+\subsubsection{Use Case 6: Gem måling}
+Forsker vælger en optagelseslængde og trykker på "Rec". Metoden, record(), køres i Beregninger; der sættes en startværdi for målingen.
 Når tiden udløber, køres record() i Beregninger igen; en slutværdi for målingen sættes.
-Forsker trykker på "Gem" knappen i Monitor-vinduet. Et Gem vindue instantieres med data fra den optagne måling. Disse hentes vis metoder i Beregninger laget.\\
-Det optagne signal vises i Gem-vinduet. Dette gøres vha en liste af DTO'er der oprettes.\\
+Forsker trykker på "Gem"\--knappen i Monitor-vinduet. Et Gem-vindue instantieres med data fra den optagede måling. Disse hentes via metoder i Beregningerlaget.\\
+Det optagne signal vises i Gem-vinduet. Dette gøres ved hjælp en liste af DTO'er, der oprettes.\\
 
 Forsker trykker på "OK"\--knappen
 og metoden gemmaalingtilDB() afvikles i DataGem klassen. Det målte signal, samt metadata gemmes. 
@@ -160,32 +172,32 @@ og metoden gemmaalingtilDB() afvikles i DataGem klassen. Det målte signal, samt
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/UC6_SD_SW}
-	\caption{Sekvensdiagram for UC6}
+	\caption{Sekvensdiagram for Use Case 6}
 \end{figure}
 
 \section{Test}
-Til at teste de forskellige metoder i softwaren har benyttes debugging. Debugging gør det muligt at følge compilerens sekventielle udførelse af programmet. Når der udføres handlinger og attributværdier sættes kan dette følges, og sættes op mod de forventede resultater. Såfremt der skulle opstå fejl gør debugging det muligt at fokuserer på enkelte metoder og undersøge, hvor fejlen opstår.
+Til at teste de forskellige metoder i softwaren er der blevet benyttet debugging. Debugging gør det muligt at følge compilerens sekventielle udførelse af programmet. Når der udføres handlinger, og attributværdier sættes, kan dette følges og sættes op mod de forventede resultater. Såfremt, der skulle opstå fejl, gør debugging det muligt at fokusere på enkelte metoder og undersøge, hvor fejlen opstår.
 \subsection{Puls}
-Til at teste pulsmetoden startes en optagelse fra starten af målingen. Målelængden sættes til 10 sek. Disse parametre sætte i monitor-vinduets constructor.
+Til at teste pulsmetoden startes en optagelse fra starten af målingen. Målelængden sættes til 10 sekunder. Disse parametre sættes i Monitor-vinduets constructor.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.5\textwidth]{Figurer/Pulstest_record}
-	\caption{Monitor vinduets default constructor ved puls-test}
+	\caption{Monitor-vinduets default constructor ved puls-test}
 \end{figure}
-Et break point sættes ved metoden der returnerer en puls efter baseret på 10000 samples. Metoden har talt 15 pulsslag.
+Et break point sættes ved metoden, der returnerer en puls, baseret på 10000 samples. Metoden har talt 15 pulsslag.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/Pulstest_debug}
 	\caption{Puls efter 10 sekunders måling}
 \end{figure}
-Antallet af pulsslag tællet på gem vinduet for de 10 sekunder. Her er der talt 15 pulsslag. Kun 4 sekunder kan vises ad gangen.
+Antallet af pulsslag talt på Gem-vinduet for de 10 sekunder. Her er der talt 15 pulsslag. Kun fire sekunder kan vises ad gangen.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/Pulstest_gemmevindue}
 	\caption{Puls efter 10 sekunders måling}
 \end{figure}
 
-Det talte antal pulsslag holdes op mod dem der er talt af metoden beregnpuls.
+Det talte antal pulsslag holdes op mod dem, der er talt af metoden beregnpuls.
 
 \begin{figure}[H]
 	\centering
@@ -194,11 +206,11 @@ Det talte antal pulsslag holdes op mod dem der er talt af metoden beregnpuls.
 \end{figure}
 
 
-Den beregnede puls er 90, hvilket stemmer overens med 15 pulsslag på 10 sekunder.Denne test kan bekræfte at metoden fungerer efter hensigten.
+Den beregnede puls er 90, hvilket stemmer overens med 15 pulsslag på 10 sekunder. Denne test kan bekræfte, at metoden fungerer efter hensigten.
 
-\subsection{UC1 Kalibrer}
+\subsection{Use Case 1: Kalibrer}
 
-Forsker indtaster (målte) kalibreringsdata. Kalibreringsdata for seneste kalibreringsdata vises.
+Forsker indtaster målte kalibreringsdata. Kalibreringsdata for seneste kalibrering vises.
 
 \begin{figure}[H]
 	\centering
@@ -220,7 +232,7 @@ Kalibreringskonstanten implementeres ved udskrivning på graf.
 	\includegraphics[width=1\textwidth]{Figurer/Test_Kalibrer_3}
 	\caption{Kalibreringsdata anvendes}
 \end{figure}
-Det kontrolleres at kalibreringsfilen er opdateret
+Det kontrolleres, at kalibreringsfilen er opdateret
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/Test_Kalibrer_4}
@@ -235,39 +247,39 @@ Et inputsignal på 1 Hz, 1 V amplitude og 0 V offset bruges til input på den fy
 	\caption{Inputsignal til DAQ}
 \end{figure}
 
-Det ses at kalibreringskonstanten (mmHg/V) = 57,9.
+Det ses, at kalibreringskonstanten (mmHg/V) er lig 57,9.
 Nulpunktsjusteringsværdien er tæt på 0.
-Maksværdien på signalet (Systole) skal være 58 mmHg.
-Minimumsværdien på signalet skal være -58mmHg. 
-Pulsen skal være 60 = 1 Hz.
+Maksimalværdien på signalet (systole) skal være lig 58 mmHg.
+Minimumsværdien på signalet skal være lig -58 mmHg. 
+Pulsen skal være lig 60 (1 Hz).
 
-Kalibreringskonstante er 57,9. Det udskrevne "blodtryk" er 57,9 mm Hg.
+Kalibreringskonstanten er lig 57,9. Det udskrevne blodtryk er lig 57,9 mmHg.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/Test_Vis_2}
-	\caption{Output på monitor-vindue}
+	\caption{Output på Monitor-vindue}
 \end{figure}
 
 
 
 
-\subsection{UC3 Nulpunktsjuster}
+\subsection{Use Case 3: Nulpunktsjuster}
 
-Et DC signal på 1 V bruges til indgangssignal til DAQ.
+Et DC-signal på 1 V bruges til inputsignal til DAQ.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/Test_Nul_1}
 	\caption{Inputsignal til DAQ}
 \end{figure}
 
-Det ses at kalibreringskonstanten er på 57,9 og inputsignalet genererer det korrekte "blodtryk"
+Det ses, at kalibreringskonstanten ligger på 57,9 og inputsignalet genererer det korrekte blodtryk.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/Test_Nul_2}
 	\caption{Inputsignal til DAQ}
 \end{figure}
 
-Der trykkes på knappen "Nulpunktsjuster" og grafens værdi falder til 0. 
+Der trykkes på knappen "Nulpunktsjuster", og grafens værdi falder til 0. 
 
 \begin{figure}[H]
 	\centering
@@ -276,22 +288,22 @@ Der trykkes på knappen "Nulpunktsjuster" og grafens værdi falder til 0.
 \end{figure}
 
 
-\subsection{UC4 Deaktiver filter}
+\subsection{Use Case 4: Deaktiver filter}
 
-Filteret er aktiveret og det filtrerede signal vises i graf.
+Filteret er aktiveret, og det filtrerede signal vises i graf.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/Test_Deaktiver_1}
-	\caption{Målingen vises med filter aktiverer}
+	\caption{Målingen vises med filter aktiveret}
 \end{figure}
 
-Beregninger klassen beregner med metoden uden filter, da "filteron" = false.
+Beregningerklassen beregner med metoden uden filter, da "filterOn" er lig false.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/Test_Deaktiver_2}
-	\caption{Beregninger klassen opretter filtrerede DTO'er}
+	\caption{Beregningerklassen opretter filtrerede DTO'er}
 \end{figure}
 
 I Monitor-vinduet aktiveres filter på radiobutton. Det filtrerede signal udskrives. 
@@ -307,10 +319,10 @@ Beregninger klassen beregner med metoden med filter, da "filteron" = true.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/Test_Deaktiver_4}
-	\caption{Beregninger klassen opretter ufiltrerede DTO'er}
+	\caption{Beregningerklassen opretter ufiltrerede DTO'er}
 \end{figure}
 
-\subsection{UC5 Aktiver filter}
+\subsection{Use Case 5: Aktiver filter}
 
 Filteret er ikke aktiveret, og det ufiltrerede signal udskrives.
 
@@ -320,12 +332,12 @@ Filteret er ikke aktiveret, og det ufiltrerede signal udskrives.
 	\caption{Ufiltreret signal udskrives i graf}
 \end{figure}
 
-Beregninger klassen beregner med metoden uden filter, da "filteron" = false.
+Beregninger klassen beregner med metoden uden filter, da "filterOn" lig false.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/Test_Aktiver_2}
-	\caption{Beregninger klassen opretter ufiltrerede}
+	\caption{Beregningerklassen opretter ufiltrerede}
 \end{figure}
 
 Filteret aktiveres, og det filtrerede signal udskrives efter blå ring.
@@ -336,47 +348,47 @@ Filteret aktiveres, og det filtrerede signal udskrives efter blå ring.
 	\caption{Ufiltreret signal udskrives i graf}
 \end{figure}
 
-Beregninger klassen opretter filtrerede DTO'er, da "filteron" = true.
+Beregninger klassen opretter filtrerede DTO'er, da "filterOn" er lig true.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/Test_Aktiver_3}
-	\caption{Beregninger klassen opretter filtrerede DTO'er}
+	\caption{Beregningerklassen opretter filtrerede DTO'er}
 \end{figure}
 
-\subsection{UC6 Gem måling}
-Kalibreringskonstant (mmHg/V) og nulpunktsværdi (mmHg) for måling fremgår af billede.
+\subsection{Use Case 6: Gem måling}
+Kalibreringskonstant (mmHg/V) og nulpunktsværdi (mmHg) for måling fremgår af Figur 4.37 nedenfor.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/UC6_InitialConditions}
-	\caption{Monitorvindues initiale værdier(kalibreringskonstant og nulpunktstryk)}
+	\caption{Monitor-vindue initiale værdier (kalibreringskonstant og nulpunktstryk)}
 \end{figure}
  
- Forsker vælger målelængde til 5 sek, og trykker på "rec"
+ Forsker vælger målelængde til fem sekunder, og trykker på "Rec".
  
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/UC6_ForceRecEnd}
-	\caption{Monitor vindue efter tryk på rec}
+	\caption{Monitor-vindue efter tryk på "Rec"\--knap}
 \end{figure}
 
-Metoden record() køres i Beregninger klassen. Her sættes startværdien for måling.
+Metoden record() køres i Beregningerklassen. Her sættes startværdien for måling.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/UC6_Record_Start}
-	\caption{Beregninger klassens record() køres når moptagelse starter}
+	\caption{Beregningerklassens metode record() køres, når optagelse starter}
 \end{figure}
 
-Tiden udløber og optagelsen slutter. record() metoden køres igen, og slutværdien for optagelsen sættes i Beregninger. Det observeres om differencen mellem startværdi og slutværdi = 5 sekunder = 5000 samples.
+Tiden udløber og optagelsen slutter. Metoden record() køres igen, og slutværdien for optagelsen sættes i Beregninger. Det observeres om differencen mellem startværdi og slutværdi er lig 5 sekunder og 5000 samples.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/UC6_Record_Slut}
-	\caption{Beregninger klassens record() køres når optagelse slutter}
+	\caption{Beregningerklassens record() køres når optagelse slutter}
 \end{figure}
 
-Forsker trykker på "Gem" knap i monitorvinduer. Gem-vinduets constructor modtager værdier via metoder der afvikles i beregninger. Metoderne Visgemgraf() og Show() afvikles.
+Forsker trykker på "Gem"\--knap i Monitor-vinduet. Gem-vinduets constructor modtager værdier via metoder, der afvikles i beregninger. Metoderne Visgemgraf() og Show() afvikles.
 
 \begin{figure}[H]
 	\centering
@@ -384,7 +396,7 @@ Forsker trykker på "Gem" knap i monitorvinduer. Gem-vinduets constructor modtag
 	\caption{Oprettelse af nyt Gem-vindue}
 \end{figure}
 
-Det kontrolleres om Gem-klassens værdier er korrekte. Følgende værdier tjekkes: slope\_ = kalibreringskonstant, nulpunkt\_ = nulpunktstryk, startgem\_ = startværdi for måling, slutgem\_ = slutværdi for måling.
+Det kontrolleres, om Gem-klassens værdier er korrekte. Følgende værdier tjekkes: slope\_ = kalibreringskonstant, nulpunkt\_ = nulpunktstryk, startgem\_ = startværdi for måling, slutgem\_ = slutværdi for måling.
 
 \begin{figure}[H]
 	\centering
@@ -392,12 +404,12 @@ Det kontrolleres om Gem-klassens værdier er korrekte. Følgende værdier tjekke
 	\caption{Gem-vinduets værdier}
 \end{figure}
 
-Det kontrolleres om længden af "samplearray" i metoden gemmaalingtilDB() stemmer overens med de valgte 5 sek = 5000 samples.
+Det kontrolleres, om længden af "samplearray" i metoden gemmaalingtilDB() stemmer overens med de valgte fem sekunder = 5000 samples.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/UC6_Samplearray}
-	\caption{Array af blodtryksværdier der gemmes til Database}
+	\caption{Array af blodtryksværdier, der gemmes til Database}
 \end{figure}
 
 Målingens ID noteres i Gem-vinduet.
@@ -405,16 +417,16 @@ Målingens ID noteres i Gem-vinduet.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/UC6_MalSuc}
-	\caption{Gem vinduet efter gemt måling}
+	\caption{Gem-vinduet efter gemt måling}
 \end{figure}
 
 
-Det kontrolleres om den gemte måling befinder sig i Databasen. 
+Det kontrolleres, om den gemte måling befinder sig i Databasen. 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/UC6_Database2}
-	\caption{array af blodtryksværdier der gemmes til Database}
+	\caption{Array af blodtryksværdier, der gemmes til Database}
 \end{figure}
 
 
