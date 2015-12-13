@@ -30,12 +30,12 @@
 \contentsline {section}{\numberline {6.4}Arkitektur}{29}{section.6.4}
 \contentsline {subsection}{\numberline {6.4.1}Hardwarearkitektur}{30}{subsection.6.4.1}
 \contentsline {subsection}{\numberline {6.4.2}Softwarearkitektur}{31}{subsection.6.4.2}
-\contentsline {section}{\numberline {6.5}Design}{32}{section.6.5}
-\contentsline {subsection}{\numberline {6.5.1}Implementering og test af HW}{32}{subsection.6.5.1}
-\contentsline {subsection}{\numberline {6.5.2}Implementering og test af SW}{32}{subsection.6.5.2}
-\contentsline {section}{\numberline {6.6}Resultater og diskussion}{32}{section.6.6}
-\contentsline {section}{\numberline {6.7}Opn\IeC {\r a}ede erfaringer}{32}{section.6.7}
-\contentsline {section}{\numberline {6.8}Fremtidigt arbejde}{32}{section.6.8}
-\contentsline {chapter}{\chapternumberline {7}Konklusion}{33}{chapter.7}
-\contentsline {chapter}{Litteratur}{35}{chapter*.29}
-\contentsline {chapter}{Bilag}{37}{chapter*.30}
+\contentsline {section}{\numberline {6.5}Design, implementering og test}{32}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Hardware}{32}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Software}{35}{subsection.6.5.2}
+\contentsline {section}{\numberline {6.6}Resultater og diskussion}{35}{section.6.6}
+\contentsline {section}{\numberline {6.7}Opn\IeC {\r a}ede erfaringer}{35}{section.6.7}
+\contentsline {section}{\numberline {6.8}Fremtidigt arbejde}{35}{section.6.8}
+\contentsline {chapter}{\chapternumberline {7}Konklusion}{37}{chapter.7}
+\contentsline {chapter}{Litteratur}{39}{chapter*.32}
+\contentsline {chapter}{Bilag}{41}{chapter*.33}

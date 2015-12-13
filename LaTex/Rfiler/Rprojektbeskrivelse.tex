@@ -98,7 +98,7 @@ Til dette benyttes den ikke-inverterende operationsforstærker, INA114 samt et p
 \subsubsection{Filteret}
 Det forstærkerede analoge signal skal videre filteres før det konventeres til det digitale signal. De relevante frekvenser, der udgør en blodtryksmåling, ligge mellem 0-50 Hz\footnote{Se bogen Medical Instrumentation s. 10}. Derfor ønskes alle frekvenser over 50 Hz dæmpet.
 \\\\
-Til dette designes et Sallen Key lavpasfilter med unity gain, hvor cutofffrekvensen er 50 Hz. Udregningerne for kompontværdierne til denne realisering, se HW implementering og test (3) i Projekdokumentationen under Filterblok (3.2).
+Til dette designes et Sallen Key anden ordens lavpasfilter med unity gain, hvor cutofffrekvensen er 50 Hz. Udregningerne for kompontværdierne til denne realisering, se HW implementering og test (3) i Projektdokumentationen under Filterblok (3.2).
 
 \subsection{Software} 
 
@@ -136,11 +136,59 @@ I domænemodellen ses interaktionen mellem de konceptuelle klasser og aktører. 
 For yderligere information om forløbene i de seks Use Cases (2.4.2) henvises der til Projektdokumentationen under Design. 
 
 
-\section{Design}
+\section{Design, implementering og test}
+I følgende afsnit vil design- og implementeringsprocessen for den udviklede hardware og software beskrives. Der vil være en beskrivelse af, hvordan de valgt løsninger er blevet testet. 
 
-\subsection{Implementering og test af HW}
+\subsection{Hardware}
+Under afsnittet Specifikation og analyse (6.3.1) står specifikationer for Signalbehandlingsblokken beskrevet. Signalbehandlingsblokken består af en forstærker samt et filter. Kommunikationen internt for Signalbehandlingsblokken samt kommunikationen ud ad til ses i ibd for Signalbehandlingsblokken på Figur 6.8.  
 
-\subsection{Implementering og test af SW}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/5}
+	\caption{idb for Signalbehandlingsblokken}
+\end{figure}
+
+Til realisering af specifikationen for forstærkeren er der blevet beregnet den ønskede forstærkning samt gain-modstand, så et tryk på 300 mmHg forstærkes op til 5 V.\\
+Udregningen for forstærkningen ses i Projektdokumentationen under Hardware arkitektur (2.3) under ligningerne (2.4) og (2.5). Udregningen for gain-modstanden kan ses i Projektdokumentationen unden HW implementering og test (3) under ligning (3.3).  
+\\\\
+Til realisering af specifikationen for filteret er der blevet beregnet de forskellige komponentværdier, så filteret får en cutofffrekvens ved 50 Hz.\\
+Udregninger for komponentværdierne, ses under HW implementering og test (3) i Projektdokumentationen under Filterblok (3.2). 
+\\\\ 
+Signalbehandlingsblokken blev i starten af projektet implementeret på et fulmebræt. På Figur 6.9 ses denne opstillingen. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{Figurer/Snip20151213_83}
+	\caption{Signalbehandlingsblokken implementeret på et fulmebræt}
+\end{figure} 
+
+Senere i implementeringsprocessen blevet Signalbehandlingsblokken implementeret på et veroboard. Dette blev valgt grundet bedre stabilitet samt udseende. På Figur 6.10 ses veroboardet. Det var også tænkt, at Signalbehandlingsblokken skulle have været implementeret på en printplade, hvor forbindelsen mellem komponenterne er lavet på forhånd. Printpladens design samt forbindelserne skulle først laves digitalt, først i programmet multisim og videre i programmet ultiboard. Dette blev nok ikke realiseret, da veroboardet fungerede som ønskede samt mangel på tid. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{Figurer/Snip20151207_46}
+	\caption{Signalbehandlingsblokken implementeret på et veroboard}
+\end{figure}
+
+Signalbehandlingsblokken er blevet testet via Analog Discovery \& Waveforms. Først blev der lavet unit test, hvor forstærkeren og filteret testes hver for sig, hvor tilsidst der blev lavet en integrationtest, hvor signalbehandlingsblokken blev testet som en enhed. 
+\\\\
+Specifikationen for forstærkeren er, at den skal forstærke en spænding på 7,5 mV, der svarer til et tryk på 300 mmHg, op til 5 V. \\
+Signalgeneratoren leverer inputspændingen, hvor oscilloskopet måler outputspændingen. Inputspændingen kan via Waveforms bestemmes. Til denne unit test af forstærkeren sættes inputspændingen til 7 mV. Reelt burde den sættes til 7,5 mV, men det er ikke muligt. \\
+Den forventet outputspænding ved en inputspænding på 7 mV er 4,7 V, se Projektdokumentationen under Test af forstærkerblok (3.2.1) for udregningen samt dokumentationen af denne test.
+Resultatet af testen stemte overens med det forventede. 
+\\\\
+Specifikationen for filteret er, at den skal dæmpe frekvenser over 50 Hz. Denne specifikation realiseres via et anden ordens lavpasfilter. \\
+Til denne unit test af filteret sættes inputspændingen til 5 V. For at teste om det implementerede filter har en cutofffrekvens ved 50 Hz ændres inputspændingens frekvenser. Der laves ialt 3 tests. Først testes filteret, hvor frekvensen er 1 Hz. Her forventes, at outputspændingen er lig med inputspændingen. Derefter testes filteret, hvor frekvensen er 50 Hz. Her forventes, at outputspændingen er blevet dæmpet med 3 dB. Til sidste teste filteret, hvor frekvensen er 500 Hz. Her forventes, at outputspændingen er blevet dæmpet med 40 dB. I Projektdokumentationen under Test af filterblok (3.2.2) de forventede outputspændingen ved de forskellige frekvenser ses samt dokumentationen af denne unit test ses. 
+Resultaterne af testen stemte overens med det forventede.  
+
+    
+ 
+ 
+
+
+ 
+
+\subsection{Software}
 
 \section{Resultater og diskussion}
 
