@@ -58,7 +58,10 @@ Vinduet udskriver den optagede sekvens i et vindue, der visuelt ligner Monitor-v
 Vinduet indeholder to tekstbokse til indtastning af tryk samt tekstbokse til dertilhørende spænding. Spændingerne kan måles automatisk ved tryk på ”Mål”\--knapperne.
 Kalibreringskonstanten kan udregnes med knappen ”Beregn” og gemmes samt anvendes ved tryk på ”OK”\--knappen.
 
-\subsection{DTO}
+\subsection{Datamodel Laget}
+Datamodel muliggør indirekte dataoverførsel mellem lag, der umiddelbart ikke har relation, der tillader dette.
+
+\subsubsection{DTO}
 DTO er et namespace, som indeholder data transfer object (DTO). Alle de andre lag har adgang til dette lag og kan oprette instanser af klassen DTO.\\
 Denne klasse har attributterne tid og spænding. Formålet med denne klasse er at overføre sampleværdier fra DAQ til et format, der har en korrekt tidsværdi, samt et tryk (blodtryk) korrigeret for nulpunktstryk samt kalibrering.
 \begin{figure}[H]
@@ -91,6 +94,31 @@ Hierakiet fremgår af figurerne nedenfor.
 
 
 \subsection{Metodebeskrivelser}
+
+Use casene er beskrevet vha. sekvensdiagrammer, samt korte beskrivelser herunder. Dette gøres for at se hvilke klasser og metoder i softwaren der bruges i de forskellige use cases.\\
+Sekvensdiagrammerne overskueliggør klassernes involvering i de forskellige use cases, og beskriver kommunikationen herimellem.\\
+Aktivitetsdiagrammer beskriver udførelsen, af enkelte metoder, step for step. Dette giver et fuldkomment indblik i metodens workflow.
+
+
+\subsubsection{Use Case 1: Kalibrer}
+Forsker trykker på knappen "Beregn" og anmoder Kalibreringsklassen om metoden 'beregn' i Beregningerklassen. Den udregnede kalibreringskonstant returneres.\\
+Forsker trykker på knappen "OK" og metoden 'gemkalibrering' afvikles i Beregningerklassen. Herfra afvikles metoden 'gemkalibrering' i Datagemklassen. Datagem returnerer en bool, der beskriver om gemningen var succesfuld.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/UC1_SD_SW}
+	\caption{Sekvensdiagram for Use Case 1}
+\end{figure}
+
+\subsubsection{Use Case 2: Vis måling}
+Når Monitor-vinduet åbnes ved opstart af program afvikles metoden 'startreader' i DAQ. Ved hjælp af publisher/subscriber metoden, 'NotifySubscriber', returneres rådata til Beregninger og videre til Monitor.\\
+Rådata sendes til Beregninger og omregnes til tid og blodtryk ved hjælp af DTO klassen.
+'BeregnSYS', 'beregnDIA' og 'beregnPuls' returnerer ligeledes double værdier med systolisk og diastolisk blodtryk samt puls. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/UC2_SD_SW}
+	\caption{Sekvensdiagram for Use Case 2}
+\end{figure}
+
 Metoden, der beregner puls, har to logiske grene til udregning af pulsen. Den første gren til venstre i Figur 4.9 beregner pulsen, når der er mellem 3000 og 10000 samples til rådighed - altså når den fysiske DAQ har målt mellem 3 og 10 sekunder.\\
 Metodikken består i at lokalisere toppunkter i signalet for at udregne det gennemsnitlige interval herimellem. Herudfra kan pulsen estimeres. \\
 En for-løkke bruges til at evaluere alle sampleværdier i forhold til de førliggende og efterfølgende samples. Hvis værdien på den pågældende sample har større værdi end den før liggende og efterfølgende, gemmes tidspunktet for dette sample i en liste.\\ 
@@ -106,28 +134,6 @@ Metodikken er den samme som ovenfor, men i stedet for at gemme et tidspunkt for 
 	\caption{Aktivitetsdiagram over beregnpuls}
 \end{figure}
 
-
-\subsection{Sekvensdiagrammer}
-Sekvensdiagrammerne beskriver kommunikationen mellem software klasserne der er involveret i de respektive Use Cases.\\
-
-\subsubsection{Use Case 1: Kalibrer}
-Forsker trykker på knappen "Beregn" og anmoder Kalibreringsklassen om metoden 'beregn' i Beregningerklassen. Den udregnede kalibreringskonstant returneres.\\
-Forsker trykker på knappen "OK" og metoden 'gemkalibrering' afvikles i Beregningerklassen. Herfra afvikles metoden 'gemkalibrering' i Datagemklassen. Datagem returnerer en bool, der beskriver om gemningen var succesfuld.
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1\textwidth]{Figurer/UC1_SD_SW}
-	\caption{Sekvensdiagram for Use Case 1}
-\end{figure}
-
-\subsubsection{Use Case 2: Vis måling}
-Når Monitor-vinduet åbnes ved opstart af program afvikles metoden 'startreader' i DAQ. Ved hjælp af publisher/subscriber metoden, 'NotifySubscriber', returneres rådata til Beregninger og videre til Monitor.\\
-Rådata sendes til Beregninger og omregnes til tid og blodtryk ved hjælp af DTO klassen.
-'BeregnSYS', 'beregnDIA' og 'beregnPuls' returnerer ligeledes double værdier med systolisk og diastolisk blodtryk samt puls.
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1\textwidth]{Figurer/UC2_SD_SW}
-	\caption{Sekvensdiagram for Use Case 2}
-\end{figure}
 
 \subsubsection{Use Case 3: Nulpunktjuster}
 'GetNulpunktsstring' returnerer en string, der indeholder data om seneste nulpunktsjustering. Denne udskrives på Monitor.\\
@@ -177,36 +183,6 @@ og metoden gemmaalingtilDB() afvikles i DataGem klassen. Det målte signal, samt
 
 \section{Test}
 Til at teste de forskellige metoder i softwaren er der blevet benyttet debugging. Debugging gør det muligt at følge compilerens sekventielle udførelse af programmet. Når der udføres handlinger, og attributværdier sættes, kan dette følges og sættes op mod de forventede resultater. Såfremt, der skulle opstå fejl, gør debugging det muligt at fokusere på enkelte metoder og undersøge, hvor fejlen opstår.
-\subsection{Puls}
-Til at teste pulsmetoden startes en optagelse fra starten af målingen. Målelængden sættes til 10 sekunder. Disse parametre sættes i Monitor-vinduets constructor.
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.5\textwidth]{Figurer/Pulstest_record}
-	\caption{Monitor-vinduets default constructor ved puls-test}
-\end{figure}
-Et break point sættes ved metoden, der returnerer en puls, baseret på 10000 samples. Metoden har talt 15 pulsslag.
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1\textwidth]{Figurer/Pulstest_debug}
-	\caption{Puls efter 10 sekunders måling}
-\end{figure}
-Antallet af pulsslag talt på Gem-vinduet for de 10 sekunder. Her er der talt 15 pulsslag. Kun fire sekunder kan vises ad gangen.
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1\textwidth]{Figurer/Pulstest_gemmevindue}
-	\caption{Puls efter 10 sekunders måling}
-\end{figure}
-
-Det talte antal pulsslag holdes op mod dem, der er talt af metoden beregnpuls.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1\textwidth]{Figurer/Pulstest_monitor}
-	\caption{Puls efter 10 sekunders måling}
-\end{figure}
-
-
-Den beregnede puls er 90, hvilket stemmer overens med 15 pulsslag på 10 sekunder. Denne test kan bekræfte, at metoden fungerer efter hensigten.
 
 \subsection{Use Case 1: Kalibrer}
 
@@ -239,7 +215,7 @@ Det kontrolleres, at kalibreringsfilen er opdateret
 	\caption{Kalibreringsdata er gemt til fil}
 \end{figure}
 
-\subsection{UC2 Vis måling}
+\subsection{Use Case 2 Vis måling}
 Et inputsignal på 1 Hz, 1 V amplitude og 0 V offset bruges til input på den fysiske DAQ. 
 \begin{figure}[H]
 	\centering
@@ -259,6 +235,38 @@ Kalibreringskonstanten er lig 57,9. Det udskrevne blodtryk er lig 57,9 mmHg.
 	\includegraphics[width=1\textwidth]{Figurer/Test_Vis_2}
 	\caption{Output på Monitor-vindue}
 \end{figure}
+
+\subsubsection{Puls}
+Til at teste pulsmetoden startes en optagelse fra starten af målingen. Målelængden sættes til 10 sekunder. Disse parametre sættes i Monitor-vinduets constructor, så optagelsen starter lige så snart måling startes.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{Figurer/Pulstest_record}
+	\caption{Monitor-vinduets default constructor ved puls-test}
+\end{figure}
+Et break point sættes ved metoden, der returnerer en puls, baseret på 10000 samples. Metoden har talt 15 pulsslag.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Pulstest_debug}
+	\caption{Puls efter 10 sekunders måling}
+\end{figure}
+Antallet af pulsslag talt på Gem-vinduet for de 10 sekunder. Her er der talt 15 pulsslag. Kun fire sekunder kan vises ad gangen.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Pulstest_gemmevindue}
+	\caption{Puls efter 10 sekunders måling}
+\end{figure}
+
+Det talte antal pulsslag holdes op mod dem, der er talt af metoden beregnpuls.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Pulstest_monitor}
+	\caption{Puls efter 10 sekunders måling}
+\end{figure}
+
+
+Den beregnede puls er 90, hvilket stemmer overens med 15 pulsslag på 10 sekunder. Denne test kan bekræfte, at metoden fungerer efter hensigten.
+
 
 
 
@@ -385,7 +393,7 @@ Tiden udløber og optagelsen slutter. Metoden record() køres igen automatisk. D
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/UC6_Record_Slut}
-	\caption{Beregningerklassens record() køres når optagelse slutter}
+	\caption{Beregningerklassens record() køres når optagelse slutter, os slutværdien sættes}
 \end{figure}
 
 Forsker trykker på "Gem"\--knap i Monitor-vinduet. Gem-vinduets constructor modtager værdier via metoder, der afvikles i beregninger. Metoderne Visgemgraf() og Show() afvikles.
@@ -401,7 +409,7 @@ Det kontrolleres, om Gem-klassens værdier er korrekte. Følgende værdier tjekk
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/UC6_Vardier}
-	\caption{Gem-vinduets værdier}
+	\caption{Gem-vinduets værdier, efter oprettelse}
 \end{figure}
 
 Det kontrolleres, om længden af "samplearray" i metoden gemmaalingtilDB() stemmer overens med de valgte fem sekunder dvs. 5000 samples.
