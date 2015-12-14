@@ -14,7 +14,6 @@
 \contentsline {chapter}{\chapternumberline {4}Systembeskrivelse}{16}{chapter.4}
 \contentsline {chapter}{\chapternumberline {5}Krav}{18}{chapter.5}
 \contentsline {chapter}{\chapternumberline {6}Projektbeskrivelse}{21}{chapter.6}
-\contentsline {subsection}{\numberline {6.0.2}Specifikation og analyse}{21}{subsection.6.0.2}
 \contentsline {section}{\numberline {6.1}Projektgennemf\IeC {\o }relse}{21}{section.6.1}
 \contentsline {subsection}{\numberline {6.1.1}Deadlines}{22}{subsection.6.1.1}
 \contentsline {subsection}{\numberline {6.1.2}M\IeC {\o }destruktur}{22}{subsection.6.1.2}
