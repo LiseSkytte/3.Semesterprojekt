@@ -1,5 +1,13 @@
 \chapter{Projektbeskrivelse}
 
+\subsection{Specifikation og analyse}
+
+\subsubsection{Arkitektur}Beslutningen om at anvende 3-lags modellen blev overvejende taget på baggrund af de krav der var stillet til projektet om, at der skulle ske en dataopsamling, databehandling og visualisering. De 3 lag repræsenterer hver især disse opgaver. 
+For at overskueliggøre og effektivisere softwaren var en vigtig overvejelse navngivning af klasser og metoder efter deres pågældende funktion. Dette skaber høj samhørighed, og lav kobling klasserne imellem.\\
+Data-laget er et eksempel herpå, med en opdeling i 3 klasser, med hver deres specifikke funktion(DataHent, DataGem, DAQ). På denne måde er fejlfinding overskueligt, da fejlen sker i en indkapslet funktion.
+
+\subsubsection{Dataindhentning}I overvejelserne omkring udskrivning af målt blodtryk til graf i monitor vinduet, var en prioritet at signalet blev udskrevet rettidigt, altså med en minimal forsinkelse fra at målingen var foretaget af den fysiske DAQ. I den forbindelse var det muligt enten at requeste data fra logiklaget jf. 3.lags modellen, eller at anvende subscriber/publisher pattern, med DAQ klassen som publisher. Ved den første metode, ville behandlingen af måledata være styret eksternt fra hvor data blev produceret, altså fra logik laget. Med den anden mulighed ville databehandlingen være styret af den fysiske DAQ. Dette var at foretrække, da data ville blive behandlet som det blev produceret; altså mest rettidigt.
+
 \section{Projektgennemførelse}
 Ud fra den givne projektformulering og tilgang til emnet er der udformet en tidsplan, som indeholder de overordnede deadlines for review og tests givet fra AU.
 \begin{figure}[H]
