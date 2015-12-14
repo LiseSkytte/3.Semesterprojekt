@@ -5,11 +5,12 @@
 \contentsline {chapter}{Ordliste}{v}{chapter*.3}
 \contentsline {chapter}{\chapternumberline {1}Indledning}{1}{chapter.1}
 \contentsline {chapter}{\chapternumberline {2}Projektformulering og afgr\IeC {\ae }nsning}{3}{chapter.2}
+\contentsline {subsubsection}{Ansvarsomr\IeC {\r a}der}{4}{section*.5}
 \contentsline {chapter}{\chapternumberline {3}Baggrund}{5}{chapter.3}
 \contentsline {section}{\numberline {3.1}Kroppens kredsl\IeC {\o }b}{5}{section.3.1}
 \contentsline {section}{\numberline {3.2}Invasiv blodtryksm\IeC {\r a}ling}{9}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Dynamiske egenskaber}{12}{subsection.3.2.1}
-\contentsline {subsubsection}{Referancer}{15}{section*.15}
+\contentsline {subsubsection}{Referancer}{15}{section*.16}
 \contentsline {chapter}{\chapternumberline {4}Systembeskrivelse}{17}{chapter.4}
 \contentsline {chapter}{\chapternumberline {5}Krav}{19}{chapter.5}
 \contentsline {chapter}{\chapternumberline {6}Projektbeskrivelse}{23}{chapter.6}
@@ -21,15 +22,15 @@
 \contentsline {subsection}{\numberline {6.1.4}V-modellen}{25}{subsection.6.1.4}
 \contentsline {subsection}{\numberline {6.1.5}Vandfaldsmodellen}{26}{subsection.6.1.5}
 \contentsline {section}{\numberline {6.2}Metode}{27}{section.6.2}
-\contentsline {subsubsection}{Arbejdsredskaber}{28}{section*.22}
+\contentsline {subsubsection}{Arbejdsredskaber}{28}{section*.23}
 \contentsline {section}{\numberline {6.3}Specifikation og analyse}{28}{section.6.3}
 \contentsline {subsection}{\numberline {6.3.1}Hardware}{28}{subsection.6.3.1}
-\contentsline {subsubsection}{Tryktransducer}{29}{section*.23}
-\contentsline {subsubsection}{Forst\IeC {\ae }rker}{29}{section*.24}
-\contentsline {subsubsection}{Filteret}{29}{section*.25}
+\contentsline {subsubsection}{Tryktransducer}{29}{section*.24}
+\contentsline {subsubsection}{Forst\IeC {\ae }rker}{29}{section*.25}
+\contentsline {subsubsection}{Filteret}{29}{section*.26}
 \contentsline {subsection}{\numberline {6.3.2}Software}{29}{subsection.6.3.2}
-\contentsline {subsubsection}{Arkitektur}{29}{section*.26}
-\contentsline {subsubsection}{Dataindhentning}{30}{section*.27}
+\contentsline {subsubsection}{Arkitektur}{29}{section*.27}
+\contentsline {subsubsection}{Dataindhentning}{30}{section*.28}
 \contentsline {section}{\numberline {6.4}Arkitektur}{30}{section.6.4}
 \contentsline {subsection}{\numberline {6.4.1}Hardwarearkitektur}{30}{subsection.6.4.1}
 \contentsline {subsection}{\numberline {6.4.2}Softwarearkitektur}{31}{subsection.6.4.2}
@@ -42,5 +43,5 @@
 \contentsline {section}{\numberline {6.7}Opn\IeC {\r a}ede erfaringer}{39}{section.6.7}
 \contentsline {section}{\numberline {6.8}Fremtidigt arbejde}{40}{section.6.8}
 \contentsline {chapter}{\chapternumberline {7}Konklusion}{43}{chapter.7}
-\contentsline {chapter}{Litteratur}{45}{section*.40}
-\contentsline {chapter}{Bilag}{47}{chapter*.41}
+\contentsline {chapter}{Litteratur}{45}{section*.41}
+\contentsline {chapter}{Bilag}{47}{chapter*.42}
