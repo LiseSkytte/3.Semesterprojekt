@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.10)  14 DEC 2015 14:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.10)  14 DEC 2015 15:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1686,40 +1686,38 @@ LaTeX Font Info:    Try loading font information for U+stmry on input line 6.
 \c__siunitx_mathtt_int=\count342
 \openout2 = `Rfiler/Rforside.aux'.
 
- (./Rfiler/Rforside.tex <Figurer/ASE.png, id=152, 439.6425pt x 136.25906pt>
-File: Figurer/ASE.png Graphic file (type png)
- <use Figurer/ASE.png>
-Package pdftex.def Info: Figurer/ASE.png used on input line 7.
-(pdftex.def)             Requested size: 255.6026pt x 79.21742pt.
+ (./Rfiler/Rforside.tex <Figurer/Snip20151214_103.png, id=152, 2007.5pt x 1248.665pt>
+File: Figurer/Snip20151214_103.png Graphic file (type png)
+ <use Figurer/Snip20151214_103.png>
+Package pdftex.def Info: Figurer/Snip20151214_103.png used on input line 11.
+(pdftex.def)             Requested size: 426.0pt x 264.97102pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--27
+Underfull \hbox (badness 10000) in paragraph at lines 19--26
 
  []
 
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 32.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 32.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 32.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 32.
 [1
 
 
 
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Figurer/ASE.png>]
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Figurer/Snip20151214_103.png>]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 41.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 41.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 41.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 42.
- [2
-
-])
+(babel)             in language  on input line 41.
+ [2])
 \openout2 = `Rfiler/Resume.aux'.
 
  (./Rfiler/Resume.tex (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/t1pbk.fd)
@@ -1751,6 +1749,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has b
                    \relax 
 l.9 \include{Rfiler/Resume}
                             [1
+
 
 
 
@@ -3057,14 +3056,14 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 32.
  ) 
 Here is how much of TeX's memory you used:
  27386 strings out of 493117
- 490824 string characters out of 6135433
+ 490889 string characters out of 6135433
  801923 words of memory out of 5000000
  30199 multiletter control sequences out of 15000+600000
  27884 words of font info for 79 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  53i,13n,90p,10460b,1016s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfit1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm2488.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb>
-Output written on /Users/Lise/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Rapport.pdf (57 pages, 14086910 bytes).
+Output written on /Users/Lise/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Rapport.pdf (57 pages, 19495948 bytes).
 PDF statistics:
  712 PDF objects out of 1000 (max. 8388607)
  556 compressed objects within 6 object streams
