@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.7)  14 DEC 2015 12:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.7)  14 DEC 2015 12:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2708,7 +2708,7 @@ Package babel Info: Redefining danish shorthand "~
  <Figurer/Monitor_vindue_Recording.png, id=667, 732.5378pt x 365.89052pt>
 File: Figurer/Monitor_vindue_Recording.png Graphic file (type png)
  <use Figurer/Monitor_vindue_Recording.png>
-Package pdftex.def Info: Figurer/Monitor_vindue_Recording.png used on input line 41.
+Package pdftex.def Info: Figurer/Monitor_vindue_Recording.png used on input line 45.
 (pdftex.def)             Requested size: 426.0pt x 212.78053pt.
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 48.
@@ -2718,7 +2718,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 48.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 48.
- [39 <./Figurer/Monitor_vindue_Recording.png>]
+ [39]
 File: Figurer/Gem.png Graphic file (type png)
  <use Figurer/Gem.png>
 Package pdftex.def Info: Figurer/Gem.png used on input line 53.
@@ -2727,20 +2727,20 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 61.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 61.
- <Figurer/DTO_kode.png, id=679, 230.80995pt x 328.80959pt>
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 64.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 64.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 64.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 64.
+ [40 <./Figurer/Monitor_vindue_Recording.png>] <Figurer/DTO_kode.png, id=686, 230.80995pt x 328.80959pt>
 File: Figurer/DTO_kode.png Graphic file (type png)
  <use Figurer/DTO_kode.png>
 Package pdftex.def Info: Figurer/DTO_kode.png used on input line 69.
 (pdftex.def)             Requested size: 213.0pt x 303.45172pt.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 72.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 72.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 72.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 72.
- [40] <Figurer/DAQ_pub.png, id=688, 339.78252pt x 130.54005pt>
+ <Figurer/DAQ_pub.png, id=687, 339.78252pt x 130.54005pt>
 File: Figurer/DAQ_pub.png Graphic file (type png)
  <use Figurer/DAQ_pub.png>
 Package pdftex.def Info: Figurer/DAQ_pub.png used on input line 79.
@@ -2750,20 +2750,20 @@ Underfull \hbox (badness 1320) in paragraph at lines 74--81
 \T1/cmr/m/n/10.95 udskrivning af blodtrykket i Monitor-vinduet. Den fysiske DAQ måler med 1000
  []
 
-<Figurer/Beregninger_subpub.png, id=689, 318.97179pt x 112.75633pt>
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 82.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 82.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 82.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 82.
+[41 <./Figurer/DTO_kode.png>] <Figurer/Beregninger_subpub.png, id=696, 318.97179pt x 112.75633pt>
 File: Figurer/Beregninger_subpub.png Graphic file (type png)
  <use Figurer/Beregninger_subpub.png>
 Package pdftex.def Info: Figurer/Beregninger_subpub.png used on input line 85.
 (pdftex.def)             Requested size: 213.0pt x 75.29514pt.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 88.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 88.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 88.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 88.
- [41 <./Figurer/DTO_kode.png> <./Figurer/DAQ_pub.png>] <Figurer/Monitor_sub.png, id=699, 300.4313pt x 103.6753pt>
+ <Figurer/Monitor_sub.png, id=697, 300.4313pt x 103.6753pt>
 File: Figurer/Monitor_sub.png Graphic file (type png)
  <use Figurer/Monitor_sub.png>
 Package pdftex.def Info: Figurer/Monitor_sub.png used on input line 91.
@@ -2772,7 +2772,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 96.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 96.
- <Figurer/UC1_SD_SW.png, id=700, 1073.51062pt x 525.46312pt>
+ <Figurer/UC1_SD_SW.png, id=698, 1073.51062pt x 525.46312pt>
 File: Figurer/UC1_SD_SW.png Graphic file (type png)
  <use Figurer/UC1_SD_SW.png>
 Package pdftex.def Info: Figurer/UC1_SD_SW.png used on input line 108.
@@ -2785,7 +2785,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 111.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 111.
- [42 <./Figurer/Beregninger_subpub.png> <./Figurer/Monitor_sub.png>] <Figurer/UC2_SD_SW.png, id=710, 818.30719pt x 568.37344pt>
+ [42 <./Figurer/DAQ_pub.png> <./Figurer/Beregninger_subpub.png> <./Figurer/Monitor_sub.png>] <Figurer/UC2_SD_SW.png, id=710, 818.30719pt x 568.37344pt>
 File: Figurer/UC2_SD_SW.png Graphic file (type png)
  <use Figurer/UC2_SD_SW.png>
 Package pdftex.def Info: Figurer/UC2_SD_SW.png used on input line 118.
@@ -5596,7 +5596,7 @@ Here is how much of TeX's memory you used:
  53i,13n,90p,10494b,1033s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm2488.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/u
 rw/bookman/ubkd8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb>
-Output written on "/Users/AndersMac/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Dokumentation .pdf" (80 pages, 23464060 bytes).
+Output written on "/Users/AndersMac/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Dokumentation .pdf" (80 pages, 23463956 bytes).
 PDF statistics:
  1129 PDF objects out of 1200 (max. 8388607)
  863 compressed objects within 9 object streams

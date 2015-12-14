@@ -36,15 +36,15 @@ Beregninger er hovedsageligt et lag, hvor logiske beregninger foretages.\\
 Herunder beregnes ting som systolisk og diastolisk blodtryk samt puls. Beregninger i forbindelse med kalibrering og nulpunktsjustering foregår ligeledes her. Ydermere skaber logiklaget forbindelse mellem datalaget og præsentationslaget, hvilket tillader, at metoder fra datalaget kan anvendes fra præsentationslaget.
 
 \subsection{Præsentationslag}
+
+\subsubsection{Monitor}
+Monitorlaget er Forskerens generelle visuelle interaktionslag med systemet. Heri observeres udskrevne blodtrykssignaler over 4-sekunders intervaller. Værdierne puls, systolisk og diastolisk blodtryk udskrives ligeledes her. Designet er inspireret fra i forvejen eksisterende blodtryksmonitoreringssystemer. \\
+Der er mulighed for at vælge en optagelseslængde for målingen, og start/stop med en ”Rec”\--knap/"Stop"\--knap. Herefter kan Gem-vinduet åbnes, hvor den optagede sekvens kan gemmes. Derudover er der en knap til udførelse af nulpunktsjustering. Den kørende måling kan vises med eller uden et filter ved at ændre på de to radio buttons. Y- og X-akse kan påsættes med to radio buttons. 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/Monitor_vindue_Recording}
 	\caption{Monitor med igangsat måling}
 \end{figure}
-
-\subsubsection{Monitor}
-Monitorlaget er Forskerens generelle visuelle interaktionslag med systemet. Heri observeres udskrevne blodtrykssignaler over 4-sekunders intervaller. Værdierne puls, systolisk og diastolisk blodtryk udskrives ligeledes her. Designet er inspireret fra i forvejen eksisterende blodtryksmonitoreringssystemer. \\
-Der er mulighed for at vælge en optagelseslængde for målingen, og start/stop med en ”Rec”\--knap/"Stop"\--knap. Herefter kan Gem-vinduet åbnes, hvor den optagede sekvens kan gemmes. Derudover er der en knap til udførelse af nulpunktsjustering. Den kørende måling kan vises med eller uden et filter ved at ændre på de to radio buttons. Y- og X-akse kan påsættes med to radio buttons. 
 
 \subsubsection{Gem}
 Vinduet udskriver den optagede sekvens i et vindue, der visuelt ligner Monitor-vinduet. Der er to tekstbokse, hvor en kommentar og et navn for den ansvarlige af målingen, kan indtastes.
