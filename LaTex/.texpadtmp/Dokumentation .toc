@@ -27,15 +27,15 @@
 \contentsline {subsubsection}{Filterblok}{17}{section*.10}
 \contentsline {subsection}{\numberline {2.3.1}bdd}{17}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Ibd}{17}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Gr\IeC {\ae }nseflader}{17}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.3}Gr\IeC {\ae }nseflader}{18}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}Forst\IeC {\ae }rkerblok}{18}{subsection.2.3.4}
 \contentsline {subsubsection}{Specifikationer}{18}{section*.13}
 \contentsline {subsection}{\numberline {2.3.5}Filterblok}{18}{subsection.2.3.5}
 \contentsline {subsubsection}{Specifikationer}{18}{section*.14}
 \contentsline {section}{\numberline {2.4}Software arkitektur}{19}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Dom\IeC {\ae }nemodel}{19}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Applikationsmodel}{19}{subsection.2.4.2}
-\contentsline {subsubsection}{Sekvensdiagram}{19}{section*.16}
+\contentsline {subsection}{\numberline {2.4.2}Applikationsmodel}{20}{subsection.2.4.2}
+\contentsline {subsubsection}{Sekvensdiagram}{20}{section*.16}
 \contentsline {chapter}{\chapternumberline {3}HW implementering og test}{25}{chapter.3}
 \contentsline {section}{\numberline {3.1}Implementering}{25}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Forst\IeC {\ae }rkerblok}{25}{subsection.3.1.1}
@@ -44,55 +44,55 @@
 \contentsline {subsubsection}{Gainmodstand}{26}{section*.27}
 \contentsline {subsection}{\numberline {3.1.2}Filterblok}{27}{subsection.3.1.2}
 \contentsline {subsubsection}{Beregning af komponentv\IeC {\ae }rdier}{27}{section*.30}
-\contentsline {subsubsection}{Overf\IeC {\o }ringsfunktion}{27}{section*.31}
+\contentsline {subsubsection}{Overf\IeC {\o }ringsfunktion}{28}{section*.31}
 \contentsline {subsubsection}{Standardform}{28}{section*.32}
 \contentsline {subsubsection}{Magnitude Bodeplot}{28}{section*.33}
 \contentsline {section}{\numberline {3.2}Test}{29}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Test af Forst\IeC {\ae }rkerblok}{29}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Test af Filterblok}{30}{subsection.3.2.2}
-\contentsline {subsubsection}{Filtering ved 1 Hz}{32}{section*.38}
-\contentsline {subsubsection}{Filtering ved 50 Hz}{32}{section*.40}
-\contentsline {subsubsection}{Filtering ved 500 Hz}{33}{section*.42}
-\contentsline {subsection}{\numberline {3.2.3}Test af Signalbehandlingsblok}{33}{subsection.3.2.3}
-\contentsline {subsubsection}{Test ved 1 Hz}{34}{section*.45}
-\contentsline {subsubsection}{Test ved 50 Hz}{35}{section*.47}
-\contentsline {subsubsection}{Test ved 500 Hz}{36}{section*.49}
-\contentsline {chapter}{\chapternumberline {4}SW implementering og test }{37}{chapter.4}
-\contentsline {section}{\numberline {4.1}Implementering}{37}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Datalag}{38}{subsection.4.1.1}
-\contentsline {subsubsection}{DAQ}{38}{section*.53}
-\contentsline {subsubsection}{Datahent}{39}{section*.54}
-\contentsline {subsubsection}{DataGem}{39}{section*.55}
-\contentsline {subsection}{\numberline {4.1.2}Logiklag}{39}{subsection.4.1.2}
-\contentsline {subsubsection}{Beregninger}{39}{section*.56}
-\contentsline {subsection}{\numberline {4.1.3}Pr\IeC {\ae }sentationslag}{39}{subsection.4.1.3}
-\contentsline {subsubsection}{Monitor}{39}{section*.57}
-\contentsline {subsubsection}{Gem}{40}{section*.59}
-\contentsline {subsubsection}{Kalibr\IeC {\'e}r}{40}{section*.61}
-\contentsline {subsection}{\numberline {4.1.4}Datamodel Laget}{41}{subsection.4.1.4}
-\contentsline {subsubsection}{DTO}{41}{section*.62}
-\contentsline {subsubsection}{Publisher/subscriber pattern}{41}{section*.64}
-\contentsline {subsection}{\numberline {4.1.5}Metodebeskrivelser}{42}{subsection.4.1.5}
-\contentsline {subsubsection}{Use Case 1: Kalibrer}{42}{section*.68}
-\contentsline {subsubsection}{Use Case 2: Vis m\IeC {\r a}ling}{43}{section*.70}
-\contentsline {subsubsection}{Use Case 3: Nulpunktjuster}{45}{section*.73}
-\contentsline {subsubsection}{Use Case 4: Deaktiver filter}{46}{section*.75}
-\contentsline {subsubsection}{Use Case 5: Aktiver filter}{47}{section*.77}
-\contentsline {subsubsection}{Use Case 6: Gem m\IeC {\r a}ling}{47}{section*.79}
-\contentsline {section}{\numberline {4.2}Test}{48}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Use Case 1: Kalibrer}{48}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Use Case 2 Vis m\IeC {\r a}ling}{51}{subsection.4.2.2}
-\contentsline {subsubsection}{Puls}{52}{section*.87}
-\contentsline {subsection}{\numberline {4.2.3}Use Case 3: Nulpunktsjuster}{54}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Use Case 4: Deaktiver filter}{55}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}Use Case 5: Aktiver filter}{57}{subsection.4.2.5}
-\contentsline {subsection}{\numberline {4.2.6}Use Case 6: Gem m\IeC {\r a}ling}{59}{subsection.4.2.6}
+\contentsline {subsection}{\numberline {3.2.2}Test af Filterblok}{31}{subsection.3.2.2}
+\contentsline {subsubsection}{Filtering ved 1 Hz}{33}{section*.38}
+\contentsline {subsubsection}{Filtering ved 50 Hz}{33}{section*.40}
+\contentsline {subsubsection}{Filtering ved 500 Hz}{34}{section*.42}
+\contentsline {subsection}{\numberline {3.2.3}Test af Signalbehandlingsblok}{34}{subsection.3.2.3}
+\contentsline {subsubsection}{Test ved 1 Hz}{35}{section*.45}
+\contentsline {subsubsection}{Test ved 50 Hz}{36}{section*.47}
+\contentsline {subsubsection}{Test ved 500 Hz}{37}{section*.49}
+\contentsline {chapter}{\chapternumberline {4}SW implementering og test }{38}{chapter.4}
+\contentsline {section}{\numberline {4.1}Implementering}{38}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Datalag}{39}{subsection.4.1.1}
+\contentsline {subsubsection}{DAQ}{39}{section*.53}
+\contentsline {subsubsection}{Datahent}{40}{section*.54}
+\contentsline {subsubsection}{DataGem}{40}{section*.55}
+\contentsline {subsection}{\numberline {4.1.2}Logiklag}{40}{subsection.4.1.2}
+\contentsline {subsubsection}{Beregninger}{40}{section*.56}
+\contentsline {subsection}{\numberline {4.1.3}Pr\IeC {\ae }sentationslag}{40}{subsection.4.1.3}
+\contentsline {subsubsection}{Monitor}{40}{section*.57}
+\contentsline {subsubsection}{Gem}{41}{section*.59}
+\contentsline {subsubsection}{Kalibr\IeC {\'e}r}{41}{section*.61}
+\contentsline {subsection}{\numberline {4.1.4}Datamodel Laget}{42}{subsection.4.1.4}
+\contentsline {subsubsection}{DTO}{42}{section*.62}
+\contentsline {subsubsection}{Publisher/subscriber pattern}{42}{section*.64}
+\contentsline {subsection}{\numberline {4.1.5}Metodebeskrivelser}{43}{subsection.4.1.5}
+\contentsline {subsubsection}{Use Case 1: Kalibrer}{43}{section*.68}
+\contentsline {subsubsection}{Use Case 2: Vis m\IeC {\r a}ling}{44}{section*.70}
+\contentsline {subsubsection}{Use Case 3: Nulpunktjuster}{46}{section*.73}
+\contentsline {subsubsection}{Use Case 4: Deaktiver filter}{47}{section*.75}
+\contentsline {subsubsection}{Use Case 5: Aktiver filter}{48}{section*.77}
+\contentsline {subsubsection}{Use Case 6: Gem m\IeC {\r a}ling}{48}{section*.79}
+\contentsline {section}{\numberline {4.2}Test}{49}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Use Case 1: Kalibrer}{49}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Use Case 2 Vis m\IeC {\r a}ling}{52}{subsection.4.2.2}
+\contentsline {subsubsection}{Puls}{53}{section*.87}
+\contentsline {subsection}{\numberline {4.2.3}Use Case 3: Nulpunktsjuster}{55}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Use Case 4: Deaktiver filter}{57}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Use Case 5: Aktiver filter}{58}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}Use Case 6: Gem m\IeC {\r a}ling}{60}{subsection.4.2.6}
 \contentsline {chapter}{\chapternumberline {5}Acceptest}{65}{chapter.5}
 \contentsline {section}{\numberline {5.1}Accepttest af Use Cases}{65}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Use Case 1}{65}{subsection.5.1.1}
 \contentsline {subsection}{\numberline {5.1.2}Use Case 2}{66}{subsection.5.1.2}
 \contentsline {subsection}{\numberline {5.1.3}Use Case 3}{66}{subsection.5.1.3}
 \contentsline {subsection}{\numberline {5.1.4}Use Case 4}{67}{subsection.5.1.4}
-\contentsline {subsection}{\numberline {5.1.5}Use Case 5}{67}{subsection.5.1.5}
+\contentsline {subsection}{\numberline {5.1.5}Use Case 5}{68}{subsection.5.1.5}
 \contentsline {subsection}{\numberline {5.1.6}Use Case 6}{68}{subsection.5.1.6}
 \contentsline {section}{\numberline {5.2}Accepttest af ikke-funktionelle krav}{69}{section.5.2}
