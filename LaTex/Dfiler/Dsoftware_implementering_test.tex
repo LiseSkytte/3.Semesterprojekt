@@ -298,7 +298,7 @@ Filteret er aktiveret, og det filtrerede signal vises i graf.
 	\caption{Målingen vises med filter aktiveret}
 \end{figure}
 
-Beregningerklassen beregner med metoden uden filter, da "filterOn" er lig false.
+I Beregninger klassen beregnes målingen der udskrives på graf med filter, da bool'en filterOn er true.
 
 \begin{figure}[H]
 	\centering
@@ -306,15 +306,15 @@ Beregningerklassen beregner med metoden uden filter, da "filterOn" er lig false.
 	\caption{Beregningerklassen opretter filtrerede DTO'er}
 \end{figure}
 
-I Monitor-vinduet aktiveres filter på radiobutton. Det filtrerede signal udskrives. 
+Der trykkes på radiobutton "Filter Off" og bool'en der sendes med metoden "beregnBlodtryk" sættes til false. Metoden beregner blodtrykket der udskrives i Monitor-vinduet, uden filter.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/Test_Deaktiver_3}
-	\caption{Det filtrerede signal udskrives efter blå ring}
+	\caption{Blodtrykssignal før og efter deaktivering af filter. Den blå markering viser overgangen}
 \end{figure}
 
-Beregninger klassen beregner med metoden med filter, da "filteron" = true.
+Beregninger klassen beregner med metoden uden filter, da "filteron" = true.
 
 \begin{figure}[H]
 	\centering
@@ -332,7 +332,7 @@ Filteret er ikke aktiveret, og det ufiltrerede signal udskrives.
 	\caption{Ufiltreret signal udskrives i graf}
 \end{figure}
 
-Beregninger klassen beregner med metoden uden filter, da "filterOn" lig false.
+I Beregninger klassen beregnes målingen der udskrives på graf uden filter, da bool'en filterOn er false.
 
 \begin{figure}[H]
 	\centering
@@ -340,7 +340,7 @@ Beregninger klassen beregner med metoden uden filter, da "filterOn" lig false.
 	\caption{Beregningerklassen opretter ufiltrerede}
 \end{figure}
 
-Filteret aktiveres, og det filtrerede signal udskrives efter blå ring.
+Der trykkes på "Filter On" og det ses at det udskrevne signal, filtreres.
 
 \begin{figure}[H]
 	\centering
@@ -348,11 +348,11 @@ Filteret aktiveres, og det filtrerede signal udskrives efter blå ring.
 	\caption{Ufiltreret signal udskrives i graf}
 \end{figure}
 
-Beregninger klassen opretter filtrerede DTO'er, da "filterOn" er lig true.
+I beregninger klassen er bool'en der sendes med metoden "beregnBlodtryk" sat til true. Metoden beregner blodtrykket der udskrives i Monitor-vinduet, med filter.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/Test_Aktiver_3}
+	\includegraphics[width=1\textwidth]{Figurer/Test_Aktiver_4}
 	\caption{Beregningerklassen opretter filtrerede DTO'er}
 \end{figure}
 
@@ -377,10 +377,10 @@ Metoden record() køres i Beregningerklassen. Her sættes startværdien for mål
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/UC6_Record_Start}
-	\caption{Beregningerklassens metode record() køres, når optagelse starter}
+	\caption{Beregningerklassens metode record() køres, når optagelse starter, og startværdien sættes}
 \end{figure}
 
-Tiden udløber og optagelsen slutter. Metoden record() køres igen, og slutværdien for optagelsen sættes i Beregninger. Det observeres om differencen mellem startværdi og slutværdi er lig 5 sekunder og 5000 samples.
+Tiden udløber og optagelsen slutter. Metoden record() køres igen automatisk. Denne gang sættes slutværdien for målingen. Det observeres om differencen mellem startværdi og slutværdi er lig 5 sekunder dvs. 5000 samples.
 
 \begin{figure}[H]
 	\centering
@@ -404,7 +404,7 @@ Det kontrolleres, om Gem-klassens værdier er korrekte. Følgende værdier tjekk
 	\caption{Gem-vinduets værdier}
 \end{figure}
 
-Det kontrolleres, om længden af "samplearray" i metoden gemmaalingtilDB() stemmer overens med de valgte fem sekunder = 5000 samples.
+Det kontrolleres, om længden af "samplearray" i metoden gemmaalingtilDB() stemmer overens med de valgte fem sekunder dvs. 5000 samples.
 
 \begin{figure}[H]
 	\centering
