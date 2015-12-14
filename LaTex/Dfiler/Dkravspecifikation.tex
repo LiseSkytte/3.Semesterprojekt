@@ -34,10 +34,10 @@ Systemet består af en software- og en hardwaredel. Softwaredelen er udarbejdet 
 Primæraktøren i dette projekt er en Forsker. Sekundære aktører er Database, Tryktransducer og Måleobjekt. Måleobjekt er en package af Physionet og Analog Discovery, som er eksterne aktører.   
 
 \subsection{Aktørbeskrivelse}
+I Tabel 1.2 vil de forskellige aktører beskrives. 
 
-\begin{table}[H]
-\begin{tabularx}{\textwidth}{l X}
-     Aktørnavn & Forsker \\
+\begin{longtabu} to \linewidth{@{}l  X[j]@{}}
+	Aktørnavn & Forsker \\
      Type & Primær \\
      Beskrivelse  & Person med relevant baggrundsviden inden for blodtryksanalyse \\ 
      \midrule
@@ -61,11 +61,9 @@ Primæraktøren i dette projekt er en Forsker. Sekundære aktører er Database, 
      Type & Ekstern \\
      Beskrivelse  & Analog Discovery omdanner data fra Physionet til et analogt signal \\                                                                                                                                                                          
      \bottomrule                                                                                                                   
-    \end{tabularx}
     \caption {Aktørbeskrivelse}
-    \label{tab:aktoerbeskrivelse}
-	
-\end{table}
+\end{longtabu}
+
 
 \subsection{Use casediagram}
 \begin{figure}[H]
