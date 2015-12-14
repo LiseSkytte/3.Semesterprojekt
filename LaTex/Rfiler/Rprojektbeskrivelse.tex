@@ -2,11 +2,6 @@
 
 \subsection{Specifikation og analyse}
 
-\subsubsection{Arkitektur}Beslutningen om at anvende 3-lags modellen blev overvejende taget på baggrund af de krav der var stillet til projektet om, at der skulle ske en dataopsamling, databehandling og visualisering. De 3 lag repræsenterer hver især disse opgaver. 
-For at overskueliggøre og effektivisere softwaren var en vigtig overvejelse navngivning af klasser og metoder efter deres pågældende funktion. Dette skaber høj samhørighed, og lav kobling klasserne imellem.\\
-Data-laget er et eksempel herpå, med en opdeling i 3 klasser, med hver deres specifikke funktion(DataHent, DataGem, DAQ). På denne måde er fejlfinding overskueligt, da fejlen sker i en indkapslet funktion.
-
-\subsubsection{Dataindhentning}I overvejelserne omkring udskrivning af målt blodtryk til graf i monitor vinduet, var en prioritet at signalet blev udskrevet rettidigt, altså med en minimal forsinkelse fra at målingen var foretaget af den fysiske DAQ. I den forbindelse var det muligt enten at requeste data fra logiklaget jf. 3.lags modellen, eller at anvende subscriber/publisher pattern, med DAQ klassen som publisher. Ved den første metode, ville behandlingen af måledata være styret eksternt fra hvor data blev produceret, altså fra logik laget. Med den anden mulighed ville databehandlingen være styret af den fysiske DAQ. Dette var at foretrække, da data ville blive behandlet som det blev produceret; altså mest rettidigt.
 
 \section{Projektgennemførelse}
 Ud fra den givne projektformulering og tilgang til emnet er der udformet en tidsplan, som indeholder de overordnede deadlines for review og tests givet fra AU.
@@ -109,11 +104,14 @@ Det forstærkerede analoge signal skal videre filteres før det konventeres til 
 Til dette designes et Sallen Key anden ordens lavpasfilter med unity gain, hvor cutofffrekvensen er 50 Hz. Udregningerne for kompontværdierne til denne realisering, se HW implementering og test (3) i Projektdokumentationen under Filterblok (3.2).
 
 \subsection{Software} 
+\subsubsection{Arkitektur}
+Beslutningen om at anvende trelagsmodellen blev overvejende taget på baggrund af de krav der var stillet til projektet om, at der skulle ske en dataopsamling, databehandling og visualisering. De 3 lag repræsenterer hver især disse opgaver. 
+For at overskueliggøre og effektivisere softwaren var en vigtig overvejelse navngivning af klasser og metoder efter deres pågældende funktion. Dette skaber høj samhørighed, og lav kobling klasserne imellem.\\
+Data-laget er et eksempel herpå, med en opdeling i 3 klasser, med hver deres specifikke funktion(DataHent, DataGem, DAQ). På denne måde er fejlfinding overskueligt, da fejlen sker i en indkapslet funktion.
 
+\subsubsection{Dataindhentning}
+I overvejelserne omkring udskrivning af målt blodtryk til graf i monitor vinduet, var en prioritet at signalet blev udskrevet rettidigt, altså med en minimal forsinkelse fra at målingen var foretaget af den fysiske DAQ. I den forbindelse var det muligt enten at requeste data fra logiklaget jf. 3.lags modellen, eller at anvende subscriber/publisher pattern, med DAQ klassen som publisher. Ved den første metode, ville behandlingen af måledata være styret eksternt fra hvor data blev produceret, altså fra logik laget. Med den anden mulighed ville databehandlingen være styret af den fysiske DAQ. Dette var at foretrække, da data ville blive behandlet som det blev produceret; altså mest rettidigt.
 
-
-
-        
 
 \section{Arkitektur}
 I følgende afsnit beskrives systemarkitekturen for blodtryksmålesystemet. Systemarkitekturen fungerer som en udviklingsramme for videreudviklingen af design og implementering. Her bliver systemets funktionalitet nedbrudt til overordnede moduler. Gennem dette afsnit ønskes der at skabe et overordnet overblik over systemet. Der benyttes diagrammer med tilhørende beskrivelser til at specificere og klarlægge systemkrav.
@@ -203,6 +201,11 @@ Resultaterne af testen stemte overens med det forventede.
 \section{Resultater og diskussion}
 
 \section{Opnåede erfaringer}
+På baggrund af den generelle viden om hjertet, blodtrykket og de forskellige måletyper er der designet og udviklet et system til at måle blodtrykket invasivt. Med udgangspunkt i problemformuleringen og opsatte rammer er der arbejdet efter vandfaldsmetoden, hvor vi undervejs i udviklingsprocessen gennem løsninger og erfaringer har opnået bedre kendskab til det ønskede produkt. Vi har styrket vores tværfaglige kompetencer og formået at udvikle en teknisk løsning samt at benytte teori i praksis.\\\\
+Et væsentligt fokusområde i udviklingen af blodtryksmålesystemet har været integreringen af hardware og software. I udarbejdelsen af hardware startede vi med at beregne komponentværdierne og derefter designe det elektriske kredsløb for at kunne opstille det på et fumlebræt. Herefter var hensigten at designe kredsløbet i Multisim, og derefter overføre det til printplade via Ultiboard. Dette blev ikke gennemført grundet tidspres. Derfor designede vi kredsløbet på et veroboard, hvor komponenterne og forbindelserne blev loddet. I selve processen med design af kredsløb opstod der problemer, da vi ved en fejl havde placeret de to kondensatorerne omvendt af hinanden, så de ikke stemte overens med teorien. \\\\
+I udviklingen af det ønskede software har vi tildelt os ny viden i undervisningen i ITS3, men primært har softwaren været en viderebygning på erfaringer fra 2. semesterprojektet. Processen har været uden svære komplikationer, dog blev vi bevidste om et problem i forhold til udskrivning af samples. Da vi har målt med over 1000 samples i sekundet, erfarede vi at programmet ikke kunne udskrive dette. Dette løste vi ved i stedet kun at udskrive hvert 10. sample, hvilket dog indebar at signalet ikke blev lige så præcist. \\\\ 
+Selve projektarbejdet har i høj grad været struktureret af faste møder og dagsordener. Derudover har der været en fælles opsamling på opgaver, der har været fordelt mellem gruppemedlemmerne. På denne måde har det været muligt for alle at have et overblik over de forskellige arbejdsopgaver. Denne strukturering af projektarbejdet har styrket vores færdigheder i projektstyring og tilrettelægning af arbejdsopgaver.
+
 
 \section{Fremtidigt arbejde}
 
