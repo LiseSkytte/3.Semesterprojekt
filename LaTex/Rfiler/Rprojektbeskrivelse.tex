@@ -197,8 +197,66 @@ Resultaterne af testen stemte overens med det forventede.
  
 
 \subsection{Software}
+Softwaren er designet efter 3-lags modellen samt anvendelse af publisher/subscriber mønstret. \\Dette er gjort i henhold til de givne krav til produktet, som er dataopsamling, databehandling og visualisering. 3-lagsmodellen sørger for at håndterer af disse opgaver sker i hvert sit lag. Det visuelle design er lavet så det assimilerer eksisterende blodtryksmonitorer. \\Design af SW er konkretiseret i sekvensdiagrammer med konceptuelle klasser.
+\\\\Form-laget er implementeret med tre GUI vinduer: Monitor, Gem og Kalibrer.\\ Monitorvinduet udskriver blodtrykssignalet, giver bruger mulighed for at udføre nulpunktsjustering, og optage det viste signal. Gem vinduet fremviser det optagne signal, til revision før gemning på database. Kalibreringsvinduet giver bruger mulighed for kalibrering af systemet.\\ Logik laget er implementeret med en enkelt klasse, Beregninger, som udfører opgaver i specificerede metoder, såsom digital filtrering, kalibrering, nulpunktsjustering og behandling af rådata.\\Datalaget er implementeret med klasser med specifikke opgaver, der sørger for lav kobling og høj samhørighed. Dataoverførslen af rådata sker jf. publisher/subscriber mønstret. \\Implementeringens af software er beskrevet med sekvensdiagrammer med konkrete softwareklasser og metoder i projektdokumentationen.
+\\\\Softwaren er testet jf. use cases. Analog Discovery Waveform Generator er brugt som input til systemet, og resultater er kontrolleret med debugging af kode.
 
 \section{Resultater og diskussion}
+Accepttest blev den 9. december 2015 gennemført af vejleder Peter Johansen. Til denne test af blodtryksmålesystemet blev et blodtrykssignal fra PhysioNet simuleret ved hjælp af Analog Discovery \& Waveforms. Accepttesten blev gennemført uden nogen problemer og der kunne sættes checkmark ved alle funktionelle og ikke-funktionelle krav. 
+
+\subsection{In Vitro hjertemodel}
+Samme dag var det muligt, at teste blodtryksmålesystemet via en In Vitro hjertemodel. In Vitro betyder ”i glas”, hvilket er en betegnelse, man benytter, når man laver forskningsforsøg uden for den levende organisme. \\Den benyttede In Vitro hjertemodel til testen af blodtryksmålesystemet genskaber hjertets venstre sides funktion. Trykket i modellen bliver skabt via stempelpumpen ViVitro SuperDup'r. Hjertets venstre side genskabes via et ventrikulær kammer, en artiel reservoir samt en aortarod. Mellem det ventrikulære kammer og det artielle reservoir sidder der en mekanisk hjerteklap, der efterligner funktionaliteten af mitralklappen. I aortaroden er aortaklappen også genskabt. Filmen ”Aortaklap” viser, hvordan aortaklappen fungere.\\Via denne In Vitro hjertemodel kan hjertes venstre sides blod flow simuleres, hvilket gør det muligt at måle trykket efter aortaroden, hvilket kan sammenlignes med det artielle blodtryk.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Snip20151214_98}
+	\caption{Opstilling af In Vitro hjertemodel}
+\end{figure}
+
+På Figur 6.11 ses opstillingen for In Vitro hjertemodel. Den orange pil peger på den artielle reservoir, den blå pil peger på det ventrikulære kammer og den grønne pil peget på aortaroden. Tryktransduceren fastsættes der, hvor den sorte pil peger. På billedet ses, at der er fastsat to tryktransducer. Den ene er tilkoblet et monitoreringssystem fra Siemens, mens den anden er tilkoblet vores monitoreringssystem.
+\\\\
+Før målingen kan foretages skal vores monitoreringssystem kalibreres. Til dette benyttes en vandsøjle. På vandsøjlen er tre punkter markeret, hvor trykket i mmHg er kendt. Når monitoreringssystemet skal kalibreres, skal der bestemmes en kalibreringskonstant, som systemet skal korrigeres efter. \\Der måles først en spænding ved eksempelvis 10 mmHg og derefter en spænding ved eksempelvis 50 mmHg. Kalibreringskonstanten beregnes ud fra følgende formel: 
+
+\begin{equation}
+	K_{konstant} = \frac{tryk_2 - tryk_1}{spænding_2 - spænding_1}
+\end{equation}
+
+Efter kalibreringen er foretaget kan målingen foretages. 
+\\\\Resultaterne af målingen ses på Figur 6.12 og Figur 6.13. Figur 6.12 viser resultatet af vores monitoreringssystem, mens Figur 6.13 viser resultatet af Simens’ monitoreringssystem. \begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Snip20151214_99}
+	\caption{Vores monitoreringssystem}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Snip20151214_100}
+	\caption{Simens' monitoreringssystem}
+\end{figure}
+
+Der ses, at der er en lille forskel i værdier for de to monitoreringssystemer. Årsagen hertil kan være, at billederne ikke blev taget på nøjagtig samme tid, da dette ikke var muligt. Forskellen er dog så lille, at det accepteres. \\Værdierne er heller ikke realistiske i forhold til det artielle blodtryk – systolen er meget lavere end det forventede. Årsagen til dette er opstillingen af In Vitro hjertemodel, hvor der var nogle problemer med pakningerne mellem det ventrikulære kammer og aortaroden samt at der var et lille hul i aortaroden, hvor vand ville sprøjte ud, hvis trykket fra stempelpumpen blev for stort.  Filmen ”Utæt pakning mellem ventrikulær kammer og aortaroden” i bilag viser dette.
+\\\\Ud fra denne test via In Vitro hjertemodel konkluderes det, at vores monitoreringssystem fungerer som ønsket, da de to monitoreringssystemer følges ad og viser tilnærmelsesvis samme værdier.
+
+\subsection{Blodtryksmåling på en gris} Den 14. december 2015 var det muligt at teste blodtryksmålesystemet på en gris på Skejby Sygehus. Formålet med denne test, er at undersøge om blodtryksmålesystemet kan monitorerer et blodtryk, der kan sammenlignes med det menneskelige. \\Målingen foregik på en gris, der blev benyttet til klinisk forskning. Selve operationen foregik samtidig med monitorering af blodtrykket. I en arterie tæt på sternum blev et kareter påsat, som gjorde det muligt at fastsætte tryktransduceren fra blodtryksmålesystemet. På Figur 6.14 ses resultaterne fra målingen. I det tidsrum, hvor vores blodtryksmålesystemet stod for monitoreringen, var det nødvendigt for lægerne at vide blodtryksværdierne. Disse kunne blodtryksmålesystemet levere og lægerne accepterede disse.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Snip20151214_101}
+	\caption{Vores monitoreringssystem}
+\end{figure}
+
+Efter målingen blev sygehuset allerede implementeret system påsat. På Figur 6.15 ses dette monitoreringssystems resultater.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Snip20151214_102}
+	\caption{Sygehusets monitoreringssystem}
+\end{figure}
+
+
+Igen ved denne test ses der en lille forskel i værdierne. Årsagen kan igen være, at billederne ikke blev taget på nøjagtig samme tid. Filmen ”Griseforsøg” i bilag viser blodtryksmålingen på grisen.
+\\\\ Ud fra denne test af blodtryksmålesystemet konkluderes det, at vores monitoreringssystem fungere som ønsket, og kan monitorere reelle blodtryksværdier. 
+
 
 \section{Opnåede erfaringer}
 På baggrund af den generelle viden om hjertet, blodtrykket og de forskellige måletyper er der designet og udviklet et system til at måle blodtrykket invasivt. Med udgangspunkt i problemformuleringen og opsatte rammer er der arbejdet efter vandfaldsmetoden, hvor vi undervejs i udviklingsprocessen gennem løsninger og erfaringer har opnået bedre kendskab til det ønskede produkt. Vi har styrket vores tværfaglige kompetencer og formået at udvikle en teknisk løsning samt at benytte teori i praksis.\\\\
@@ -207,6 +265,6 @@ I udviklingen af det ønskede software har vi tildelt os ny viden i undervisning
 Selve projektarbejdet har i høj grad været struktureret af faste møder og dagsordener. Derudover har der været en fælles opsamling på opgaver, der har været fordelt mellem gruppemedlemmerne. På denne måde har det været muligt for alle at have et overblik over de forskellige arbejdsopgaver. Denne strukturering af projektarbejdet har styrket vores færdigheder i projektstyring og tilrettelægning af arbejdsopgaver.
 
 
-\section{Fremtidigt arbejde}
+\section{Fremtidigt arbejde}Gennem udviklingsforløbet af blodtryksmålesystemet, er der blevet arbejdet ud fra de retningslinjer og obligatoriske krav, der er blevet givet fra AU’s side. Første prioritet har været, at skabe et produkt der lever op til disse krav, men samtidig har der været fokus på at skabe det bedst mulige produkt for brugeren. Som resultat heraf, er der blevet implementeret udbyggende forbedringer i blodtryksmålesystemet i form af afbildning af systolisk/diastolisk blodtryk og puls med tal. \\Yderligere forbedringer hertil kunne være angivelse af pulsslag med svage bip-lyde, således Forskeren ikke behøver at kigge på monitoren for at få besked om Måleobjektets puls. Denne funktion vil hjælpe Forskeren til at holde overblik over Måleobjektets tilstand, samtidigt med, at der kan foretages indgreb, justeringer med videre. \\Ligeledes har der været overvejelser om at udvikle en alarmfunktion, der undervejs angiver særligt høje eller lave blodtryk hos Måleobjektet.  Denne funktion vil have samme virkning, som beskrevet ved angivelse af bip-lyde for pulsslag, og derfor behjælpelig med, at gøre Forskerens arbejde lettere. \\ \\Blodtryksmålesystemet, der er udviklet i dette projekt, har til formål, at hjælpe Forskere med kontinuert at monitorere Måleobjekters blodtryk, og derfor vil inddragelse af fagprofessionelle til design af brugergrænsefladen og klarlæggelse af funktioner, være en naturlig del af det fremtidige arbejde. \\Via usability testing kan blodtryksmålesystemets evalueres af dets slutbrugere og derefter tilpasses til deres behov, således brugergrænsefladens design og systemets funktioner møder slutbrugerens ønsker. \\ \\Ved monitorering af Måleobjekters helbredstilstand kan det – udover blodtryk – være relevant at observere deres saturation og EKG-signal. \\ En fremtidig udvidelse kunne derfor være, at udvikle en funktion til at vise Måleobjektets saturation og EKG-signal på samme måde som blodtrykket bliver vist, og derefter implementere det i brugergrænsefladen. \\Denne udvidelse vil samtidig give anledning til bredere anvendelsesmuligheder, idet systemet dækker flere af de funktioner, der blandt andet er brug for på sygehuse. \\ \\Hardwaredelen i blodtryksmålesystemet er realiseret på et veroboard, men til fremtidigt arbejde kunne der udvikles et printboard for at sikre bedre stabilitet og udseende. Hardwaredelen vil desuden blive markant mindre med et printboard, fremfor på et veroboard. \\ \\Samlet set er der i fremtiden flere muligheder for at ændre og forbedre brugergrænsefladen. Blandt andet gennem samarbejde med fagprofessionelle slutbrugere, men især i takt med videreudvikling af flere funktioner til systemet. \\Specielt implementering af monitorering for saturation og EKG-signal kan være med til at løfte produktet til bredere anvendelsesmuligheder, samt et generelt bedre udgangspunkt for monitorering af Måleobjekters helbredstilstand.
 
 
