@@ -41,5 +41,5 @@
 \contentsline {section}{\numberline {6.7}Opn\IeC {\r a}ede erfaringer}{35}{section.6.7}
 \contentsline {section}{\numberline {6.8}Fremtidigt arbejde}{35}{section.6.8}
 \contentsline {chapter}{\chapternumberline {7}Konklusion}{37}{chapter.7}
-\contentsline {chapter}{Litteratur}{38}{section*.40}
-\contentsline {chapter}{Bilag}{39}{chapter*.41}
+\contentsline {chapter}{Litteratur}{39}{section*.40}
+\contentsline {chapter}{Bilag}{40}{chapter*.41}
