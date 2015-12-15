@@ -4,7 +4,6 @@ The top-level auxiliary file: /Users/AndersMac/Desktop/3.Semesterprojekt/LaTex/.
 The style file: plain.bst
 A level-1 auxiliary file: Rfiler/Rforside.aux
 A level-1 auxiliary file: Rfiler/Resume.aux
-A level-1 auxiliary file: Rfiler/Rgodkendelsesformular.aux
 A level-1 auxiliary file: Rfiler/Rordliste.aux
 A level-1 auxiliary file: Rfiler/Rindledning.aux
 A level-1 auxiliary file: Rfiler/Rprojektformulering.aux
@@ -68,15 +67,17 @@ A level-1 auxiliary file: Rfiler/Rkonklusion.aux
 A level-1 auxiliary file: Rfiler/Rlitteratur.aux
 A level-1 auxiliary file: Rfiler/Rbilag.aux
 I found no \bibdata command---while reading file /Users/AndersMac/Desktop/3.Semesterprojekt/LaTex/.texpadtmp/Rapport.aux
+Warning--I didn't find a database entry for "Note"
 Warning--I didn't find a database entry for "Hjertecyklus"
 Warning--I didn't find a database entry for "Wheatestone"
 Warning--I didn't find a database entry for "Diashow"
 Warning--I didn't find a database entry for "Sundhedbog"
 Warning--I didn't find a database entry for "Vejledning"
 Warning--I didn't find a database entry for "ISE"
+Warning--I didn't find a database entry for "PhysioNet"
 You've used 0 entries,
             2118 wiz_defined-function locations,
-            521 strings with 4509 characters,
+            523 strings with 4499 characters,
 and the built_in function-call counts, 18 in all, are:
 = -- 0
 > -- 0
