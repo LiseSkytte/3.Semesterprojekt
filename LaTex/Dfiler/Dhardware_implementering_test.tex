@@ -11,7 +11,7 @@ Som Forstærkerblok anvendes INA114, se Figur 3.1. Denne har den fordel, at gain
 	\caption{INA114}
 \end{figure}
 
-INA114 er blevet udleveret som én komponent. Den sorte boks på Figur 3.1 viser, hvilke delkomponenter, INA114 indeholder. Det ses også, at $R_{G}$ er placeret udenfor den sorte boks, hvilket betyder, at det er en variabel modstand, der skal tilkobles INA114.  
+INA114 er blevet udleveret som én komponent. Den sorte boks på Figur 3.1 viser, hvilke delkomponenter INA114 indeholder. Det ses også, at $R_{G}$ er placeret udenfor den sorte boks, hvilket betyder, at det er en regulerbar modstand, der skal tilkobles INA114.  
 \\
 \\
 På Figur 3.2 ses, hvordan INA114 \footnote{Se datablad for INA114 i bilag} skal realiseres i forhold til at implementere Forstærkeren. 
@@ -22,11 +22,11 @@ På Figur 3.2 ses, hvordan INA114 \footnote{Se datablad for INA114 i bilag} skal
 	\caption{INA114}
 \end{figure}
 
-På ben et og otte forbindes INA114 med gainmodstanden, $R_{G}$. Ben fire forbindes med -9 V. Ben syv forbindes med +9 V. Ben fem forbindes til jord. Inputsignalet modtages ved ben to og tre, mens outputsignalet kommer fra ben seks, som forbindes med filteret, der efterfølgende viderebehandler signalet. 
+På ben et og otte forbindes INA114 med $R_{G}$. Ben fire forbindes med -9 V, ben syv forbindes med +9 V og ben fem forbindes til jord. Inputsignalet modtages ved ben to og tre, mens outputsignalet kommer fra ben seks, som forbindes med filteret, der efterfølgende viderebehandler signalet. 
    
 
 \subsubsection{Forstærkning}
-Forstærkningen, gain, skal forstærke den maksimale inputspænding fra Tryktransduceren, så outputtet bliver 5 V, hvilket er det interval, der er valgt for DAQ'en. Udregningen for forstærkning kan ses i ligning (2.4) til (2.5).
+Forstærkningen, gain, skal forstærke den maksimale inputspænding fra Tryktransduceren, så outputtet bliver 5 V, hvilket er det interval, der er valgt for DAQ'en. Udregningen for forstærkning ses i ligning (2.4) til (2.5).
 \begin{equation}
 	Gain = 666,667
 \end{equation}
@@ -42,7 +42,7 @@ Båndbredden for denne Forstærkerblok, hvor gain er 1333,33, er
 	BW = 1500 Hz
 \end{equation} 
 
-Båndbredden er større end 50 Hz, hvilket var det, den mindst skulle være. 
+Båndbredden er større end 50 Hz, hvilket var det, den mindst måtte være. 
 
 \subsubsection{Gainmodstand}
 Gainmodstanden, $R_{G}$ er en variabel modstand, der bestemmer forstærkningen i INA114. INA114 skal have en gain på 666,667. Ud fra ligning (3.3) kan $R_{G}$ isoleres og beregnes.\\
@@ -72,7 +72,7 @@ Som ikke-inverterende operationsforstærker anvendes der OP27G \footnote{Se data
 	\caption{OP27G}
 \end{figure}
 
-Ben tre modtager det forstærkede signal. Ben to forbindes med ben seks, hvor det færdigtbehandlede signal kan måles. Ben fire forbindes med -9 V. Ben syv forbindes med +9 V.  
+Ben tre modtager det forstærkede signal. Ben to forbindes med ben seks, hvor det behandlede signal kan måles. Ben fire forbindes med -9 V og ben syv forbindes med +9 V.  
 
 
 \subsubsection{Beregning af komponentværdier}
@@ -103,7 +103,7 @@ Kondensatoren, C2, skal være 680 nF og kondensatoren, C1, bestemmes til 340 nF,
 Ved realiseringen af de to modstande vælge 3k$\Omega$ og 3.6k$\Omega$.  
 
 \subsubsection{Magnitude Bodeplot}
-Bodeplottet i Figur 3.3 viser, at ved -3 dB, hvor cutoff frekvensen befinder sig, er frekvensen 50 Hz, som var et krav. Det ses også, at grafen er faldet med 40 dB en dekade efter, 500 Hz, hvilket også var et krav.   
+Bodeplottet i Figur 3.5 viser, at ved -3 dB, hvor cutoff frekvensen befinder sig, er frekvensen 50 Hz, som var et krav. Det ses også, at grafen er faldet med 40 dB en dekade efter, 500 Hz, hvilket også var et krav.   
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/Bodeplot_Lavpasfilter_Teoretisk}
@@ -112,10 +112,10 @@ Bodeplottet i Figur 3.3 viser, at ved -3 dB, hvor cutoff frekvensen befinder sig
 \end{figure}
 
 \section{Test}
-Forstærkeren og filteret testes via Analog Discovery og Waveforms. Der foretages først unit test for hver af de to dele, og derefter bliver de sat sammen til en samlet Signalbehandlingsblok, som testes ved en integrationstest.\\ 
+Forstærkeren og filteret testes via Analog Discovery \& Waveforms. Der foretages først unittest for hver af de to dele, og derefter bliver de sat sammen til en samlet Signalbehandlingsblok, som testes ved en integrationstest.\\ 
 
 \subsection{Test af Forstærkerblok}
-Testopstillingen kan ses på Figur 3.4. 
+Testopstillingen kan ses på Figur 3.6. 
 
 \begin{figure}[H]
 	\centering
@@ -123,13 +123,13 @@ Testopstillingen kan ses på Figur 3.4.
 	\caption{Testopstilling for Forstærkeren}
 \end{figure}
 
-Der ønskes, at ved en inputspænding på 7,5 mV vil outputspændingen være forstærket op til 5 V. Der kunne ikke påtrykkes en spænding på 7,5 mV, men istedet med 7 mV. Outputspændingen ved 7 mV er 
+Der ønskes en outputspænding på 5 V ved en inputspænding på 7,5 mV. Der kunne ikke påtrykkes en spænding på 7,5 mV, men istedet med 7 mV. Outputspændingen ved 7 mV er 
 
 \begin{equation}
 	7 mV \cdot 666,667 = 4,7 V
 \end{equation} 
 
-Dette ser at være det samme, når man tester Forstærkeren, se Figur 3.5. 
+Det ønskede resultat ses, når man tester Forstærkeren, se Figur 3.7. 
 
 \begin{figure}[H]
 	\centering
@@ -139,9 +139,9 @@ Dette ser at være det samme, når man tester Forstærkeren, se Figur 3.5.
 
 
 \subsection{Test af Filterblok}
-Testen af filteret er foretaget, hvor der påtrykkes en AC spænding på 5 V, hvor frekvensen varieres imellem 1 Hz, 50 Hz og 500 Hz. \\ \\
+Testen af filteret er foretaget, hvor der påtrykkes en AC spænding på 5 V og frekvensen varieres imellem 1 Hz, 50 Hz og 500 Hz. \\ \\
 
-Testopstillingen ses på Figur 3.6.  
+Testopstillingen ses på Figur 3.8.  
 
 \begin{figure}[H]
 	\centering
@@ -150,7 +150,7 @@ Testopstillingen ses på Figur 3.6.
 	\label{fig:Filter}
 \end{figure}
 
-Channel 1 er inputspændingen og viser den varierende frekvens. Ændringen ses i venstre side af efterfølgende skærmbilleder. 
+Channel 1 er inputspændingen og viser den varierende frekvens. Ændringen ses i venstre side på Figur 3.09, Figur 3.10 og Figur 3.11.
 Oscilloskopet måler outputspændingen på filteret og resultatet vises i højre side af efterfølgende skærmbilleder.
 
 \subsubsection{Filtering ved 1 Hz}
@@ -161,7 +161,7 @@ Oscilloskopet måler outputspændingen på filteret og resultatet vises i højre
 	\label{fig:Filter}
 \end{figure}
 
-På Figur 3.7 ses det, at inputspændingen  og outputspændingen er den samme - 5 V ca. Dette er også det ønskede resultat, da filteret er et lavpasfilter, der er designet til at lukke de lave frekvenser igennem indtil 50 Hz. 
+På Figur 3.9 ses det, at inputspændingen  og outputspændingen er tilnærmelsesvis den samme. Dette er også det ønskede resultat, da filteret er et lavpasfilter, der er designet til at lade de lave frekvenser passere indtil 50 Hz. 
  
 \subsubsection{Filtering ved 50 Hz}
 \begin{figure}[H]
@@ -171,7 +171,7 @@ På Figur 3.7 ses det, at inputspændingen  og outputspændingen er den samme - 
 	\label{fig:Filter}
 \end{figure}
 
-Ved 50 Hz, som er filteret cutoff frekvens, skal inputspændingen være dæmpet med 3 dB efter filteringen. I ligningen (3.9) beregnes, hvad outputspændingen er efter en dæmpning med 3 dB. 
+Ved 50 Hz, som er filterets cutoff frekvens, skal inputspændingen være dæmpet med 3 dB efter filteringen. I ligningen (3.10) beregnes, hvad outputspændingen er efter en dæmpning med 3 dB. 
 
 \begin{equation}
 	3 dB = 20\cdot log(x) \\ \Longrightarrow \\
@@ -180,7 +180,7 @@ Ved 50 Hz, som er filteret cutoff frekvens, skal inputspændingen være dæmpet 
 	outputspænding = 3,535 V 
 \end{equation}
 
-På Figur 3.8 ses, at det i praksis er 3,502 V, hvilket der er acceptabelt. 
+På Figur 3.10 ses, at det i praksis er 3,502 V, hvilket der er acceptabelt. 
 
 \subsubsection{Filtering ved 500 Hz}
 
@@ -191,7 +191,7 @@ På Figur 3.8 ses, at det i praksis er 3,502 V, hvilket der er acceptabelt.
 	\label{fig:Filter}
 \end{figure}
 
-Her forventes der en dæmpning med 40 dB, da det er et anden ordens lavpasfilter, og 500 Hz er en dekade efter cutoff frekvensen. I ligning (3.10) ses beregningen, hvad outputspændingen er efter en dæmpning på 40 dB. 
+Her forventes der en dæmpning med 40 dB, da det er et anden ordens lavpasfilter, og 500 Hz er en dekade efter cutoff frekvensen. I ligning (3.10) ses beregningen for, hvad outputspændingen er efter en dæmpning på 40 dB. 
 
 \begin{equation}
 	40 dB = 20\cdot log(x) \\ \Longrightarrow \\
@@ -200,11 +200,11 @@ Her forventes der en dæmpning med 40 dB, da det er et anden ordens lavpasfilter
 	outputspænding = 0,05 V 
 \end{equation}
 
-På Figur 3.9 ses, at det i praksis er 51 mV. Det omregnes til 0,051 V, hvilket er acceptabelt i forhold til teorien. 
+På Figur 3.11 ses, at det i praksis er 51 mV. Det omregnes til 0,051 V, hvilket er acceptabelt i forhold til teorien. 
 
 \subsection{Test af Signalbehandlingsblok}
 
-Testopstillingen ses på Figur 3.10. 
+Testopstillingen ses på Figur 3.12. 
 
 \begin{figure}[H]
 	\centering
@@ -216,7 +216,7 @@ Testopstillingen ses på Figur 3.10.
 Der laves tre forskellige tests, hvor frekvensen varieres mellem 1 Hz, 50 Hz og 500 Hz. Inputspændingen er i alle tests 13 mV. 
 \\
 \subsubsection{Test ved 1 Hz}
-På Figur 3.11 ses resultatet ved 1 Hz. Der forventes, at Forstærkeren har forstærket signalet op til 5 V samt, at filteret ikke har påvirket outputtet, da frekvensen er under 50 Hz, som er filteret cutoff frekvens.
+På Figur 3.13 ses resultatet ved 1 Hz. Der forventes, at Forstærkeren har forstærket signalet op til 5 V samt, at filteret ikke har påvirket outputtet, da frekvensen er under 50 Hz, som er filteret cutoff frekvens.
 \\ \\
 I praksis er det lig med 4,83 V, hvilket er acceptabelt.  
  
@@ -227,7 +227,7 @@ I praksis er det lig med 4,83 V, hvilket er acceptabelt.
 \end{figure}
 
 \subsubsection{Test ved 50 Hz}
-På Figur 3.12 ses resultatet ved 50 Hz. Der forventes, at Forstærkeren har forstærket signalet op til 5 V samt, at filteret har dæmpet outputspændingen med 3 dB, så outputspændingen er lig med 3,535 V. 
+På Figur 3.14 ses resultatet ved 50 Hz. Der forventes, at Forstærkeren har forstærket signalet op til 5 V samt, at filteret har dæmpet outputspændingen med 3 dB, så outputspændingen er lig med 3,535 V. 
 \\ \\
 I praksis er det lig med 3,39 V, hvilket er acceptabelt.    
   
@@ -240,7 +240,7 @@ I praksis er det lig med 3,39 V, hvilket er acceptabelt.
 \end{figure}
 
 \subsubsection{Test ved 500 Hz}
-På Figur 3.13 ses resultatet ved 500 Hz. Der forventes, at Forstærkeren har forstærket signalet op til 5 V samt, at filteret har dæmpet outputspændingen med 40 dB, så outputspændingen er lig med 0,05 V.    
+På Figur 3.15 ses resultatet ved 500 Hz. Der forventes, at Forstærkeren har forstærket signalet op til 5 V samt, at filteret har dæmpet outputspændingen med 40 dB, så outputspændingen er lig med 0,05 V.    
 \\ \\
 I praksis er det lig med 0,056 V, hvilket er acceptabelt. 
 

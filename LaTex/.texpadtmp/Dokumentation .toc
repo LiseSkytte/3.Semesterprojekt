@@ -18,7 +18,7 @@
 \contentsline {subsection}{\numberline {1.4.7}GUI}{10}{subsection.1.4.7}
 \contentsline {chapter}{\chapternumberline {2}Design}{13}{chapter.2}
 \contentsline {section}{\numberline {2.1}Systemarkitektur}{13}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Bdd}{13}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.1}bdd}{13}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}ibd}{14}{subsection.2.1.2}
 \contentsline {section}{\numberline {2.2}Gr\IeC {\ae }nseflader}{15}{section.2.2}
 \contentsline {section}{\numberline {2.3}Hardware arkitektur}{16}{section.2.3}
@@ -27,7 +27,7 @@
 \contentsline {subsubsection}{Filterblok}{17}{section*.10}
 \contentsline {subsection}{\numberline {2.3.1}bdd}{17}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Ibd}{17}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Gr\IeC {\ae }nseflader}{18}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.3}Gr\IeC {\ae }nseflader}{17}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}Forst\IeC {\ae }rkerblok}{18}{subsection.2.3.4}
 \contentsline {subsubsection}{Specifikationer}{18}{section*.13}
 \contentsline {subsection}{\numberline {2.3.5}Filterblok}{18}{subsection.2.3.5}
@@ -69,12 +69,12 @@
 \contentsline {subsubsection}{Monitor}{40}{section*.57}
 \contentsline {subsubsection}{Gem}{41}{section*.59}
 \contentsline {subsubsection}{Kalibr\IeC {\'e}r}{41}{section*.61}
-\contentsline {subsection}{\numberline {4.1.4}Datamodel Laget}{42}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.4}Datamodellaget}{42}{subsection.4.1.4}
 \contentsline {subsubsection}{DTO}{42}{section*.62}
 \contentsline {subsubsection}{Publisher/subscriber pattern}{42}{section*.64}
 \contentsline {subsection}{\numberline {4.1.5}Metodebeskrivelser}{43}{subsection.4.1.5}
 \contentsline {subsubsection}{Use Case 1: Kalibrer}{43}{section*.68}
-\contentsline {subsubsection}{Use Case 2: Vis m\IeC {\r a}ling}{44}{section*.70}
+\contentsline {subsubsection}{Use Case 2: Vis m\IeC {\r a}ling med filter}{44}{section*.70}
 \contentsline {subsubsection}{Use Case 3: Nulpunktjuster}{46}{section*.73}
 \contentsline {subsubsection}{Use Case 4: Deaktiver filter}{47}{section*.75}
 \contentsline {subsubsection}{Use Case 5: Aktiver filter}{48}{section*.77}

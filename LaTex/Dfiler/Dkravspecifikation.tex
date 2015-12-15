@@ -5,7 +5,7 @@
     Version &    Dato &    Ansvarlig &    Beskrivelse\\[-1ex]
     \midrule
     1.0		&	23-09-2015 &		Alle	&	Første udkast til Use Cases. I alt 4, hvor en af funktionaliteterne var, at man kunne optage en lydsekvens\\[-1ex]
-    1.1		&	29-09-2015	&	Alle	&	Ændring af Use Cases efter møde med Peter. I alt fem, hvor funktionaliteterne kun dækker over de opstillede krav til projektet. \\[-1ex]
+    1.1		&	29-09-2015	&	Alle	&	Ændring af Use Cases efter møde med Peter. I alt fem, hvor funktionaliteterne kun dækker over de opstillede krav til projektet \\[-1ex]
     1.2		&	30-09-2015	&	Alle	&	Små ændring af formuleringerne samt byttet om på Use Case 1 og Use Case 2 og tilføjet en Use Case 6. De ikke-funktionelle krav er blevet tilføjet. Klar til Review\\[-1ex]	
     2.0		&	08-10-2015	& Alle		&	Rettelser efter review møde\\[-1ex] 
     2.1		&	04-11-2015	& Alle		&	Tilføjet Tryktransducer som en sekundær aktør \\[-1ex]
@@ -14,13 +14,13 @@
 \end{longtabu}
 
 \section{Indledning}
-Kravspecifikationen vil gennem seks Use Cases beskrive blodtryksmålerens funktionelle krav. Systemets ikke-funktionelle krav er udarbejdet på baggrund af FURPS+. Dertil vil der være aktør-kontekstdiagram og Use Case diagram samt beskrivelse af de forskellige aktører, der interagerer med systemet.  
+Kravspecifikationen vil gennem seks Use Cases beskrive Blodtryksmålesystemets funktionelle krav. Systemets ikke-funktionelle krav er udarbejdet på baggrund af FURPS+. Dertil vil der være aktør-kontekstdiagram og Use Case diagram samt beskrivelse af de forskellige aktører, der interagerer med systemet.  
 
 \section{Systembeskrivelse}
- Systemet skal kunne vise et blodtrykssignal kontinuert i en graf. Derudover skal systemet kunne kalibrere, nulpunktsjustere samt gemme data for målingen i en lokal database. Systemet er udvilket som en prototype, der er mulig at teste udfra de givne rammer. 
+ Systemet skal kunne vise et blodtrykssignal kontinuert i en graf. Derudover skal systemet kunne kalibrere, nulpunktsjustere samt gemme data for målingen i en database. Systemet er udviklet som et færdigt produkt, der er muligt at teste udfra de givne rammer. 
 
 \section{Funktionelle krav}
-De funktionelle krav vil nedenstående beskrives ud fra aktør-kontekstdiagram, aktørbeskrivelse, Use Cases samt Use Case diagram. 
+De funktionelle krav vil beskrives ud fra aktør-kontekstdiagram, aktørbeskrivelse, Use Cases samt Use Case diagram. 
 
 \subsection{Aktør-kontekstdiagram}
 \begin{figure}[H]
@@ -30,8 +30,8 @@ De funktionelle krav vil nedenstående beskrives ud fra aktør-kontekstdiagram, 
 	\label{fig:aktoerbeskrivelse}
 \end{figure}
 
-Systemet består af en software- og en hardwaredel. Softwaredelen er udarbejdet i Visual Studio C\#. Hardwaredelen består af flere komponenter sat sammen. Tryktransducer, Instrumentationforstærker, et aktivt anden ordens lavpasfilter af typen Sallen-Key med unity gain og en DAQ. Det er selve systemet. \\
-Primæraktøren i dette projekt er en Forsker. Sekundære aktører er Database, Tryktransducer og Måleobjekt. Måleobjekt er en package af Physionet og Analog Discovery, som er eksterne aktører.   
+Systemet består af en software- og en hardwaredel. Softwaredelen er udarbejdet i Visual Studio C\#. Hardwaredelen består af flere komponenter sat sammen: Tryktransducer, instrumentationforstærker, et aktivt anden ordens lavpasfilter af typen Sallen-Key med unity gain og en DAQ. Dette er selve systemet. \\
+Primæraktøren i dette projekt er en Forsker. Sekundæraktørerne er Database, Tryktransducer og Måleobjekt. Måleobjekt kan være en package af PhysioNet og Analog Discovery. 
 
 \subsection{Aktørbeskrivelse}
 I Tabel 1.2 vil de forskellige aktører beskrives. 
@@ -73,7 +73,7 @@ I Tabel 1.2 vil de forskellige aktører beskrives.
 	\label{fig:Use case-diagram}
 \end{figure}
 
-Forskeren af systemet er den primære aktør i alle seks Use Cases. Det er Forskeren, der sætter alle Use Cases igang og styrer, hvad der skal ske og hvornår. Tryktransducer, som er en af de sekundære aktører, interagerer i Use Case 2. Tryktransduceren behandler tryk fra den anden sekundære aktør, Måleobjekt, og omformer det til et analogt signal. Blodtryksmålingen skal vises i Use Case 2. For at få gemt data interagerer den sekundære aktør Database med Use Case 6.  
+Forskeren af systemet er den primære aktør i alle seks Use Cases. Forskeren sætter alle Use Cases igang og styrer, hvad der skal ske og hvornår. Tryktransducer, som er en af de sekundære aktører, interagerer i Use Case 2. Tryktransduceren behandler tryk fra den anden sekundære aktør, Måleobjekt, og omformer det til et analogt signal. Blodtryksmålingen skal vises i Use Case 2. For at få gemt data interagerer den sekundære aktør, Database, med Use Case 6.  
 
 \subsection{Use Cases}
 
@@ -220,12 +220,12 @@ De ikke-funktionelle krav er specificeret ved brug af redskabet FURPS+, der stå
 
 \subsection{Functionality}
 \begin{itemize}
-	\item System skal kunne kalibreres. 
-	\item System skal kunne vise et kontinuert blodtrykssignal i Monitor-vinduet.
-	\item System skal kunne vise systole-, diastole- og pulsværdier med op til tre cifre.
-	\item System skal kunne vise et blodtrykssignal med og uden digitalt filter.
-	\item System skal kunne nulpunktsjustere blodtrykssignalet.
-	\item System skal kunne gemme en blodtryksmåling i en database.
+	\item Systemet skal kunne kalibreres. 
+	\item Systemet skal kunne vise et kontinuert blodtrykssignal i Monitor-vinduet.
+	\item Systemet skal kunne vise systole-, diastole- og pulsværdier med op til tre cifre.
+	\item Systemet skal kunne vise et blodtrykssignal med og uden digitalt filter.
+	\item Systemet skal kunne nulpunktsjustere blodtrykssignalet.
+	\item Systemet skal kunne gemme en blodtryksmåling i en database.
 \end{itemize}
 
 \subsection{Usability}
@@ -278,14 +278,14 @@ De ikke-funktionelle krav er specificeret ved brug af redskabet FURPS+, der stå
 \end{itemize}
 \textbf{Interface}
 \begin{itemize}
-	\item Blodtryksdiagrammet skal fylde minimum 1/3 af Monitor-vinduet.
+	\item Blodtryksgrafen skal fylde minimum 1/3 af Monitor-vinduet.
 	\item Baggrunden i Monitor-vinduet skal være mørk.
-	\item Blodtrykssignal og -værdier(systole og diastole) skal være røde, og puls skal være grøn.
-	\item Systolisk og diastolisk blodtryk skal fremhæves øverst i højre hjørne ved større skriftstørrelse end andre værdier i Monitor-vinduet eksempelvis værdier på akserne.
+	\item Blodtrykssignal og -værdier (systole og diastole) skal være røde, og puls skal være grøn.
+	\item Systolisk og diastolisk blodtryk skal fremhæves øverst i højre hjørne, med større skriftstørrelse end andre værdier i Monitor-vinduet, eksempelvis værdier på akserne.
 \end{itemize}
 
 \subsection{GUI}
-I det følgende afsnit vil der være indsat figurer af, hvorledes det ønskes, at brugergrænsefladerne skal designes. Brugergrænsefladen er bindeleddet mellem systemet og dets bruger. Her stilles krav til, at programmet skal være let anvendeligt, og designet med fokus på slutbrugeren. Yderligere specifikationer om designfasen af programmets brugergrænseflade kan findes i Projektdokumentationen under Design (X.X).
+I det følgende afsnit vil der være indsat figurer af, hvordan brugergrænsefladerne skal designes. Brugergrænsefladen er bindeleddet mellem systemet og dets bruger. Her stilles krav til, at programmet skal være let anvendeligt og designet med fokus på slutbrugeren. Yderligere specifikationer om designfasen af programmets brugergrænseflade kan findes i Projektdokumentationen under Design 2.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/Kalibrer2}

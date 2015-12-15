@@ -12,9 +12,9 @@
 \end{longtabu}
 
 \section{Systemarkitektur} 
-Igennem bdd og ibd vil det overordnede blodtryksmålesystem beskrives i forhold til hvilke hardwareblokke, systemet består af, og hvordan de interagerer med hinanden. 
+Igennem bdd og ibd vil det overordnede Blodtryksmålesystem beskrives i forhold til hvilke hardwareblokke, systemet består af, og hvordan de interagerer med hinanden. 
 
-\subsection{Bdd}
+\subsection{bdd}
 På Figur 2.1 ses bdd for systemet. Bdd viser de forskellige hardwareblokke for systemet og hvilke porte, de består af. I Tabel 2.2 ses en beskrivelse af blokkene. 
 
 \begin{figure}[H]
@@ -28,7 +28,7 @@ På Figur 2.1 ses bdd for systemet. Bdd viser de forskellige hardwareblokke for 
 	\textbf{Blok} &	\textbf{Beskrivelse} \\[-1ex]
 	\midrule
 	Blodtryksmåler & Det overordnede system, som indeholder Tryktransducer, Signalbehandling, DAQ og Computer.\\[-1ex]
-	Tryktransducer & Registrerer en fysisk størrelse i form af en trykændring. Tryktransduceren har til opgave at transformere den fysiske størrelse til en elektrisk spænding, som viderebehandles gennem de resterne hardware blokke.  \\[-1ex]
+	Tryktransducer & Registrerer en fysisk størrelse i form af en trykændring. Tryktransduceren har til opgave at transformere den fysiske størrelse til en elektrisk spænding, som viderebehandles gennem de resterende hardwareblokke.  \\[-1ex]
 	Signalbehandling & Består af to dele. En forstærkerdel og en filteringsdel. Det analoge signal fra Tryktransduceren bliver via denne blok forstærket og filteret.\\[-1ex]
 	DAQ & Konverterer det forstærkede og filterede analoge signal til et digitalt signal. Der er valgt et spændingsområde fra +/- 5 V.\\[-1ex]
 	Computer & Indeholder software til systemet, som er kodet i Visual Studio C\#. Softwaren kan blandt andet vise det digitale signal grafisk. Softwaren kan ligeledes kalibrere, nulpunktsjustere og gemme målinger samt aktivere og deaktivere filter.\\[-1ex]
@@ -36,7 +36,7 @@ På Figur 2.1 ses bdd for systemet. Bdd viser de forskellige hardwareblokke for 
 	\end{longtabu}
 	
 \subsection{ibd}
-På Figur 2.2 ses ibd for systemet. Ibd viser, hvordan de forskellige hardwareblokke interagerer med hinanden. Ibd fortæller signalets behandling gennem systemet - altså hvordan signalet transformeres fra et målt fysisk tryk til et digitalt signal, som softwaren kan viderebehandle og vise grafisk. 
+På Figur 2.2 ses et ibd for systemet. Ibd viser, hvordan de forskellige hardwareblokke interagerer med hinanden. Ibd fortæller signalets behandling gennem systemet - altså hvordan signalet transformeres fra et målt fysisk tryk til et digitalt signal, som softwaren kan viderebehandle og vise grafisk. 
 
 \begin{figure}[H]
 	\centering
@@ -58,7 +58,7 @@ P = Tryk\\
 K = sensitivitet\\
 $V_{+}$ = inputspænding\\
 
-For systemet er der valgt, at Tryktransducerens målbare område skal ligge i intervallet 0-300 mmHg. Den maksimale outputspænding bliver derfor udtrykt fra det maksimale tryk på 300 mmHg, sensitiviteten på 5 $\mu$ og inputspændingen på 5 V. Inputspændingen kommer reelt fra 9 V batterier, men der er valgt at indsætte en 5 V regulator, så man er sikker på, hvad inputspændingen er, da batterier er ustabile.  
+For systemet er der valgt, at Tryktransducerens målbare område skal ligge i intervallet 0-300 mmHg. Den maksimale outputspænding bliver derfor udtrykt ved det maksimale tryk på 300 mmHg, sensitiviteten på 5 $\mu$ og inputspændingen på 5 V. Inputspændingen kommer reelt fra 9 V's batterier, men der er valgt at indsætte en 5 V regulator, så man er sikker på, hvad inputspændingen er, da batterier kan være ustabile.  
 
 
 \begin{equation}
@@ -86,19 +86,19 @@ For systemet er der valgt, at Tryktransducerens målbare område skal ligge i in
 
 
 \section{Hardware arkitektur}
-Herunder er de krævede specifikationer for Signalbehandlingsblokken beskrevet. Tryktransducerens beskrives ligeledes, da denne har indflydelse for Forstærkerblokkens specifikationer. 
+Herunder er de krævede specifikationer for Signalbehandlingsblokken beskrevet. Tryktransduceren beskrives ligeledes, da denne har indflydelse for Forstærkerblokkens specifikationer. 
 
 \subsubsection{Tryktransducer}
-Tryktransduceren skal omsætte det fysiske tryk til en elektrisk spænding. Tryktransduceren har en meget høj common mode rejection samt en høj sensitivitet på 5 $\mu$V/V/mmHg +/- 1 \% \footnote{Se datablad for Tryktransduceren i bilag} , da de forventede trykændringer er små. Enheden for sensitiviteten angiver, hvor mange $\mu$V output, der kommer fra Tryktransduceren pr. antal V i Tryktransducerens eksitationsspænding pr. mmHg. For at være sikker på, at strømmen igennem Wheatstone broen ikke bliver for høj og dermed i sidst ende kan brænde strain gauges af, er der blevet valgt at indsætte en regulator, der omdanner eksitationsspænding fra 9 V batterier til 5 V. 
+Tryktransduceren skal omsætte det fysiske tryk til en elektrisk spænding. Tryktransduceren har en meget høj common mode rejection samt en høj sensitivitet på 5 $\mu$V/V/mmHg +/- 1 \% \footnote{Se datablad for Tryktransduceren i bilag} , da de forventede trykændringer er små. Enheden for sensitiviteten angiver, hvor mange $\mu$V output der kommer fra Tryktransduceren pr. antal V i Tryktransducerens eksitationsspænding pr. mmHg. For at være sikker på at strømmen igennem Wheatstone broen ikke bliver for høj, og dermed i sidst ende kan brænde strain gauges af, er der blevet valgt at indsætte en regulator, der omdanner eksitationsspænding fra 9 V batterier til 5 V. 
 
 \subsubsection{Forstærkerblok}
-Forstærkerblokken sørger for, at det meget svage spændingssignal fra Tryktransduceren bliver forstærket til en spænding, der ligger indenfor det måleinterval, der svarer til DAQ'en, som er valgt til +/- 5 V.
+Forstærkerblokken sørger for at det svage spændingssignal fra Tryktransduceren bliver forstærket til en spænding, der ligger indenfor det måleinterval, der svarer til DAQ'ens, som er valgt til +/- 5 V.
  
 \subsubsection{Filterblok}
 Filterets formål er at frasortere blodtrykssignalets frekvenser, der er højere end 50 Hz, da disse ikke har nogen relevans for blodtrykssignalet. Dette skal realiseres ved et anden ordens lavpasfilter. 
  
 \subsection{bdd}
-På Figur 2.3 ses bdd for Signalbehandlingsblokken, hvor Forstærkerblokkens og Filterblokkens input- og outputporte er vist.  
+På Figur 2.3 ses et bdd for Signalbehandlingsblokken, hvor Forstærkerblokkens og Filterblokkens input- og outputporte er vist.  
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/4}
@@ -107,7 +107,7 @@ På Figur 2.3 ses bdd for Signalbehandlingsblokken, hvor Forstærkerblokkens og 
 \end{figure}
 
 \subsection{Ibd}
-På Figur 2.4 ses ibd for Signalbehandlingsblokken. Ibd viser, hvordan Forstærkerblokken og Filterblokken interagerer med hinanden. 
+På Figur 2.4 ses et ibd for Signalbehandlingsblokken. Ibd viser, hvordan Forstærkerblokken og Filterblokken interagerer med hinanden. 
 
 \begin{figure}[H]
 	\centering
@@ -174,7 +174,7 @@ På Figur 2.4 ses ibd for Signalbehandlingsblokken. Ibd viser, hvordan Forstærk
 \section{Software arkitektur}
 
 \subsection{Domænemodel}
-Domænemodellen er skabt på baggrund af de seks Use Cases og fungerer som et middel til at skabe et samlet overblik over systemet. Gennem navneordsanalyse er de konceptuelle klasser fundet. I modellen beskrives, hvordan de konceptuelle klasser og aktører interagerer med hinanden. Controlleren er ikke en konceptuel klasse, men det er den, der sørger for, at systemet fungerer optimalt og udfører kommandoer.
+Domænemodellen er skabt på baggrund af de seks Use Cases og fungerer som et middel til at skabe et samlet overblik over systemet. Gennem navneordsanalyse er de konceptuelle klasser fundet. I modellen beskrives, hvordan de konceptuelle klasser og aktører interagerer med hinanden. Controlleren er ikke en konceptuel klasse, men den sørger for, at systemet fungerer optimalt og udfører kommandoer.
 
 \begin{figure}[H]
 	\centering
@@ -186,7 +186,7 @@ I domænemodellen ses generelle principper om kommunikation mellem klasser og ak
 \subsection{Applikationsmodel}
 
 \subsubsection{Sekvensdiagram}
-Sekvensdiagrammerne beskriver step-by-step, via metoder, forløbet i de forskellige Use Cases. Der er lavet et sekvensdiagram for hver Use Case for at gøre systemet mere overskueligt. Et sekvensdiagram består af boundary-klasserne og domain-klasserne fra domænemodellen, samt en controller-klasse, med navn efter den specifikke Use Case.
+Sekvensdiagrammerne beskriver step-by-step forløbet i de forskellige Use Cases via metoder. Der er lavet et sekvensdiagram for hver Use Case for at gøre systemet mere overskueligt. Et sekvensdiagram består af boundary-klasserne og domain-klasserne fra domænemodellen, samt en controller-klasse, med navn efter den specifikke Use Case.
 
 \begin{figure}[H]
 	\centering
@@ -194,7 +194,7 @@ Sekvensdiagrammerne beskriver step-by-step, via metoder, forløbet i de forskell
 	\caption{Sekvensdiagram for Use Case 1}
 \end{figure}
 
-Forsker interagerer med Monitor-vindue. Kalibreringsmetoden bliver kaldt, når Forsker trykker på knappen ”Ja”. Derefter igangsættes kalibreringen og kalibrerings-tidspunkt og værdi sendes og gemmes i Databasen. 
+Forsker interagerer med Monitor-vindue. Kalibreringsmetoden bliver kaldt, når Forsker trykker på knappen ”Ja”. Derefter igangsættes kalibreringen og kalibrerings-tidspunkt, og værdi sendes og gemmes i Databasen. 
 
 \begin{figure}[H]
 	\centering
@@ -202,7 +202,7 @@ Forsker interagerer med Monitor-vindue. Kalibreringsmetoden bliver kaldt, når F
 	\caption{Sekvensdiagram for Use Case 2}
 \end{figure}
 
-Controller henter data fra Tryktransducer, som henter data i form af tryk fra Måleobjekt. Datafilerne sendes fra Måleobjekt via Tryktransducer tilbage til Controller, der kalder metoden. Monitor-vindue opdateres, og herefter kan Forsker aflæse blodtryk. 
+Controller henter data fra Tryktransducer, som henter data i form af tryk fra Måleobjekt. Datafilerne sendes fra Måleobjekt via Tryktransducer tilbage til Controller, der kalder en metode. Monitor-vinduet opdateres, og herefter kan Forsker aflæse blodtryk. 
 
 \begin{figure}[H]
 	\centering
@@ -210,7 +210,7 @@ Controller henter data fra Tryktransducer, som henter data i form af tryk fra M�
 	\caption{Sekvensdiagram for Use Case 3}
 \end{figure}
 
-Forsker interagerer med Monitor-vindue ved at trykke på knappen ”Nulpunktsjustér”. Derefter kaldes metoden, og nulpunktsjusteringen startes. Tidspunktet og værdien for nulpunktjusteringen sendes og gemmes i Databasen, hvorefter Forsker får besked om, at nulpunktsjusteringen er foretaget. 
+Forsker interagerer med Monitor-vinduet ved at trykke på knappen ”Nulpunktsjustér”. Derefter kaldes en metode, og nulpunktsjusteringen startes. Tidspunktet og værdien for nulpunktjusteringen sendes og gemmes i Databasen, hvorefter Forsker får besked om, at nulpunktsjusteringen er foretaget. 
 
 \begin{figure}[H]
 	\centering
@@ -218,7 +218,7 @@ Forsker interagerer med Monitor-vindue ved at trykke på knappen ”Nulpunktsjus
 	\caption{Sekvensdiagram for Use Case 4}
 \end{figure}
 
-Forsker interagerer med Monitor-vindue ved at markere i radiobutton ”Deaktivér digitalt filter”. Derefter kaldes metoden, og filteret deaktiveres, hvorefter signalet bliver udskrevet ufiltreret.
+Forsker interagerer med Monitor-vinduet ved at markere "Off"\--radiobutton under "Filter". Derefter kaldes en metode, og filteret deaktiveres, hvorefter signalet bliver udskrevet ufiltreret.
 
 \begin{figure}[H]
 	\centering
@@ -226,7 +226,7 @@ Forsker interagerer med Monitor-vindue ved at markere i radiobutton ”Deaktivé
 	\caption{Sekvensdiagram for Use Case 5}
 \end{figure}
 
-Forsker interagerer med Monitor-vindue ved at markere i radiobutton ”Aktivér digitalt filter”. Derefter kaldes metoden, og filteret aktiveres, hvorefter signalet bliver udskrevet filtreret.
+Forsker interagerer med Monitor-vinduet ved at markere "On"\--radiobutton under "Filter". Derefter kaldes en metode, og filteret aktiveres, hvorefter signalet bliver udskrevet filtreret.
 
 \begin{figure}[H]
 	\centering
@@ -234,4 +234,4 @@ Forsker interagerer med Monitor-vindue ved at markere i radiobutton ”Aktivér 
 	\caption{Sekvensdiagram for Use Case 6}
 \end{figure}
 
-Forsker interagerer med Monitor-vindue ved at trykke på knappen ”Gem”. Derefter kaldes metoden og Gem-vinduet åbnes. Første gang Forsker ønsker at gemme, indtastes data om målingen og der trykkes på knappen ”OK”. Kommando sendes og data gemmes. De efterfølgende gange, der ønskes at gemme, er data udfyldt fra første gang, og der trykkes blot på ”OK”, hvorefter kommandoen sendes. Data gemmes og Gem-vinduet lukkes. Controller bekræfter til Monitor-vindue, at data er gemt.
+Forsker interagerer med Monitor-vinduet ved at trykke på knappen ”Gem”. Derefter kaldes en metode og Gem-vinduet åbnes. Når Forsker ønsker at gemme, indtastes data om målingen og der trykkes på knappen ”OK”. Kommando sendes og data gemmes. Controller bekræfter til Gem-vinduet, at data er gemt.

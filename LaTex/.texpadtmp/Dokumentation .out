@@ -16,7 +16,7 @@
 \BOOKMARK [2][-]{subsection.1.4.7}{GUI}{section.1.4}% 16
 \BOOKMARK [0][-]{chapter.2}{Design}{}% 17
 \BOOKMARK [1][-]{section.2.1}{Systemarkitektur}{chapter.2}% 18
-\BOOKMARK [2][-]{subsection.2.1.1}{Bdd}{section.2.1}% 19
+\BOOKMARK [2][-]{subsection.2.1.1}{bdd}{section.2.1}% 19
 \BOOKMARK [2][-]{subsection.2.1.2}{ibd}{section.2.1}% 20
 \BOOKMARK [1][-]{section.2.2}{Gr\346nseflader}{chapter.2}% 21
 \BOOKMARK [1][-]{section.2.3}{Hardware arkitektur}{chapter.2}% 22
@@ -41,7 +41,7 @@
 \BOOKMARK [2][-]{subsection.4.1.1}{Datalag}{section.4.1}% 41
 \BOOKMARK [2][-]{subsection.4.1.2}{Logiklag}{section.4.1}% 42
 \BOOKMARK [2][-]{subsection.4.1.3}{Pr\346sentationslag}{section.4.1}% 43
-\BOOKMARK [2][-]{subsection.4.1.4}{Datamodel Laget}{section.4.1}% 44
+\BOOKMARK [2][-]{subsection.4.1.4}{Datamodellaget}{section.4.1}% 44
 \BOOKMARK [2][-]{subsection.4.1.5}{Metodebeskrivelser}{section.4.1}% 45
 \BOOKMARK [1][-]{section.4.2}{Test}{chapter.4}% 46
 \BOOKMARK [2][-]{subsection.4.2.1}{Use Case 1: Kalibrer}{section.4.2}% 47
