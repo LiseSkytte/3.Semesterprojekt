@@ -6,15 +6,31 @@
 
 % Logbog for den 21-09-2015\section{Dato: 21-09-2015 }\hrule\textbf{Omhandler:} Kravspecifikation\textbf{Ansvarlig:} Lise, Nina, Annsofie, Toke, Anders og Jakob\textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Kravspecifikation\end{itemize}Vi vil implementere systole og diastole på vores blodtryksmåler.\\En knap i GUI'en til at bestemme om filteret skal være aktivt eller passivt.\\En knap i GUI'en til at kalibrere.\\En 'Start/record'-knap der også optager lyd de første 30 sek. eks.\\EN 'Start'-knap til at starte blodtryksmåling.\\Vi dropper login funktionen.\\Vi talte om en form for talefunktion, der optager når lægen råber patientens informationer op. Den lydfil skal så kobles til den blodtryksmåling, som foretages fx. i ambulancen. \\Vi skal have defineret: System, borger, UI
 
+% Logbog for den 21-09-2015\section{Dato: 21-09-2015 }\hrule\textbf{Omhandler:} Hardware\textbf{Ansvarlig:} Toke \textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Hardware\end{itemize}
+
+Udarbejdelse af teorien omkring Sallen Key-filteret. De ønskede komponentværdier blev udregnet ud fra overføringsfunktionen sammen med de krav, der var til filteret. Dette resultat testede vi på hjemmesiden:  http://sim.okawa-denshi.jp/en/OPseikiLowkeisan.htm. Ud fra kondensatorer på 680 nF og modstande på 4,7 kΩ fik vi udregnet cutoff-frekvensen på hjemmesiden til 50 Hz. Vores udregninger blev derved verificeret.
 
 
 % Logbog for den 23-09-2015\section{Dato: 23-09-2015 }\hrule\textbf{Omhandler:} Kravspecfikation \textbf{Ansvarlig:} Lise, Nina, Annsofie, Toke, Anders og Jakob\textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Definationer	\item Aktør-kontekst diagram	\item Use Case diagram	\item Use Case forløb\end{itemize}Ordliste:\\ Use Case 1 = UC1 \\PhysioNet + Analog-Discovery = Borger, som er en Package \\Analog-Discovery = AD \\Der er blevet lavet et udkast til AK og UC-diagram. \\Vi har en Bruger som primær aktør. Vi har lavet en package med PhysioNet og AD, som repræsentere Borger. DAQ er en sekundær aktør, der påvirker Borger. Databasen er også en sekundær aktør. Vision for BT-måler:\\Apparatet skal være fungerende som en "normal" BT-måler med mulighed for visning af kontinuerligt BT med/uden filter. Derudover skal der være mulighed for at optage lydsekvenser direkte på apperatet som kan bruges som metadata til målingen, uden at bruger skal indtaste data på UI. Dette skal implementeres i en Rec. knap der tænder for mikrofonen og optagen en lydsekvens på f.eks. 30 sek, og derefter slukker. Denne lydsekvens kunne bruges til at dokumentere information om Borger. Disse kunne være alder, køn, traume, ABCDE (førsthjælp), mv. på Borger der monitoreres. \\Når blodtryksmålingen gemmes på database eller fil, bliver lydsekvensen gemt sammen med denne. Dette kan anvendes til forskning senere. Vi ønsker også at vis dia/sys i UI. 
 
 
+
+
+% Logbog for den 23-09-2015\section{Dato: 23-09-2015 }\hrule\textbf{Omhandler:} Hardware\textbf{Ansvarlig:} Toke\textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Hardware\end{itemize}
+
+Udarbejdelse af teorien omkring instrumentationsforstærkeren. Vi fandt det maksimale output, vi kunne pådutte systemet ud fra trykket samt den maksimale forstærkning og eksitationsspændingen. Ud fra denne værdi på 13,5 mV fandt vi at vores gain var 370. Til slut fandt vi båndbredden ud fra gain på 370. Denne skulle være over 50 Hz, hvilket den var. 
 	
+
+
 
 % Logbog for den 29-09-2015\section{Dato: 29-09-2015 }\hrule\textbf{Omhandler:} Kravspecifikation \textbf{Ansvarlig:} Alle \textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}\item Lave UC's om samt AK- og UC-diagammer\end{itemize}Efter mødet med Peter i torsdags måtte vi indse, at ideen med optagelse ikke var nogen god ide - eller Peter mente i hvert fald ikke, det var nødvendigt. Han vil meget heller have, at vi kigger forskningsbaseret på opgaven og holder os indenfor de krav, der er stillet til projektet.\\Derfor er vi gået over til, at holde det til kravene. Derfor har vi udarbejdet nogle nye UC's - der er kommet 5 indtil videre. \begin{itemize}	\item Vis måling 	\item Kalibrer	\item Nulpunktjustér 	\item Aktivér digitalt filter	\item Gem \end{itemize}Disse fik vi udformet og aftalte at mødes i morgen igen, for at få alle de ikke-funktionelle krav og AT. \\Anders og Lise gik lidt igang med at kigge på hardwarddelen. Altså har siddet også udregnet lidt på, hvad det er for nogle komponentværdier, vi skal arbejde med for at designe vores lavpasfiltre.  
 
+
+
+% Logbog for den 29-09-2015\section{Dato: 29-09-2015 }\hrule\textbf{Omhandler:} Hardware\textbf{Ansvarlig:} Toke\textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Hardware\end{itemize}
+	
+Opbygning af filteret på fumlebrættet ud fra udregnede komponentværdier. \\Test af filteret med Analog Discovery med forskellige frekvenser for at se om signalet blev ordentligt dæmpet. \\Test ved cutoff-frekvensen på 50 Hz, hvor signalet skulle være dæmpet med 3 dB.\\Dette gav ikke de rigtige resultater, og vi testede derfor med nye komponentværdier for at undersøge effekten af disse på filteret. 
+	
 	
 	
 % Logbog for den 30-09-2015\section{Dato: 30-09-2015 }\hrule\textbf{Omhandler:} Kravspecifikation og Accepttest  \textbf{Ansvarlig:} Alle \textbf{Logbog}\\
@@ -42,12 +58,26 @@ Lavede lige hurtig lidt brødtekst til indledning, AK-diagram samt UC-diagram.
 \textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Review af gruppe 2's KS og AT	\item Udvikling af tidsplan	\item Videreudvikling af hardware\end{itemize}Der er blevet lavet review af gruppe 2's KS og AT, og givet kommentarer hertil. \\Der er i gruppen blevet udarbejdet en tidsplan, hvori deadlines fra IHA er inkluderet for accepttest, kravspecifikation, design, accepttest med vejleder aflevering. Dertil har gruppen selv tilføjet en række deadlines for software, hardware, rapportskrivning, dokumentation og korrekturlæsning. Alle deadlines er lagt ind i en tabel for at skabe overblik, således at tidsplanen kan benyttes som pejlmærke for hvad vi skal lave og hvornår.\\Der er desuden blevet udarbejdet en detaljeret tidsplan, hvor vi beskriver det grundlæggende for udviklingsprocessen.\\Anders og Toke arbejdede videre med hardware delen på fumlebrættet.Forsøger at aftale et møde med Peter mandag eller tirsdag efter kl. 12.00 i uge 43.
 	
 	
+	
+% Logbog for den 06-10-2015\section{Dato: 06-10-2015 }\hrule\textbf{Omhandler:} Hardware\textbf{Ansvarlig:} Toke\textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Hardware\end{itemize}
+	
+Opbygning af forstærker på fumlebræt ud fra udregnede komponentværdier. \\Påsætning af Gain-modstand (modstande i serie) og analyse af resultaterne i Analog Discovery. \\Da resultaterne ikke passede fik vi hjælp omkring INA114 operationsforstærkeren. Herefter opbyggede vi forstærkeren igen, hvor vi benyttede to 9 V batterier i stedet for ét. \\Vi fik bedre resultater af dette, og kan gå videre med dette til næste gang.
+	
+	
+	
 
 % Logbog for den 08-10-2015\section{Dato: 08-10-2015 }\hrule\textbf{Omhandler:} Review af kravspecifikation og accepttest \textbf{Ansvarlig:} Alle\textbf{Logbog}\\
 \\
 \textbf{Dagsorden:}\begin{itemize}	\item Overskrift til versionshistorik	\item AK - bruger og borger ligger tæt op af hinanden (brug evt. forsker eller lignende.	\item Specificere at det kun er prototype, således at 'borger' giver mening.	\item Mangler lidt til fremtiden - hvem skal den kunne bruges til der?	\item Der er uklarhed mht det digitale filter. Specielt i UC2.	\item UC5 rager der også uklarhed.	\item UC3: mangler en afslutning - det fremgår af GUI at ...	\item UC6: lidt uklarhed omkring stjernen i samtidig forløb	\item Sidehoved er blevet genbrugt - HUSK AF ÆNDRE DET!	\item Undtagelse: UC6 forsættes ved punkt 6***	\item Lidt forvirret over interfacet. Hvor mange grafer bliver der vist? 	\item Punkt 4 i Interface: Lidt uklart hvor tallene bliver vist?	\item Der er stor forvirring omkring 2.2 og specielt under Andet+	\item Lav vores test af kalibrering lidt mere idiotsikker. \end{itemize}Vi rettede efterfølgende de ting, som vi mente skulle rettes.
 
 	
+	
+	
+% Logbog for den 15-10-2015\section{Dato: 15-10-2015 }\hrule\textbf{Omhandler:} Software\textbf{Ansvarlig:} Anders og Toke\textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Software\end{itemize}
+
+Oprettelse af nyt projekt. Forsøg med indlæselse af data fra DAQ, og udskrivning på simpel graf, altsammen i enkelt klasse.  
+
+
 
 
 % Logbog for den 19-10-2015\section{Dato: 19-10-2015 }\hrule\textbf{Omhandler:} Design \textbf{Ansvarlig:} Annsofie, Nina, Jakob og Lise
@@ -56,6 +86,22 @@ Lavede lige hurtig lidt brødtekst til indledning, AK-diagram samt UC-diagram.
 	\item Videreudvikling af hardwaredelen\end{itemize}Der er blevet startet på BDD diagrammet for systemet + beskrivelsen. Ikke færdiggjort.\\
 Der blevet lavet udkast for SD i generel form til samtlige use cases. 
 
+
+
+
+% Logbog for den 19-10-2015\section{Dato: 19-10-2015 }\hrule\textbf{Omhandler:} Hardware\textbf{Ansvarlig:} Toke\textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Hardware\end{itemize}
+
+Vi arbejdede videre med filteret og testede dette med nye komponentværdier. Vi testede med kondensatorer på 680 nF og med modstande på 3 kΩ, for at se om dette gav bedre resultater i praksis. \\Den nye opstilling gav bedre resultater ved analyse af cutoff frekvensen, men ulempen er, at den ikke stemmer overens teoretisk. Ud fra de komponentværdierne fås ikke en cutoff frekvens på cirka 50 Hz (krav). \\Vi testede hele systemet og udførte dokumentation ud fra de visuelle resultater fra Analog Discovery. \\Vi samlede resultaterne ud fra komponentværdier hvor den teoretiske cutoff frekvens passer og hvor den i praksis passer.
+
+
+
+
+% Logbog for den 19-10-2015\section{Dato: 19-10-2015 }\hrule\textbf{Omhandler:} Software\textbf{Ansvarlig:} Anders og Toke\textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Software\end{itemize}
+
+Oprettelse af 3-lags modellen, med Monitor-klasse, DAQ-klasse, DataHent-klasse og beregninger klasse.
+Data kan indhentes fra DAQ vha. NI "black box" kode.
+Forsøg med udskrivning på graf, og hvilke C\# matoder der skal bruges for at få mest gnidningfri udskrivning.
+Alle sampleværdier kan ikke udskrives uden "lag" Det vælges at udskrive hver 50'ende indtil videre.
 
 
 
@@ -72,6 +118,27 @@ I morgen skal vi hele gruppe side og snakke om sekvensdiagrammerne, så vi blive
 	
 	
 	
+	
+% Logbog for den 20-10-2015\section{Dato: 20-10-2015 }\hrule\textbf{Omhandler:} Hardware\textbf{Ansvarlig:} Toke\textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Hardware\end{itemize}
+	
+Vi fortsatte med enhedstest og fokuserede på forstærkningen. \\Vi havde et kort møde med vores vejleder, da vi havde problemer med cutoff-frekvensen (se logbog d. 19/10-15). \\Vi testede igen og resultaterne var bedre, men de gav stadig ikke de ønskede resultater. Der er muligvis være noget usikkerhed i komponenterne, som vi skal teste på og dokumentere. 
+	
+	
+	
+	
+% Logbog for den 21-10-2015\section{Dato: 21-10-2015 }\hrule\textbf{Omhandler:} Hardware\textbf{Ansvarlig:} Toke\textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Hardware\end{itemize}
+	
+Dokumentering af lavpasfilteret samt forstærkeren. Vi indsatte et potentiometer på 220 Ω i stedet for de modstande vi havde i serie. Herved kan vi få præcis den gain-modstand vi ønsker. \\Vi lavede beregninger med de komponenter vi har i praksis og sammenlignede disse med de teoretiske. \\Vi foretog enhedstest af filteret og forstærkeren og dokumenterede resultaterne med billeder fra Analog Discovery. 
+	
+	
+	
+	
+% Logbog for den 26-10-2015\section{Dato: 26-10-2015 }\hrule\textbf{Omhandler:} Software\textbf{Ansvarlig:} Anders og Toke\textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Software\end{itemize}
+
+Opbygning af Monitor-vindue, hvor signalet vises og Forsker kan aktivere filter samt lave nulpunktsjustering. \\Textboxe og labels er indsat så det diastoliske- og systoliske blodtryk kan udskrives. Der er dog ikke kodet noget til dette. \\Indhentning af signal, hvor vi arbejdede med at vise dette ud fra de givne krav. Signalet vises kontinuerligt og fjernes efter 7 sekunder hvorefter det udskrives igen. \\Vi kunne ikke få grafen til at ”spise sin hale”, men kun vise i en ny graf vha. en Clear-funktion. 
+
+
+
 
 % Logbog for den 27-10-2015\section{Dato: 27-10-2015 }\hrule\textbf{Omhandler:} Rettelse af use cases, ak-diagram og kravspec\textbf{Ansvarlig:} Jakob, Toke, Nina, Annsofie, Lise 
 
@@ -86,20 +153,6 @@ Der blev opdateret use case diagrammer, aktør kontekst diagram og tilføjet et 
 Vi begyndte på domænemodellen og fik lavet et solidt udgangspunkt til klassediagrammet. 
 \\
 Vi mangler stadig at opdatere nogle de ikke-funktionelle krav ift. de GUI krav vi gerne vil have. Tjek mødereferat fra 26.10.15.
-
-
-
-
-% Logbog for den 28-10-2015
-\section{Dato: 28-10-2015 }\hrule\textbf{Omhandler:} Anders har fået Texpad til at virke. \textbf{Ansvarlig:} Anders
- \textbf{Logbog}
-\\
-\\\textbf{Dagsorden:}
-\begin{itemize}
-	\item Nu skal der skrives logbøger.
-\end{itemize} 
-
-Dag 28. Jeg har omsider fået Texpad til at typesette. Dette medfører at jeg kan skrive logbog. Dette er et lille skidt for én mand, men et stort skridt for semesterprojektgruppen.
 
 
 
@@ -136,11 +189,31 @@ Der er lavet en versionshistorik for designfasen.
 
 
 
+% Logbog for den 04-11-2015\section{Dato: 04-11-2015 }\hrule\textbf{Omhandler:} Software\textbf{Ansvarlig:} Anders og Toke\textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Software\end{itemize}
+
+Opbygning af strukturen omkring trelagsmodellen. \\Oprettelse af DTOblodtryk, som omdanner spænding og samples til mmHg og sekunder. \\Oprettelse af Gem-vinduet, hvor Forsker kan indtaste oplysning (metadata) og gemme dette i Databasen. 
+Oprettelse af DataGem klasse der gemmer til DB.
+Oprettelse af funktioner der kan skrive til textfiler, mhp at gemme fremtidige kalibrerings/nulpunktsdata.
+
+
+
+
+% Logbog for den 09-11-2015\section{Dato: 09-11-2015 }\hrule\textbf{Omhandler:} Software\textbf{Ansvarlig:} Anders og Toke\textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Software\end{itemize}
+
+Oprettelse af (rå)dataoverførsel vha publisher/subscriber pattern. Arbejde med tilpasning af monitor visuelle udsende, Der vises 4 sekunder ad gangen.
+
+
 % Logbog for den 12-11-2015
 \section{Dato: 12-11-2015 }\hrule\textbf{Omhandler:} Review \textbf{Ansvarlig:} Lise, Annsofie, Nina, Toke, Anders og Jakob
 \textbf{Logbog}\\\\
 \textbf{Dagsorden:}\begin{itemize}	\item Rettelser af design efter review
 \end{itemize}
+
+
+
+% Logbog for den 12-10-2015\section{Dato: 12-10-2015 }\hrule\textbf{Omhandler:} Software\textbf{Ansvarlig:} Anders og Toke\textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Software\end{itemize}
+
+Oprettelse af metoder der udregner systolisk og diastolisk blodtryk.
 
 
 
@@ -171,13 +244,18 @@ Vi har desuden fået skabt et overblik over hvilke "små" ændringer der skal la
 
 
 
+% Logbog for den 17-10-2015\section{Dato: 17-10-2015 }\hrule\textbf{Omhandler:} Software\textbf{Ansvarlig:} Anders og Toke\textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Software\end{itemize}
+
+Oprydning af kode. Arbejde med bedre viaualisering af udskrevne data. 
+
+
+
 % Logbog for den 01-12-2015\section{Dato: 01-12-2015 }\hrule\textbf{Omhandler:} Rapport\textbf{Ansvarlig:} Lise\textbf{Logbog}\\
 \\Rapport dokumentet er blevet oprettet med de forskellige afsnit den skal indeholde. 
 
 
 % Logbog for den 02-12-2015\section{Dato: 02-12-2015 }\hrule\textbf{Omhandler:} \textbf{Ansvarlig:} Nina, Lise, Annsofie, Toke, Anders og Jakob\textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Ret use case navne mv.
-	\item Lav sq diagrammer til software design
-	\item \end{itemize}
+	\item Lav sq diagrammer til software design\end{itemize}
 
 SE LOGBOG 17-11-2015 \\
 Vi har fået rettet BDD, IBD, Grænseflader(2.2 og 2.33), tekst til kondensator (på lager), filter/forstærkerblok, indgangsimpedans og test af forstærkerblok.
@@ -187,6 +265,13 @@ Vi har forsøgt at realisere vores hardware fra fumlebræt til hul-board. Dette 
 Vi har rettet UC6 og dertil hørende accepttest. \\
 Der er blevet begyndt på software sq diagrammer, og der er blevet programmeret på nulpunktsjusterings funktionen. \\
 Der er lavet ændringer i vores GUI pga. rettelser i UC6 efter møde med Peter.
+	
+	
+
+
+% Logbog for den 01-12-2015\section{Dato: 01-12-2015 }\hrule\textbf{Omhandler:} Software\textbf{Ansvarlig:} Anders og Toke\textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Software\end{itemize}
+
+Arbejde med kalibrering. Metode til udregning af kalibreringkonstant oprettet. Denne skal ganges på rådatamålinger i volt, for at sørge for den korrekte stigning.
 	
 	
 	
@@ -199,7 +284,15 @@ Vi skal have kigget på beregninger til implementering af hardware, da vi har p�
 Med et ændret input fra 9V til 5V, vil der også været et ændret max antal mV fra de tidligere 13,5 mV til ca. 7,5 mV. Kig nærmere på alle de beregninger der knytter sig til det.
 
 
+
+
+% Logbog for den 03-12-2015\section{Dato: 03-12-2015 }\hrule\textbf{Omhandler:} Software\textbf{Ansvarlig:} Anders og Toke\textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Software\end{itemize}
+
+Oprettelse af nulpunktsjusteringsmetode. Denne måler gennemsnitsspændingen for det seneste sekund, omregner til mmHg og trækker fra udskrevne værdier.
+Implementering af digitalf FIR filter med 10 filterkefficienter.
 	
+
+
 	
 % Logbog for den 07-12-2015\section{Dato: 07-12-2015 }\hrule\textbf{Omhandler:} Færdiggørelse af produkt\textbf{Ansvarlig:} Nina, Lise, Annsofie, Toke, Anders og Jakob\textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Færdiggøre hardware
 	\item Færdiggøre software
@@ -209,6 +302,12 @@ Vi har fået testet på vores vero-board, og det er nu klar til at blive impleme
 Der er blevet skrevet videre på baggrundsafsnittet - herunder om wheatstonebridge.
 
 
+
+% Logbog for den 07-12-2015\section{Dato: 07-12-2015 }\hrule\textbf{Omhandler:} Software\textbf{Ansvarlig:} Anders og Toke\textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Software\end{itemize}
+
+Arbejde med gemning på DB. Der er problemer med at få overført data til DataGem laget. Alt andet en selve målingen bliver gemt. 
+Omskrivning af publisher/subscriber pattern, med generelle klasser. DataGem laget har nu adgang til liste der skal gemmes. Gemning fungerer.
+SW lever op til accepttest. Fremtidig arbejde er småjusteringer.
 	
 	
 % Logbog for den 08-12-2015\section{Dato: 08-12-2015 }\hrule\textbf{Omhandler:} Pre-accepttest\textbf{Ansvarlig:} Nina, Lise, Annsofie, Toke, Anders og Jakob\textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Gennemgang af Use cases og accepttest
@@ -234,6 +333,12 @@ Vi er klar til, at arbejde videre med rapporten imorgen og de næste mange dage.
 
 
 	
+% Logbog for den 09-12-2015\section{Dato: 09-12-2015 }\hrule\textbf{Omhandler:} Software\textbf{Ansvarlig:} Anders og Toke\textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Software\end{itemize}
+
+
+Oprydning i kode, små visuelle justeringer på gem vindue mm.
+
+
 	
 % Logbog for den 10-12-2015\section{Dato: 10-12-2015 }\hrule\textbf{Omhandler:} Videre arbejde med rapport\textbf{Ansvarlig:} Nina, Lise, Annsofie, Toke, Anders og Jakob\textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Indledning
 	\item Resumé
@@ -294,10 +399,27 @@ Der skal kigges på indledning.
 	
 	
 	
+<<<<<<< Updated upstream
 % Logbog for den 14-12-2015\section{Dato: 14-12-2015 }\hrule\textbf{Omhandler:} Rettelse af rapport samt dokumentationen\textbf{Ansvarlig:} Nina, Lise, Annsofie, Toke, Anders og Jakob\textbf{Logbog}\\
 Der er i dag blevet rettet projektrapport og projektdokumentation igennem, så den er klar til aflevering d. 16/12-2015. 
+=======
+% Logbog for den 14-12-2015\section{Dato: 14-12-2015 }\hrule\textbf{Omhandler:} Rapportskrivning\textbf{Ansvarlig:} Nina, Lise, Annsofie, Toke, Anders og Jakob\textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Resultater og diskussion
+	\item Opnåede erfaringer
+	\item Fremtidigt arbejde
+	\item Design, implementering og test af software(rapport)
+	\item Referenceliste
+	\item Ordliste\end{itemize}
+>>>>>>> Stashed changes
 	
-	
-	
-	
+Vi har idag fået skrevet rapporten færdig og mangler nu kun at læse korrektur på den og dokumentationen.
 
+	
+	
+	
+<<<<<<< Updated upstream
+
+=======
+% Logbog for den 15-12-2015\section{Dato: 15-12-2015 }\hrule\textbf{Omhandler:} Korrekturlæsning af rapport og dokumentation\textbf{Ansvarlig:} Nina, Lise, Annsofie, Toke, Anders og Jakob\textbf{Logbog}\\\\\textbf{Dagsorden:}\begin{itemize}	\item Korrekturlæsning\end{itemize}
+
+Vi har idag fået rettet hele rapporten og dokumentationen igennem og vi er nu færdige med 3. semesterprojekt!
+>>>>>>> Stashed changes
