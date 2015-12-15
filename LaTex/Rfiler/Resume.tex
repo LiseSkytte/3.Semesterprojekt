@@ -1,6 +1,10 @@
 \chapter{Resumé}
-Problemstillingen i dette projekt omfatter en udarbejdelse af et program, der har til formål at vise en kontinuerlig blodtrykskurve på en computerskærm. Der er udarbejdet et blodtryksmålesystem, der kan måle blodtrykket invasivt ved at tilslutte et væskefyldt kateter til patientens arterie. Systemet indeholder et elektronisk kredsløb, som forstærker signalet fra en tryktransducer og filtrerer det med et indbygget analogt filter. Derudover indeholder det et program, der har til formal at vise blodtrykskurven som funktion af tiden. Desuden skal løsningen kunne gemme data i en database, samt foretage kalibrering og nulpunktjustering.\\\\
-Det udviklede produkt består af software, udviklet i Visual Studio efter trelagsmodellen, samt hardware i form af en tryktransducer, forstærker og DAQ. 
-Den endelige løsning har resulteret i software, som kan vise en blodtrykskurve kontinuerligt over et interval på 4 sekunder og gemme det i en database. Løsningen er derudover i stand til at filtrere blodtrykket i selve programmet via et digitalt filter, som kan slås til og fra. Ydermere er brugergrænsefladen designet brugervenligt ud fra medicotekniske standarder.\\\\
-Gennem en række tests er det konkluderet, at systemet er i stand til at vise en blodtrykskurve kontinuerligt, samt vise systole-, diastole- og pulsværdier med tal. Derudover er det konkluderet, at systemet kan gemme data i en database.
+Projektet tager udgangspunkt i problemstillingen om at kunne monitorere et blodtrykssignal invasivt. Invasive blodtryksmålinger bliver til hverdag benyttet under operationer samt hos svært syge patienter på intensiv afdelinger. 
 
+I dette projekt skal der udvikles et blodtryksmålesystem, der kontinuerligt kan vise en blodtrykskurve på en monitor. Blodtryksmålesystemet skal udover den kontinuerlige visningen kunne kalibreres, nulpunktjusteres, kunne anvende digitalt filter samt gemme data om målingen i en database. 
+
+Projektet består af en softwaredel, der skal løse de funktionelle krav for blodtryksmålesystemet. Før blodtrykssignalet kommer i kontakt med softwaren, skal signalet behandles af forskellige hardwareelementer. Der er blevet udleveret en A/D konverter og en tryktransducer ved projektets start. Signalet skal ydermere forstærkes og filtreres i en Signalbehandlingsblok, som gruppen selv designer og realiserer på veroboard.
+
+Signalbehandlingsblokken behandler det analoge signal fra tryktransduceren som ønsket. Softwaredelen er blevet udviklet i Visual Studio og opfylder de opstillede krav for blodtryksmålesystemet. 
+
+Det udviklede blodtryksmålesystem er gennem hele processen blevet testet. Hardware og software er blevet testet hver for sig via unittest og integrationstest. Systemet er som enhed blevet testet ved udførsel af accepttest. Blodtryksmålesystemet er blevet afprøvet på forskellige måleobjekter, både via simulerede blodtryksmålinger fra PhysioNet, via en In Vitro hjertemodel og til slut på en levende gris.
