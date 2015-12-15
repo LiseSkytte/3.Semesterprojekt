@@ -1,5 +1,5 @@
 \chapter{Krav}
-Dette afsnit har til formål at beskrive, hvilke krav der er til systemet, og skabe et overordnet overblik over rammerne for systemet. \\Med udgangspunkt i projektformuleringen, er der udarbejdet seks Use Cases, som repræsenterer de funktionelle krav for systemet. Hver Use Case dækker over et givet krav og beskriver brugerens interaktion med systemet. Samlet dækker de seks Use Cases over systemets funktionalitet.\\Systemets primære funktionalitet beskrives ved Use Case 2, Use Case 6, samt enkelte ikke-funktionelle krav, der tydeliggør muligheden for at monitorere et kontinuerligt blodtryk på en computerskærm, og gemme en måling til efterfølgende forskning.
+Dette afsnit har til formål at beskrive hvilke krav, der er til systemet og for at skabe et overordnet overblik. \\Med udgangspunkt i projektformuleringen er der udarbejdet seks Use Cases, som repræsenterer de funktionelle krav for systemet. Hver Use Case dækker over et givet krav og beskriver Forskerens interaktion med systemet. Samlet dækker de seks Use Cases over systemets funktionalitet.\\Systemets primære funktionalitet beskrives ved Use Case 2, Use Case 6 samt enkelte ikke-funktionelle krav, der tydeliggøre muligheden for at monitorere et kontinuerligt blodtrykssignal og gemme en måling til efterfølgende forskning.
 
 \begin{figure}[H]
 	\centering
@@ -7,20 +7,20 @@ Dette afsnit har til formål at beskrive, hvilke krav der er til systemet, og sk
 	\caption{Use Case diagram}
 \end{figure}
 
-Ovenfor ses de funktionelle krav beskrevet ud fra et Use Case diagram, der samtidig viser, hvilke aktører, der har betydning for hvilke Use Cases.  Aktører beskrives herunder:\\\\
+På Figur 5.1 ses de funktionelle krav beskrevet ud fra et Use Case diagram, der samtidig viser, hvilke aktører, der har betydning for hvilke Use Cases.  Aktører beskrives herunder:\\\\
 
-\textbf{Forsker} er den primære aktør for samtlige seks Use Cases, hvilket betyder at Forskeren initierer alle Use Cases og dermed styrer programmet og dets funktioner. Forskeren sidder med den fulde kontrol over systemet, og kan bestemme hvad der skal ske og hvornår.
+\textbf{Forsker} er den primære aktør for samtlige seks Use Cases og styrer dermed programmet og dets funktioner.
 \\\\
-\textbf{Måleobjekt} er sekundær aktør i Use Case 2 og det er her blodtrykket måles på. Måleobjektet kan enten realiseres in vivo eller in vitro.
+\textbf{Måleobjekt} er sekundær aktør i Use Case 2 og generer trykket, der måles på. Måleobjektet kan enten realiseres in vivo eller in vitro.
 \\\\
-\textbf{Tryktransducer} er sekundær aktør i Use Case 2 og fungerer som et bindeled mellem de to aktører, Forsker og Måleobjekt. Den sørger for, at omforme det målte tryk fra Måleobjektet om til et analogt signal, som systemet kan behandle og fremvise på brugervenlig form for Forskeren. 
+\textbf{Tryktransducer} er sekundær aktør i Use Case 2 og fungerer som et bindeled mellem de to aktører, Forsker og Måleobjekt. Tryktransduceren sørger for, at konvertere det målte tryk fra Måleobjektet om til et elektrisk analogt signal.
 \\\\
-\textbf{Database} er sekundær aktør i Use Case 6 og den er ansvarlige for at blodtryksmålinger kan gemmes.
+\textbf{Database} er sekundær aktør i Use Case 6 og er ansvarlig for, at de gemte blodtryksmålinger kan opbevares.
 \\\\
-Nedenfor ses en kort beskrivelse af de seks Use Cases og aktørernes roller i disse. For yderligere detaljer af Use Cases henvises til kravspecifikationen i Projektdokumentationen.\\\\
-\textbf{UC1: Kalibrér}\\Forskeren skal kunne kalibrere systemet via en grafisk brugergrænseflade.
+Nedenfor ses en kort beskrivelse af de seks Use Cases og aktørernes roller i disse. For yderligere detaljer af Use Cases henvises til kravspecifikationen under Funktionelle krav 1.3 i Projektdokumentationen.\\\\
+\textbf{Use Case 1: Kalibrér}\\Forskeren skal kunne kalibrere systemet via en grafisk brugergrænseflade.
 \\\\
-\textbf{Use Case 2: Vis måling med filter}\\Forskeren skal kunne se en kontinuerlig blodtrykskurve for et givet Måleobjekt på en grafisk brugergrænseflade. 
+\textbf{Use Case 2: Vis måling med filter}\\Forskeren skal kunne se en kontinuerlig blodtrykskurve med aktivt filter for et givet Måleobjekt på en grafisk brugergrænseflade. 
 \\\\
 \textbf{Use Case 3: Nulpunktsjustér}\\Forskeren skal kunne nulpunktsjustere systemet via en grafisk brugergrænseflade.
 \\\\
@@ -28,4 +28,4 @@ Nedenfor ses en kort beskrivelse af de seks Use Cases og aktørernes roller i di
 \textbf{Use Case 5: Aktivér filter}\\Forskeren skal kunne aktivere det digitale filter og udskrive det filtrerede blodtrykssignal på en grafisk brugergrænseflade.\\\\
 \textbf{Use Case 6: Gem måling}\\Forskeren skal kunne optage blodtryksmålinger og derefter gemme dem i en Database. 
 \\\\
-Udover de funktionelle krav, er der ved hjælp af FURPS+ opstillet en række ikke-funktionelle krav med henblik på at klarlægge design og kvalitetsgrad for systemet. \\Herunder bliver der beskrevet krav til blandt andet design af den grafiske brugergrænseflade, systemets præstation og diverse krav til udstyr og generel udvikling af systemet.\\Det er gældende for hele den grafiske brugergrænseflade, at alle knapper skal være selvforklarende i forhold til den funktion, de varetager. Det gælder blandt andet knapperne ”Beregn”, ”Nulpunktsjuster”, ”Rec”, ”Stop” og ”Gem”.\\Ydermere er der forsøgt, at overholde diverse standarder for design af en grafisk brugergrænseflade, hvad angår placering, størrelse og farve af knapper, værdier, grafer med videre.\\For yderligere detaljer af ikke-funktionelle krav henvises der til kravspecifikationen i Projektdokumentationen. 
+Udover de funktionelle krav er der ved hjælp af FURPS+ opstillet en række ikke-funktionelle krav med henblik på at klarlægge design og kvalitetsgrad for systemet. \\Herunder bliver der beskrevet krav til blandt andet design af den grafiske brugergrænseflade, systemets præstation og diverse krav til udstyr og generel udvikling af systemet.\\Det er gældende for hele den grafiske brugergrænseflade, at alle knapper skal være selvforklarende i forhold til den funktion, de varetager. Det gælder blandt andet knapperne ”Beregn”, ”Nulpunktsjuster”, ”Rec”, ”Stop” og ”Gem”.\\Ydermere er der forsøgt, at overholde diverse standarder for design af en grafisk brugergrænseflade, hvad angår placering, størrelse og farve af knapper, værdier, grafer med videre.\\For yderligere detaljer af ikke-funktionelle krav henvises der til kravspecifikationen under Ikke-funktionelle krav 1.4 i Projektdokumentationen. 
